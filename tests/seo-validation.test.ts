@@ -47,7 +47,7 @@ describe('SEO metadata audit', () => {
     expect(audit.warnings.map((issue) => issue.code)).toContain('seo.title.includes-brand')
   })
 
-  it('accepts natural keyword variants and warns on unrelated intent', () => {
+  it('accepts natural Latin keyword variants and warns on unrelated intent', () => {
     const matching = auditSeoMetadata({
       ...validInput,
       primaryKeyword: 'image resize tool',
@@ -74,6 +74,39 @@ describe('SEO metadata audit', () => {
         'seo.primary-keyword.hero',
       ]),
     )
+  })
+
+  it('evaluates CJK keyword intent instead of silently passing it', () => {
+    const matching = auditSeoMetadata({
+      title: '免费在线图片压缩工具',
+      description: '在线压缩 JPG、PNG 和 WebP 图片，减少文件大小，无需安装。',
+      path: '/zh/image-compressor',
+      primaryKeyword: '图片压缩工具',
+      heroTitle: '图片压缩工具',
+    })
+
+    expect(matching.warnings.map((issue) => issue.code)).not.toContain(
+      'seo.primary-keyword.manual-review',
+    )
+    expect(matching.warnings.map((issue) => issue.code)).not.toContain('seo.primary-keyword.title')
+
+    const unrelated = auditSeoMetadata({
+      title: '在线图片裁剪',
+      description: '上传图片并调整裁剪区域。',
+      path: '/zh/image-cropper',
+      primaryKeyword: '图片压缩工具',
+      heroTitle: '图片裁剪',
+    })
+    expect(unrelated.warnings.map((issue) => issue.code)).toContain('seo.primary-keyword.title')
+  })
+
+  it('requests manual review for unsupported non-Latin scripts', () => {
+    const audit = auditSeoMetadata({
+      ...validInput,
+      primaryKeyword: 'генератор счетов',
+      heroTitle: 'Invoice Generator',
+    })
+    expect(audit.warnings.map((issue) => issue.code)).toContain('seo.primary-keyword.manual-review')
   })
 
   it('warns about unsupported social image schemes', () => {

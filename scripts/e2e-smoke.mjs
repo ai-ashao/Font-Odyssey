@@ -101,6 +101,57 @@ function detectProductMode(html) {
   return hasTool ? 'tool' : 'saas'
 }
 
+function normalizeGraphUrl(value) {
+  const url = new URL(value)
+  url.hash = ''
+  return url.toString()
+}
+
+function internalLinks(html, pageUrl) {
+  const links = new Set()
+  for (const tag of tags(html, 'a')) {
+    const raw = attribute(tag, 'href')
+    if (!raw) continue
+    const href = raw.replaceAll('&amp;', '&').trim()
+    if (
+      !href ||
+      href.startsWith('mailto:') ||
+      href.startsWith('tel:') ||
+      href.startsWith('javascript:') ||
+      href.startsWith('data:')
+    ) {
+      continue
+    }
+
+    try {
+      const url = new URL(href, pageUrl)
+      if (url.origin !== baseUrl) continue
+      url.hash = ''
+      links.add(url.toString())
+    } catch {
+      throw new Error(`Invalid internal href on ${pageUrl}: ${href}`)
+    }
+  }
+  return [...links]
+}
+
+function graphDepths(graph, start) {
+  const depths = new Map([[start, 0]])
+  const queue = [start]
+
+  while (queue.length > 0) {
+    const current = queue.shift()
+    const depth = depths.get(current) ?? 0
+    for (const next of graph.get(current) ?? []) {
+      if (depths.has(next)) continue
+      depths.set(next, depth + 1)
+      queue.push(next)
+    }
+  }
+
+  return depths
+}
+
 async function waitForServer() {
   const deadline = Date.now() + 30_000
   while (Date.now() < deadline) {
@@ -115,9 +166,64 @@ async function waitForServer() {
   throw new Error(`Vite did not start.\n${output.join('')}`)
 }
 
+const getCache = new Map()
+
 async function request(path, init) {
+  const cacheable = !init
+  if (cacheable && getCache.has(path)) return getCache.get(path)
+
   const response = await fetch(`${baseUrl}${path}`, init)
-  return { response, text: await response.text() }
+  const result = { response, text: await response.text() }
+  if (cacheable) getCache.set(path, result)
+  return result
+}
+
+async function requestAbsolute(url) {
+  const parsed = new URL(url)
+  return request(`${parsed.pathname}${parsed.search}`)
+}
+
+async function auditInternalLinkGraph(indexedHtml) {
+  const sitemapSet = new Set([...indexedHtml.keys()].map(normalizeGraphUrl))
+  const incoming = new Map([...sitemapSet].map((url) => [url, new Set()]))
+  const graph = new Map([...sitemapSet].map((url) => [url, new Set()]))
+
+  for (const [sourceUrl, html] of indexedHtml) {
+    const normalizedSource = normalizeGraphUrl(sourceUrl)
+    for (const targetUrl of internalLinks(html, sourceUrl)) {
+      const targetResult = await requestAbsolute(targetUrl)
+      assert(
+        targetResult.response.status < 400,
+        `Broken internal link: ${sourceUrl} -> ${targetUrl} returned ${targetResult.response.status}.`,
+      )
+
+      const normalizedTarget = normalizeGraphUrl(targetUrl)
+      if (!sitemapSet.has(normalizedTarget)) continue
+
+      graph.get(normalizedSource)?.add(normalizedTarget)
+      if (normalizedTarget !== normalizedSource) {
+        incoming.get(normalizedTarget)?.add(normalizedSource)
+      }
+    }
+  }
+
+  const homeUrl = normalizeGraphUrl(`${baseUrl}/`)
+  for (const url of sitemapSet) {
+    if (url === homeUrl) continue
+    assert(
+      (incoming.get(url)?.size ?? 0) > 0,
+      `Indexable orphan page has no incoming internal link from another sitemap page: ${url}`,
+    )
+  }
+
+  const depths = graphDepths(graph, homeUrl)
+  for (const url of sitemapSet) {
+    const depth = depths.get(url)
+    assert(depth !== undefined, `Indexable page is unreachable from the homepage: ${url}`)
+    if (depth > 3) {
+      console.warn(`SEO warning: ${url} is ${depth} internal-link clicks from the homepage.`)
+    }
+  }
 }
 
 try {
@@ -183,10 +289,7 @@ try {
   )
 
   const sitemap = await request('/sitemap.xml')
-  assert(
-    sitemap.response.status === 200 && sitemap.text.includes('/guides/build-with-the-skill'),
-    'sitemap.xml is invalid.',
-  )
+  assert(sitemap.response.status === 200, 'sitemap.xml is invalid.')
   assert(
     !sitemap.text.includes('/tool-reference'),
     'Noindex Tool Landing reference routes must not appear in sitemap.xml.',
@@ -196,19 +299,35 @@ try {
     'Pricing sitemap membership must match the active product-surface contract.',
   )
 
+  const guides = await request('/guides')
+  assert(guides.response.status === 200, 'Guides route must remain renderable for starter review.')
+  const guidesIndexed = sitemap.text.includes(`<loc>${baseUrl}/guides</loc>`)
+  assertSeoHead(guides.text, { url: `${baseUrl}/guides`, indexable: guidesIndexed })
+  if (!guidesIndexed) {
+    assert(
+      !home.text.includes('href="/guides"'),
+      'Disabled starter Guides must not remain in primary homepage navigation.',
+    )
+  }
+
   const indexedUrls = sitemapUrls(sitemap.text)
   assert(indexedUrls.length > 0, 'sitemap.xml must contain at least one public URL.')
   assert(
     new Set(indexedUrls).size === indexedUrls.length,
     'sitemap.xml must not contain duplicates.',
   )
+
+  const indexedHtml = new Map()
   for (const indexedUrl of indexedUrls) {
     const url = new URL(indexedUrl)
     assert(url.origin === baseUrl, `Sitemap URL must use the configured site origin: ${indexedUrl}`)
     const page = await request(`${url.pathname}${url.search}`)
     assert(page.response.status === 200, `Sitemap URL must return 200: ${indexedUrl}`)
     assertSeoHead(page.text, { url: indexedUrl, indexable: true })
+    indexedHtml.set(indexedUrl, page.text)
   }
+
+  await auditInternalLinkGraph(indexedHtml)
 
   const privacy = await request('/privacy-policy')
   assert(privacy.response.status === 200, 'Privacy Policy route must return 200.')
@@ -337,7 +456,7 @@ try {
   }
 
   console.log(
-    `E2E smoke passed for ${activeMode} mode: mode-aware sitemap, optional surfaces, SEO metadata, legal templates, tool references, security, and local session lifecycle.`,
+    `E2E smoke passed for ${activeMode} mode: SEO-first sitemap, internal-link graph, mode-aware surfaces, metadata, legal templates, tool references, security, and local session lifecycle.`,
   )
 } finally {
   server.kill('SIGTERM')

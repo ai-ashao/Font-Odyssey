@@ -121,6 +121,11 @@ export type ToolLandingConfig = {
     title: string
     description: string
     path: string
+    /**
+     * Indexability is explicit at the Tool Landing level.
+     * Indexable pages require a primaryKeyword; QA/reference routes should set false.
+     */
+    indexable?: boolean
     applicationCategory?: string
     socialImage?: string
   }

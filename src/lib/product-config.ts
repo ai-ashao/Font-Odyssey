@@ -1,5 +1,5 @@
 export type ProductMode = 'saas' | 'tool'
-export type ProductSurface = 'pricing' | 'app'
+export type ProductSurface = 'pricing' | 'app' | 'guides'
 
 export type ProductConfig = {
   mode: ProductMode
@@ -14,9 +14,9 @@ export type ProductConfig = {
   /**
    * Optional surface overrides.
    *
-   * By default SaaS enables Pricing + App, while Tool disables both.
-   * Use an explicit override only when the real product requires a different boundary,
-   * such as a paid Tool site that needs a Pricing page.
+   * SaaS defaults Pricing + App on; Tool defaults them off.
+   * Guides default off for both modes so ShipLean starter guidance never becomes
+   * indexable product content by accident.
    */
   surfaces?: Partial<Record<ProductSurface, boolean>>
 }
@@ -42,7 +42,10 @@ export function productSurfaceEnabled(
   surface: ProductSurface,
   config: ProductConfig = productConfig,
 ): boolean {
-  return config.surfaces?.[surface] ?? config.mode === 'saas'
+  const explicit = config.surfaces?.[surface]
+  if (explicit !== undefined) return explicit
+  if (surface === 'guides') return false
+  return config.mode === 'saas'
 }
 
 export function validateProductConfig(config: ProductConfig): ReadonlyArray<string> {

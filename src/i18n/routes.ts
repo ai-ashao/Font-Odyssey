@@ -25,11 +25,12 @@ export type PublicPageRoute = {
 
 const legalPagesIndexable = isLegalProfileLaunchReady(legalProfile)
 const pricingIndexable = productSurfaceEnabled('pricing')
+const guidesIndexable = productSurfaceEnabled('guides')
 
 const staticPages: PublicPageRoute[] = [
   { id: 'home', indexable: true, paths: { en: '/', 'zh-CN': '/zh' } },
   { id: 'pricing', indexable: pricingIndexable, paths: { en: '/pricing' } },
-  { id: 'guides', indexable: true, paths: { en: '/guides' } },
+  { id: 'guides', indexable: guidesIndexable, paths: { en: '/guides' } },
   { id: 'about', indexable: true, paths: { en: '/about' } },
   { id: 'contact', indexable: true, paths: { en: '/contact' } },
   { id: 'privacy', indexable: legalPagesIndexable, paths: { en: '/privacy-policy' } },
@@ -38,7 +39,7 @@ const staticPages: PublicPageRoute[] = [
 
 const guidePages: PublicPageRoute[] = guides.map((guide) => ({
   id: guidePageId(guide.slug),
-  indexable: true,
+  indexable: guidesIndexable,
   paths: { en: `/guides/${guide.slug}` },
 }))
 

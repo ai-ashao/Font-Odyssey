@@ -1,4 +1,5 @@
 import { expect, type Locator, test } from '@playwright/test'
+import { productSurfaceEnabled } from '@/lib/product-config'
 
 const viewports = [
   { name: 'desktop', width: 1440, height: 900 },
@@ -126,7 +127,9 @@ for (const fixture of fixtures) {
 
       const headerGuides = page.locator('[data-site-header] a', { hasText: 'Guides' })
       const footerGuides = page.locator('[data-site-footer] a', { hasText: 'Guides' })
-      expect((await headerGuides.count()) + (await footerGuides.count())).toBe(1)
+      expect((await headerGuides.count()) + (await footerGuides.count())).toBe(
+        productSurfaceEnabled('guides') ? 1 : 0,
+      )
 
       expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(
         await page.evaluate(() => window.innerWidth),

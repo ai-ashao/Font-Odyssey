@@ -80,19 +80,33 @@ export function siteNavigationForMode(
   mode: ProductMode,
   config?: ProductConfig,
 ): SiteNavigationConfig {
-  if (mode === 'tool') return toolSiteNavigation
-
   const resolvedConfig = config ?? { ...productConfig, mode }
+  const guidesEnabled = productSurfaceEnabled('guides', resolvedConfig)
+
+  if (mode === 'tool') {
+    return {
+      ...toolSiteNavigation,
+      guidesPlacement: guidesEnabled ? toolSiteNavigation.guidesPlacement : 'none',
+      header: {
+        ...toolSiteNavigation.header,
+        links: toolSiteNavigation.header.links.filter(
+          (linkId) => linkId !== 'guides' || guidesEnabled,
+        ),
+      },
+    }
+  }
+
   const pricingEnabled = productSurfaceEnabled('pricing', resolvedConfig)
   const appEnabled = productSurfaceEnabled('app', resolvedConfig)
-  if (pricingEnabled && appEnabled) return saasSiteNavigation
 
   return {
     ...saasSiteNavigation,
+    guidesPlacement: guidesEnabled ? saasSiteNavigation.guidesPlacement : 'none',
     header: {
       ...saasSiteNavigation.header,
       links: saasSiteNavigation.header.links.filter(
-        (linkId) => linkId !== 'pricing' || pricingEnabled,
+        (linkId) =>
+          (linkId !== 'pricing' || pricingEnabled) && (linkId !== 'guides' || guidesEnabled),
       ),
       cta: appEnabled ? saasSiteNavigation.header.cta : undefined,
     },

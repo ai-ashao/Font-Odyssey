@@ -3,7 +3,7 @@ import { productHomeMessages } from '@/i18n/product-home-messages'
 import { productConfig } from '@/lib/product-config'
 import { localizedPageHead } from '@/lib/seo'
 import { SaasStarterHome } from './saas-starter-home'
-import { ToolStarterHome } from './tool-starter-home'
+import { ToolStarterHome, toolStarterConfig } from './tool-starter-home'
 
 export function ProductHome({ locale }: Readonly<{ locale: Locale }>) {
   return productConfig.mode === 'tool' ? (
@@ -14,14 +14,22 @@ export function ProductHome({ locale }: Readonly<{ locale: Locale }>) {
 }
 
 export function productHomeHead(locale: Locale) {
-  const meta = productHomeMessages[locale].meta
-  const title = productConfig.mode === 'tool' ? meta.toolTitle : meta.saasTitle
-  const description = productConfig.mode === 'tool' ? meta.toolDescription : meta.saasDescription
+  if (productConfig.mode === 'tool') {
+    const config = toolStarterConfig(locale)
+    return localizedPageHead({
+      pageId: 'home',
+      locale,
+      title: config.seo.title,
+      description: config.seo.description,
+      socialImage: config.seo.socialImage,
+    })
+  }
 
+  const meta = productHomeMessages[locale].meta
   return localizedPageHead({
     pageId: 'home',
     locale,
-    title,
-    description,
+    title: meta.saasTitle,
+    description: meta.saasDescription,
   })
 }

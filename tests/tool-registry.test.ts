@@ -16,6 +16,7 @@ const registry = [
     href: '/current',
     tags: ['image', 'resize'],
     status: 'live',
+    indexable: true,
     localizations: {
       'zh-CN': { label: '当前工具', href: '/zh/current' },
     },
@@ -26,6 +27,7 @@ const registry = [
     href: '/closest',
     tags: ['image', 'resize'],
     status: 'live',
+    indexable: true,
     localizations: {
       'zh-CN': { label: '最相关工具', href: '/zh/closest' },
     },
@@ -35,6 +37,14 @@ const registry = [
     label: 'Other Tool',
     href: '/other',
     tags: ['text'],
+    status: 'live',
+    indexable: true,
+  },
+  {
+    id: 'live-noindex',
+    label: 'Live Noindex Tool',
+    href: '/live-noindex',
+    tags: ['image'],
     status: 'live',
   },
   {
@@ -59,19 +69,34 @@ describe('tool registry', () => {
     expect(related[0]?.href).toBe('/zh/closest')
   })
 
-  it('falls back to tag relevance when explicit ids are absent', () => {
+  it('uses only positive tag relevance for automatic Related Tools', () => {
     expect(
       resolveRelatedTools({ registry, currentToolId: 'current' }).map((tool) => tool.id),
-    ).toEqual(['closest', 'other'])
+    ).toEqual(['closest', 'live-noindex'])
+    expect(
+      resolveRelatedTools({ registry, currentToolId: 'other' }).map((tool) => tool.id),
+    ).toEqual([])
   })
 
-  it('rejects duplicate registry ids', () => {
+  it('rejects duplicate registry ids and planned indexable tools', () => {
     expect(validateToolRegistry([...registry, registry[0] as ToolRegistryItem])).toContain(
       'Duplicate tool registry id: current',
     )
+    expect(
+      validateToolRegistry([
+        ...registry,
+        {
+          id: 'bad-planned',
+          label: 'Bad Planned',
+          href: '/bad-planned',
+          status: 'planned',
+          indexable: true,
+        },
+      ]),
+    ).toContain('Tool bad-planned cannot be indexable until its status is live.')
   })
 
-  it('uses localized routes for switching, hreflang, and sitemap', () => {
+  it('uses localized routes for switching and hreflang', () => {
     expect(findToolRouteByPath(registry, '/zh/current')).toMatchObject({
       locale: 'zh-CN',
       path: '/zh/current',
@@ -86,10 +111,13 @@ describe('tool registry', () => {
       { locale: 'zh-CN', path: '/zh/current' },
       { locale: 'x-default', path: '/current' },
     ])
+  })
 
+  it('requires explicit indexable=true before a live tool enters sitemap', () => {
     expect(toolSitemapPaths(registry)).toEqual(
       expect.arrayContaining(['/current', '/zh/current', '/closest', '/zh/closest', '/other']),
     )
     expect(toolSitemapPaths(registry)).not.toContain('/planned')
+    expect(toolSitemapPaths(registry)).not.toContain('/live-noindex')
   })
 })

@@ -18,46 +18,49 @@ Supported modes:
 type ProductMode = 'saas' | 'tool'
 ```
 
-The same config also owns the neutral starter brand:
-
-```ts
-productConfig.brand.name
-productConfig.brand.mark
-productConfig.brand.description
-```
-
-The checked-in brand is intentionally generic (`Starter Product`). A coding Agent must replace it with the real product identity during adaptation.
+The same config owns the neutral starter brand.
 
 ## Optional product surfaces
 
-Pricing and the local App shell are mode-aware:
+Pricing, App, and Guides are explicit product surfaces.
+
+Default behavior:
 
 ```text
-SaaS default
+SaaS
 Pricing = enabled
 App = enabled
+Guides = disabled
 
-Tool default
+Tool
 Pricing = disabled
 App = disabled
+Guides = disabled
 ```
 
-Disabled Pricing is unavailable and excluded from the sitemap. Disabled App hides `/login`, `/dashboard`, and the sandbox-session API.
+Guides are disabled for both modes because the checked-in guide content describes ShipLean itself and must never become indexable product content by accident.
 
-A real product may explicitly override one surface when required:
+A real product may override surfaces:
 
 ```ts
 surfaces: {
   pricing: true,
   app: false,
+  guides: true,
 }
 ```
 
-This is useful for a paid Tool product that needs Pricing without turning the product into SaaS. Explicit overrides should reflect real shipped behavior, not starter convenience.
+When Guides are enabled, the SEO-first residue gate requires the original ShipLean starter guide slugs to be replaced first.
 
 ## SaaS mode
 
-Default shell:
+Default shell while Guides are disabled:
+
+```text
+Logo | Home | Workflow | Pricing | Primary CTA | Language
+```
+
+If real product Guides are later enabled:
 
 ```text
 Logo | Home | Workflow | Guides | Pricing | Primary CTA | Language
@@ -75,11 +78,15 @@ Hero
 → Final CTA
 ```
 
-SaaS mode may use a Header CTA. The checked-in pricing page is neutral example content only and must be replaced with real plans, entitlements, and billing behavior before launch.
-
 ## Tool mode
 
-Default shell:
+Default shell while Guides are disabled:
+
+```text
+Logo | Tools | Language
+```
+
+If real product Guides are later enabled:
 
 ```text
 Logo | Tools | Guides | Language
@@ -97,7 +104,7 @@ Compact intro
 → FAQ
 ```
 
-Tool mode has no SaaS-style Header CTA by default. It keeps the task-first Tool Landing quality contract.
+Tool Mode also requires the [Tool SEO Brief Contract](./tool-seo-brief.md) before it is treated as SEO-first.
 
 ## Shared Core
 
@@ -106,22 +113,23 @@ Both modes share:
 - TanStack Start / Cloudflare runtime;
 - typed locale routes;
 - SEO metadata contract;
+- internal-link graph acceptance;
 - legal-review infrastructure;
 - Field / Select / Button spacing contract;
 - accessibility baseline;
 - `pnpm verify`;
 - Agent Skill and repository contracts.
 
-Product mode changes **composition, navigation, route exposure, and indexability**, not the underlying engineering contract.
+Product mode changes composition, navigation, route exposure, and indexability, not the underlying engineering contract.
 
 ## QA contract
 
-`pnpm verify` is mode-aware. The browser test reads the active homepage mode rather than assuming SaaS. The HTTP smoke independently checks whether Pricing and App surfaces are enabled and verifies sitemap, route availability, robots metadata, and session behavior against that active configuration.
+`pnpm verify` is mode-aware. The browser test reads the active homepage mode. HTTP smoke verifies sitemap membership, indexability, internal links, optional surfaces, and session boundaries.
 
-`/tool-reference` and `/tool-reference-upload` remain Tool-mode QA surfaces even when the checked-in starter defaults to SaaS mode. This lets the repository verify Tool shell behavior without changing the active product mode.
+`/tool-reference` and `/tool-reference-upload` remain Tool-mode QA surfaces even when the checked-in starter defaults to SaaS mode.
 
 ## Custom layouts
 
-A product may replace the default SaaS or Tool composition when the user explicitly asks for another layout. Custom composition must preserve the shared SEO, accessibility, truthful-claim, responsive, and verification contracts.
+A product may replace the default SaaS or Tool composition when the user explicitly asks for another layout. Custom composition must preserve SEO, accessibility, truthful-claim, responsive, internal-link, and verification contracts.
 
 Do not add ShipLean marketing sections back into the product template. Vendor marketing belongs in `shiplean-site`.

@@ -11,6 +11,7 @@ export const toolReferenceConfig = {
     description:
       'Free online text length checker for counting characters and words. No installation or signup required.',
     path: '/tool-reference',
+    indexable: false,
     applicationCategory: 'UtilitiesApplication',
   },
   hero: {
@@ -100,6 +101,7 @@ export const toolReferenceUploadConfig = {
     description:
       'Free online image upload reference for validating a realistic Tool Landing viewport. No installation or signup required.',
     path: '/tool-reference-upload',
+    indexable: false,
     applicationCategory: 'UtilitiesApplication',
   },
   hero: {

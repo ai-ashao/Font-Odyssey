@@ -17,6 +17,26 @@ The runtime in this repository is not the ShipLean marketing website. ShipLean's
 - Keep `/tool-reference` and `/tool-reference-upload` as Tool-mode QA surfaces even when the active starter mode is SaaS.
 - Read `docs/product-modes.md` for the mode boundary.
 
+## SEO-first Tool contract
+
+Tool Mode is SEO-first, not product-first.
+
+Before implementing an indexable Tool product:
+
+1. Consume keyword/SERP research from the available SEO/research workflow.
+2. Populate `src/modules/tool-seo-brief.ts`.
+3. Validate the primary keyword, search intent, first-batch page map, locales, and research evidence.
+4. Build the planned search pages before adding optional product complexity.
+5. Keep indexability explicit: a Tool Registry route enters sitemap only when `status: 'live'` and `indexable: true`.
+6. Every indexable Tool Landing requires `seo.primaryKeyword`.
+7. Do not enable Guides while the original ShipLean starter guide content remains.
+8. Prefer fewer relevant Related Tools to unrelated filler links.
+9. Preserve a crawlable internal-link path from the homepage to every indexable page.
+
+ShipLean consumes the SEO brief. It does not own keyword-volume APIs, SERP scraping, competitor scoring, or ranking promises.
+
+Read `docs/tool-seo-brief.md`.
+
 ## Working rules
 
 - Keep the downloaded scaffold useful without a database, payment provider, or external secrets.
@@ -37,13 +57,15 @@ The runtime in this repository is not the ShipLean marketing website. ShipLean's
 
 ## Completion command
 
-Run `pnpm verify`. It must pass formatting/lint checks, strict TypeScript, domain tests, SEO assertions, and the production build.
+Run `pnpm verify`. It must pass formatting/lint checks, strict TypeScript, domain tests, SEO assertions, internal-link acceptance, browser viewport acceptance, and the production build.
+
 Before a production deployment, `pnpm deploy` must also pass the strict legal-profile gate.
 
 ## Current non-goals
 
 - Next.js and shared framework packages
 - Productized SEO tools or SEO SaaS features
+- Keyword-volume APIs, SERP scraping, or ranking prediction inside ShipLean
 - Payments, orders, webhooks, entitlements, and credits before phase two
 - Subscription-SaaS Privacy / Terms modules before their later dedicated phase
 - Teams, RBAC, multi-tenancy, and a no-code editor

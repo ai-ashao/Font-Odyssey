@@ -3,6 +3,7 @@ import { toolStarterConfig } from '@/components/tool-starter-home'
 import { isPublicPageIndexable } from '@/i18n/routes'
 import { validateLegalProfile } from '@/lib/legal'
 import { productConfig, productSurfaceEnabled, validateProductConfig } from '@/lib/product-config'
+import { validateSeoFirstProductState } from '@/lib/seo-first-validation'
 import {
   saasSiteNavigation,
   siteNavigation,
@@ -22,15 +23,20 @@ describe('real configuration contracts', () => {
     expect(validateProductConfig(productConfig)).toEqual([])
   })
 
-  it('keeps public Pricing indexability aligned with the active product surface', () => {
+  it('keeps the checked-in SEO-first product state valid', () => {
+    expect(validateSeoFirstProductState()).toEqual([])
+  })
+
+  it('keeps public surface indexability aligned with product configuration', () => {
     expect(isPublicPageIndexable('pricing')).toBe(productSurfaceEnabled('pricing'))
+    expect(isPublicPageIndexable('guides')).toBe(productSurfaceEnabled('guides'))
   })
 
   it('keeps the checked-in legal profile structurally valid', () => {
     expect(validateLegalProfile(legalProfile)).toEqual([])
   })
 
-  it('keeps both product-mode navigation defaults valid', () => {
+  it('keeps both base product-mode navigation contracts valid', () => {
     expect(validateSiteNavigation(siteNavigation, toolRegistry)).toEqual([])
     expect(validateSaasSiteNavigation(saasSiteNavigation, toolRegistry)).toEqual([])
     expect(validateToolSiteNavigation(toolSiteNavigation, toolRegistry)).toEqual([])

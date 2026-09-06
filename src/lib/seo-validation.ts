@@ -103,32 +103,44 @@ export function auditSeoMetadata(input: SeoMetadataAuditInput): SeoAuditResult {
 
   const primaryKeyword = input.primaryKeyword?.trim()
   if (primaryKeyword) {
-    if (!matchesKeywordIntent(title, primaryKeyword)) {
+    const intentMode = keywordIntentMode(primaryKeyword)
+
+    if (intentMode === 'manual') {
       issues.push(
         warning(
-          'seo.primary-keyword.title',
+          'seo.primary-keyword.manual-review',
           'primaryKeyword',
-          'Primary keyword intent is not clearly reflected in the SEO title; review the wording manually.',
+          'Primary keyword uses a script that the lightweight intent matcher does not evaluate reliably; review title, description, and Hero intent manually.',
         ),
       )
-    }
-    if (!matchesKeywordIntent(description, primaryKeyword)) {
-      issues.push(
-        warning(
-          'seo.primary-keyword.description',
-          'primaryKeyword',
-          'Primary keyword intent is not clearly reflected in the SEO description; natural variants are allowed.',
-        ),
-      )
-    }
-    if (input.heroTitle && !matchesKeywordIntent(input.heroTitle, primaryKeyword)) {
-      issues.push(
-        warning(
-          'seo.primary-keyword.hero',
-          'primaryKeyword',
-          'Hero title may not clearly match the primary keyword intent; branded wording is allowed, so confirm manually.',
-        ),
-      )
+    } else {
+      if (!matchesKeywordIntent(title, primaryKeyword, intentMode)) {
+        issues.push(
+          warning(
+            'seo.primary-keyword.title',
+            'primaryKeyword',
+            'Primary keyword intent is not clearly reflected in the SEO title; review the wording manually.',
+          ),
+        )
+      }
+      if (!matchesKeywordIntent(description, primaryKeyword, intentMode)) {
+        issues.push(
+          warning(
+            'seo.primary-keyword.description',
+            'primaryKeyword',
+            'Primary keyword intent is not clearly reflected in the SEO description; natural variants are allowed.',
+          ),
+        )
+      }
+      if (input.heroTitle && !matchesKeywordIntent(input.heroTitle, primaryKeyword, intentMode)) {
+        issues.push(
+          warning(
+            'seo.primary-keyword.hero',
+            'primaryKeyword',
+            'Hero title may not clearly match the primary keyword intent; branded wording is allowed, so confirm manually.',
+          ),
+        )
+      }
     }
   }
 
@@ -158,14 +170,30 @@ function isSitePath(path: string): boolean {
 }
 
 function normalizeText(value: string): string {
-  return value.trim().toLowerCase().replace(/\s+/g, ' ')
+  return value.normalize('NFKC').trim().toLowerCase().replace(/\s+/g, ' ')
 }
 
 function includesWords(value: string, phrase: string): boolean {
   return normalizeText(value).includes(normalizeText(phrase))
 }
 
-function matchesKeywordIntent(value: string, keyword: string): boolean {
+type KeywordIntentMode = 'latin' | 'cjk' | 'manual'
+
+function keywordIntentMode(keyword: string): KeywordIntentMode {
+  if (/[\u3400-\u9fff\u3040-\u30ff\uac00-\ud7af]/u.test(keyword)) return 'cjk'
+  if (/\P{ASCII}/u.test(keyword)) return 'manual'
+  return 'latin'
+}
+
+function matchesKeywordIntent(
+  value: string,
+  keyword: string,
+  mode: Exclude<KeywordIntentMode, 'manual'>,
+): boolean {
+  return mode === 'cjk' ? matchesCjkIntent(value, keyword) : matchesLatinIntent(value, keyword)
+}
+
+function matchesLatinIntent(value: string, keyword: string): boolean {
   const valueTokens = intentTokens(value)
   const keywordTokens = intentTokens(keyword)
   if (keywordTokens.length === 0) return true
@@ -173,6 +201,35 @@ function matchesKeywordIntent(value: string, keyword: string): boolean {
     valueTokens.some((candidate) => tokensAreRelated(token, candidate)),
   ).length
   return matched >= Math.max(1, Math.ceil(keywordTokens.length * 0.6))
+}
+
+function matchesCjkIntent(value: string, keyword: string): boolean {
+  const normalizedValue = normalizeCjk(value)
+  const normalizedKeyword = normalizeCjk(keyword)
+  if (!normalizedKeyword) return true
+  if (normalizedValue.includes(normalizedKeyword)) return true
+
+  const keywordBigrams = ngrams(normalizedKeyword, 2)
+  if (keywordBigrams.length === 0) return normalizedValue.includes(normalizedKeyword)
+
+  const valueBigrams = new Set(ngrams(normalizedValue, 2))
+  const matched = keywordBigrams.filter((gram) => valueBigrams.has(gram)).length
+  return matched / keywordBigrams.length >= 0.6
+}
+
+function normalizeCjk(value: string): string {
+  return value
+    .normalize('NFKC')
+    .toLowerCase()
+    .replace(/[\s\p{P}\p{S}]+/gu, '')
+}
+
+function ngrams(value: string, size: number): string[] {
+  const characters = [...value]
+  if (characters.length < size) return characters.length ? [value] : []
+  return Array.from({ length: characters.length - size + 1 }, (_, index) =>
+    characters.slice(index, index + size).join(''),
+  )
 }
 
 function intentTokens(value: string): string[] {

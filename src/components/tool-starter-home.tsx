@@ -10,7 +10,9 @@ import type { Locale } from '@/i18n/config'
 import { productHomeMessages } from '@/i18n/product-home-messages'
 import { localizedPathOrDefault } from '@/i18n/routes'
 import { site } from '@/lib/site'
+import { primaryKeywordForLocale } from '@/lib/tool-seo-brief'
 import { buildToolStructuredData } from '@/lib/tool-structured-data'
+import { toolSeoBrief } from '@/modules/tool-seo-brief'
 
 const toolSectionId = 'tool'
 
@@ -29,6 +31,9 @@ export function ToolStarterHome({ locale }: Readonly<{ locale: Locale }>) {
 export function toolStarterConfig(locale: Locale): ToolLandingConfig {
   const copy = productHomeMessages[locale].tool
   const path = localizedPathOrDefault('home', locale)
+  const primaryKeyword =
+    primaryKeywordForLocale(toolSeoBrief, locale) ??
+    (locale === 'zh-CN' ? '文本长度统计' : 'text length checker')
 
   return {
     version: '0.2',
@@ -36,9 +41,11 @@ export function toolStarterConfig(locale: Locale): ToolLandingConfig {
     toolId: 'starter-home-tool',
     locale,
     seo: {
+      primaryKeyword,
       title: productHomeMessages[locale].meta.toolTitle,
       description: productHomeMessages[locale].meta.toolDescription,
       path,
+      indexable: true,
       applicationCategory: 'UtilitiesApplication',
     },
     hero: {

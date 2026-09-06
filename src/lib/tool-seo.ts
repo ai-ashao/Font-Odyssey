@@ -12,6 +12,7 @@ export function toolPageHead(
     description: config.seo.description,
     path: config.seo.path,
     alternates: toolHreflangAlternates(registry, config.toolId),
+    indexable: config.seo.indexable !== false,
     socialImage: config.seo.socialImage,
   })
 }

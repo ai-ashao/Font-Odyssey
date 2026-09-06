@@ -13,6 +13,10 @@ export type ToolRegistryItem = {
   description?: string
   tags?: ReadonlyArray<string>
   status: 'live' | 'planned'
+  /**
+   * SEO indexability is explicit opt-in.
+   * A live tool enters sitemap only when indexable === true.
+   */
   indexable?: boolean
   localizations?: Partial<Record<Locale, ToolRegistryLocalization>>
 }
@@ -126,7 +130,7 @@ export function toolLocaleAlternatesForPath(
 
 export function toolSitemapPaths(registry: ReadonlyArray<ToolRegistryItem>): ReadonlyArray<string> {
   return registry
-    .filter((tool) => tool.status === 'live' && tool.indexable !== false)
+    .filter((tool) => tool.status === 'live' && tool.indexable === true)
     .flatMap((tool) =>
       supportedLocales.flatMap((locale) => {
         const path = toolPathForLocale(tool, locale)
@@ -150,6 +154,10 @@ export function validateToolRegistry(
 
     if (!tool.href.startsWith('/')) {
       issues.push(`Tool ${tool.id} href must be an absolute site path starting with "/".`)
+    }
+
+    if (tool.indexable === true && tool.status !== 'live') {
+      issues.push(`Tool ${tool.id} cannot be indexable until its status is live.`)
     }
 
     for (const locale of supportedLocales) {
@@ -218,6 +226,7 @@ export function resolveRelatedTools(input: {
                 0,
               ),
             }))
+            .filter(({ score }) => score > 0)
             .sort((a, b) => b.score - a.score || a.tool.label.localeCompare(b.tool.label))
             .slice(0, maxItems)
             .map(({ tool }) => tool)

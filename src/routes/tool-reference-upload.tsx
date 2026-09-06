@@ -8,13 +8,7 @@ import { buildToolStructuredData } from '@/lib/tool-structured-data'
 import { toolReferenceUploadConfig as config } from '@/modules/tool-reference-configs'
 
 export const Route = createFileRoute('/tool-reference-upload')({
-  head: () => {
-    const head = toolPageHead(config)
-    return {
-      ...head,
-      meta: [...head.meta, { name: 'robots', content: 'noindex,nofollow' }],
-    }
-  },
+  head: () => toolPageHead(config),
   component: UploadReferencePage,
 })
 

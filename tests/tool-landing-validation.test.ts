@@ -15,9 +15,11 @@ function validConfig(): ToolLandingConfig {
     toolId: 'current',
     locale: 'en',
     seo: {
+      primaryKeyword: 'current online tool',
       title: 'Current Tool - Free Online Tool',
       description: 'Free online tool with no installation or signup required.',
       path: '/current',
+      indexable: true,
     },
     hero: {
       title: 'Current Tool',
@@ -51,6 +53,19 @@ function validConfig(): ToolLandingConfig {
 describe('Tool Landing validation', () => {
   it('accepts a valid v0.2 config', () => {
     expect(validateToolLandingConfig(validConfig(), registry)).toEqual([])
+  })
+
+  it('requires a primary keyword only for indexable Tool Landing pages', () => {
+    const indexable = validConfig()
+    indexable.seo.primaryKeyword = undefined
+    expect(validateToolLandingConfig(indexable, registry)).toContain(
+      'Indexable Tool Landing pages require a primaryKeyword from the SEO brief.',
+    )
+
+    const noindex = validConfig()
+    noindex.seo.primaryKeyword = undefined
+    noindex.seo.indexable = false
+    expect(validateToolLandingConfig(noindex, registry)).toEqual([])
   })
 
   it('enforces 3–5 completion highlights', () => {

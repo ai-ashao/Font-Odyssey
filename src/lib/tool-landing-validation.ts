@@ -30,9 +30,21 @@ export function auditToolLandingConfig(
   registry: ReadonlyArray<ToolRegistryItem> = [],
 ): SeoAuditResult {
   const errors: SeoAuditIssue[] = []
+  const indexable = config.seo.indexable !== false
+
+  if (indexable && !config.seo.primaryKeyword?.trim()) {
+    errors.push(
+      toolError(
+        'tool.seo.primary-keyword.required',
+        'seo.primaryKeyword',
+        'Indexable Tool Landing pages require a primaryKeyword from the SEO brief.',
+      ),
+    )
+  }
 
   const seoAudit = auditSeoMetadata({
     ...config.seo,
+    indexable,
     heroTitle: config.hero.title,
     heroDescription: config.hero.description,
   })
