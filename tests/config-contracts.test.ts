@@ -1,59 +1,58 @@
 import { describe, expect, it } from 'vitest'
-import { toolStarterConfig } from '@/components/tool-starter-home'
-import { isPublicPageIndexable } from '@/i18n/routes'
+import { hreflangAlternates, sitemapPaths } from '@/i18n/routes'
+import { filterAndSortFonts, fontCatalog, fontLanguages } from '@/lib/font-catalog'
 import { validateLegalProfile } from '@/lib/legal'
-import { productConfig, productSurfaceEnabled, validateProductConfig } from '@/lib/product-config'
+import { productConfig, validateProductConfig } from '@/lib/product-config'
 import { validateSeoFirstProductState } from '@/lib/seo-first-validation'
-import {
-  saasSiteNavigation,
-  siteNavigation,
-  toolSiteNavigation,
-  validateSaasSiteNavigation,
-  validateSiteNavigation,
-  validateToolSiteNavigation,
-} from '@/lib/site-navigation'
-import { validateToolLandingConfig } from '@/lib/tool-landing-validation'
-import { validateToolRegistry } from '@/lib/tool-registry'
+import { siteNavigation, validateToolSiteNavigation } from '@/lib/site-navigation'
 import { legalProfile } from '@/modules/legal-profile'
-import { toolReferenceConfigs } from '@/modules/tool-reference-configs'
 import { toolRegistry } from '@/modules/tool-registry'
 
-describe('real configuration contracts', () => {
-  it('keeps the checked-in product config structurally valid', () => {
+describe('FontOdyssey configuration', () => {
+  it('uses the real product identity and Tool mode', () => {
+    expect(productConfig.mode).toBe('tool')
+    expect(productConfig.brand.name).toBe('FontOdyssey')
     expect(validateProductConfig(productConfig)).toEqual([])
-  })
-
-  it('keeps the checked-in SEO-first product state valid', () => {
     expect(validateSeoFirstProductState()).toEqual([])
   })
 
-  it('keeps public surface indexability aligned with product configuration', () => {
-    expect(isPublicPageIndexable('pricing')).toBe(productSurfaceEnabled('pricing'))
-    expect(isPublicPageIndexable('guides')).toBe(productSurfaceEnabled('guides'))
-  })
-
-  it('keeps the checked-in legal profile structurally valid', () => {
+  it('keeps navigation and legal configuration valid', () => {
+    expect(validateToolSiteNavigation(siteNavigation, toolRegistry)).toEqual([])
     expect(validateLegalProfile(legalProfile)).toEqual([])
   })
 
-  it('keeps both base product-mode navigation contracts valid', () => {
-    expect(validateSiteNavigation(siteNavigation, toolRegistry)).toEqual([])
-    expect(validateSaasSiteNavigation(saasSiteNavigation, toolRegistry)).toEqual([])
-    expect(validateToolSiteNavigation(toolSiteNavigation, toolRegistry)).toEqual([])
+  it('ships exactly the final 149 Approved families in curation order', () => {
+    expect(fontCatalog).toHaveLength(149)
+    expect(fontCatalog[0]?.family).toBe('Noto Sans TC')
+    expect(fontCatalog.some((font) => font.family === 'Roboto Condensed')).toBe(false)
+    expect(fontCatalog.map((font) => font.curationRank)).toEqual(
+      [...fontCatalog].map((font) => font.curationRank).sort((left, right) => left - right),
+    )
   })
 
-  it('keeps the checked-in Tool Registry internally valid', () => {
-    expect(validateToolRegistry(toolRegistry)).toEqual([])
+  it('supports the public sort and language semantics', () => {
+    const popular = filterAndSortFonts(fontCatalog, { sort: 'popular' })
+    expect(popular[0]?.officialPopularityRank).toBe(
+      Math.min(...fontCatalog.map((font) => font.officialPopularityRank)),
+    )
+    const alphabetical = filterAndSortFonts(fontCatalog, { sort: 'alphabetical' })
+    expect(
+      alphabetical.every((font, index) => {
+        const previous = alphabetical[index - 1]
+        return !previous || previous.family.localeCompare(font.family) <= 0
+      }),
+    ).toBe(true)
+    expect(filterAndSortFonts(fontCatalog, { language: 'Chinese' })).not.toHaveLength(0)
+    const latinOnly = filterAndSortFonts(fontCatalog, { language: 'Latin' })
+    expect(latinOnly.every((font) => fontLanguages(font).includes('Latin'))).toBe(true)
   })
 
-  it('keeps every checked-in Tool Landing reference config valid', () => {
-    for (const config of toolReferenceConfigs) {
-      expect(validateToolLandingConfig(config, toolRegistry)).toEqual([])
-    }
-  })
-
-  it('keeps the Tool-mode homepage config valid in every shipped locale', () => {
-    expect(validateToolLandingConfig(toolStarterConfig('en'), toolRegistry)).toEqual([])
-    expect(validateToolLandingConfig(toolStarterConfig('zh-CN'), toolRegistry)).toEqual([])
+  it('publishes reciprocal home and directory routes', () => {
+    expect(hreflangAlternates('fonts')).toEqual([
+      { locale: 'en', path: '/fonts' },
+      { locale: 'zh-CN', path: '/zh/fonts' },
+      { locale: 'x-default', path: '/fonts' },
+    ])
+    expect(sitemapPaths()).toEqual(expect.arrayContaining(['/', '/zh', '/fonts', '/zh/fonts']))
   })
 })

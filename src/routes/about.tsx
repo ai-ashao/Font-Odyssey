@@ -18,17 +18,16 @@ function AboutPage() {
   return (
     <InformationPage
       eyebrow="About"
-      title={`Tell users why ${site.name} should exist.`}
-      description="This is neutral starter copy. Replace it with the real product story, operator details, and support commitments before launch."
+      title="A smaller font library with a stronger point of view."
+      description="FontOdyssey curates a focused collection of popular, multilingual fonts instead of building another endless directory."
     >
       <p>
-        Explain the user problem, the product point of view, and the outcome your product is
-        designed to deliver. Keep the story specific enough that a visitor can understand why this
-        product is different.
+        Every launch font passes a source, metadata, and license gate before it can enter the
+        catalog. Featured order reflects editorial value rather than alphabetical ingestion order.
       </p>
       <p>
-        Before launch, replace every starter statement on this page with facts about the real
-        product and the real operator.
+        The first collection emphasizes widely useful Latin, Chinese, Japanese, and Korean families,
+        with clear category and language filters.
       </p>
     </InformationPage>
   )

@@ -2,6 +2,7 @@ import { createFileRoute } from '@tanstack/react-router'
 import { InformationPage } from '@/components/information-page'
 import { localizedPageHead } from '@/lib/seo'
 import { site } from '@/lib/site'
+import { legalProfile } from '@/modules/legal-profile'
 
 export const Route = createFileRoute('/contact')({
   head: () =>
@@ -18,16 +19,13 @@ function ContactPage() {
   return (
     <InformationPage
       eyebrow="Contact"
-      title="Make support easy to find."
-      description="This is the neutral starter contact page. Replace the guidance below with a real support channel before launch."
+      title="Questions about a font or its license?"
+      description="Contact FontOdyssey about catalog corrections, source attribution, or download issues."
     >
       <p>
-        Add the support email, contact form, or community link that users should use for help. Keep
-        the first response path clear and owned by a real person or team.
-      </p>
-      <p>
-        Align this page with the contact address used by the reviewed Privacy Policy and Terms of
-        Service before production release.
+        Email <a href={`mailto:${legalProfile.contactEmail}`}>{legalProfile.contactEmail}</a>. The
+        address follows the configured public domain; email delivery and DNS remain a production
+        launch gate.
       </p>
     </InformationPage>
   )

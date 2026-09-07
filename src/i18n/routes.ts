@@ -1,20 +1,10 @@
-import { type GuideSlug, guides } from '@/lib/guides'
 import { isLegalProfileLaunchReady } from '@/lib/legal'
-import { productSurfaceEnabled } from '@/lib/product-config'
 import { toolLocaleAlternatesForPath, toolSitemapPaths } from '@/lib/tool-registry'
 import { legalProfile } from '@/modules/legal-profile'
 import { toolRegistry } from '@/modules/tool-registry'
 import { defaultLocale, type Locale, localeConfig, supportedLocales } from './config'
 
-export type PublicPageId =
-  | 'home'
-  | 'pricing'
-  | 'guides'
-  | 'about'
-  | 'contact'
-  | 'privacy'
-  | 'terms'
-  | `guide:${GuideSlug}`
+export type PublicPageId = 'home' | 'fonts' | 'about' | 'contact' | 'privacy' | 'terms'
 export type LocalizedPaths = Partial<Record<Locale, string>>
 
 export type PublicPageRoute = {
@@ -24,36 +14,22 @@ export type PublicPageRoute = {
 }
 
 const legalPagesIndexable = isLegalProfileLaunchReady(legalProfile)
-const pricingIndexable = productSurfaceEnabled('pricing')
-const guidesIndexable = productSurfaceEnabled('guides')
-
 const staticPages: PublicPageRoute[] = [
   { id: 'home', indexable: true, paths: { en: '/', 'zh-CN': '/zh' } },
-  { id: 'pricing', indexable: pricingIndexable, paths: { en: '/pricing' } },
-  { id: 'guides', indexable: guidesIndexable, paths: { en: '/guides' } },
+  { id: 'fonts', indexable: true, paths: { en: '/fonts', 'zh-CN': '/zh/fonts' } },
   { id: 'about', indexable: true, paths: { en: '/about' } },
   { id: 'contact', indexable: true, paths: { en: '/contact' } },
   { id: 'privacy', indexable: legalPagesIndexable, paths: { en: '/privacy-policy' } },
   { id: 'terms', indexable: legalPagesIndexable, paths: { en: '/terms-of-service' } },
 ]
 
-const guidePages: PublicPageRoute[] = guides.map((guide) => ({
-  id: guidePageId(guide.slug),
-  indexable: guidesIndexable,
-  paths: { en: `/guides/${guide.slug}` },
-}))
-
-export const publicPageRoutes: ReadonlyArray<PublicPageRoute> = [...staticPages, ...guidePages]
+export const publicPageRoutes: ReadonlyArray<PublicPageRoute> = staticPages
 
 export type LocaleAlternate = {
   locale: Locale
   path: string
   label: string
   shortLabel: string
-}
-
-export function guidePageId(slug: GuideSlug): `guide:${GuideSlug}` {
-  return `guide:${slug}`
 }
 
 export function localizedPath(pageId: PublicPageId, locale: Locale): string | undefined {

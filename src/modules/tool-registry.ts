@@ -1,7 +1,7 @@
 import type { ToolRegistryItem } from '@/lib/tool-registry'
 
 /**
- * Product repositories replace this empty registry with their live tools.
- * ShipLean core intentionally does not ship fake production tools.
+ * Font families are catalog entries rather than separate Tool Registry products.
+ * Keep this empty until FontOdyssey ships a real standalone utility.
  */
 export const toolRegistry = [] satisfies ReadonlyArray<ToolRegistryItem>

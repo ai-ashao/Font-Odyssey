@@ -1,5 +1,4 @@
 export type ProductMode = 'saas' | 'tool'
-export type ProductSurface = 'pricing' | 'app' | 'guides'
 
 export type ProductConfig = {
   mode: ProductMode
@@ -8,44 +7,18 @@ export type ProductConfig = {
     mark: string
     description: string
   }
-  starter: {
-    showPreviewBanner: boolean
-  }
-  /**
-   * Optional surface overrides.
-   *
-   * SaaS defaults Pricing + App on; Tool defaults them off.
-   * Guides default off for both modes so ShipLean starter guidance never becomes
-   * indexable product content by accident.
-   */
-  surfaces?: Partial<Record<ProductSurface, boolean>>
 }
 
 /**
- * ShipLean's runtime is a product template, not the ShipLean marketing website.
- * Change this file first when adapting the repository into a real product.
+ * Product identity remains centralized so the shell, metadata, and legal pages agree.
  */
 export const productConfig: ProductConfig = {
-  mode: 'saas',
+  mode: 'tool',
   brand: {
-    name: 'Starter Product',
-    mark: 'SP',
-    description:
-      'A focused product starter with typed routes, shared UI, and repository-wide verification.',
+    name: 'FontOdyssey',
+    mark: 'FO',
+    description: 'A small, carefully curated collection of popular multilingual fonts.',
   },
-  starter: {
-    showPreviewBanner: true,
-  },
-}
-
-export function productSurfaceEnabled(
-  surface: ProductSurface,
-  config: ProductConfig = productConfig,
-): boolean {
-  const explicit = config.surfaces?.[surface]
-  if (explicit !== undefined) return explicit
-  if (surface === 'guides') return false
-  return config.mode === 'saas'
 }
 
 export function validateProductConfig(config: ProductConfig): ReadonlyArray<string> {
@@ -63,6 +36,6 @@ export function validateProductConfig(config: ProductConfig): ReadonlyArray<stri
 }
 
 export function surfaceModeForPath(pathname: string): ProductMode {
-  if (pathname.startsWith('/tool-reference')) return 'tool'
+  void pathname
   return productConfig.mode
 }

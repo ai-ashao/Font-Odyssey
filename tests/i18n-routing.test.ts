@@ -2,7 +2,6 @@ import { readFileSync } from 'node:fs'
 import { describe, expect, it } from 'vitest'
 import { localeFromPathname, supportedLocales } from '../src/i18n/config'
 import { shellMessages } from '../src/i18n/messages'
-import { productHomeMessages } from '../src/i18n/product-home-messages'
 import {
   hreflangAlternates,
   localeAlternatesForPath,
@@ -16,7 +15,7 @@ import { legalProfile } from '../src/modules/legal-profile'
 describe('locale-aware route registry', () => {
   it('detects only exact locale path prefixes', () => {
     expect(localeFromPathname('/')).toBe('en')
-    expect(localeFromPathname('/pricing')).toBe('en')
+    expect(localeFromPathname('/fonts')).toBe('en')
     expect(localeFromPathname('/zh')).toBe('zh-CN')
     expect(localeFromPathname('/zh/missing')).toBe('zh-CN')
     expect(localeFromPathname('/zh-fake')).toBe('en')
@@ -41,14 +40,15 @@ describe('locale-aware route registry', () => {
       { locale: 'zh-CN', path: '/zh' },
       { locale: 'x-default', path: '/' },
     ])
-    expect(hreflangAlternates('pricing')).toEqual([])
-    expect(hreflangAlternates('guides')).toEqual([])
+    expect(hreflangAlternates('fonts')).toHaveLength(3)
   })
 
   it('offers a locale switch only when the current page has an equivalent route', () => {
     expect(localeAlternatesForPath('/')).toMatchObject([{ locale: 'zh-CN', path: '/zh' }])
     expect(localeAlternatesForPath('/zh')).toMatchObject([{ locale: 'en', path: '/' }])
-    expect(localeAlternatesForPath('/pricing')).toEqual([])
+    expect(localeAlternatesForPath('/fonts')).toMatchObject([
+      { locale: 'zh-CN', path: '/zh/fonts' },
+    ])
     expect(localeAlternatesForPath('/missing')).toEqual([])
   })
 
@@ -75,9 +75,6 @@ describe('locale-aware route registry', () => {
   it('ships structurally complete message dictionaries for every supported locale', () => {
     expect(Object.keys(shellMessages).sort()).toEqual([...supportedLocales].sort())
     expect(messageShape(shellMessages['zh-CN'])).toEqual(messageShape(shellMessages.en))
-
-    expect(Object.keys(productHomeMessages).sort()).toEqual([...supportedLocales].sort())
-    expect(messageShape(productHomeMessages['zh-CN'])).toEqual(messageShape(productHomeMessages.en))
   })
 
   it('keeps localized route files as thin wrappers around one shared page component', () => {

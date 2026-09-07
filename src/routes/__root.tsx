@@ -49,8 +49,6 @@ function RootComponent() {
   const navigation = siteNavigationForMode(surfaceMode)
 
   const nav = navigation.header.links.flatMap((linkId) => {
-    if (linkId === 'guides' && navigation.guidesPlacement !== 'header') return []
-
     const resolved = resolveHeaderLink(linkId, locale, navigation)
     return resolved ? [resolved] : []
   })
@@ -104,13 +102,6 @@ function RootComponent() {
         </div>
       </header>
 
-      {productConfig.starter.showPreviewBanner ? (
-        <div className="preview-banner" data-starter-preview-banner>
-          <span className="preview-banner-dot" />
-          <span>{copy.previewNotice}</span>
-        </div>
-      ) : null}
-
       <main>
         <Outlet />
       </main>
@@ -131,20 +122,6 @@ function resolveHeaderLink(
   switch (linkId) {
     case 'home':
       return { id: linkId, label: copy.nav.home, href: homePath }
-    case 'workflow':
-      return { id: linkId, label: copy.nav.workflow, href: `${homePath}#workflow` }
-    case 'guides':
-      return {
-        id: linkId,
-        label: copy.nav.guides,
-        href: localizedPathOrDefault('guides', locale),
-      }
-    case 'pricing':
-      return {
-        id: linkId,
-        label: copy.nav.pricing,
-        href: localizedPathOrDefault('pricing', locale),
-      }
     case 'tools': {
       const href = navigation.header.toolsHref
         ? localizedNavigationValue(navigation.header.toolsHref, locale)

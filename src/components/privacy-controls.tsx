@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import type { Locale } from '@/i18n/config'
 import { publicEnv } from '@/lib/config/env'
 
-const CONSENT_KEY = 'shiplean_analytics_consent'
+const CONSENT_KEY = 'fontodyssey_analytics_consent'
 
 export function createGtagQueue(dataLayer: unknown[]) {
   return function gtag(..._args: unknown[]) {
@@ -29,10 +29,10 @@ export function PrivacyControls({ locale = 'en' }: Readonly<{ locale?: Locale }>
       return
     }
     window.gtag('consent', 'update', { analytics_storage: 'granted' })
-    if (document.querySelector('[data-shiplean-ga4]')) return
+    if (document.querySelector('[data-fontodyssey-ga4]')) return
     const script = document.createElement('script')
     script.async = true
-    script.dataset.shipleanGa4 = 'true'
+    script.dataset.fontodysseyGa4 = 'true'
     script.src = `https://www.googletagmanager.com/gtag/js?id=${publicEnv.ga4Id}`
     document.head.append(script)
     window.gtag('js', new Date())

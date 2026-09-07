@@ -1,14 +1,9 @@
 import type { Locale } from '@/i18n/config'
-import {
-  type ProductConfig,
-  type ProductMode,
-  productConfig,
-  productSurfaceEnabled,
-} from './product-config'
+import { type ProductConfig, type ProductMode, productConfig } from './product-config'
 import { resolveToolPresentation, type ToolRegistryItem } from './tool-registry'
 
-export type GuidesPlacement = 'header' | 'footer' | 'none'
-export type HeaderLinkId = 'home' | 'workflow' | 'tools' | 'guides' | 'pricing'
+export type GuidesPlacement = 'none'
+export type HeaderLinkId = 'home' | 'tools'
 export type LocalizedValue = Partial<Record<Locale, string>>
 
 export type FooterToolGroupConfig = {
@@ -49,26 +44,11 @@ export type SiteNavigationConfig = {
   }
 }
 
-export const saasSiteNavigation: SiteNavigationConfig = {
-  guidesPlacement: 'header',
-  header: {
-    links: ['home', 'workflow', 'guides', 'pricing'],
-    cta: {
-      label: { en: 'Open app', 'zh-CN': '打开应用' },
-      href: { en: '/login', 'zh-CN': '/login' },
-    },
-  },
-  footer: {
-    toolGroups: [],
-    secondaryPages: ['about', 'contact', 'privacy', 'terms'],
-  },
-}
-
 export const toolSiteNavigation: SiteNavigationConfig = {
-  guidesPlacement: 'header',
+  guidesPlacement: 'none',
   header: {
-    links: ['tools', 'guides'],
-    toolsHref: { en: '/#tool', 'zh-CN': '/zh#tool' },
+    links: ['tools'],
+    toolsHref: { en: '/fonts', 'zh-CN': '/zh/fonts' },
   },
   footer: {
     toolGroups: [],
@@ -80,37 +60,9 @@ export function siteNavigationForMode(
   mode: ProductMode,
   config?: ProductConfig,
 ): SiteNavigationConfig {
-  const resolvedConfig = config ?? { ...productConfig, mode }
-  const guidesEnabled = productSurfaceEnabled('guides', resolvedConfig)
-
-  if (mode === 'tool') {
-    return {
-      ...toolSiteNavigation,
-      guidesPlacement: guidesEnabled ? toolSiteNavigation.guidesPlacement : 'none',
-      header: {
-        ...toolSiteNavigation.header,
-        links: toolSiteNavigation.header.links.filter(
-          (linkId) => linkId !== 'guides' || guidesEnabled,
-        ),
-      },
-    }
-  }
-
-  const pricingEnabled = productSurfaceEnabled('pricing', resolvedConfig)
-  const appEnabled = productSurfaceEnabled('app', resolvedConfig)
-
-  return {
-    ...saasSiteNavigation,
-    guidesPlacement: guidesEnabled ? saasSiteNavigation.guidesPlacement : 'none',
-    header: {
-      ...saasSiteNavigation.header,
-      links: saasSiteNavigation.header.links.filter(
-        (linkId) =>
-          (linkId !== 'pricing' || pricingEnabled) && (linkId !== 'guides' || guidesEnabled),
-      ),
-      cta: appEnabled ? saasSiteNavigation.header.cta : undefined,
-    },
-  }
+  void mode
+  void config
+  return toolSiteNavigation
 }
 
 export const siteNavigation = siteNavigationForMode(productConfig.mode)
@@ -189,14 +141,6 @@ export function validateSiteNavigation(
   registry?: ReadonlyArray<ToolRegistryItem>,
 ): ReadonlyArray<string> {
   const issues: string[] = []
-  const headerHasGuides = config.header.links.includes('guides')
-
-  if (config.guidesPlacement === 'header' && !headerHasGuides) {
-    issues.push('Guides placement is header but the header links do not include guides.')
-  }
-  if (config.guidesPlacement !== 'header' && headerHasGuides) {
-    issues.push('Guides must not appear in the header when placement is footer or none.')
-  }
   if (config.header.links.includes('tools') && !config.header.toolsHref) {
     issues.push('Header includes tools but no toolsHref is configured.')
   }
@@ -248,29 +192,8 @@ export function validateToolSiteNavigation(
   if (!config.header.links.includes('tools')) {
     issues.push('Tool-site Header must include Tools.')
   }
-  if (config.header.links.includes('workflow')) {
-    issues.push('Tool-site Header must not retain the starter Workflow link.')
-  }
-  if (config.header.links.includes('pricing')) {
-    issues.push(
-      'Tool-site Header must not retain Pricing unless the product explicitly overrides the Tool-site default.',
-    )
-  }
   if (config.header.cta) {
     issues.push('Default Tool-site Header must not contain a SaaS-style CTA.')
-  }
-
-  return issues
-}
-
-export function validateSaasSiteNavigation(
-  config: SiteNavigationConfig,
-  registry?: ReadonlyArray<ToolRegistryItem>,
-): ReadonlyArray<string> {
-  const issues = [...validateSiteNavigation(config, registry)]
-
-  if (!config.header.cta) {
-    issues.push('Default SaaS Header should expose one primary CTA.')
   }
 
   return issues

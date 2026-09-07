@@ -12,20 +12,14 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as ContactRouteImport } from './routes/contact'
-import { Route as DashboardRouteImport } from './routes/dashboard'
-import { Route as LoginRouteImport } from './routes/login'
-import { Route as PricingRouteImport } from './routes/pricing'
 import { Route as PrivacyPolicyRouteImport } from './routes/privacy-policy'
 import { Route as RobotsDottxtRouteImport } from './routes/robots[.]txt'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as TermsOfServiceRouteImport } from './routes/terms-of-service'
-import { Route as ToolReferenceRouteImport } from './routes/tool-reference'
-import { Route as ToolReferenceUploadRouteImport } from './routes/tool-reference-upload'
 import { Route as ApiHealthRouteImport } from './routes/api.health'
-import { Route as GuidesIndexRouteImport } from './routes/guides.index'
-import { Route as GuidesSlugRouteImport } from './routes/guides.$slug'
+import { Route as FontsIndexRouteImport } from './routes/fonts.index'
 import { Route as ZhIndexRouteImport } from './routes/zh.index'
-import { Route as ApiSandboxSessionRouteImport } from './routes/api.sandbox.session'
+import { Route as ZhFontsIndexRouteImport } from './routes/zh.fonts.index'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -40,21 +34,6 @@ const AboutRoute = AboutRouteImport.update({
 const ContactRoute = ContactRouteImport.update({
   id: '/contact',
   path: '/contact',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const DashboardRoute = DashboardRouteImport.update({
-  id: '/dashboard',
-  path: '/dashboard',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const LoginRoute = LoginRouteImport.update({
-  id: '/login',
-  path: '/login',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PricingRoute = PricingRouteImport.update({
-  id: '/pricing',
-  path: '/pricing',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PrivacyPolicyRoute = PrivacyPolicyRouteImport.update({
@@ -77,29 +56,14 @@ const TermsOfServiceRoute = TermsOfServiceRouteImport.update({
   path: '/terms-of-service',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ToolReferenceRoute = ToolReferenceRouteImport.update({
-  id: '/tool-reference',
-  path: '/tool-reference',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ToolReferenceUploadRoute = ToolReferenceUploadRouteImport.update({
-  id: '/tool-reference-upload',
-  path: '/tool-reference-upload',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const ApiHealthRoute = ApiHealthRouteImport.update({
   id: '/api/health',
   path: '/api/health',
   getParentRoute: () => rootRouteImport,
 } as any)
-const GuidesIndexRoute = GuidesIndexRouteImport.update({
-  id: '/guides/',
-  path: '/guides/',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const GuidesSlugRoute = GuidesSlugRouteImport.update({
-  id: '/guides/$slug',
-  path: '/guides/$slug',
+const FontsIndexRoute = FontsIndexRouteImport.update({
+  id: '/fonts/',
+  path: '/fonts/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ZhIndexRoute = ZhIndexRouteImport.update({
@@ -107,9 +71,9 @@ const ZhIndexRoute = ZhIndexRouteImport.update({
   path: '/zh/',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ApiSandboxSessionRoute = ApiSandboxSessionRouteImport.update({
-  id: '/api/sandbox/session',
-  path: '/api/sandbox/session',
+const ZhFontsIndexRoute = ZhFontsIndexRouteImport.update({
+  id: '/zh/fonts/',
+  path: '/zh/fonts/',
   getParentRoute: () => rootRouteImport,
 } as any)
 
@@ -117,59 +81,41 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
-  '/dashboard': typeof DashboardRoute
-  '/login': typeof LoginRoute
-  '/pricing': typeof PricingRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
   '/robots.txt': typeof RobotsDottxtRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms-of-service': typeof TermsOfServiceRoute
-  '/tool-reference': typeof ToolReferenceRoute
-  '/tool-reference-upload': typeof ToolReferenceUploadRoute
   '/api/health': typeof ApiHealthRoute
-  '/guides/$slug': typeof GuidesSlugRoute
-  '/guides/': typeof GuidesIndexRoute
+  '/fonts/': typeof FontsIndexRoute
   '/zh/': typeof ZhIndexRoute
-  '/api/sandbox/session': typeof ApiSandboxSessionRoute
+  '/zh/fonts/': typeof ZhFontsIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
-  '/dashboard': typeof DashboardRoute
-  '/login': typeof LoginRoute
-  '/pricing': typeof PricingRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
   '/robots.txt': typeof RobotsDottxtRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms-of-service': typeof TermsOfServiceRoute
-  '/tool-reference': typeof ToolReferenceRoute
-  '/tool-reference-upload': typeof ToolReferenceUploadRoute
   '/api/health': typeof ApiHealthRoute
-  '/guides/$slug': typeof GuidesSlugRoute
-  '/guides': typeof GuidesIndexRoute
+  '/fonts': typeof FontsIndexRoute
   '/zh': typeof ZhIndexRoute
-  '/api/sandbox/session': typeof ApiSandboxSessionRoute
+  '/zh/fonts': typeof ZhFontsIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
-  '/dashboard': typeof DashboardRoute
-  '/login': typeof LoginRoute
-  '/pricing': typeof PricingRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
   '/robots.txt': typeof RobotsDottxtRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms-of-service': typeof TermsOfServiceRoute
-  '/tool-reference': typeof ToolReferenceRoute
-  '/tool-reference-upload': typeof ToolReferenceUploadRoute
   '/api/health': typeof ApiHealthRoute
-  '/guides/$slug': typeof GuidesSlugRoute
-  '/guides/': typeof GuidesIndexRoute
+  '/fonts/': typeof FontsIndexRoute
   '/zh/': typeof ZhIndexRoute
-  '/api/sandbox/session': typeof ApiSandboxSessionRoute
+  '/zh/fonts/': typeof ZhFontsIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -177,78 +123,54 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/contact'
-    | '/dashboard'
-    | '/login'
-    | '/pricing'
     | '/privacy-policy'
     | '/robots.txt'
     | '/sitemap.xml'
     | '/terms-of-service'
-    | '/tool-reference'
-    | '/tool-reference-upload'
     | '/api/health'
-    | '/guides/$slug'
-    | '/guides/'
+    | '/fonts/'
     | '/zh/'
-    | '/api/sandbox/session'
+    | '/zh/fonts/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/about'
     | '/contact'
-    | '/dashboard'
-    | '/login'
-    | '/pricing'
     | '/privacy-policy'
     | '/robots.txt'
     | '/sitemap.xml'
     | '/terms-of-service'
-    | '/tool-reference'
-    | '/tool-reference-upload'
     | '/api/health'
-    | '/guides/$slug'
-    | '/guides'
+    | '/fonts'
     | '/zh'
-    | '/api/sandbox/session'
+    | '/zh/fonts'
   id:
     | '__root__'
     | '/'
     | '/about'
     | '/contact'
-    | '/dashboard'
-    | '/login'
-    | '/pricing'
     | '/privacy-policy'
     | '/robots.txt'
     | '/sitemap.xml'
     | '/terms-of-service'
-    | '/tool-reference'
-    | '/tool-reference-upload'
     | '/api/health'
-    | '/guides/$slug'
-    | '/guides/'
+    | '/fonts/'
     | '/zh/'
-    | '/api/sandbox/session'
+    | '/zh/fonts/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
   ContactRoute: typeof ContactRoute
-  DashboardRoute: typeof DashboardRoute
-  LoginRoute: typeof LoginRoute
-  PricingRoute: typeof PricingRoute
   PrivacyPolicyRoute: typeof PrivacyPolicyRoute
   RobotsDottxtRoute: typeof RobotsDottxtRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   TermsOfServiceRoute: typeof TermsOfServiceRoute
-  ToolReferenceRoute: typeof ToolReferenceRoute
-  ToolReferenceUploadRoute: typeof ToolReferenceUploadRoute
   ApiHealthRoute: typeof ApiHealthRoute
-  GuidesSlugRoute: typeof GuidesSlugRoute
-  GuidesIndexRoute: typeof GuidesIndexRoute
+  FontsIndexRoute: typeof FontsIndexRoute
   ZhIndexRoute: typeof ZhIndexRoute
-  ApiSandboxSessionRoute: typeof ApiSandboxSessionRoute
+  ZhFontsIndexRoute: typeof ZhFontsIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -272,27 +194,6 @@ declare module '@tanstack/react-router' {
       path: '/contact'
       fullPath: '/contact'
       preLoaderRoute: typeof ContactRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/dashboard': {
-      id: '/dashboard'
-      path: '/dashboard'
-      fullPath: '/dashboard'
-      preLoaderRoute: typeof DashboardRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/login': {
-      id: '/login'
-      path: '/login'
-      fullPath: '/login'
-      preLoaderRoute: typeof LoginRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/pricing': {
-      id: '/pricing'
-      path: '/pricing'
-      fullPath: '/pricing'
-      preLoaderRoute: typeof PricingRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/privacy-policy': {
@@ -323,20 +224,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof TermsOfServiceRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/tool-reference': {
-      id: '/tool-reference'
-      path: '/tool-reference'
-      fullPath: '/tool-reference'
-      preLoaderRoute: typeof ToolReferenceRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/tool-reference-upload': {
-      id: '/tool-reference-upload'
-      path: '/tool-reference-upload'
-      fullPath: '/tool-reference-upload'
-      preLoaderRoute: typeof ToolReferenceUploadRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/api/health': {
       id: '/api/health'
       path: '/api/health'
@@ -344,18 +231,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ApiHealthRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/guides/': {
-      id: '/guides/'
-      path: '/guides'
-      fullPath: '/guides/'
-      preLoaderRoute: typeof GuidesIndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/guides/$slug': {
-      id: '/guides/$slug'
-      path: '/guides/$slug'
-      fullPath: '/guides/$slug'
-      preLoaderRoute: typeof GuidesSlugRouteImport
+    '/fonts/': {
+      id: '/fonts/'
+      path: '/fonts'
+      fullPath: '/fonts/'
+      preLoaderRoute: typeof FontsIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/zh/': {
@@ -365,11 +245,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ZhIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/api/sandbox/session': {
-      id: '/api/sandbox/session'
-      path: '/api/sandbox/session'
-      fullPath: '/api/sandbox/session'
-      preLoaderRoute: typeof ApiSandboxSessionRouteImport
+    '/zh/fonts/': {
+      id: '/zh/fonts/'
+      path: '/zh/fonts'
+      fullPath: '/zh/fonts/'
+      preLoaderRoute: typeof ZhFontsIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
   }
@@ -379,20 +259,14 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
   ContactRoute: ContactRoute,
-  DashboardRoute: DashboardRoute,
-  LoginRoute: LoginRoute,
-  PricingRoute: PricingRoute,
   PrivacyPolicyRoute: PrivacyPolicyRoute,
   RobotsDottxtRoute: RobotsDottxtRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   TermsOfServiceRoute: TermsOfServiceRoute,
-  ToolReferenceRoute: ToolReferenceRoute,
-  ToolReferenceUploadRoute: ToolReferenceUploadRoute,
   ApiHealthRoute: ApiHealthRoute,
-  GuidesSlugRoute: GuidesSlugRoute,
-  GuidesIndexRoute: GuidesIndexRoute,
+  FontsIndexRoute: FontsIndexRoute,
   ZhIndexRoute: ZhIndexRoute,
-  ApiSandboxSessionRoute: ApiSandboxSessionRoute,
+  ZhFontsIndexRoute: ZhFontsIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

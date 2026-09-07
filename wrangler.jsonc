@@ -1,8 +1,8 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "shiplean",
+  "name": "font-odyssey",
   "compatibility_date": "2026-08-06",
   "compatibility_flags": ["nodejs_compat"],
   "main": "@tanstack/react-start/server-entry",
-  "vars": { "SHIPLEAN_SANDBOX": "false" }
+  "vars": {}
 }

@@ -1,6 +1,5 @@
 import { describe, expect, it } from 'vitest'
 import { type ProductConfig, productConfig } from '@/lib/product-config'
-import { validateSeoFirstState } from '@/lib/seo-first-validation'
 import {
   type ToolSeoBrief,
   validateToolSeoBrief,
@@ -70,33 +69,5 @@ describe('Tool SEO Brief contract', () => {
     expect(validateToolSeoBrief(invalid)).toContain(
       'Tool SEO Brief requires a primary keyword for locale: zh-CN',
     )
-  })
-
-  it('blocks indexable Guides while starter guide slugs remain', () => {
-    const config = {
-      ...productConfig,
-      surfaces: {
-        ...productConfig.surfaces,
-        guides: true,
-      },
-    } satisfies ProductConfig
-
-    expect(
-      validateSeoFirstState({
-        config,
-        brief: null,
-        guideSlugs: ['build-with-the-skill', 'real-product-guide'],
-      }),
-    ).toContain(
-      'Guides cannot be indexable while ShipLean starter guide content remains: build-with-the-skill',
-    )
-
-    expect(
-      validateSeoFirstState({
-        config,
-        brief: null,
-        guideSlugs: ['real-product-guide'],
-      }),
-    ).toEqual([])
   })
 })

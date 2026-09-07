@@ -34,7 +34,7 @@ export function InformationPage({
       </div>
       <p className="mt-10 text-sm">
         <Link className="font-medium text-[#4f8521] underline-offset-4 hover:underline" to="/">
-          Return to ShipLean
+          Return to FontOdyssey
         </Link>
       </p>
     </section>

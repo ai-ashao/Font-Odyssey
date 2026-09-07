@@ -1,5 +1,5 @@
 {
-  "name": "shiplean",
+  "name": "font-odyssey",
   "private": true,
   "type": "module",
   "packageManager": "pnpm@11.9.0",
@@ -10,8 +10,9 @@
     "start": "pnpm preview",
     "deploy": "pnpm legal:check && pnpm build && wrangler deploy",
     "cf-typegen": "wrangler types",
-    "check": "biome check src tests scripts docs TASKS .agents .github AGENTS.md ARCHITECTURE.md CHANGELOG.md README.md package.json tsconfig.json vite.config.ts playwright.config.ts biome.json",
-    "check:fix": "biome check --write src tests scripts docs TASKS .agents .github AGENTS.md ARCHITECTURE.md CHANGELOG.md README.md package.json tsconfig.json vite.config.ts playwright.config.ts biome.json",
+    "check": "biome check src tests scripts docs data .github AGENTS.md ARCHITECTURE.md README.md package.json tsconfig.json vite.config.ts playwright.config.ts biome.json",
+    "check:fix": "biome check --write src tests scripts docs data .github AGENTS.md ARCHITECTURE.md README.md package.json tsconfig.json vite.config.ts playwright.config.ts biome.json",
+    "test:fonts": ".venv/bin/python -m unittest discover -s tests -p 'test_*.py'",
     "typecheck": "tsc --noEmit",
     "test": "vitest run --exclude tests/browser-viewport.spec.ts --exclude tests/legal-release.test.ts",
     "legal:check": "vitest run tests/legal-release.test.ts --mode production",

@@ -2,7 +2,7 @@ import { publicEnv } from '@/lib/config/env'
 import { defaultSupportEmailForSite, defineLegalProfile, legalTemplateVersion } from '@/lib/legal'
 import { site } from '@/lib/site'
 
-const starterFallbackSiteUrl = 'https://starter.invalid'
+const starterFallbackSiteUrl = 'https://fontodyssey.invalid'
 const operatorName = site.name
 const analytics = publicEnv.ga4Id
   ? {
@@ -24,8 +24,8 @@ export const legalProfile = defineLegalProfile({
   contactEmail: defaultSupportEmailForSite(site.url, {
     fallbackSiteUrl: starterFallbackSiteUrl,
   }),
-  effectiveDate: '2026-09-03',
-  lastUpdated: '2026-09-03',
+  effectiveDate: '2026-09-07',
+  lastUpdated: '2026-09-07',
   governingLaw: 'the laws applicable where the product operator is established',
   features: {
     analytics,

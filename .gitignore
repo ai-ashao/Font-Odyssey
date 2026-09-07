@@ -8,6 +8,12 @@ research/
 .env.local
 *.log
 .DS_Store
+.venv/
+staging/
+analysis/
+reports/
+test-results/
+playwright-report/
 
 # Local patch / overlay handoff files are not product source.
 APPLY.md

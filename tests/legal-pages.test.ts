@@ -121,6 +121,8 @@ describe('legal page contracts', () => {
     const reviewed = {
       ...legalProfile,
       reviewStatus: 'reviewed',
+      siteUrl: 'https://fontodyssey.example',
+      contactEmail: 'support@fontodyssey.example',
       governingLaw: 'the laws of the State of Delaware, United States',
     } satisfies LegalProfile
 

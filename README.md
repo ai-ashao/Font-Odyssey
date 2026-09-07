@@ -1,66 +1,29 @@
-# ShipLean
+# FontOdyssey
 
-[简体中文](README.zh-CN.md)
+FontOdyssey is a focused multilingual font discovery and download project. The
+launch catalog contains 149 license-gated families, ordered by a frozen editorial
+`curationRank` rather than ingestion or alphabetical order.
 
-An Agent-ready TanStack Start product scaffold for turning a focused product idea into a verified MVP without paying for a heavyweight boilerplate.
+## Product foundation
 
-ShipLean provides **TanStack Start only** and supports two explicit product compositions: **SaaS** and **Tool**.
+- TanStack Start, React, strict TypeScript, Tailwind CSS, and shadcn/ui primitives;
+- Cloudflare-first runtime inherited from ShipLean;
+- English and Simplified Chinese home and font-directory routes;
+- search, category, language, Featured, Popular, A–Z, and Most Styles controls;
+- canonical, reciprocal hreflang, sitemap, robots, security-header, and legal-page contracts;
+- a reproducible Python acquisition, analysis, license-gate, and packaging pipeline.
 
-The runtime in this repository is the **product template**, not the ShipLean marketing website. The public ShipLean website lives separately in `ai-ashao/shiplean-site`.
+The repository intentionally does not track generated font ZIPs, WOFF2 previews,
+the Google Fonts staging checkout, or analysis reports. Those local artifacts are
+large and reproducible. A production download store and public domain are still
+release gates.
 
-## Product modes
-
-Set the active mode and product identity in:
-
-```text
-src/lib/product-config.ts
-```
-
-```ts
-productConfig.mode = 'saas'
-// or
-productConfig.mode = 'tool'
-```
-
-The checked-in runtime uses the neutral brand `Starter Product` so cloning the template does not accidentally produce a ShipLean-branded product.
-
-- **SaaS mode**: product/value/conversion homepage, product preview, workflow, pricing entry, FAQ, and one primary Header CTA by default.
-- **Tool mode**: task-first Tool Landing homepage, Constraints, Value Signals, Completion Highlights, Capabilities, and no SaaS-style Header CTA by default.
-
-See [Product Modes](./docs/product-modes.md).
-
-## Use the downloaded template
-
-1. Download and unpack ShipLean into a local workspace.
-2. Open the repository in Codex, Claude Code, or another coding agent that can read project files.
-3. Invoke the bundled Skill and describe the product.
-
-SaaS example:
-
-```text
-Use $shiplean-quick-start to turn this template into a bilingual feedback SaaS.
-The first user is a solo founder and the first workflow is collecting one shareable feedback board.
-```
-
-Tool example:
-
-```text
-Use $shiplean-quick-start to build a free bilingual image utility.
-Use the default Tool Landing, keep the first task anonymous, and populate the live Tool Registry.
-```
-
-The canonical Skill lives at `.agents/skills/shiplean-quick-start/SKILL.md`.
-
-The Skill reads `AGENTS.md`, `ARCHITECTURE.md`, and the Product Mode contract, creates an independent private GitHub repository, scopes the first workflow, implements the requested product, and finishes with `pnpm verify`.
-
-## Run locally
+## Run the site
 
 ```bash
-pnpm install
+pnpm install --frozen-lockfile
 pnpm dev
 ```
-
-No external secret is required. `/login` and `/dashboard` form a visibly labeled local identity demo.
 
 ## Verify
 
@@ -68,56 +31,24 @@ No external secret is required. `/login` and `/dashboard` form a visibly labeled
 pnpm verify
 ```
 
-The command checks formatting/lint, unit contracts, the Cloudflare-oriented build, strict TypeScript, HTTP smoke, and Playwright browser acceptance.
+## Refresh the site catalog
 
-The Tool Landing browser gate covers both a compact text fixture and a realistic upload-first fixture at:
+The checked-in source evidence is under `data/font-catalog/`. After updating the
+final gate reports, regenerate the compact frontend snapshot with:
 
-```text
-1440 × 900
-390 × 844
+```bash
+python3 scripts/font-ingest/export_site_catalog.py --root .
 ```
 
-GitHub Actions runs verification for pull requests and pushes to `main` and `dev`.
+For a full acquisition run, create a Python virtual environment, install
+`requirements-font-ingest.txt`, and follow the scripts in `scripts/font-ingest/`.
 
-## Current foundation
+## Routes
 
-Included now:
+- `/` and `/zh`: curated homepages with 12 featured families;
+- `/fonts` and `/zh/fonts`: complete 149-family directories;
+- `/about`, `/contact`, `/privacy-policy`, and `/terms-of-service`: trust and legal surfaces.
 
-- TanStack Start, React, and strict TypeScript;
-- explicit `product.mode = 'saas' | 'tool'`;
-- neutral mode-specific starter homepages and shell navigation;
-- shadcn/ui + Tailwind local UI foundation;
-- guide, pricing, login, and protected dashboard examples;
-- bundled `shiplean-quick-start` Skill;
-- local HttpOnly identity demo;
-- Cloudflare-first build path;
-- canonical, hreflang, robots, sitemap, and locale-aware public routing;
-- structured SEO metadata audits plus sitemap-wide SSR metadata acceptance;
-- Tool Landing v0.2 task-first composition;
-- Tool Registry-driven localized tool routes, Related Tools, Footer discovery, hreflang, and sitemap;
-- Constraints, Value Signals, Completion Highlights, Capabilities, Helpful Guidance, and structured data;
-- Tool Landing, Tool Registry, Site Navigation, Tool-site, SaaS-site, and Product Config validators;
-- a shared, typed Privacy Policy and Terms template for free, account-free, browser-local tools, with a visible legal-review gate;
-- real-browser acceptance.
-
-Deferred:
-
-- subscription-SaaS Privacy and Terms modules;
-- production auth and PostgreSQL;
-- payments, email, and object storage;
-- Result/Workbench monetization;
-- ads and analytics abstractions.
-
-## Documentation
-
-- [Build your first ShipLean MVP](./docs/getting-started.md)
-- [Architecture](./ARCHITECTURE.md)
-- [Product Modes](./docs/product-modes.md)
-- [Tool Landing Standard v0.2](./docs/tool-landing-standard-v0.2.md)
-- [Tool Landing v0.2 implementation](./docs/tool-landing-v0.2-implementation.md)
-- [Tool Landing v0.2.1 hardening](./docs/tool-landing-v0.2.1-hardening.md)
-- [SEO Metadata Contract v0.1](./docs/seo-metadata-standard.md)
-- [UI control spacing contract](./docs/ui-control-spacing.md)
-- [Legal page template](./docs/legal-pages.md)
-- [Current feature status](./docs/FEATURE_STATUS.md)
-- [MVP acceptance evidence](./docs/mvp-acceptance.md)
+Privacy and Terms remain in starter legal-review status and stay out of the
+sitemap until reviewed. The current SEO brief records user-provided product
+evidence only; it makes no keyword-volume, difficulty, or SERP-ranking claim.

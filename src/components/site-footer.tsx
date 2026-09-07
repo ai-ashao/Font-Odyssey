@@ -26,15 +26,6 @@ export function SiteFooter({
   })
 
   const standardSecondaryLinks = [
-    ...(navigation.guidesPlacement === 'footer'
-      ? [
-          {
-            id: 'guides',
-            label: copy.footer.guides,
-            href: localizedPathOrDefault('guides', locale),
-          },
-        ]
-      : []),
     ...navigation.footer.secondaryPages.map((pageId) => ({
       id: pageId,
       label: copy.footer[pageId],
