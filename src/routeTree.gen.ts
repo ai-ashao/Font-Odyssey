@@ -20,7 +20,6 @@ import { Route as ApiHealthRouteImport } from './routes/api.health'
 import { Route as FontSlugRouteImport } from './routes/font.$slug'
 import { Route as FontsIndexRouteImport } from './routes/fonts.index'
 import { Route as FontsHubRouteImport } from './routes/fonts.$hub'
-import { Route as FontsSlugRouteImport } from './routes/fonts.$slug'
 import { Route as ZhTwIndexRouteImport } from './routes/zh-tw.index'
 import { Route as ZhIndexRouteImport } from './routes/zh.index'
 import { Route as ZhTwFontSlugRouteImport } from './routes/zh-tw.font.$slug'
@@ -85,11 +84,6 @@ const FontsHubRoute = FontsHubRouteImport.update({
   path: '/fonts/$hub',
   getParentRoute: () => rootRouteImport,
 } as any)
-const FontsSlugRoute = FontsSlugRouteImport.update({
-  id: '/fonts/$slug',
-  path: '/fonts/$slug',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const ZhTwIndexRoute = ZhTwIndexRouteImport.update({
   id: '/zh-tw/',
   path: '/zh-tw/',
@@ -142,7 +136,6 @@ export interface FileRoutesByFullPath {
   '/api/health': typeof ApiHealthRoute
   '/font/$slug': typeof FontSlugRoute
   '/fonts/$hub': typeof FontsHubRoute
-  '/fonts/$slug': typeof FontsSlugRoute
   '/fonts/': typeof FontsIndexRoute
   '/zh-tw/': typeof ZhTwIndexRoute
   '/zh/': typeof ZhIndexRoute
@@ -164,7 +157,6 @@ export interface FileRoutesByTo {
   '/api/health': typeof ApiHealthRoute
   '/font/$slug': typeof FontSlugRoute
   '/fonts/$hub': typeof FontsHubRoute
-  '/fonts/$slug': typeof FontsSlugRoute
   '/fonts': typeof FontsIndexRoute
   '/zh-tw': typeof ZhTwIndexRoute
   '/zh': typeof ZhIndexRoute
@@ -187,7 +179,6 @@ export interface FileRoutesById {
   '/api/health': typeof ApiHealthRoute
   '/font/$slug': typeof FontSlugRoute
   '/fonts/$hub': typeof FontsHubRoute
-  '/fonts/$slug': typeof FontsSlugRoute
   '/fonts/': typeof FontsIndexRoute
   '/zh-tw/': typeof ZhTwIndexRoute
   '/zh/': typeof ZhIndexRoute
@@ -211,7 +202,6 @@ export interface FileRouteTypes {
     | '/api/health'
     | '/font/$slug'
     | '/fonts/$hub'
-    | '/fonts/$slug'
     | '/fonts/'
     | '/zh-tw/'
     | '/zh/'
@@ -233,7 +223,6 @@ export interface FileRouteTypes {
     | '/api/health'
     | '/font/$slug'
     | '/fonts/$hub'
-    | '/fonts/$slug'
     | '/fonts'
     | '/zh-tw'
     | '/zh'
@@ -255,7 +244,6 @@ export interface FileRouteTypes {
     | '/api/health'
     | '/font/$slug'
     | '/fonts/$hub'
-    | '/fonts/$slug'
     | '/fonts/'
     | '/zh-tw/'
     | '/zh/'
@@ -278,7 +266,6 @@ export interface RootRouteChildren {
   ApiHealthRoute: typeof ApiHealthRoute
   FontSlugRoute: typeof FontSlugRoute
   FontsHubRoute: typeof FontsHubRoute
-  FontsSlugRoute: typeof FontsSlugRoute
   FontsIndexRoute: typeof FontsIndexRoute
   ZhTwIndexRoute: typeof ZhTwIndexRoute
   ZhIndexRoute: typeof ZhIndexRoute
@@ -369,13 +356,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof FontsHubRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/fonts/$slug': {
-      id: '/fonts/$slug'
-      path: '/fonts/$slug'
-      fullPath: '/fonts/$slug'
-      preLoaderRoute: typeof FontsSlugRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/zh-tw/': {
       id: '/zh-tw/'
       path: '/zh-tw'
@@ -446,7 +426,6 @@ const rootRouteChildren: RootRouteChildren = {
   ApiHealthRoute: ApiHealthRoute,
   FontSlugRoute: FontSlugRoute,
   FontsHubRoute: FontsHubRoute,
-  FontsSlugRoute: FontsSlugRoute,
   FontsIndexRoute: FontsIndexRoute,
   ZhTwIndexRoute: ZhTwIndexRoute,
   ZhIndexRoute: ZhIndexRoute,

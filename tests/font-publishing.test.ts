@@ -101,10 +101,50 @@ describe('font publishing contracts', () => {
     expect(fontPageEligibilityIssues(published(), 'zh-CN')).toContain('zh-CN content is not ready.')
   })
 
-  it('blocks generated subsets for Reserved Font Name families', () => {
-    const reservedFacts = { ...facts, reservedFontNames: ['Example Sans'] }
-    expect(isCompliantPreview(reservedFacts, release.previewStatus, release.preview)).toBe(false)
-    expect(fontPageEligible(published({ facts: reservedFacts }), 'en')).toBe(false)
+  it('keeps preview rendering separate from page publishing for Reserved Font Name families', () => {
+    const reservedFacts: FontApprovalFacts = {
+      ...facts,
+      reservedFontNames: ['Example Sans'],
+      previewStatus: 'UNAVAILABLE_RFN',
+    }
+    const reservedRelease: FontAssetRelease = {
+      ...release,
+      preview: undefined,
+      previewStatus: 'UNAVAILABLE_RFN',
+    }
+    expect(
+      isCompliantPreview(reservedFacts, reservedRelease.previewStatus, reservedRelease.preview),
+    ).toBe(false)
+    expect(validateAssetRelease(reservedRelease)).toEqual([])
+    expect(
+      fontPageEligible(published({ facts: reservedFacts, release: reservedRelease }), 'en'),
+    ).toBe(true)
+  })
+
+  it('publishes a verified no-preview release when preview generation is intentionally unavailable', () => {
+    const noPreviewFacts: FontApprovalFacts = {
+      ...facts,
+      license: 'Apache-2.0',
+      previewStatus: 'ELIGIBLE_NOT_GENERATED',
+    }
+    const noPreviewRelease: FontAssetRelease = {
+      ...release,
+      preview: undefined,
+      previewStatus: 'ELIGIBLE_NOT_GENERATED',
+    }
+    expect(validateAssetRelease(noPreviewRelease)).toEqual([])
+    expect(
+      fontPageEligible(published({ facts: noPreviewFacts, release: noPreviewRelease }), 'en'),
+    ).toBe(true)
+  })
+
+  it('requires preview object state to match previewStatus', () => {
+    expect(validateAssetRelease({ ...release, preview: undefined })).toContain(
+      'GENERATED_SUBSET releases require a verified preview object.',
+    )
+    expect(validateAssetRelease({ ...release, previewStatus: 'ELIGIBLE_NOT_GENERATED' })).toContain(
+      'ELIGIBLE_NOT_GENERATED releases cannot include a preview object.',
+    )
   })
 
   it('allows an original unmodified preview for Reserved Font Name families', () => {

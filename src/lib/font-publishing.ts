@@ -224,8 +224,14 @@ export function validateAssetRelease(release: FontAssetRelease): string[] {
   if (!previewStatuses.has(release.previewStatus)) {
     issues.push('Asset release previewStatus is invalid.')
   }
-  if (release.previewStatus === 'UNAVAILABLE_RFN' && release.preview) {
-    issues.push('UNAVAILABLE_RFN releases cannot include a preview object.')
+  const previewRequired =
+    release.previewStatus === 'GENERATED_SUBSET' ||
+    release.previewStatus === 'ORIGINAL_UNMODIFIED_WEBFONT'
+  if (previewRequired && !release.preview) {
+    issues.push(`${release.previewStatus} releases require a verified preview object.`)
+  }
+  if (!previewRequired && release.preview) {
+    issues.push(`${release.previewStatus} releases cannot include a preview object.`)
   }
   return issues
 }
@@ -275,9 +281,6 @@ export function fontPageEligibilityIssues(font: PublishedFont, locale: Publishin
     ) {
       issues.push(`${locale} content identity does not match approval facts.`)
     }
-  }
-  if (!isCompliantPreview(font.facts, font.release.previewStatus, font.release.preview)) {
-    issues.push('A compliant preview asset is not available.')
   }
   return issues
 }

@@ -20,7 +20,7 @@ export function fontR2DownloadUrl(font: FontCatalogItem): string | undefined {
 }
 
 export function fontOfficialSourceUrl(font: FontCatalogItem): string {
-  return `https://fonts.google.com/?query=${encodeURIComponent(font.family)}`
+  return `https://github.com/google/fonts/tree/${font.sourceCommit}/${font.sourcePath}`
 }
 
 export function fontDownloadSources(font: FontCatalogItem, locale: Locale): FontDownloadSource[] {
@@ -32,8 +32,8 @@ export function fontDownloadSources(font: FontCatalogItem, locale: Locale): Font
     if (overrides.quark) {
       sources.push({
         id: 'quark',
-        label: '高速网盘下载',
-        url: overrides.quark,
+        label: overrides.quark.ctaMode === 'fast' ? '高速网盘下载' : '夸克网盘下载',
+        url: overrides.quark.url,
         primary: true,
         sponsored: true,
       })
@@ -42,7 +42,7 @@ export function fontDownloadSources(font: FontCatalogItem, locale: Locale): Font
       sources.push({
         id: 'baidu',
         label: '百度网盘',
-        url: overrides.baidu,
+        url: overrides.baidu.url,
         primary: !overrides.quark,
         sponsored: true,
       })

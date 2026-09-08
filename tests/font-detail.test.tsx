@@ -2,13 +2,9 @@ import { renderToStaticMarkup } from 'react-dom/server'
 import { describe, expect, it } from 'vitest'
 import { FontDetailPage } from '@/components/font-detail-page'
 import { fontCatalog } from '@/lib/font-catalog'
+import { publishedFontForLocale } from '@/lib/font-publication'
 import type { FontAssetRelease, PublishedFont } from '@/lib/font-publishing'
-import {
-  fontDetailPath,
-  fontDetailRoutes,
-  fontDetailSitemapPaths,
-  getEligiblePublishedFont,
-} from '@/lib/font-publishing-registry'
+import { fontPath, fontSitemapPaths } from '@/lib/font-routes'
 import { fontEditorialContent } from '@/modules/font-editorial-content'
 
 const sha256 = 'a'.repeat(64)
@@ -17,15 +13,16 @@ describe('font detail publishing boundary', () => {
   it('keeps draft pages out of the public registry and sitemap', () => {
     expect(fontEditorialContent).toHaveLength(5)
     expect(fontEditorialContent.every((content) => content.contentStatus === 'draft')).toBe(true)
-    expect(getEligiblePublishedFont('inter', 'en')).toBeUndefined()
-    expect(fontDetailRoutes()).toEqual([])
-    expect(fontDetailSitemapPaths()).toEqual([])
+    expect(publishedFontForLocale('inter', 'en')).toBeUndefined()
+    expect(fontSitemapPaths()).not.toContain('/font/inter')
+    expect(fontSitemapPaths()).not.toContain('/zh/font/inter')
+    expect(fontSitemapPaths()).not.toContain('/zh-tw/font/inter')
   })
 
   it('uses stable localized detail paths', () => {
-    expect(fontDetailPath('inter', 'en')).toBe('/fonts/inter')
-    expect(fontDetailPath('inter', 'zh-CN')).toBe('/zh/fonts/inter')
-    expect(fontDetailPath('inter', 'zh-TW')).toBe('/zh-tw/fonts/inter')
+    expect(fontPath('inter', 'en')).toBe('/font/inter')
+    expect(fontPath('inter', 'zh-CN')).toBe('/zh/font/inter')
+    expect(fontPath('inter', 'zh-TW')).toBe('/zh-tw/font/inter')
   })
 
   it('renders the specimen and verified download controls from composed data', () => {
