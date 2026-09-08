@@ -1,3 +1,4 @@
+import { fontLocaleAlternatesForPath, fontSitemapPaths } from '@/lib/font-routes'
 import { isLegalProfileLaunchReady } from '@/lib/legal'
 import { toolLocaleAlternatesForPath, toolSitemapPaths } from '@/lib/tool-registry'
 import { legalProfile } from '@/modules/legal-profile'
@@ -15,8 +16,12 @@ export type PublicPageRoute = {
 
 const legalPagesIndexable = isLegalProfileLaunchReady(legalProfile)
 const staticPages: PublicPageRoute[] = [
-  { id: 'home', indexable: true, paths: { en: '/', 'zh-CN': '/zh' } },
-  { id: 'fonts', indexable: true, paths: { en: '/fonts', 'zh-CN': '/zh/fonts' } },
+  { id: 'home', indexable: true, paths: { en: '/', 'zh-CN': '/zh', 'zh-TW': '/zh-tw' } },
+  {
+    id: 'fonts',
+    indexable: true,
+    paths: { en: '/fonts', 'zh-CN': '/zh/fonts', 'zh-TW': '/zh-tw/fonts' },
+  },
   { id: 'about', indexable: true, paths: { en: '/about' } },
   { id: 'contact', indexable: true, paths: { en: '/contact' } },
   { id: 'privacy', indexable: legalPagesIndexable, paths: { en: '/privacy-policy' } },
@@ -83,6 +88,15 @@ export function localeAlternatesForPath(pathname: string): LocaleAlternate[] {
     })
   }
 
+  const fontAlternates = fontLocaleAlternatesForPath(pathname)
+  if (fontAlternates.length > 0) {
+    return fontAlternates.map((alternate) => ({
+      ...alternate,
+      label: localeConfig[alternate.locale].label,
+      shortLabel: localeConfig[alternate.locale].shortLabel,
+    }))
+  }
+
   return toolLocaleAlternatesForPath(toolRegistry, pathname)
 }
 
@@ -113,6 +127,7 @@ export function sitemapPaths(): string[] {
             })
           : [],
       ),
+      ...fontSitemapPaths(),
       ...toolSitemapPaths(toolRegistry),
     ]),
   )

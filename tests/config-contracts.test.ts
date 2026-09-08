@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { hreflangAlternates, sitemapPaths } from '@/i18n/routes'
 import { filterAndSortFonts, fontCatalog, fontLanguages } from '@/lib/font-catalog'
+import { fontSitemapPaths } from '@/lib/font-routes'
 import { validateLegalProfile } from '@/lib/legal'
 import { productConfig, validateProductConfig } from '@/lib/product-config'
 import { validateSeoFirstProductState } from '@/lib/seo-first-validation'
@@ -47,12 +48,16 @@ describe('FontOdyssey configuration', () => {
     expect(latinOnly.every((font) => fontLanguages(font).includes('Latin'))).toBe(true)
   })
 
-  it('publishes reciprocal home and directory routes', () => {
+  it('publishes reciprocal three-locale home and directory routes', () => {
     expect(hreflangAlternates('fonts')).toEqual([
       { locale: 'en', path: '/fonts' },
       { locale: 'zh-CN', path: '/zh/fonts' },
+      { locale: 'zh-TW', path: '/zh-tw/fonts' },
       { locale: 'x-default', path: '/fonts' },
     ])
-    expect(sitemapPaths()).toEqual(expect.arrayContaining(['/', '/zh', '/fonts', '/zh/fonts']))
+    expect(sitemapPaths()).toEqual(
+      expect.arrayContaining(['/', '/zh', '/zh-tw', '/fonts', '/zh/fonts', '/zh-tw/fonts']),
+    )
+    expect(sitemapPaths()).toEqual(expect.arrayContaining(fontSitemapPaths()))
   })
 })

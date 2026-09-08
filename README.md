@@ -40,8 +40,29 @@ final gate reports, regenerate the compact frontend snapshot with:
 python3 scripts/font-ingest/export_site_catalog.py --root .
 ```
 
+The exporter validates the shared publishing schema, rejects non-`APPROVED`
+rows, preserves preview restrictions, and writes catalog version 2. Running it
+twice with unchanged evidence must produce identical bytes.
+
 For a full acquisition run, create a Python virtual environment, install
 `requirements-font-ingest.txt`, and follow the scripts in `scripts/font-ingest/`.
+
+## Build the local five-font pilot
+
+The checked-in pilot selection covers variable Latin, static Latin, Simplified
+Chinese, Traditional Chinese, and Reserved Font Name behavior:
+
+```bash
+.venv/bin/python scripts/font-ingest/package_approved.py \
+  --root . \
+  --selection data/font-catalog/pilot-fonts-v1.json \
+  --report-prefix pilot-fonts-v1
+```
+
+The command writes immutable local artifacts under ignored `artifacts/font-releases/`
+and evidence reports under ignored `reports/`. Its manifest remains
+`LOCAL_VERIFIED`, `publishable: false`, and `remoteReadback: false`; it does not
+upload to R2 or deploy the website.
 
 ## Routes
 

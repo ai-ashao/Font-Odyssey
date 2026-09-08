@@ -1,0 +1,168 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:fontodyssey:schema:font-publishing:v1",
+  "title": "FontOdyssey font publishing contracts",
+  "$defs": {
+    "previewStatus": {
+      "type": "string",
+      "enum": [
+        "ELIGIBLE_NOT_GENERATED",
+        "GENERATED_SUBSET",
+        "ORIGINAL_UNMODIFIED_WEBFONT",
+        "UNAVAILABLE_RFN"
+      ]
+    },
+    "coverage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["latin", "zhCN", "zhTW", "japanese", "korean", "cjkUnified"],
+      "properties": {
+        "latin": { "type": "number", "minimum": 0, "maximum": 1 },
+        "zhCN": { "type": "number", "minimum": 0, "maximum": 1 },
+        "zhTW": { "type": "number", "minimum": 0, "maximum": 1 },
+        "japanese": { "type": "number", "minimum": 0, "maximum": 1 },
+        "korean": { "type": "number", "minimum": 0, "maximum": 1 },
+        "cjkUnified": { "type": "number", "minimum": 0, "maximum": 1 }
+      }
+    },
+    "fontApprovalFacts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "curationRank",
+        "family",
+        "slug",
+        "category",
+        "languageGroup",
+        "subsets",
+        "officialPopularityRank",
+        "styleCount",
+        "variableAxisCount",
+        "fontFileCount",
+        "parsedFontFileCount",
+        "variableFontCount",
+        "sourcePath",
+        "sourceCommit",
+        "license",
+        "licenseSha256Verified",
+        "reservedFontNames",
+        "axes",
+        "glyphCountMax",
+        "unicodeCodepointUnion",
+        "coverage",
+        "packagingStatus",
+        "previewStatus",
+        "finalStatus"
+      ],
+      "properties": {
+        "curationRank": { "type": "integer", "minimum": 1 },
+        "family": { "type": "string", "minLength": 1 },
+        "slug": { "type": "string", "pattern": "^[a-z0-9]+$" },
+        "category": {
+          "type": "string",
+          "enum": ["Sans Serif", "Serif", "Display", "Handwriting", "Monospace"]
+        },
+        "languageGroup": { "type": "string", "minLength": 1 },
+        "subsets": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+        "officialPopularityRank": { "type": "integer", "minimum": 1 },
+        "styleCount": { "type": "integer", "minimum": 1 },
+        "variableAxisCount": { "type": "integer", "minimum": 0 },
+        "fontFileCount": { "type": "integer", "minimum": 1 },
+        "parsedFontFileCount": { "type": "integer", "minimum": 1 },
+        "variableFontCount": { "type": "integer", "minimum": 0 },
+        "sourcePath": { "type": "string", "minLength": 1 },
+        "sourceCommit": { "type": "string", "pattern": "^[0-9a-f]{40}$" },
+        "license": { "type": "string", "enum": ["OFL-1.1", "Apache-2.0", "UFL-1.0"] },
+        "licenseSha256Verified": { "const": true },
+        "reservedFontNames": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "uniqueItems": true
+        },
+        "axes": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+        "glyphCountMax": { "type": "integer", "minimum": 1 },
+        "unicodeCodepointUnion": { "type": "integer", "minimum": 1 },
+        "coverage": { "$ref": "#/$defs/coverage" },
+        "packagingStatus": { "type": "string", "minLength": 1 },
+        "previewStatus": { "$ref": "#/$defs/previewStatus" },
+        "finalStatus": { "const": "APPROVED" }
+      }
+    },
+    "verifiedObject": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["url", "sha256", "bytes", "contentType"],
+      "properties": {
+        "url": { "type": "string", "format": "uri", "pattern": "^https://" },
+        "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "bytes": { "type": "integer", "minimum": 1 },
+        "contentType": { "type": "string", "minLength": 1 },
+        "etag": { "type": "string", "minLength": 1 }
+      }
+    },
+    "fontAssetRelease": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "slug",
+        "releaseVersion",
+        "sourceCommit",
+        "package",
+        "license",
+        "previewStatus",
+        "status",
+        "verifiedAt"
+      ],
+      "properties": {
+        "slug": { "type": "string", "pattern": "^[a-z0-9]+$" },
+        "releaseVersion": { "type": "string", "minLength": 1 },
+        "sourceCommit": { "type": "string", "pattern": "^[0-9a-f]{40}$" },
+        "package": { "$ref": "#/$defs/verifiedObject" },
+        "license": { "$ref": "#/$defs/verifiedObject" },
+        "preview": { "$ref": "#/$defs/verifiedObject" },
+        "previewStatus": { "$ref": "#/$defs/previewStatus" },
+        "status": { "const": "VERIFIED" },
+        "verifiedAt": { "type": "string", "format": "date-time" }
+      }
+    },
+    "fontEditorialContent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "pageId",
+        "slug",
+        "locale",
+        "contentStatus",
+        "title",
+        "description",
+        "h1",
+        "intro",
+        "about",
+        "useCases",
+        "previewText"
+      ],
+      "properties": {
+        "pageId": { "type": "string", "pattern": "^font:[a-z0-9]+$" },
+        "slug": { "type": "string", "pattern": "^[a-z0-9]+$" },
+        "locale": { "type": "string", "enum": ["en", "zh-CN", "zh-TW"] },
+        "contentStatus": { "type": "string", "enum": ["draft", "ready"] },
+        "title": { "type": "string", "minLength": 1 },
+        "description": { "type": "string", "minLength": 1 },
+        "h1": { "type": "string", "minLength": 1 },
+        "intro": { "type": "string", "minLength": 1 },
+        "about": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+        "useCases": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+        "previewText": { "type": "string", "minLength": 1 },
+        "reviewedAt": { "type": "string", "format": "date-time" }
+      }
+    }
+  },
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "fontCount", "fonts"],
+  "properties": {
+    "version": { "const": 2 },
+    "fontCount": { "type": "integer", "minimum": 0 },
+    "fonts": { "type": "array", "items": { "$ref": "#/$defs/fontApprovalFacts" } }
+  }
+}

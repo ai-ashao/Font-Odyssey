@@ -1,24 +1,19 @@
 import catalog from '@/data/font-catalog.json'
+import type { FontApprovalFacts } from './font-publishing'
 
 export type FontCategory = 'Sans Serif' | 'Serif' | 'Display' | 'Handwriting' | 'Monospace'
 export type FontLanguage = 'Chinese' | 'Japanese' | 'Korean' | 'Latin'
 export type FontSort = 'featured' | 'popular' | 'alphabetical' | 'styles'
 
-export type FontCatalogItem = {
-  curationRank: number
-  family: string
-  slug: string
-  category: FontCategory
-  languageGroup: string
-  subsets: string[]
-  officialPopularityRank: number
-  styleCount: number
-  variableAxisCount: number
-  license: string
-  reservedFontNames: string[]
-}
+export type FontCatalogItem = FontApprovalFacts
 
 export const fontCatalog = catalog.fonts as FontCatalogItem[]
+
+const fontBySlug = new Map(fontCatalog.map((font) => [font.slug, font]))
+
+export function findFontBySlug(slug: string): FontCatalogItem | undefined {
+  return fontBySlug.get(slug)
+}
 
 export function fontLanguages(font: FontCatalogItem): FontLanguage[] {
   const values: FontLanguage[] = []
@@ -34,6 +29,14 @@ export function fontLanguages(font: FontCatalogItem): FontLanguage[] {
     values.push('Latin')
   }
   return values
+}
+
+export function fontSupportsSimplifiedChinese(font: FontCatalogItem): boolean {
+  return font.subsets.includes('chinese-simplified')
+}
+
+export function fontSupportsTraditionalChinese(font: FontCatalogItem): boolean {
+  return font.subsets.includes('chinese-traditional')
 }
 
 export function filterAndSortFonts(

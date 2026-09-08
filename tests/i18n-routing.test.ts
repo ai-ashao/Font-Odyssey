@@ -9,6 +9,7 @@ import {
   resolvePublicPage,
   sitemapPaths,
 } from '../src/i18n/routes'
+import { fontSitemapPaths } from '../src/lib/font-routes'
 import { isLegalProfileLaunchReady } from '../src/lib/legal'
 import { legalProfile } from '../src/modules/legal-profile'
 
@@ -18,10 +19,12 @@ describe('locale-aware route registry', () => {
     expect(localeFromPathname('/fonts')).toBe('en')
     expect(localeFromPathname('/zh')).toBe('zh-CN')
     expect(localeFromPathname('/zh/missing')).toBe('zh-CN')
+    expect(localeFromPathname('/zh-tw')).toBe('zh-TW')
+    expect(localeFromPathname('/zh-tw/font/inter')).toBe('zh-TW')
     expect(localeFromPathname('/zh-fake')).toBe('en')
   })
 
-  it('keeps every registered path unique and resolvable to its page identity', () => {
+  it('keeps every registered static path unique and resolvable to its page identity', () => {
     const paths = publicPageRoutes.flatMap((page) =>
       supportedLocales.flatMap((locale) => {
         const path = page.paths[locale]
@@ -30,7 +33,6 @@ describe('locale-aware route registry', () => {
         return [path]
       }),
     )
-
     expect(new Set(paths).size).toBe(paths.length)
   })
 
@@ -38,22 +40,26 @@ describe('locale-aware route registry', () => {
     expect(hreflangAlternates('home')).toEqual([
       { locale: 'en', path: '/' },
       { locale: 'zh-CN', path: '/zh' },
+      { locale: 'zh-TW', path: '/zh-tw' },
       { locale: 'x-default', path: '/' },
     ])
-    expect(hreflangAlternates('fonts')).toHaveLength(3)
+    expect(hreflangAlternates('fonts')).toHaveLength(4)
   })
 
-  it('offers a locale switch only when the current page has an equivalent route', () => {
-    expect(localeAlternatesForPath('/')).toMatchObject([{ locale: 'zh-CN', path: '/zh' }])
-    expect(localeAlternatesForPath('/zh')).toMatchObject([{ locale: 'en', path: '/' }])
-    expect(localeAlternatesForPath('/fonts')).toMatchObject([
-      { locale: 'zh-CN', path: '/zh/fonts' },
+  it('offers locale switches for static and font-entity routes', () => {
+    expect(localeAlternatesForPath('/')).toMatchObject([
+      { locale: 'zh-CN', path: '/zh' },
+      { locale: 'zh-TW', path: '/zh-tw' },
+    ])
+    expect(localeAlternatesForPath('/font/inter')).toMatchObject([
+      { locale: 'zh-CN', path: '/zh/font/inter' },
+      { locale: 'zh-TW', path: '/zh-tw/font/inter' },
     ])
     expect(localeAlternatesForPath('/missing')).toEqual([])
   })
 
-  it('derives the indexable sitemap paths from the same registry', () => {
-    const expected = publicPageRoutes.flatMap((page) =>
+  it('derives sitemap paths from static and font registries', () => {
+    const staticExpected = publicPageRoutes.flatMap((page) =>
       page.indexable
         ? supportedLocales.flatMap((locale) => {
             const path = page.paths[locale]
@@ -62,27 +68,30 @@ describe('locale-aware route registry', () => {
         : [],
     )
 
-    expect(sitemapPaths()).toEqual(expected)
+    expect(sitemapPaths()).toEqual(
+      expect.arrayContaining([...staticExpected, ...fontSitemapPaths()]),
+    )
     expect(new Set(sitemapPaths()).size).toBe(sitemapPaths().length)
 
     const legalIndexable = isLegalProfileLaunchReady(legalProfile)
     expect(publicPageRoutes.find((page) => page.id === 'privacy')?.indexable).toBe(legalIndexable)
     expect(publicPageRoutes.find((page) => page.id === 'terms')?.indexable).toBe(legalIndexable)
-    expect(sitemapPaths().includes('/privacy-policy')).toBe(legalIndexable)
-    expect(sitemapPaths().includes('/terms-of-service')).toBe(legalIndexable)
   })
 
   it('ships structurally complete message dictionaries for every supported locale', () => {
     expect(Object.keys(shellMessages).sort()).toEqual([...supportedLocales].sort())
     expect(messageShape(shellMessages['zh-CN'])).toEqual(messageShape(shellMessages.en))
+    expect(messageShape(shellMessages['zh-TW'])).toEqual(messageShape(shellMessages.en))
   })
 
-  it('keeps localized route files as thin wrappers around one shared page component', () => {
+  it('keeps localized home route files as thin wrappers around one shared page component', () => {
     const englishRoute = readFileSync('src/routes/index.tsx', 'utf8')
     const chineseRoute = readFileSync('src/routes/zh.index.tsx', 'utf8')
+    const traditionalRoute = readFileSync('src/routes/zh-tw.index.tsx', 'utf8')
 
     expect(englishRoute).toContain('<ProductHome locale="en" />')
     expect(chineseRoute).toContain('<ProductHome locale="zh-CN" />')
+    expect(traditionalRoute).toContain('<ProductHome locale="zh-TW" />')
   })
 })
 

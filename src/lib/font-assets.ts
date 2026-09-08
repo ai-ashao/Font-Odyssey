@@ -1,0 +1,92 @@
+import { fontDownloadOverrides } from '@/data/font-downloads'
+import type { Locale } from '@/i18n/config'
+import { publicEnv } from './config/env'
+import type { FontCatalogItem } from './font-catalog'
+
+export type FontDownloadSource = {
+  id: 'quark' | 'baidu' | 'r2' | 'official'
+  label: string
+  url: string
+  primary: boolean
+  sponsored: boolean
+}
+
+function objectUrl(path: string): string | undefined {
+  const base = publicEnv.fontAssetBaseUrl
+  if (!base) return undefined
+  return `${base}${path.startsWith('/') ? path : `/${path}`}`
+}
+
+export function fontPreviewUrl(font: FontCatalogItem): string | undefined {
+  return fontDownloadOverrides[font.slug]?.preview || objectUrl(`/fonts/${font.slug}/preview.woff2`)
+}
+
+export function fontR2DownloadUrl(font: FontCatalogItem): string | undefined {
+  return fontDownloadOverrides[font.slug]?.r2 || objectUrl(`/fonts/${font.slug}/${font.slug}.zip`)
+}
+
+export function fontOfficialSourceUrl(font: FontCatalogItem): string {
+  return `https://fonts.google.com/?query=${encodeURIComponent(font.family)}`
+}
+
+export function fontDownloadSources(font: FontCatalogItem, locale: Locale): FontDownloadSource[] {
+  const overrides = fontDownloadOverrides[font.slug] || {}
+  const r2 = fontR2DownloadUrl(font)
+
+  if (locale === 'zh-CN') {
+    const sources: FontDownloadSource[] = []
+    if (overrides.quark) {
+      sources.push({
+        id: 'quark',
+        label: '高速网盘下载',
+        url: overrides.quark,
+        primary: true,
+        sponsored: true,
+      })
+    }
+    if (overrides.baidu) {
+      sources.push({
+        id: 'baidu',
+        label: '百度网盘',
+        url: overrides.baidu,
+        primary: !overrides.quark,
+        sponsored: true,
+      })
+    }
+    if (r2) {
+      sources.push({
+        id: 'r2',
+        label: '普通下载',
+        url: r2,
+        primary: sources.length === 0,
+        sponsored: false,
+      })
+    }
+    if (sources.length > 0) return sources
+  } else if (r2) {
+    return [
+      {
+        id: 'r2',
+        label: locale === 'zh-TW' ? '免費下載' : 'Download font',
+        url: r2,
+        primary: true,
+        sponsored: false,
+      },
+    ]
+  }
+
+  return [
+    {
+      id: 'official',
+      label:
+        locale === 'zh-CN'
+          ? '查看官方来源'
+          : locale === 'zh-TW'
+            ? '查看官方來源'
+            : 'View official source',
+      url: fontOfficialSourceUrl(font),
+      primary: true,
+      sponsored: false,
+    },
+  ]
+}

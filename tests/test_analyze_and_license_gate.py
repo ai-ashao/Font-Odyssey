@@ -34,6 +34,10 @@ class AnalysisHelpersTests(unittest.TestCase):
     def test_coverage(self):
         self.assertEqual(MODULE.coverage({1, 2}, {1, 2, 3, 4}), 0.5)
 
+    def test_rfn_preview_status_fails_closed(self):
+        self.assertEqual(MODULE.approval_preview_status("Example Sans"), "UNAVAILABLE_RFN")
+        self.assertEqual(MODULE.approval_preview_status(""), "ELIGIBLE_NOT_GENERATED")
+
     def test_variable_static_postscript_collision_is_packaging_warning(self):
         severity, reason = MODULE.postscript_duplicate_severity(
             [

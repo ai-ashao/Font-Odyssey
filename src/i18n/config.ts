@@ -8,8 +8,14 @@ export const localeConfig = {
   'zh-CN': {
     htmlLang: 'zh-CN',
     label: '简体中文',
-    shortLabel: '中',
+    shortLabel: '简',
     pathPrefix: 'zh',
+  },
+  'zh-TW': {
+    htmlLang: 'zh-TW',
+    label: '繁體中文',
+    shortLabel: '繁',
+    pathPrefix: 'zh-tw',
   },
 } as const
 

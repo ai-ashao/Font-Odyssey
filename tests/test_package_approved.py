@@ -1,5 +1,6 @@
 import hashlib
 import importlib.util
+import json
 import tempfile
 import unittest
 import zipfile
@@ -41,6 +42,39 @@ class PackagingHelpersTests(unittest.TestCase):
             MODULE.verify_zip(first, {"fonts/A.ttf": hashlib.sha256(b"font").hexdigest()})
             with zipfile.ZipFile(first) as archive:
                 self.assertEqual(archive.getinfo("fonts/A.ttf").date_time, MODULE.ZIP_DATE)
+
+    def test_selection_requires_unique_families(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "selection.json"
+            path.write_text(json.dumps({"fonts": [{"family": "Inter"}, {"family": "Inter"}]}))
+            with self.assertRaisesRegex(ValueError, "unique"):
+                MODULE.selected_families(path)
+
+    def test_artifact_content_types_are_explicit(self):
+        self.assertEqual(MODULE.artifact_content_type(Path("font.zip")), "application/zip")
+        self.assertEqual(MODULE.artifact_content_type(Path("preview.woff2")), "font/woff2")
+        self.assertTrue(MODULE.artifact_content_type(Path("OFL.txt")).startswith("text/plain"))
+
+    def test_release_identity_and_object_keys_are_deterministic(self):
+        approved = [{"source_commit": "a" * 40}]
+        checksums = [
+            {
+                "family": "Inter",
+                "artifact": "download_zip",
+                "relative_path": "fonts/inter/inter.zip",
+                "sha256": "b" * 64,
+                "size_bytes": 100,
+            }
+        ]
+        version, digest, commits = MODULE.release_identity(approved, checksums)
+        self.assertEqual(version, f"aaaaaaaa-{digest[:8]}")
+        self.assertEqual(commits, ["a" * 40])
+        self.assertEqual(
+            MODULE.versioned_object_key("fonts/inter/inter.zip", version),
+            f"fonts/inter/{version}/inter.zip",
+        )
+        string_sized = [{**checksums[0], "size_bytes": "100"}]
+        self.assertEqual(MODULE.release_identity(approved, string_sized), (version, digest, commits))
 
 
 if __name__ == "__main__":

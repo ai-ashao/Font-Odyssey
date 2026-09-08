@@ -48,7 +48,7 @@ export const toolSiteNavigation: SiteNavigationConfig = {
   guidesPlacement: 'none',
   header: {
     links: ['tools'],
-    toolsHref: { en: '/fonts', 'zh-CN': '/zh/fonts' },
+    toolsHref: { en: '/fonts', 'zh-CN': '/zh/fonts', 'zh-TW': '/zh-tw/fonts' },
   },
   footer: {
     toolGroups: [],

@@ -283,6 +283,10 @@ def coverage(codepoints: Set[int], charset: Set[int]) -> float:
     return round(len(codepoints & charset) / len(charset), 6) if charset else 0.0
 
 
+def approval_preview_status(reserved_font_names: str) -> str:
+    return "UNAVAILABLE_RFN" if reserved_font_names.strip() else "ELIGIBLE_NOT_GENERATED"
+
+
 def postscript_duplicate_severity(rows: List[Dict[str, object]]) -> Tuple[str, str]:
     families = {str(row["family"]) for row in rows}
     variable_states = {bool(row["variable"]) for row in rows}
@@ -518,11 +522,7 @@ def main() -> int:
                 if packaging_warnings
                 else "STANDARD"
             ),
-            "preview_status": (
-                "SKIPPED_LICENSE_REVIEW"
-                if manifest_row["reserved_font_names"]
-                else "ELIGIBLE_NOT_GENERATED"
-            ),
+            "preview_status": approval_preview_status(manifest_row["reserved_font_names"]),
             "final_status": final_status,
             "final_reason": ";".join(reasons),
         }
@@ -598,7 +598,7 @@ def main() -> int:
         f"- Packaging-only PostScript groups: {len(warning_ps)}",
         f"- Internal license metadata warnings: {sum(row['internal_license_state'] in {'MISSING', 'UNRECOGNIZED'} for row in all_file_rows)}",
         f"- Internal license metadata conflicts: {sum(row['internal_license_state'] == 'CONFLICT' for row in all_file_rows)}",
-        f"- RFN preview holds: {sum(row['preview_status'] == 'SKIPPED_LICENSE_REVIEW' for row in family_rows)}",
+        f"- RFN preview holds: {sum(row['preview_status'] == 'UNAVAILABLE_RFN' for row in family_rows)}",
         "- Gate scope: original-file redistribution engineering check; not legal advice",
         "",
     ]

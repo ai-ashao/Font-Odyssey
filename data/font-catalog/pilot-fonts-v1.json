@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "purpose": "Five-family end-to-end publishing pilot",
+  "fonts": [
+    {
+      "family": "Inter",
+      "role": "latin-variable-no-rfn",
+      "reason": "Variable Latin family with no Reserved Font Name."
+    },
+    {
+      "family": "Fira Sans",
+      "role": "latin-static-multiweight",
+      "reason": "Static Latin family with multiple weights and italics."
+    },
+    {
+      "family": "Noto Serif SC",
+      "role": "simplified-chinese",
+      "reason": "High Simplified Chinese coverage without a Reserved Font Name hold."
+    },
+    {
+      "family": "Noto Serif TC",
+      "role": "traditional-chinese",
+      "reason": "Full Traditional Chinese coverage without a Reserved Font Name hold."
+    },
+    {
+      "family": "Raleway",
+      "role": "reserved-font-name",
+      "reason": "Exercises the fail-closed Reserved Font Name preview path."
+    }
+  ]
+}

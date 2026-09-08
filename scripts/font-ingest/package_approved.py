@@ -5,8 +5,8 @@ import argparse
 import csv
 import hashlib
 import json
-import shutil
 import sys
+import tempfile
 import zipfile
 from collections import Counter
 from pathlib import Path
@@ -55,6 +55,58 @@ def stable_json(path, value):
         json.dumps(value, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
         encoding="utf-8",
     )
+
+
+def selected_families(path):
+    if not path:
+        return None
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    families = [item["family"] for item in payload["fonts"]]
+    if not families or len(families) != len(set(families)):
+        raise ValueError("selection must contain unique font families")
+    return families
+
+
+def artifact_content_type(path):
+    return {
+        ".zip": "application/zip",
+        ".txt": "text/plain; charset=utf-8",
+        ".json": "application/json",
+        ".woff2": "font/woff2",
+    }.get(path.suffix.lower(), "application/octet-stream")
+
+
+def release_identity(approved, checksums):
+    source_commits = sorted({row["source_commit"] for row in approved})
+    source_token = (
+        source_commits[0][:8]
+        if len(source_commits) == 1
+        else hashlib.sha256("\n".join(source_commits).encode()).hexdigest()[:8]
+    )
+    normalized_checksums = [
+        {
+            "family": row["family"],
+            "artifact": row["artifact"],
+            "relative_path": row["relative_path"],
+            "sha256": row["sha256"],
+            "size_bytes": int(row["size_bytes"]),
+        }
+        for row in checksums
+    ]
+    artifact_payload = json.dumps(
+        sorted(normalized_checksums, key=lambda row: (row["family"], row["relative_path"])),
+        sort_keys=True,
+        separators=(",", ":"),
+    ).encode()
+    artifact_digest = hashlib.sha256(artifact_payload).hexdigest()
+    return f"{source_token}-{artifact_digest[:8]}", artifact_digest, source_commits
+
+
+def versioned_object_key(relative_path, release_version):
+    parts = Path(relative_path).parts
+    if len(parts) < 3 or parts[0] != "fonts":
+        raise ValueError(f"unsupported release artifact path: {relative_path}")
+    return str(Path(parts[0], parts[1], release_version, *parts[2:]))
 
 
 def zip_info(name):
@@ -149,18 +201,37 @@ def source_notice(row):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--root", type=Path, default=Path.cwd())
+    parser.add_argument("--evidence-root", type=Path)
+    parser.add_argument("--selection", type=Path)
+    parser.add_argument("--output-root", type=Path)
+    parser.add_argument("--report-prefix", default="fonts-package")
     args = parser.parse_args()
     root = args.root.resolve()
-    approved = csv_rows(root / "reports" / "fonts-approved.csv")
-    launch = {row["family"]: row for row in csv_rows(root / "reports" / "fonts-launch-150.csv")}
-    file_rows = csv_rows(root / "reports" / "fonts-analysis-files.csv")
+    evidence_root = (args.evidence_root or root / "data" / "font-catalog").resolve()
+    output_root = (args.output_root or root / "artifacts" / "font-releases").resolve()
+    selection_path = args.selection.resolve() if args.selection else None
+    all_approved = csv_rows(evidence_root / "fonts-approved.csv")
+    requested = selected_families(selection_path)
+    approved_by_family = {row["family"]: row for row in all_approved}
+    if requested:
+        missing = sorted(set(requested) - set(approved_by_family))
+        if missing:
+            raise ValueError(f"selection contains non-Approved families: {', '.join(missing)}")
+        approved = [approved_by_family[family] for family in requested]
+    else:
+        approved = all_approved
+    if any(row["final_status"] != "APPROVED" for row in approved):
+        raise ValueError("packaging input contains a non-APPROVED family")
+    launch = {
+        row["family"]: row for row in csv_rows(evidence_root / "fonts-launch-150.csv")
+    }
+    file_rows = csv_rows(evidence_root / "fonts-analysis-files.csv")
     by_family = {}
     for row in file_rows:
         by_family.setdefault(row["family"], []).append(row)
 
-    dist = root / "dist"
-    if dist.exists():
-        shutil.rmtree(dist)
+    output_root.mkdir(parents=True, exist_ok=True)
+    dist = Path(tempfile.mkdtemp(prefix=".building-", dir=output_root))
     (dist / "fonts").mkdir(parents=True)
     inventory, checksums, previews, failures, catalog = [], [], [], [], []
 
@@ -194,6 +265,20 @@ def main():
             stable_json(family_dir / "metadata.json", metadata)
             (family_dir / "LICENSE.txt").write_bytes(license_bytes)
             (family_dir / "SOURCE.txt").write_bytes(notice)
+            for artifact_name, artifact_kind in (
+                ("LICENSE.txt", "license_text"),
+                ("SOURCE.txt", "source_notice"),
+            ):
+                artifact = family_dir / artifact_name
+                checksums.append(
+                    {
+                        "family": family,
+                        "artifact": artifact_kind,
+                        "relative_path": str(artifact.relative_to(dist)),
+                        "sha256": sha256(artifact),
+                        "size_bytes": artifact.stat().st_size,
+                    }
+                )
 
             if family_row["packaging_status"] == "SEPARATE_VARIABLE_STATIC_REQUIRED":
                 variable = [row for row in rows if row["variable"].lower() == "true"]
@@ -221,18 +306,18 @@ def main():
                 build_zip(package_path, entries)
                 verify_zip(package_path, expected)
                 package_sha = sha256(package_path)
-                checksums.append({"family": family, "artifact": "download_zip", "relative_path": str(package_path.relative_to(root)), "sha256": package_sha, "size_bytes": package_path.stat().st_size})
+                checksums.append({"family": family, "artifact": "download_zip", "relative_path": str(package_path.relative_to(dist)), "sha256": package_sha, "size_bytes": package_path.stat().st_size})
                 if not primary_zip:
-                    primary_zip, primary_sha, primary_size = str(package_path.relative_to(root)), package_sha, package_path.stat().st_size
+                    primary_zip, primary_sha, primary_size = str(package_path.relative_to(dist)), package_sha, package_path.stat().st_size
 
             reserved = family_row["reserved_font_names"].strip()
             preview_status = preview_reason = preview_rel = preview_sha = ""
             preview_size = 0
             selected = select_preview_font(rows)
             if family_row["license"] != "OFL-1.1":
-                preview_status, preview_reason = "SKIPPED_DERIVATIVE_POLICY", "V1 previews are limited to OFL-1.1 families"
+                preview_status, preview_reason = "ELIGIBLE_NOT_GENERATED", "V1 subset previews are limited to OFL-1.1 families"
             elif reserved:
-                preview_status, preview_reason = "SKIPPED_RFN", "Reserved Font Name requires separate derivative naming review"
+                preview_status, preview_reason = "UNAVAILABLE_RFN", "Reserved Font Name forbids a derivative preview under the original family name"
             else:
                 preview_path = family_dir / "preview.woff2"
                 codepoints = make_preview(root / selected["relative_path"], preview_path, preview_text(curated["language_group"]))
@@ -240,8 +325,8 @@ def main():
                     actual = set((preview_font.getBestCmap() or {}).keys())
                     if not set(codepoints).issubset(actual):
                         raise ValueError("preview character verification failed")
-                preview_status = "GENERATED"
-                preview_rel, preview_sha, preview_size = str(preview_path.relative_to(root)), sha256(preview_path), preview_path.stat().st_size
+                preview_status = "GENERATED_SUBSET"
+                preview_rel, preview_sha, preview_size = str(preview_path.relative_to(dist)), sha256(preview_path), preview_path.stat().st_size
                 stable_json(family_dir / "preview-metadata.json", {
                     "artifact": preview_rel, "kind": "web preview subset in WOFF2 format", "license": "OFL-1.1",
                     "source_font": selected["relative_path"], "source_sha256": selected["sha256"],
@@ -253,7 +338,7 @@ def main():
             manifest_files = [{"file": artifact.name, "sha256": sha256(artifact), "size_bytes": artifact.stat().st_size}
                               for artifact in sorted(family_dir.iterdir()) if artifact.name != "checksums.json"]
             stable_json(family_dir / "checksums.json", {"files": manifest_files})
-            checksums.append({"family": family, "artifact": "manifest", "relative_path": str((family_dir / "checksums.json").relative_to(root)), "sha256": sha256(family_dir / "checksums.json"), "size_bytes": (family_dir / "checksums.json").stat().st_size})
+            checksums.append({"family": family, "artifact": "manifest", "relative_path": str((family_dir / "checksums.json").relative_to(dist)), "sha256": sha256(family_dir / "checksums.json"), "size_bytes": (family_dir / "checksums.json").stat().st_size})
             previews.append({"family": family, "slug": slug, "license": family_row["license"], "reserved_font_names": reserved,
                              "source_font": selected["relative_path"], "preview_status": preview_status, "preview_path": preview_rel,
                              "sha256": preview_sha, "size_bytes": preview_size, "reason": preview_reason})
@@ -269,22 +354,70 @@ def main():
             failures.append({"family": family, "slug": slug, "reason": f"{type(error).__name__}: {error}"})
 
     stable_json(dist / "catalog.json", {"source_commit": approved[0]["source_commit"] if approved else "", "font_count": len(catalog), "fonts": catalog})
-    write_csv(root / "reports" / "fonts-package-inventory.csv", INVENTORY_FIELDS, inventory)
-    write_csv(root / "reports" / "fonts-package-checksums.csv", CHECKSUM_FIELDS, checksums)
-    write_csv(root / "reports" / "fonts-preview-status.csv", PREVIEW_FIELDS, previews)
-    write_csv(root / "reports" / "fonts-package-failed.csv", ["family", "slug", "reason"], failures)
+    report_base = root / "reports" / args.report_prefix
+    write_csv(report_base.with_name(f"{args.report_prefix}-inventory.csv"), INVENTORY_FIELDS, inventory)
+    write_csv(report_base.with_name(f"{args.report_prefix}-checksums.csv"), CHECKSUM_FIELDS, checksums)
+    write_csv(report_base.with_name(f"{args.report_prefix}-preview-status.csv"), PREVIEW_FIELDS, previews)
+    write_csv(report_base.with_name(f"{args.report_prefix}-failed.csv"), ["family", "slug", "reason"], failures)
     preview_counts = Counter(row["preview_status"] for row in previews)
+    final_dir = None
+    release_version = ""
+    if not failures and len(inventory) == len(approved):
+        release_version, artifact_digest, source_commits = release_identity(approved, checksums)
+        artifacts = []
+        for row in sorted(checksums, key=lambda item: (item["family"], item["relative_path"])):
+            relative_path = Path(row["relative_path"])
+            artifacts.append(
+                {
+                    "family": row["family"],
+                    "kind": row["artifact"],
+                    "localPath": row["relative_path"],
+                    "objectKey": versioned_object_key(relative_path, release_version),
+                    "sha256": row["sha256"],
+                    "bytes": int(row["size_bytes"]),
+                    "contentType": artifact_content_type(relative_path),
+                }
+            )
+        stable_json(
+            dist / "local-release-manifest.json",
+            {
+                "schemaVersion": 1,
+                "releaseVersion": release_version,
+                "status": "LOCAL_VERIFIED",
+                "publishable": False,
+                "remoteReadback": False,
+                "sourceCommits": source_commits,
+                "selection": str(selection_path.relative_to(root)) if selection_path else "all-approved",
+                "fontCount": len(inventory),
+                "artifactCount": len(artifacts),
+                "artifactDigest": artifact_digest,
+                "fonts": [
+                    {
+                        "family": row["family"],
+                        "slug": row["slug"],
+                        "approvalStatus": "APPROVED",
+                        "previewStatus": row["preview_status"],
+                    }
+                    for row in inventory
+                ],
+                "artifacts": artifacts,
+            },
+        )
+        final_dir = output_root / release_version
+        if final_dir.exists():
+            raise FileExistsError(f"immutable release already exists: {final_dir}")
+        dist.rename(final_dir)
     summary = (
         "# Font packaging summary\n\n"
         f"- Approved input families: {len(approved)}\n- Successfully packaged families: {len(inventory)}\n"
         f"- Failed families: {len(failures)}\n- Download ZIP files: {sum(1 for row in checksums if row['artifact'] == 'download_zip')}\n"
-        f"- Generated previews: {preview_counts.get('GENERATED', 0)}\n"
-        f"- Skipped for Reserved Font Names: {preview_counts.get('SKIPPED_RFN', 0)}\n"
-        f"- Skipped by derivative policy: {preview_counts.get('SKIPPED_DERIVATIVE_POLICY', 0)}\n\n"
-        "Roboto Condensed is absent because it did not pass the final License Gate. "
-        "Inconsolata variable and static editions are packaged separately.\n"
+        f"- Generated previews: {preview_counts.get('GENERATED_SUBSET', 0)}\n"
+        f"- Unavailable for Reserved Font Names: {preview_counts.get('UNAVAILABLE_RFN', 0)}\n"
+        f"- Local release version: {release_version or 'NOT_CREATED'}\n"
+        f"- Local release directory: {final_dir or dist}\n"
+        "- Remote status: NOT_UPLOADED; this output is not deployable until every R2 object passes readback.\n"
     )
-    (root / "reports" / "fonts-package-summary.md").write_text(summary, encoding="utf-8")
+    report_base.with_name(f"{args.report_prefix}-summary.md").write_text(summary, encoding="utf-8")
     print(summary, end="")
     return 1 if failures or len(inventory) != len(approved) else 0
 

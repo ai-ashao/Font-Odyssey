@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "fontCount": 149,
   "fonts": [
     {
@@ -8,13 +8,43 @@
       "slug": "notosanstc",
       "category": "Sans Serif",
       "languageGroup": "Chinese",
-      "subsets": ["menu", "chinese-traditional", "cyrillic", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "chinese-traditional",
+        "cyrillic",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 41,
       "styleCount": 9,
       "variableAxisCount": 1,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 1,
+      "sourcePath": "ofl/notosanstc",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
-      "reservedFontNames": ["Source"],
-      "previewStatus": "SKIPPED_LICENSE_REVIEW"
+      "licenseSha256Verified": true,
+      "reservedFontNames": [
+        "Source"
+      ],
+      "axes": [
+        "wght"
+      ],
+      "glyphCountMax": 20950,
+      "unicodeCodepointUnion": 20745,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.719355,
+        "zhTW": 1.0,
+        "japanese": 0.913669,
+        "korean": 0.0,
+        "cjkUnified": 0.732803
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "UNAVAILABLE_RFN",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 2,
@@ -22,13 +52,43 @@
       "slug": "notosansjp",
       "category": "Sans Serif",
       "languageGroup": "Japanese",
-      "subsets": ["menu", "cyrillic", "japanese", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "cyrillic",
+        "japanese",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 9,
       "styleCount": 9,
       "variableAxisCount": 1,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 1,
+      "sourcePath": "ofl/notosansjp",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
-      "reservedFontNames": ["Source"],
-      "previewStatus": "SKIPPED_LICENSE_REVIEW"
+      "licenseSha256Verified": true,
+      "reservedFontNames": [
+        "Source"
+      ],
+      "axes": [
+        "wght"
+      ],
+      "glyphCountMax": 17936,
+      "unicodeCodepointUnion": 16732,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.672483,
+        "zhTW": 0.72705,
+        "japanese": 1.0,
+        "korean": 0.0,
+        "cjkUnified": 0.607231
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "UNAVAILABLE_RFN",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 3,
@@ -36,13 +96,43 @@
       "slug": "notosanssc",
       "category": "Sans Serif",
       "languageGroup": "Chinese",
-      "subsets": ["menu", "chinese-simplified", "cyrillic", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "chinese-simplified",
+        "cyrillic",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 70,
       "styleCount": 9,
       "variableAxisCount": 1,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 1,
+      "sourcePath": "ofl/notosanssc",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
-      "reservedFontNames": ["Source"],
-      "previewStatus": "SKIPPED_LICENSE_REVIEW"
+      "licenseSha256Verified": true,
+      "reservedFontNames": [
+        "Source"
+      ],
+      "axes": [
+        "wght"
+      ],
+      "glyphCountMax": 31036,
+      "unicodeCodepointUnion": 30890,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 1.0,
+        "zhTW": 1.0,
+        "japanese": 1.0,
+        "korean": 0.0,
+        "cjkUnified": 0.999238
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "UNAVAILABLE_RFN",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 4,
@@ -50,13 +140,43 @@
       "slug": "notosanskr",
       "category": "Sans Serif",
       "languageGroup": "Korean",
-      "subsets": ["menu", "cyrillic", "korean", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "cyrillic",
+        "korean",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 37,
       "styleCount": 9,
       "variableAxisCount": 1,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 1,
+      "sourcePath": "ofl/notosanskr",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
-      "reservedFontNames": ["Source"],
-      "previewStatus": "SKIPPED_LICENSE_REVIEW"
+      "licenseSha256Verified": true,
+      "reservedFontNames": [
+        "Source"
+      ],
+      "axes": [
+        "wght"
+      ],
+      "glyphCountMax": 24964,
+      "unicodeCodepointUnion": 23174,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.56469,
+        "zhTW": 0.54345,
+        "japanese": 0.859176,
+        "korean": 1.0,
+        "cjkUnified": 0.387671
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "UNAVAILABLE_RFN",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 5,
@@ -64,13 +184,41 @@
       "slug": "notoserifjp",
       "category": "Serif",
       "languageGroup": "Japanese",
-      "subsets": ["menu", "cyrillic", "japanese", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "cyrillic",
+        "japanese",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 79,
       "styleCount": 8,
       "variableAxisCount": 1,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 1,
+      "sourcePath": "ofl/notoserifjp",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [
+        "wght"
+      ],
+      "glyphCountMax": 17923,
+      "unicodeCodepointUnion": 16726,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.672335,
+        "zhTW": 0.726897,
+        "japanese": 1.0,
+        "korean": 0.0,
+        "cjkUnified": 0.607088
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 6,
@@ -93,9 +241,31 @@
       "officialPopularityRank": 2,
       "styleCount": 18,
       "variableAxisCount": 2,
+      "fontFileCount": 2,
+      "parsedFontFileCount": 2,
+      "variableFontCount": 2,
+      "sourcePath": "ofl/roboto",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [
+        "wdth",
+        "wght"
+      ],
+      "glyphCountMax": 1326,
+      "unicodeCodepointUnion": 927,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 7,
@@ -119,9 +289,31 @@
       "officialPopularityRank": 3,
       "styleCount": 12,
       "variableAxisCount": 2,
+      "fontFileCount": 2,
+      "parsedFontFileCount": 2,
+      "variableFontCount": 2,
+      "sourcePath": "ofl/opensans",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [
+        "wdth",
+        "wght"
+      ],
+      "glyphCountMax": 1162,
+      "unicodeCodepointUnion": 1010,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 8,
@@ -142,9 +334,31 @@
       "officialPopularityRank": 5,
       "styleCount": 18,
       "variableAxisCount": 2,
+      "fontFileCount": 2,
+      "parsedFontFileCount": 2,
+      "variableFontCount": 2,
+      "sourcePath": "ofl/inter",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [
+        "opsz",
+        "wght"
+      ],
+      "glyphCountMax": 2933,
+      "unicodeCodepointUnion": 2850,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 9,
@@ -152,13 +366,41 @@
       "slug": "montserrat",
       "category": "Sans Serif",
       "languageGroup": "Other",
-      "subsets": ["menu", "cyrillic", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "cyrillic",
+        "cyrillic-ext",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 6,
       "styleCount": 18,
       "variableAxisCount": 1,
+      "fontFileCount": 2,
+      "parsedFontFileCount": 2,
+      "variableFontCount": 2,
+      "sourcePath": "ofl/montserrat",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [
+        "wght"
+      ],
+      "glyphCountMax": 2791,
+      "unicodeCodepointUnion": 1312,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 10,
@@ -180,9 +422,30 @@
       "officialPopularityRank": 13,
       "styleCount": 8,
       "variableAxisCount": 1,
+      "fontFileCount": 2,
+      "parsedFontFileCount": 2,
+      "variableFontCount": 2,
+      "sourcePath": "ofl/arimo",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [
+        "wght"
+      ],
+      "glyphCountMax": 3306,
+      "unicodeCodepointUnion": 3010,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 12,
@@ -190,13 +453,42 @@
       "slug": "robotomono",
       "category": "Monospace",
       "languageGroup": "Other",
-      "subsets": ["menu", "cyrillic", "cyrillic-ext", "greek", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "cyrillic",
+        "cyrillic-ext",
+        "greek",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 16,
       "styleCount": 14,
       "variableAxisCount": 1,
+      "fontFileCount": 2,
+      "parsedFontFileCount": 2,
+      "variableFontCount": 2,
+      "sourcePath": "ofl/robotomono",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [
+        "wght"
+      ],
+      "glyphCountMax": 1006,
+      "unicodeCodepointUnion": 876,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 13,
@@ -218,9 +510,31 @@
       "officialPopularityRank": 20,
       "styleCount": 18,
       "variableAxisCount": 2,
+      "fontFileCount": 2,
+      "parsedFontFileCount": 2,
+      "variableFontCount": 2,
+      "sourcePath": "ofl/notosans",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [
+        "wdth",
+        "wght"
+      ],
+      "glyphCountMax": 4526,
+      "unicodeCodepointUnion": 3094,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 14,
@@ -228,13 +542,43 @@
       "slug": "raleway",
       "category": "Sans Serif",
       "languageGroup": "Other",
-      "subsets": ["menu", "cyrillic", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "cyrillic",
+        "cyrillic-ext",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 23,
       "styleCount": 18,
       "variableAxisCount": 1,
+      "fontFileCount": 2,
+      "parsedFontFileCount": 2,
+      "variableFontCount": 2,
+      "sourcePath": "ofl/raleway",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
-      "reservedFontNames": ["Raleway"],
-      "previewStatus": "SKIPPED_LICENSE_REVIEW"
+      "licenseSha256Verified": true,
+      "reservedFontNames": [
+        "Raleway"
+      ],
+      "axes": [
+        "wght"
+      ],
+      "glyphCountMax": 1071,
+      "unicodeCodepointUnion": 937,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "UNAVAILABLE_RFN",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 15,
@@ -257,9 +601,28 @@
       "officialPopularityRank": 131,
       "styleCount": 7,
       "variableAxisCount": 0,
+      "fontFileCount": 7,
+      "parsedFontFileCount": 7,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/mplus1p",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [],
+      "glyphCountMax": 8676,
+      "unicodeCodepointUnion": 8331,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.421263,
+        "zhTW": 0.330985,
+        "japanese": 0.798102,
+        "korean": 0.0,
+        "cjkUnified": 0.242092
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 16,
@@ -267,13 +630,41 @@
       "slug": "nunito",
       "category": "Sans Serif",
       "languageGroup": "Other",
-      "subsets": ["menu", "cyrillic", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "cyrillic",
+        "cyrillic-ext",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 25,
       "styleCount": 18,
       "variableAxisCount": 1,
+      "fontFileCount": 2,
+      "parsedFontFileCount": 2,
+      "variableFontCount": 2,
+      "sourcePath": "ofl/nunito",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [
+        "wght"
+      ],
+      "glyphCountMax": 1103,
+      "unicodeCodepointUnion": 938,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 17,
@@ -281,13 +672,44 @@
       "slug": "nunitosans",
       "category": "Sans Serif",
       "languageGroup": "Other",
-      "subsets": ["menu", "cyrillic", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "cyrillic",
+        "cyrillic-ext",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 26,
       "styleCount": 18,
       "variableAxisCount": 4,
+      "fontFileCount": 2,
+      "parsedFontFileCount": 2,
+      "variableFontCount": 2,
+      "sourcePath": "ofl/nunitosans",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [
+        "YTLC",
+        "opsz",
+        "wdth",
+        "wght"
+      ],
+      "glyphCountMax": 1104,
+      "unicodeCodepointUnion": 939,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 18,
@@ -295,13 +717,42 @@
       "slug": "rubik",
       "category": "Sans Serif",
       "languageGroup": "Other",
-      "subsets": ["menu", "arabic", "cyrillic", "cyrillic-ext", "hebrew", "latin", "latin-ext"],
+      "subsets": [
+        "menu",
+        "arabic",
+        "cyrillic",
+        "cyrillic-ext",
+        "hebrew",
+        "latin",
+        "latin-ext"
+      ],
       "officialPopularityRank": 28,
       "styleCount": 14,
       "variableAxisCount": 1,
+      "fontFileCount": 2,
+      "parsedFontFileCount": 2,
+      "variableFontCount": 2,
+      "sourcePath": "ofl/rubik",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [
+        "wght"
+      ],
+      "glyphCountMax": 1174,
+      "unicodeCodepointUnion": 885,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 19,
@@ -322,9 +773,30 @@
       "officialPopularityRank": 29,
       "styleCount": 9,
       "variableAxisCount": 1,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 1,
+      "sourcePath": "apache/robotoslab",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "Apache-2.0",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [
+        "wght"
+      ],
+      "glyphCountMax": 1164,
+      "unicodeCodepointUnion": 901,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 20,
@@ -332,13 +804,41 @@
       "slug": "oswald",
       "category": "Sans Serif",
       "languageGroup": "Other",
-      "subsets": ["menu", "cyrillic", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "cyrillic",
+        "cyrillic-ext",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 17,
       "styleCount": 6,
       "variableAxisCount": 1,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 1,
+      "sourcePath": "ofl/oswald",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [
+        "wght"
+      ],
+      "glyphCountMax": 883,
+      "unicodeCodepointUnion": 850,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 21,
@@ -346,13 +846,42 @@
       "slug": "manrope",
       "category": "Sans Serif",
       "languageGroup": "Other",
-      "subsets": ["menu", "cyrillic", "cyrillic-ext", "greek", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "cyrillic",
+        "cyrillic-ext",
+        "greek",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 33,
       "styleCount": 7,
       "variableAxisCount": 1,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 1,
+      "sourcePath": "ofl/manrope",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [
+        "wght"
+      ],
+      "glyphCountMax": 742,
+      "unicodeCodepointUnion": 678,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 22,
@@ -360,13 +889,41 @@
       "slug": "notoseriftc",
       "category": "Serif",
       "languageGroup": "Chinese",
-      "subsets": ["menu", "chinese-traditional", "cyrillic", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "chinese-traditional",
+        "cyrillic",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 194,
       "styleCount": 8,
       "variableAxisCount": 1,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 1,
+      "sourcePath": "ofl/notoseriftc",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [
+        "wght"
+      ],
+      "glyphCountMax": 20939,
+      "unicodeCodepointUnion": 20748,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.719355,
+        "zhTW": 1.0,
+        "japanese": 0.913669,
+        "korean": 0.0,
+        "cjkUnified": 0.732851
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 23,
@@ -374,13 +931,40 @@
       "slug": "ubuntu",
       "category": "Sans Serif",
       "languageGroup": "Other",
-      "subsets": ["menu", "cyrillic", "cyrillic-ext", "greek", "greek-ext", "latin", "latin-ext"],
+      "subsets": [
+        "menu",
+        "cyrillic",
+        "cyrillic-ext",
+        "greek",
+        "greek-ext",
+        "latin",
+        "latin-ext"
+      ],
       "officialPopularityRank": 35,
       "styleCount": 8,
       "variableAxisCount": 0,
+      "fontFileCount": 8,
+      "parsedFontFileCount": 8,
+      "variableFontCount": 0,
+      "sourcePath": "ufl/ubuntu",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "UFL-1.0",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [],
+      "glyphCountMax": 1269,
+      "unicodeCodepointUnion": 1194,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 24,
@@ -388,13 +972,41 @@
       "slug": "notoserifsc",
       "category": "Serif",
       "languageGroup": "Chinese",
-      "subsets": ["menu", "chinese-simplified", "cyrillic", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "chinese-simplified",
+        "cyrillic",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 196,
       "styleCount": 8,
       "variableAxisCount": 1,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 1,
+      "sourcePath": "ofl/notoserifsc",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [
+        "wght"
+      ],
+      "glyphCountMax": 31058,
+      "unicodeCodepointUnion": 30928,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 1.0,
+        "zhTW": 1.0,
+        "japanese": 1.0,
+        "korean": 0.0,
+        "cjkUnified": 1.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 25,
@@ -402,13 +1014,45 @@
       "slug": "merriweather",
       "category": "Serif",
       "languageGroup": "Other",
-      "subsets": ["menu", "cyrillic", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "cyrillic",
+        "cyrillic-ext",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 36,
       "styleCount": 14,
       "variableAxisCount": 3,
+      "fontFileCount": 2,
+      "parsedFontFileCount": 2,
+      "variableFontCount": 2,
+      "sourcePath": "ofl/merriweather",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
-      "reservedFontNames": ["Merriweather"],
-      "previewStatus": "SKIPPED_LICENSE_REVIEW"
+      "licenseSha256Verified": true,
+      "reservedFontNames": [
+        "Merriweather"
+      ],
+      "axes": [
+        "opsz",
+        "wdth",
+        "wght"
+      ],
+      "glyphCountMax": 2384,
+      "unicodeCodepointUnion": 1424,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "UNAVAILABLE_RFN",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 26,
@@ -429,9 +1073,32 @@
       "officialPopularityRank": 39,
       "styleCount": 8,
       "variableAxisCount": 1,
+      "fontFileCount": 2,
+      "parsedFontFileCount": 2,
+      "variableFontCount": 2,
+      "sourcePath": "ofl/lora",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
-      "reservedFontNames": ["Lora"],
-      "previewStatus": "SKIPPED_LICENSE_REVIEW"
+      "licenseSha256Verified": true,
+      "reservedFontNames": [
+        "Lora"
+      ],
+      "axes": [
+        "wght"
+      ],
+      "glyphCountMax": 892,
+      "unicodeCodepointUnion": 778,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "UNAVAILABLE_RFN",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 27,
@@ -439,13 +1106,41 @@
       "slug": "mulish",
       "category": "Sans Serif",
       "languageGroup": "Other",
-      "subsets": ["menu", "cyrillic", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "cyrillic",
+        "cyrillic-ext",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 47,
       "styleCount": 18,
       "variableAxisCount": 1,
+      "fontFileCount": 2,
+      "parsedFontFileCount": 2,
+      "variableFontCount": 2,
+      "sourcePath": "ofl/mulish",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [
+        "wght"
+      ],
+      "glyphCountMax": 1063,
+      "unicodeCodepointUnion": 936,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 28,
@@ -466,11 +1161,32 @@
       "officialPopularityRank": 52,
       "styleCount": 16,
       "variableAxisCount": 1,
+      "fontFileCount": 2,
+      "parsedFontFileCount": 2,
+      "variableFontCount": 2,
+      "sourcePath": "ofl/sourcesans3",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [
         "Source'. All Rights Reserved. Source is a trademark of Adobe in the United States and/or other countries"
       ],
-      "previewStatus": "SKIPPED_LICENSE_REVIEW"
+      "axes": [
+        "wght"
+      ],
+      "glyphCountMax": 2478,
+      "unicodeCodepointUnion": 1615,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "UNAVAILABLE_RFN",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 29,
@@ -478,13 +1194,45 @@
       "slug": "ibmplexsans",
       "category": "Sans Serif",
       "languageGroup": "Other",
-      "subsets": ["menu", "cyrillic", "cyrillic-ext", "greek", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "cyrillic",
+        "cyrillic-ext",
+        "greek",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 55,
       "styleCount": 14,
       "variableAxisCount": 2,
+      "fontFileCount": 2,
+      "parsedFontFileCount": 2,
+      "variableFontCount": 2,
+      "sourcePath": "ofl/ibmplexsans",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
-      "reservedFontNames": ["Plex"],
-      "previewStatus": "SKIPPED_LICENSE_REVIEW"
+      "licenseSha256Verified": true,
+      "reservedFontNames": [
+        "Plex"
+      ],
+      "axes": [
+        "wdth",
+        "wght"
+      ],
+      "glyphCountMax": 1025,
+      "unicodeCodepointUnion": 891,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "UNAVAILABLE_RFN",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 30,
@@ -492,13 +1240,42 @@
       "slug": "jetbrainsmono",
       "category": "Monospace",
       "languageGroup": "Other",
-      "subsets": ["menu", "cyrillic", "cyrillic-ext", "greek", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "cyrillic",
+        "cyrillic-ext",
+        "greek",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 56,
       "styleCount": 16,
       "variableAxisCount": 1,
+      "fontFileCount": 2,
+      "parsedFontFileCount": 2,
+      "variableFontCount": 2,
+      "sourcePath": "ofl/jetbrainsmono",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [
+        "wght"
+      ],
+      "glyphCountMax": 1179,
+      "unicodeCodepointUnion": 976,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 31,
@@ -506,13 +1283,41 @@
       "slug": "heebo",
       "category": "Sans Serif",
       "languageGroup": "Other",
-      "subsets": ["menu", "hebrew", "latin", "latin-ext", "math", "symbols"],
+      "subsets": [
+        "menu",
+        "hebrew",
+        "latin",
+        "latin-ext",
+        "math",
+        "symbols"
+      ],
       "officialPopularityRank": 61,
       "styleCount": 9,
       "variableAxisCount": 1,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 1,
+      "sourcePath": "ofl/heebo",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [
+        "wght"
+      ],
+      "glyphCountMax": 591,
+      "unicodeCodepointUnion": 463,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 32,
@@ -534,9 +1339,31 @@
       "officialPopularityRank": 62,
       "styleCount": 18,
       "variableAxisCount": 2,
+      "fontFileCount": 2,
+      "parsedFontFileCount": 2,
+      "variableFontCount": 2,
+      "sourcePath": "ofl/notoserif",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [
+        "wdth",
+        "wght"
+      ],
+      "glyphCountMax": 3836,
+      "unicodeCodepointUnion": 2967,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 33,
@@ -557,9 +1384,28 @@
       "officialPopularityRank": 63,
       "styleCount": 18,
       "variableAxisCount": 0,
+      "fontFileCount": 18,
+      "parsedFontFileCount": 18,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/firasans",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [],
+      "glyphCountMax": 2708,
+      "unicodeCodepointUnion": 1686,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 34,
@@ -567,13 +1413,41 @@
       "slug": "cormorantgaramond",
       "category": "Serif",
       "languageGroup": "Other",
-      "subsets": ["menu", "cyrillic", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "cyrillic",
+        "cyrillic-ext",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 66,
       "styleCount": 10,
       "variableAxisCount": 1,
+      "fontFileCount": 2,
+      "parsedFontFileCount": 2,
+      "variableFontCount": 2,
+      "sourcePath": "ofl/cormorantgaramond",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [
+        "wght"
+      ],
+      "glyphCountMax": 3241,
+      "unicodeCodepointUnion": 983,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 35,
@@ -581,13 +1455,41 @@
       "slug": "librefranklin",
       "category": "Sans Serif",
       "languageGroup": "Other",
-      "subsets": ["menu", "cyrillic", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "cyrillic",
+        "cyrillic-ext",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 78,
       "styleCount": 18,
       "variableAxisCount": 1,
+      "fontFileCount": 2,
+      "parsedFontFileCount": 2,
+      "variableFontCount": 2,
+      "sourcePath": "ofl/librefranklin",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [
+        "wght"
+      ],
+      "glyphCountMax": 1012,
+      "unicodeCodepointUnion": 918,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 36,
@@ -595,13 +1497,37 @@
       "slug": "poppins",
       "category": "Sans Serif",
       "languageGroup": "Other",
-      "subsets": ["menu", "devanagari", "latin", "latin-ext"],
+      "subsets": [
+        "menu",
+        "devanagari",
+        "latin",
+        "latin-ext"
+      ],
       "officialPopularityRank": 7,
       "styleCount": 18,
       "variableAxisCount": 0,
+      "fontFileCount": 18,
+      "parsedFontFileCount": 18,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/poppins",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [],
+      "glyphCountMax": 1060,
+      "unicodeCodepointUnion": 471,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 37,
@@ -609,13 +1535,41 @@
       "slug": "notoserifkr",
       "category": "Serif",
       "languageGroup": "Korean",
-      "subsets": ["menu", "cyrillic", "korean", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "cyrillic",
+        "korean",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 203,
       "styleCount": 8,
       "variableAxisCount": 1,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 1,
+      "sourcePath": "ofl/notoserifkr",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [
+        "wght"
+      ],
+      "glyphCountMax": 24910,
+      "unicodeCodepointUnion": 23124,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.564542,
+        "zhTW": 0.543373,
+        "japanese": 0.859176,
+        "korean": 1.0,
+        "cjkUnified": 0.387671
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 38,
@@ -623,13 +1577,38 @@
       "slug": "lato",
       "category": "Sans Serif",
       "languageGroup": "Other",
-      "subsets": ["menu", "latin", "latin-ext"],
+      "subsets": [
+        "menu",
+        "latin",
+        "latin-ext"
+      ],
       "officialPopularityRank": 10,
       "styleCount": 10,
       "variableAxisCount": 0,
+      "fontFileCount": 18,
+      "parsedFontFileCount": 18,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/lato",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
-      "reservedFontNames": ["Lato"],
-      "previewStatus": "SKIPPED_LICENSE_REVIEW"
+      "licenseSha256Verified": true,
+      "reservedFontNames": [
+        "Lato"
+      ],
+      "axes": [],
+      "glyphCountMax": 3023,
+      "unicodeCodepointUnion": 2164,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "UNAVAILABLE_RFN",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 39,
@@ -650,9 +1629,30 @@
       "officialPopularityRank": 84,
       "styleCount": 10,
       "variableAxisCount": 1,
+      "fontFileCount": 2,
+      "parsedFontFileCount": 2,
+      "variableFontCount": 2,
+      "sourcePath": "ofl/ebgaramond",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [
+        "wght"
+      ],
+      "glyphCountMax": 3247,
+      "unicodeCodepointUnion": 2096,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 40,
@@ -673,11 +1673,32 @@
       "officialPopularityRank": 89,
       "styleCount": 16,
       "variableAxisCount": 1,
+      "fontFileCount": 2,
+      "parsedFontFileCount": 2,
+      "variableFontCount": 2,
+      "sourcePath": "ofl/sourcecodepro",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [
         "Source'. All Rights Reserved. Source is a trademark of Adobe Systems Incorporated in the United States and/or other countries"
       ],
-      "previewStatus": "SKIPPED_LICENSE_REVIEW"
+      "axes": [
+        "wght"
+      ],
+      "glyphCountMax": 1568,
+      "unicodeCodepointUnion": 1334,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "UNAVAILABLE_RFN",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 41,
@@ -685,13 +1706,39 @@
       "slug": "dmsans",
       "category": "Sans Serif",
       "languageGroup": "Other",
-      "subsets": ["menu", "latin", "latin-ext"],
+      "subsets": [
+        "menu",
+        "latin",
+        "latin-ext"
+      ],
       "officialPopularityRank": 21,
       "styleCount": 20,
       "variableAxisCount": 2,
+      "fontFileCount": 2,
+      "parsedFontFileCount": 2,
+      "variableFontCount": 2,
+      "sourcePath": "ofl/dmsans",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [
+        "opsz",
+        "wght"
+      ],
+      "glyphCountMax": 486,
+      "unicodeCodepointUnion": 403,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 42,
@@ -699,13 +1746,41 @@
       "slug": "ibmplexmono",
       "category": "Monospace",
       "languageGroup": "Other",
-      "subsets": ["menu", "cyrillic", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "cyrillic",
+        "cyrillic-ext",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 94,
       "styleCount": 14,
       "variableAxisCount": 0,
+      "fontFileCount": 14,
+      "parsedFontFileCount": 14,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/ibmplexmono",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
-      "reservedFontNames": ["Plex"],
-      "previewStatus": "SKIPPED_LICENSE_REVIEW"
+      "licenseSha256Verified": true,
+      "reservedFontNames": [
+        "Plex"
+      ],
+      "axes": [],
+      "glyphCountMax": 1033,
+      "unicodeCodepointUnion": 930,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "UNAVAILABLE_RFN",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 43,
@@ -726,9 +1801,30 @@
       "officialPopularityRank": 95,
       "styleCount": 18,
       "variableAxisCount": 1,
+      "fontFileCount": 2,
+      "parsedFontFileCount": 2,
+      "variableFontCount": 2,
+      "sourcePath": "ofl/intertight",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [
+        "wght"
+      ],
+      "glyphCountMax": 2547,
+      "unicodeCodepointUnion": 2504,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 44,
@@ -736,13 +1832,42 @@
       "slug": "playfairdisplay",
       "category": "Serif",
       "languageGroup": "Other",
-      "subsets": ["menu", "cyrillic", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "cyrillic",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 24,
       "styleCount": 12,
       "variableAxisCount": 1,
+      "fontFileCount": 2,
+      "parsedFontFileCount": 2,
+      "variableFontCount": 2,
+      "sourcePath": "ofl/playfairdisplay",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
-      "reservedFontNames": ["Playfair Display"],
-      "previewStatus": "SKIPPED_LICENSE_REVIEW"
+      "licenseSha256Verified": true,
+      "reservedFontNames": [
+        "Playfair Display"
+      ],
+      "axes": [
+        "wght"
+      ],
+      "glyphCountMax": 1103,
+      "unicodeCodepointUnion": 659,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "UNAVAILABLE_RFN",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 45,
@@ -750,13 +1875,54 @@
       "slug": "robotoflex",
       "category": "Sans Serif",
       "languageGroup": "Other",
-      "subsets": ["menu", "cyrillic", "cyrillic-ext", "greek", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "cyrillic",
+        "cyrillic-ext",
+        "greek",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 98,
       "styleCount": 10,
       "variableAxisCount": 13,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 1,
+      "sourcePath": "ofl/robotoflex",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [
+        "GRAD",
+        "XOPQ",
+        "XTRA",
+        "YOPQ",
+        "YTAS",
+        "YTDE",
+        "YTFI",
+        "YTLC",
+        "YTUC",
+        "opsz",
+        "slnt",
+        "wdth",
+        "wght"
+      ],
+      "glyphCountMax": 948,
+      "unicodeCodepointUnion": 826,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 46,
@@ -764,13 +1930,43 @@
       "slug": "bitter",
       "category": "Serif",
       "languageGroup": "Other",
-      "subsets": ["menu", "cyrillic", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "cyrillic",
+        "cyrillic-ext",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 101,
       "styleCount": 18,
       "variableAxisCount": 1,
+      "fontFileCount": 2,
+      "parsedFontFileCount": 2,
+      "variableFontCount": 2,
+      "sourcePath": "ofl/bitter",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
-      "reservedFontNames": ["Bitter Pro"],
-      "previewStatus": "SKIPPED_LICENSE_REVIEW"
+      "licenseSha256Verified": true,
+      "reservedFontNames": [
+        "Bitter Pro"
+      ],
+      "axes": [
+        "wght"
+      ],
+      "glyphCountMax": 1542,
+      "unicodeCodepointUnion": 977,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "UNAVAILABLE_RFN",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 47,
@@ -778,13 +1974,38 @@
       "slug": "outfit",
       "category": "Sans Serif",
       "languageGroup": "Other",
-      "subsets": ["menu", "latin", "latin-ext"],
+      "subsets": [
+        "menu",
+        "latin",
+        "latin-ext"
+      ],
       "officialPopularityRank": 31,
       "styleCount": 9,
       "variableAxisCount": 1,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 1,
+      "sourcePath": "ofl/outfit",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [
+        "wght"
+      ],
+      "glyphCountMax": 416,
+      "unicodeCodepointUnion": 360,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 48,
@@ -792,11 +2013,21 @@
       "slug": "nanumgothic",
       "category": "Sans Serif",
       "languageGroup": "Korean",
-      "subsets": ["menu", "korean", "latin"],
+      "subsets": [
+        "menu",
+        "korean",
+        "latin"
+      ],
       "officialPopularityRank": 105,
       "styleCount": 3,
       "variableAxisCount": 0,
+      "fontFileCount": 3,
+      "parsedFontFileCount": 3,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/nanumgothic",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [
         "Nanum",
         "Naver Nanum",
@@ -809,7 +2040,20 @@
         "NanumPen",
         "Naver NanumPen"
       ],
-      "previewStatus": "SKIPPED_LICENSE_REVIEW"
+      "axes": [],
+      "glyphCountMax": 13671,
+      "unicodeCodepointUnion": 11827,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 1.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "UNAVAILABLE_RFN",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 49,
@@ -817,13 +2061,38 @@
       "slug": "kanit",
       "category": "Sans Serif",
       "languageGroup": "Other",
-      "subsets": ["menu", "latin", "latin-ext", "thai", "vietnamese"],
+      "subsets": [
+        "menu",
+        "latin",
+        "latin-ext",
+        "thai",
+        "vietnamese"
+      ],
       "officialPopularityRank": 34,
       "styleCount": 18,
       "variableAxisCount": 0,
+      "fontFileCount": 18,
+      "parsedFontFileCount": 18,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/kanit",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [],
+      "glyphCountMax": 775,
+      "unicodeCodepointUnion": 725,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 50,
@@ -831,13 +2100,39 @@
       "slug": "worksans",
       "category": "Sans Serif",
       "languageGroup": "Other",
-      "subsets": ["menu", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 38,
       "styleCount": 18,
       "variableAxisCount": 1,
+      "fontFileCount": 2,
+      "parsedFontFileCount": 2,
+      "variableFontCount": 2,
+      "sourcePath": "ofl/worksans",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [
+        "wght"
+      ],
+      "glyphCountMax": 1349,
+      "unicodeCodepointUnion": 754,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 51,
@@ -845,13 +2140,40 @@
       "slug": "plusjakartasans",
       "category": "Sans Serif",
       "languageGroup": "Other",
-      "subsets": ["menu", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "cyrillic-ext",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 40,
       "styleCount": 14,
       "variableAxisCount": 1,
+      "fontFileCount": 2,
+      "parsedFontFileCount": 2,
+      "variableFontCount": 2,
+      "sourcePath": "ofl/plusjakartasans",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [
+        "wght"
+      ],
+      "glyphCountMax": 1188,
+      "unicodeCodepointUnion": 721,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 52,
@@ -859,13 +2181,41 @@
       "slug": "exo2",
       "category": "Sans Serif",
       "languageGroup": "Other",
-      "subsets": ["menu", "cyrillic", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "cyrillic",
+        "cyrillic-ext",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 114,
       "styleCount": 18,
       "variableAxisCount": 1,
+      "fontFileCount": 2,
+      "parsedFontFileCount": 2,
+      "variableFontCount": 2,
+      "sourcePath": "ofl/exo2",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [
+        "wght"
+      ],
+      "glyphCountMax": 1033,
+      "unicodeCodepointUnion": 911,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 53,
@@ -873,13 +2223,38 @@
       "slug": "figtree",
       "category": "Sans Serif",
       "languageGroup": "Other",
-      "subsets": ["menu", "latin", "latin-ext"],
+      "subsets": [
+        "menu",
+        "latin",
+        "latin-ext"
+      ],
       "officialPopularityRank": 43,
       "styleCount": 14,
       "variableAxisCount": 1,
+      "fontFileCount": 2,
+      "parsedFontFileCount": 2,
+      "variableFontCount": 2,
+      "sourcePath": "ofl/figtree",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [
+        "wght"
+      ],
+      "glyphCountMax": 459,
+      "unicodeCodepointUnion": 391,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 54,
@@ -887,13 +2262,38 @@
       "slug": "zenkakugothicnew",
       "category": "Sans Serif",
       "languageGroup": "Japanese",
-      "subsets": ["menu", "cyrillic", "japanese", "latin", "latin-ext"],
+      "subsets": [
+        "menu",
+        "cyrillic",
+        "japanese",
+        "latin",
+        "latin-ext"
+      ],
       "officialPopularityRank": 157,
       "styleCount": 5,
       "variableAxisCount": 0,
+      "fontFileCount": 5,
+      "parsedFontFileCount": 5,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/zenkakugothicnew",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [],
+      "glyphCountMax": 7792,
+      "unicodeCodepointUnion": 7737,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.499482,
+        "zhTW": 0.423168,
+        "japanese": 1.0,
+        "korean": 0.0,
+        "cjkUnified": 0.318312
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 55,
@@ -901,13 +2301,38 @@
       "slug": "prompt",
       "category": "Sans Serif",
       "languageGroup": "Other",
-      "subsets": ["menu", "latin", "latin-ext", "thai", "vietnamese"],
+      "subsets": [
+        "menu",
+        "latin",
+        "latin-ext",
+        "thai",
+        "vietnamese"
+      ],
       "officialPopularityRank": 45,
       "styleCount": 18,
       "variableAxisCount": 0,
+      "fontFileCount": 18,
+      "parsedFontFileCount": 18,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/prompt",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [],
+      "glyphCountMax": 773,
+      "unicodeCodepointUnion": 725,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 56,
@@ -915,13 +2340,41 @@
       "slug": "bricolagegrotesque",
       "category": "Sans Serif",
       "languageGroup": "Other",
-      "subsets": ["menu", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 46,
       "styleCount": 7,
       "variableAxisCount": 3,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 1,
+      "sourcePath": "ofl/bricolagegrotesque",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [
+        "opsz",
+        "wdth",
+        "wght"
+      ],
+      "glyphCountMax": 597,
+      "unicodeCodepointUnion": 527,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 57,
@@ -929,13 +2382,37 @@
       "slug": "barlow",
       "category": "Sans Serif",
       "languageGroup": "Other",
-      "subsets": ["menu", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 48,
       "styleCount": 18,
       "variableAxisCount": 0,
+      "fontFileCount": 18,
+      "parsedFontFileCount": 18,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/barlow",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [],
+      "glyphCountMax": 694,
+      "unicodeCodepointUnion": 525,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 58,
@@ -943,13 +2420,40 @@
       "slug": "saira",
       "category": "Sans Serif",
       "languageGroup": "Other",
-      "subsets": ["menu", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 49,
       "styleCount": 18,
       "variableAxisCount": 2,
+      "fontFileCount": 2,
+      "parsedFontFileCount": 2,
+      "variableFontCount": 2,
+      "sourcePath": "ofl/saira",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [
+        "wdth",
+        "wght"
+      ],
+      "glyphCountMax": 898,
+      "unicodeCodepointUnion": 661,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 59,
@@ -971,9 +2475,28 @@
       "officialPopularityRank": 245,
       "styleCount": 9,
       "variableAxisCount": 0,
+      "fontFileCount": 9,
+      "parsedFontFileCount": 9,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/gothica1",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [],
+      "glyphCountMax": 22711,
+      "unicodeCodepointUnion": 14721,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.027093,
+        "korean": 1.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 60,
@@ -981,13 +2504,39 @@
       "slug": "jost",
       "category": "Sans Serif",
       "languageGroup": "Other",
-      "subsets": ["menu", "cyrillic", "latin", "latin-ext"],
+      "subsets": [
+        "menu",
+        "cyrillic",
+        "latin",
+        "latin-ext"
+      ],
       "officialPopularityRank": 53,
       "styleCount": 18,
       "variableAxisCount": 1,
+      "fontFileCount": 2,
+      "parsedFontFileCount": 2,
+      "variableFontCount": 2,
+      "sourcePath": "ofl/jost",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [
+        "wght"
+      ],
+      "glyphCountMax": 535,
+      "unicodeCodepointUnion": 524,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 61,
@@ -995,13 +2544,40 @@
       "slug": "archivo",
       "category": "Sans Serif",
       "languageGroup": "Other",
-      "subsets": ["menu", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 54,
       "styleCount": 18,
       "variableAxisCount": 2,
+      "fontFileCount": 2,
+      "parsedFontFileCount": 2,
+      "variableFontCount": 2,
+      "sourcePath": "ofl/archivo",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [
+        "wdth",
+        "wght"
+      ],
+      "glyphCountMax": 834,
+      "unicodeCodepointUnion": 653,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 62,
@@ -1009,13 +2585,43 @@
       "slug": "sourceserif4",
       "category": "Serif",
       "languageGroup": "Other",
-      "subsets": ["menu", "cyrillic", "cyrillic-ext", "greek", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "cyrillic",
+        "cyrillic-ext",
+        "greek",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 134,
       "styleCount": 16,
       "variableAxisCount": 2,
+      "fontFileCount": 2,
+      "parsedFontFileCount": 2,
+      "variableFontCount": 2,
+      "sourcePath": "ofl/sourceserif4",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [
+        "opsz",
+        "wght"
+      ],
+      "glyphCountMax": 1463,
+      "unicodeCodepointUnion": 918,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 63,
@@ -1023,13 +2629,42 @@
       "slug": "fraunces",
       "category": "Serif",
       "languageGroup": "Other",
-      "subsets": ["menu", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 72,
       "styleCount": 18,
       "variableAxisCount": 4,
+      "fontFileCount": 2,
+      "parsedFontFileCount": 2,
+      "variableFontCount": 2,
+      "sourcePath": "ofl/fraunces",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [
+        "SOFT",
+        "WONK",
+        "opsz",
+        "wght"
+      ],
+      "glyphCountMax": 698,
+      "unicodeCodepointUnion": 625,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 64,
@@ -1037,13 +2672,40 @@
       "slug": "librebaskerville",
       "category": "Serif",
       "languageGroup": "Other",
-      "subsets": ["menu", "latin", "latin-ext"],
+      "subsets": [
+        "menu",
+        "latin",
+        "latin-ext"
+      ],
       "officialPopularityRank": 67,
       "styleCount": 8,
       "variableAxisCount": 1,
+      "fontFileCount": 2,
+      "parsedFontFileCount": 2,
+      "variableFontCount": 2,
+      "sourcePath": "ofl/librebaskerville",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
-      "reservedFontNames": ["Libre Baskerville"],
-      "previewStatus": "SKIPPED_LICENSE_REVIEW"
+      "licenseSha256Verified": true,
+      "reservedFontNames": [
+        "Libre Baskerville"
+      ],
+      "axes": [
+        "wght"
+      ],
+      "glyphCountMax": 864,
+      "unicodeCodepointUnion": 789,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "UNAVAILABLE_RFN",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 65,
@@ -1051,13 +2713,40 @@
       "slug": "inconsolata",
       "category": "Monospace",
       "languageGroup": "Other",
-      "subsets": ["menu", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 76,
       "styleCount": 8,
       "variableAxisCount": 2,
+      "fontFileCount": 83,
+      "parsedFontFileCount": 83,
+      "variableFontCount": 1,
+      "sourcePath": "ofl/inconsolata",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [
+        "wdth",
+        "wght"
+      ],
+      "glyphCountMax": 964,
+      "unicodeCodepointUnion": 882,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "SEPARATE_VARIABLE_STATIC_REQUIRED",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 66,
@@ -1065,13 +2754,39 @@
       "slug": "zenmarugothic",
       "category": "Sans Serif",
       "languageGroup": "Japanese",
-      "subsets": ["menu", "cyrillic", "greek", "japanese", "latin", "latin-ext"],
+      "subsets": [
+        "menu",
+        "cyrillic",
+        "greek",
+        "japanese",
+        "latin",
+        "latin-ext"
+      ],
       "officialPopularityRank": 205,
       "styleCount": 5,
       "variableAxisCount": 0,
+      "fontFileCount": 5,
+      "parsedFontFileCount": 5,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/zenmarugothic",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [],
+      "glyphCountMax": 7864,
+      "unicodeCodepointUnion": 7812,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.499482,
+        "zhTW": 0.423168,
+        "japanese": 1.0,
+        "korean": 0.0,
+        "cjkUnified": 0.318312
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 67,
@@ -1091,9 +2806,30 @@
       "officialPopularityRank": 156,
       "styleCount": 18,
       "variableAxisCount": 1,
+      "fontFileCount": 2,
+      "parsedFontFileCount": 2,
+      "variableFontCount": 2,
+      "sourcePath": "ofl/geistmono",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [
+        "wght"
+      ],
+      "glyphCountMax": 1159,
+      "unicodeCodepointUnion": 889,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 68,
@@ -1101,13 +2837,44 @@
       "slug": "comfortaa",
       "category": "Display",
       "languageGroup": "Other",
-      "subsets": ["menu", "cyrillic", "cyrillic-ext", "greek", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "cyrillic",
+        "cyrillic-ext",
+        "greek",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 152,
       "styleCount": 5,
       "variableAxisCount": 1,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 1,
+      "sourcePath": "ofl/comfortaa",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
-      "reservedFontNames": ["Comfortaa"],
-      "previewStatus": "SKIPPED_LICENSE_REVIEW"
+      "licenseSha256Verified": true,
+      "reservedFontNames": [
+        "Comfortaa"
+      ],
+      "axes": [
+        "wght"
+      ],
+      "glyphCountMax": 874,
+      "unicodeCodepointUnion": 850,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "UNAVAILABLE_RFN",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 69,
@@ -1115,13 +2882,43 @@
       "slug": "notosanshk",
       "category": "Sans Serif",
       "languageGroup": "Chinese",
-      "subsets": ["menu", "chinese-hongkong", "cyrillic", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "chinese-hongkong",
+        "cyrillic",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 338,
       "styleCount": 9,
       "variableAxisCount": 1,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 1,
+      "sourcePath": "ofl/notosanshk",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
-      "reservedFontNames": ["Source"],
-      "previewStatus": "SKIPPED_LICENSE_REVIEW"
+      "licenseSha256Verified": true,
+      "reservedFontNames": [
+        "Source"
+      ],
+      "axes": [
+        "wght"
+      ],
+      "glyphCountMax": 20940,
+      "unicodeCodepointUnion": 20755,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.719355,
+        "zhTW": 1.0,
+        "japanese": 0.913669,
+        "korean": 0.0,
+        "cjkUnified": 0.732851
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "UNAVAILABLE_RFN",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 70,
@@ -1129,13 +2926,39 @@
       "slug": "lineseedjp",
       "category": "Sans Serif",
       "languageGroup": "Japanese",
-      "subsets": ["menu", "cyrillic", "greek-ext", "japanese", "latin", "latin-ext"],
+      "subsets": [
+        "menu",
+        "cyrillic",
+        "greek-ext",
+        "japanese",
+        "latin",
+        "latin-ext"
+      ],
       "officialPopularityRank": 214,
       "styleCount": 4,
       "variableAxisCount": 0,
+      "fontFileCount": 4,
+      "parsedFontFileCount": 4,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/lineseedjp",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [],
+      "glyphCountMax": 9225,
+      "unicodeCodepointUnion": 8341,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.500518,
+        "zhTW": 0.425465,
+        "japanese": 1.0,
+        "korean": 0.0,
+        "cjkUnified": 0.319836
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 71,
@@ -1143,13 +2966,39 @@
       "slug": "spectral",
       "category": "Serif",
       "languageGroup": "Other",
-      "subsets": ["menu", "cyrillic", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "cyrillic",
+        "cyrillic-ext",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 183,
       "styleCount": 14,
       "variableAxisCount": 0,
+      "fontFileCount": 14,
+      "parsedFontFileCount": 14,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/spectral",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [],
+      "glyphCountMax": 1480,
+      "unicodeCodepointUnion": 878,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 72,
@@ -1157,13 +3006,41 @@
       "slug": "cormorant",
       "category": "Serif",
       "languageGroup": "Other",
-      "subsets": ["menu", "cyrillic", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "cyrillic",
+        "cyrillic-ext",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 187,
       "styleCount": 10,
       "variableAxisCount": 1,
+      "fontFileCount": 2,
+      "parsedFontFileCount": 2,
+      "variableFontCount": 2,
+      "sourcePath": "ofl/cormorant",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [
+        "wght"
+      ],
+      "glyphCountMax": 3237,
+      "unicodeCodepointUnion": 981,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 73,
@@ -1171,13 +3048,41 @@
       "slug": "ibmplexserif",
       "category": "Serif",
       "languageGroup": "Other",
-      "subsets": ["menu", "cyrillic", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "cyrillic",
+        "cyrillic-ext",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 188,
       "styleCount": 14,
       "variableAxisCount": 0,
+      "fontFileCount": 14,
+      "parsedFontFileCount": 14,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/ibmplexserif",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
-      "reservedFontNames": ["Plex"],
-      "previewStatus": "SKIPPED_LICENSE_REVIEW"
+      "licenseSha256Verified": true,
+      "reservedFontNames": [
+        "Plex"
+      ],
+      "axes": [],
+      "glyphCountMax": 836,
+      "unicodeCodepointUnion": 754,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "UNAVAILABLE_RFN",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 74,
@@ -1185,11 +3090,21 @@
       "slug": "nanummyeongjo",
       "category": "Serif",
       "languageGroup": "Korean",
-      "subsets": ["menu", "korean", "latin"],
+      "subsets": [
+        "menu",
+        "korean",
+        "latin"
+      ],
       "officialPopularityRank": 195,
       "styleCount": 3,
       "variableAxisCount": 0,
+      "fontFileCount": 3,
+      "parsedFontFileCount": 3,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/nanummyeongjo",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [
         "Nanum",
         "Naver Nanum",
@@ -1202,7 +3117,20 @@
         "NanumPen",
         "Naver NanumPen"
       ],
-      "previewStatus": "SKIPPED_LICENSE_REVIEW"
+      "axes": [],
+      "glyphCountMax": 14697,
+      "unicodeCodepointUnion": 11884,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 1.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "UNAVAILABLE_RFN",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 75,
@@ -1210,13 +3138,42 @@
       "slug": "vollkorn",
       "category": "Serif",
       "languageGroup": "Other",
-      "subsets": ["menu", "cyrillic", "cyrillic-ext", "greek", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "cyrillic",
+        "cyrillic-ext",
+        "greek",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 199,
       "styleCount": 12,
       "variableAxisCount": 1,
+      "fontFileCount": 2,
+      "parsedFontFileCount": 2,
+      "variableFontCount": 2,
+      "sourcePath": "ofl/vollkorn",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [
+        "wght"
+      ],
+      "glyphCountMax": 2303,
+      "unicodeCodepointUnion": 1243,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 76,
@@ -1224,13 +3181,40 @@
       "slug": "newsreader",
       "category": "Serif",
       "languageGroup": "Other",
-      "subsets": ["menu", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 138,
       "styleCount": 14,
       "variableAxisCount": 2,
+      "fontFileCount": 2,
+      "parsedFontFileCount": 2,
+      "variableFontCount": 2,
+      "sourcePath": "ofl/newsreader",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [
+        "opsz",
+        "wght"
+      ],
+      "glyphCountMax": 658,
+      "unicodeCodepointUnion": 564,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 77,
@@ -1238,13 +3222,44 @@
       "slug": "robotoserif",
       "category": "Serif",
       "languageGroup": "Other",
-      "subsets": ["menu", "cyrillic", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "cyrillic",
+        "cyrillic-ext",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 213,
       "styleCount": 18,
       "variableAxisCount": 4,
+      "fontFileCount": 2,
+      "parsedFontFileCount": 2,
+      "variableFontCount": 2,
+      "sourcePath": "ofl/robotoserif",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [
+        "GRAD",
+        "opsz",
+        "wdth",
+        "wght"
+      ],
+      "glyphCountMax": 1264,
+      "unicodeCodepointUnion": 919,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 7.7e-05,
+        "japanese": 0.000153,
+        "korean": 0.0,
+        "cjkUnified": 9.5e-05
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 78,
@@ -1252,13 +3267,37 @@
       "slug": "shipporimincho",
       "category": "Serif",
       "languageGroup": "Japanese",
-      "subsets": ["menu", "japanese", "latin", "latin-ext"],
+      "subsets": [
+        "menu",
+        "japanese",
+        "latin",
+        "latin-ext"
+      ],
       "officialPopularityRank": 249,
       "styleCount": 5,
       "variableAxisCount": 0,
+      "fontFileCount": 5,
+      "parsedFontFileCount": 5,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/shipporimincho",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [],
+      "glyphCountMax": 16359,
+      "unicodeCodepointUnion": 15363,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.682537,
+        "zhTW": 0.791746,
+        "japanese": 1.0,
+        "korean": 0.0,
+        "cjkUnified": 0.647437
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 79,
@@ -1266,13 +3305,41 @@
       "slug": "bodonimoda",
       "category": "Serif",
       "languageGroup": "Other",
-      "subsets": ["menu", "latin", "latin-ext", "math", "symbols"],
+      "subsets": [
+        "menu",
+        "latin",
+        "latin-ext",
+        "math",
+        "symbols"
+      ],
       "officialPopularityRank": 148,
       "styleCount": 12,
       "variableAxisCount": 2,
+      "fontFileCount": 2,
+      "parsedFontFileCount": 2,
+      "variableFontCount": 2,
+      "sourcePath": "ofl/bodonimoda",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [
+        "opsz",
+        "wght"
+      ],
+      "glyphCountMax": 563,
+      "unicodeCodepointUnion": 428,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 80,
@@ -1280,13 +3347,41 @@
       "slug": "ptserif",
       "category": "Serif",
       "languageGroup": "Other",
-      "subsets": ["menu", "cyrillic", "cyrillic-ext", "latin", "latin-ext"],
+      "subsets": [
+        "menu",
+        "cyrillic",
+        "cyrillic-ext",
+        "latin",
+        "latin-ext"
+      ],
       "officialPopularityRank": 71,
       "styleCount": 4,
       "variableAxisCount": 0,
+      "fontFileCount": 4,
+      "parsedFontFileCount": 4,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/ptserif",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
-      "reservedFontNames": ["PT Sans", "PT Serif\" and \"ParaType"],
-      "previewStatus": "SKIPPED_LICENSE_REVIEW"
+      "licenseSha256Verified": true,
+      "reservedFontNames": [
+        "PT Sans",
+        "PT Serif\" and \"ParaType"
+      ],
+      "axes": [],
+      "glyphCountMax": 719,
+      "unicodeCodepointUnion": 723,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "UNAVAILABLE_RFN",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 81,
@@ -1307,9 +3402,31 @@
       "officialPopularityRank": 225,
       "styleCount": 16,
       "variableAxisCount": 2,
+      "fontFileCount": 2,
+      "parsedFontFileCount": 2,
+      "variableFontCount": 2,
+      "sourcePath": "ofl/literata",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [
+        "opsz",
+        "wght"
+      ],
+      "glyphCountMax": 1789,
+      "unicodeCodepointUnion": 1163,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 82,
@@ -1317,13 +3434,41 @@
       "slug": "dancingscript",
       "category": "Handwriting",
       "languageGroup": "Other",
-      "subsets": ["menu", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 83,
       "styleCount": 4,
       "variableAxisCount": 1,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 1,
+      "sourcePath": "ofl/dancingscript",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
-      "reservedFontNames": ["Dancing Script"],
-      "previewStatus": "SKIPPED_LICENSE_REVIEW"
+      "licenseSha256Verified": true,
+      "reservedFontNames": [
+        "Dancing Script"
+      ],
+      "axes": [
+        "wght"
+      ],
+      "glyphCountMax": 643,
+      "unicodeCodepointUnion": 559,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "UNAVAILABLE_RFN",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 83,
@@ -1331,13 +3476,41 @@
       "slug": "mplusu",
       "category": "Sans Serif",
       "languageGroup": "Japanese",
-      "subsets": ["menu", "japanese", "latin", "latin-ext", "symbols2", "vietnamese"],
+      "subsets": [
+        "menu",
+        "japanese",
+        "latin",
+        "latin-ext",
+        "symbols2",
+        "vietnamese"
+      ],
       "officialPopularityRank": 339,
       "styleCount": 9,
       "variableAxisCount": 1,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 1,
+      "sourcePath": "ofl/mplusu",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [
+        "wght"
+      ],
+      "glyphCountMax": 6969,
+      "unicodeCodepointUnion": 6613,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.434127,
+        "zhTW": 0.342547,
+        "japanese": 0.827491,
+        "korean": 0.0,
+        "cjkUnified": 0.251953
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 84,
@@ -1345,13 +3518,43 @@
       "slug": "playfair",
       "category": "Serif",
       "languageGroup": "Other",
-      "subsets": ["menu", "cyrillic", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "cyrillic",
+        "cyrillic-ext",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 239,
       "styleCount": 14,
       "variableAxisCount": 3,
+      "fontFileCount": 2,
+      "parsedFontFileCount": 2,
+      "variableFontCount": 2,
+      "sourcePath": "ofl/playfair",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [
+        "opsz",
+        "wdth",
+        "wght"
+      ],
+      "glyphCountMax": 2326,
+      "unicodeCodepointUnion": 1112,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 85,
@@ -1359,13 +3562,36 @@
       "slug": "zillaslab",
       "category": "Serif",
       "languageGroup": "Other",
-      "subsets": ["menu", "latin", "latin-ext"],
+      "subsets": [
+        "menu",
+        "latin",
+        "latin-ext"
+      ],
       "officialPopularityRank": 173,
       "styleCount": 10,
       "variableAxisCount": 0,
+      "fontFileCount": 10,
+      "parsedFontFileCount": 10,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/zillaslab",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [],
+      "glyphCountMax": 1056,
+      "unicodeCodepointUnion": 515,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 86,
@@ -1373,13 +3599,39 @@
       "slug": "zenoldmincho",
       "category": "Serif",
       "languageGroup": "Japanese",
-      "subsets": ["menu", "cyrillic", "greek", "japanese", "latin", "latin-ext"],
+      "subsets": [
+        "menu",
+        "cyrillic",
+        "greek",
+        "japanese",
+        "latin",
+        "latin-ext"
+      ],
       "officialPopularityRank": 302,
       "styleCount": 5,
       "variableAxisCount": 0,
+      "fontFileCount": 5,
+      "parsedFontFileCount": 5,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/zenoldmincho",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [],
+      "glyphCountMax": 7866,
+      "unicodeCodepointUnion": 7815,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.499482,
+        "zhTW": 0.423168,
+        "japanese": 1.0,
+        "korean": 0.0,
+        "cjkUnified": 0.318312
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 87,
@@ -1387,13 +3639,40 @@
       "slug": "caveat",
       "category": "Handwriting",
       "languageGroup": "Other",
-      "subsets": ["menu", "cyrillic", "cyrillic-ext", "latin", "latin-ext"],
+      "subsets": [
+        "menu",
+        "cyrillic",
+        "cyrillic-ext",
+        "latin",
+        "latin-ext"
+      ],
       "officialPopularityRank": 117,
       "styleCount": 4,
       "variableAxisCount": 1,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 1,
+      "sourcePath": "ofl/caveat",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [
+        "wght"
+      ],
+      "glyphCountMax": 1034,
+      "unicodeCodepointUnion": 753,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 88,
@@ -1401,13 +3680,40 @@
       "slug": "mplus1",
       "category": "Sans Serif",
       "languageGroup": "Japanese",
-      "subsets": ["menu", "japanese", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "japanese",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 357,
       "styleCount": 9,
       "variableAxisCount": 1,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 1,
+      "sourcePath": "ofl/mplus1",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [
+        "wght"
+      ],
+      "glyphCountMax": 6966,
+      "unicodeCodepointUnion": 6613,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.434127,
+        "zhTW": 0.342547,
+        "japanese": 0.827491,
+        "korean": 0.0,
+        "cjkUnified": 0.251953
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 89,
@@ -1415,13 +3721,38 @@
       "slug": "blackopsone",
       "category": "Display",
       "languageGroup": "Other",
-      "subsets": ["menu", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "cyrillic-ext",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 50,
       "styleCount": 1,
       "variableAxisCount": 0,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/blackopsone",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [],
+      "glyphCountMax": 760,
+      "unicodeCodepointUnion": 693,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 90,
@@ -1429,13 +3760,37 @@
       "slug": "lobstertwo",
       "category": "Display",
       "languageGroup": "Other",
-      "subsets": ["menu", "latin"],
+      "subsets": [
+        "menu",
+        "latin"
+      ],
       "officialPopularityRank": 74,
       "styleCount": 4,
       "variableAxisCount": 0,
+      "fontFileCount": 4,
+      "parsedFontFileCount": 4,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/lobstertwo",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
-      "reservedFontNames": ["Lobster\" and \"Lobster Two"],
-      "previewStatus": "SKIPPED_LICENSE_REVIEW"
+      "licenseSha256Verified": true,
+      "reservedFontNames": [
+        "Lobster\" and \"Lobster Two"
+      ],
+      "axes": [],
+      "glyphCountMax": 357,
+      "unicodeCodepointUnion": 257,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "UNAVAILABLE_RFN",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 91,
@@ -1443,13 +3798,39 @@
       "slug": "pacifico",
       "category": "Handwriting",
       "languageGroup": "Other",
-      "subsets": ["menu", "cyrillic", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "cyrillic",
+        "cyrillic-ext",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 136,
       "styleCount": 1,
       "variableAxisCount": 0,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/pacifico",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [],
+      "glyphCountMax": 1533,
+      "unicodeCodepointUnion": 805,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 92,
@@ -1457,13 +3838,41 @@
       "slug": "lobster",
       "category": "Display",
       "languageGroup": "Other",
-      "subsets": ["menu", "cyrillic", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "cyrillic",
+        "cyrillic-ext",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 143,
       "styleCount": 1,
       "variableAxisCount": 0,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/lobster",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
-      "reservedFontNames": ["Lobster"],
-      "previewStatus": "SKIPPED_LICENSE_REVIEW"
+      "licenseSha256Verified": true,
+      "reservedFontNames": [
+        "Lobster"
+      ],
+      "axes": [],
+      "glyphCountMax": 1174,
+      "unicodeCodepointUnion": 828,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "UNAVAILABLE_RFN",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 93,
@@ -1471,13 +3880,38 @@
       "slug": "sawarabimincho",
       "category": "Serif",
       "languageGroup": "Japanese",
-      "subsets": ["menu", "braille", "japanese", "latin", "latin-ext"],
+      "subsets": [
+        "menu",
+        "braille",
+        "japanese",
+        "latin",
+        "latin-ext"
+      ],
       "officialPopularityRank": 260,
       "styleCount": 1,
       "variableAxisCount": 0,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/sawarabimincho",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [],
+      "glyphCountMax": 4792,
+      "unicodeCodepointUnion": 4746,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.307112,
+        "zhTW": 0.214608,
+        "japanese": 0.53069,
+        "korean": 0.0,
+        "cjkUnified": 0.156822
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 94,
@@ -1485,13 +3919,39 @@
       "slug": "bizudpgothic",
       "category": "Sans Serif",
       "languageGroup": "Japanese",
-      "subsets": ["menu", "cyrillic", "greek-ext", "japanese", "latin", "latin-ext"],
+      "subsets": [
+        "menu",
+        "cyrillic",
+        "greek-ext",
+        "japanese",
+        "latin",
+        "latin-ext"
+      ],
       "officialPopularityRank": 290,
       "styleCount": 2,
       "variableAxisCount": 0,
+      "fontFileCount": 2,
+      "parsedFontFileCount": 2,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/bizudpgothic",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [],
+      "glyphCountMax": 13932,
+      "unicodeCodepointUnion": 11741,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.613337,
+        "zhTW": 0.585024,
+        "japanese": 1.0,
+        "korean": 0.0,
+        "cjkUnified": 0.456126
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 95,
@@ -1499,13 +3959,39 @@
       "slug": "sawarabigothic",
       "category": "Sans Serif",
       "languageGroup": "Japanese",
-      "subsets": ["menu", "cyrillic", "japanese", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "cyrillic",
+        "japanese",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 276,
       "styleCount": 1,
       "variableAxisCount": 0,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/sawarabigothic",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [],
+      "glyphCountMax": 6945,
+      "unicodeCodepointUnion": 6884,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.381783,
+        "zhTW": 0.289564,
+        "japanese": 0.703046,
+        "korean": 0.0,
+        "cjkUnified": 0.212891
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 96,
@@ -1526,9 +4012,30 @@
       "officialPopularityRank": 288,
       "styleCount": 5,
       "variableAxisCount": 1,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 1,
+      "sourcePath": "ofl/firacode",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [
+        "wght"
+      ],
+      "glyphCountMax": 1857,
+      "unicodeCodepointUnion": 1551,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 97,
@@ -1536,11 +4043,21 @@
       "slug": "nanumgothiccoding",
       "category": "Handwriting",
       "languageGroup": "Korean",
-      "subsets": ["menu", "korean", "latin"],
+      "subsets": [
+        "menu",
+        "korean",
+        "latin"
+      ],
       "officialPopularityRank": 282,
       "styleCount": 2,
       "variableAxisCount": 0,
+      "fontFileCount": 2,
+      "parsedFontFileCount": 2,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/nanumgothiccoding",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [
         "Nanum",
         "Naver Nanum",
@@ -1553,7 +4070,20 @@
         "NanumPen",
         "Naver NanumPen"
       ],
-      "previewStatus": "SKIPPED_LICENSE_REVIEW"
+      "axes": [],
+      "glyphCountMax": 20338,
+      "unicodeCodepointUnion": 12477,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.026175,
+        "korean": 1.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "UNAVAILABLE_RFN",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 98,
@@ -1561,13 +4091,36 @@
       "slug": "dmmono",
       "category": "Monospace",
       "languageGroup": "Other",
-      "subsets": ["menu", "latin", "latin-ext"],
+      "subsets": [
+        "menu",
+        "latin",
+        "latin-ext"
+      ],
       "officialPopularityRank": 164,
       "styleCount": 6,
       "variableAxisCount": 0,
+      "fontFileCount": 6,
+      "parsedFontFileCount": 6,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/dmmono",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [],
+      "glyphCountMax": 411,
+      "unicodeCodepointUnion": 381,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 99,
@@ -1587,9 +4140,28 @@
       "officialPopularityRank": 186,
       "styleCount": 1,
       "variableAxisCount": 0,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/greatvibes",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [],
+      "glyphCountMax": 2025,
+      "unicodeCodepointUnion": 1081,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 100,
@@ -1597,13 +4169,37 @@
       "slug": "changaone",
       "category": "Display",
       "languageGroup": "Other",
-      "subsets": ["menu", "latin"],
+      "subsets": [
+        "menu",
+        "latin"
+      ],
       "officialPopularityRank": 87,
       "styleCount": 2,
       "variableAxisCount": 0,
+      "fontFileCount": 2,
+      "parsedFontFileCount": 2,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/changaone",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
-      "reservedFontNames": ["Changa"],
-      "previewStatus": "SKIPPED_LICENSE_REVIEW"
+      "licenseSha256Verified": true,
+      "reservedFontNames": [
+        "Changa"
+      ],
+      "axes": [],
+      "glyphCountMax": 247,
+      "unicodeCodepointUnion": 243,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "UNAVAILABLE_RFN",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 101,
@@ -1628,9 +4224,30 @@
       "officialPopularityRank": 313,
       "styleCount": 12,
       "variableAxisCount": 2,
+      "fontFileCount": 2,
+      "parsedFontFileCount": 2,
+      "variableFontCount": 2,
+      "sourcePath": "ofl/googlesanscode",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [
+        "wght"
+      ],
+      "glyphCountMax": 688,
+      "unicodeCodepointUnion": 670,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 102,
@@ -1638,13 +4255,39 @@
       "slug": "alfaslabone",
       "category": "Display",
       "languageGroup": "Other",
-      "subsets": ["menu", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 96,
       "styleCount": 1,
       "variableAxisCount": 0,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/alfaslabone",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
-      "reservedFontNames": ["Alfa Slab"],
-      "previewStatus": "SKIPPED_LICENSE_REVIEW"
+      "licenseSha256Verified": true,
+      "reservedFontNames": [
+        "Alfa Slab"
+      ],
+      "axes": [],
+      "glyphCountMax": 734,
+      "unicodeCodepointUnion": 671,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "UNAVAILABLE_RFN",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 103,
@@ -1652,13 +4295,40 @@
       "slug": "baloo2",
       "category": "Display",
       "languageGroup": "Other",
-      "subsets": ["menu", "devanagari", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "devanagari",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 210,
       "styleCount": 5,
       "variableAxisCount": 1,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 1,
+      "sourcePath": "ofl/baloo2",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [
+        "wght"
+      ],
+      "glyphCountMax": 1601,
+      "unicodeCodepointUnion": 856,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 104,
@@ -1666,13 +4336,37 @@
       "slug": "spacemono",
       "category": "Monospace",
       "languageGroup": "Other",
-      "subsets": ["menu", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 162,
       "styleCount": 4,
       "variableAxisCount": 0,
+      "fontFileCount": 4,
+      "parsedFontFileCount": 4,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/spacemono",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [],
+      "glyphCountMax": 765,
+      "unicodeCodepointUnion": 624,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 105,
@@ -1680,13 +4374,40 @@
       "slug": "delagothicone",
       "category": "Display",
       "languageGroup": "Japanese",
-      "subsets": ["menu", "cyrillic", "greek", "japanese", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "cyrillic",
+        "greek",
+        "japanese",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 322,
       "styleCount": 1,
       "variableAxisCount": 0,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/delagothicone",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [],
+      "glyphCountMax": 9194,
+      "unicodeCodepointUnion": 9030,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.551235,
+        "zhTW": 0.482735,
+        "japanese": 0.999694,
+        "korean": 0.0,
+        "cjkUnified": 0.364615
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 106,
@@ -1694,13 +4415,38 @@
       "slug": "lilitaone",
       "category": "Display",
       "languageGroup": "Other",
-      "subsets": ["menu", "latin", "latin-ext"],
+      "subsets": [
+        "menu",
+        "latin",
+        "latin-ext"
+      ],
       "officialPopularityRank": 106,
       "styleCount": 1,
       "variableAxisCount": 0,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/lilitaone",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
-      "reservedFontNames": ["Lilita"],
-      "previewStatus": "SKIPPED_LICENSE_REVIEW"
+      "licenseSha256Verified": true,
+      "reservedFontNames": [
+        "Lilita"
+      ],
+      "axes": [],
+      "glyphCountMax": 229,
+      "unicodeCodepointUnion": 225,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "UNAVAILABLE_RFN",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 107,
@@ -1708,13 +4454,41 @@
       "slug": "pressstart2p",
       "category": "Display",
       "languageGroup": "Other",
-      "subsets": ["menu", "cyrillic", "cyrillic-ext", "greek", "latin", "latin-ext"],
+      "subsets": [
+        "menu",
+        "cyrillic",
+        "cyrillic-ext",
+        "greek",
+        "latin",
+        "latin-ext"
+      ],
       "officialPopularityRank": 221,
       "styleCount": 1,
       "variableAxisCount": 0,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/pressstart2p",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
-      "reservedFontNames": ["Press Start 2P"],
-      "previewStatus": "SKIPPED_LICENSE_REVIEW"
+      "licenseSha256Verified": true,
+      "reservedFontNames": [
+        "Press Start 2P"
+      ],
+      "axes": [],
+      "glyphCountMax": 658,
+      "unicodeCodepointUnion": 656,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "UNAVAILABLE_RFN",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 108,
@@ -1722,13 +4496,37 @@
       "slug": "bungee",
       "category": "Display",
       "languageGroup": "Other",
-      "subsets": ["menu", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 129,
       "styleCount": 1,
       "variableAxisCount": 0,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/bungee",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [],
+      "glyphCountMax": 1063,
+      "unicodeCodepointUnion": 1082,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 109,
@@ -1736,13 +4534,39 @@
       "slug": "amaticsc",
       "category": "Handwriting",
       "languageGroup": "Other",
-      "subsets": ["menu", "cyrillic", "hebrew", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "cyrillic",
+        "hebrew",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 254,
       "styleCount": 2,
       "variableAxisCount": 0,
+      "fontFileCount": 2,
+      "parsedFontFileCount": 2,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/amaticsc",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [],
+      "glyphCountMax": 850,
+      "unicodeCodepointUnion": 797,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 110,
@@ -1750,13 +4574,38 @@
       "slug": "oxanium",
       "category": "Display",
       "languageGroup": "Other",
-      "subsets": ["menu", "latin", "latin-ext"],
+      "subsets": [
+        "menu",
+        "latin",
+        "latin-ext"
+      ],
       "officialPopularityRank": 279,
       "styleCount": 7,
       "variableAxisCount": 1,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 1,
+      "sourcePath": "ofl/oxanium",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [
+        "wght"
+      ],
+      "glyphCountMax": 375,
+      "unicodeCodepointUnion": 357,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 111,
@@ -1764,13 +4613,36 @@
       "slug": "courierprime",
       "category": "Monospace",
       "languageGroup": "Other",
-      "subsets": ["menu", "latin", "latin-ext"],
+      "subsets": [
+        "menu",
+        "latin",
+        "latin-ext"
+      ],
       "officialPopularityRank": 206,
       "styleCount": 4,
       "variableAxisCount": 0,
+      "fontFileCount": 4,
+      "parsedFontFileCount": 4,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/courierprime",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [],
+      "glyphCountMax": 416,
+      "unicodeCodepointUnion": 383,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 112,
@@ -1778,13 +4650,37 @@
       "slug": "gravitasone",
       "category": "Display",
       "languageGroup": "Other",
-      "subsets": ["menu", "latin"],
+      "subsets": [
+        "menu",
+        "latin"
+      ],
       "officialPopularityRank": 141,
       "styleCount": 1,
       "variableAxisCount": 0,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/gravitasone",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
-      "reservedFontNames": ["Gravitas"],
-      "previewStatus": "SKIPPED_LICENSE_REVIEW"
+      "licenseSha256Verified": true,
+      "reservedFontNames": [
+        "Gravitas"
+      ],
+      "axes": [],
+      "glyphCountMax": 238,
+      "unicodeCodepointUnion": 229,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "UNAVAILABLE_RFN",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 113,
@@ -1792,13 +4688,38 @@
       "slug": "abrilfatface",
       "category": "Display",
       "languageGroup": "Other",
-      "subsets": ["menu", "latin", "latin-ext"],
+      "subsets": [
+        "menu",
+        "latin",
+        "latin-ext"
+      ],
       "officialPopularityRank": 166,
       "styleCount": 1,
       "variableAxisCount": 0,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/abrilfatface",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
-      "reservedFontNames": ["Abril\" and \"Abril Fatface"],
-      "previewStatus": "SKIPPED_LICENSE_REVIEW"
+      "licenseSha256Verified": true,
+      "reservedFontNames": [
+        "Abril\" and \"Abril Fatface"
+      ],
+      "axes": [],
+      "glyphCountMax": 425,
+      "unicodeCodepointUnion": 394,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "UNAVAILABLE_RFN",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 114,
@@ -1806,13 +4727,36 @@
       "slug": "shadowsintolight",
       "category": "Handwriting",
       "languageGroup": "Other",
-      "subsets": ["menu", "latin", "latin-ext"],
+      "subsets": [
+        "menu",
+        "latin",
+        "latin-ext"
+      ],
       "officialPopularityRank": 167,
       "styleCount": 1,
       "variableAxisCount": 0,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/shadowsintolight",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [],
+      "glyphCountMax": 352,
+      "unicodeCodepointUnion": 349,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 115,
@@ -1820,13 +4764,39 @@
       "slug": "huninn",
       "category": "Sans Serif",
       "languageGroup": "Chinese",
-      "subsets": ["menu", "chinese-traditional", "cyrillic", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "chinese-traditional",
+        "cyrillic",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 435,
       "styleCount": 1,
       "variableAxisCount": 0,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/huninn",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [],
+      "glyphCountMax": 11609,
+      "unicodeCodepointUnion": 11364,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.684164,
+        "zhTW": 0.621009,
+        "japanese": 0.999082,
+        "korean": 0.0,
+        "cjkUnified": 0.455888
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 116,
@@ -1834,13 +4804,37 @@
       "slug": "kalam",
       "category": "Handwriting",
       "languageGroup": "Other",
-      "subsets": ["menu", "devanagari", "latin", "latin-ext"],
+      "subsets": [
+        "menu",
+        "devanagari",
+        "latin",
+        "latin-ext"
+      ],
       "officialPopularityRank": 222,
       "styleCount": 3,
       "variableAxisCount": 0,
+      "fontFileCount": 3,
+      "parsedFontFileCount": 3,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/kalam",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [],
+      "glyphCountMax": 1027,
+      "unicodeCodepointUnion": 1026,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 117,
@@ -1848,13 +4842,37 @@
       "slug": "rowdies",
       "category": "Display",
       "languageGroup": "Other",
-      "subsets": ["menu", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 238,
       "styleCount": 3,
       "variableAxisCount": 0,
+      "fontFileCount": 3,
+      "parsedFontFileCount": 3,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/rowdies",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [],
+      "glyphCountMax": 639,
+      "unicodeCodepointUnion": 595,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 118,
@@ -1862,13 +4880,36 @@
       "slug": "indieflower",
       "category": "Handwriting",
       "languageGroup": "Other",
-      "subsets": ["menu", "latin", "latin-ext"],
+      "subsets": [
+        "menu",
+        "latin",
+        "latin-ext"
+      ],
       "officialPopularityRank": 201,
       "styleCount": 1,
       "variableAxisCount": 0,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/indieflower",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [],
+      "glyphCountMax": 569,
+      "unicodeCodepointUnion": 550,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 119,
@@ -1876,13 +4917,35 @@
       "slug": "comicneue",
       "category": "Handwriting",
       "languageGroup": "Other",
-      "subsets": ["menu", "latin"],
+      "subsets": [
+        "menu",
+        "latin"
+      ],
       "officialPopularityRank": 286,
       "styleCount": 6,
       "variableAxisCount": 0,
+      "fontFileCount": 6,
+      "parsedFontFileCount": 6,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/comicneue",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [],
+      "glyphCountMax": 344,
+      "unicodeCodepointUnion": 319,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 120,
@@ -1890,13 +4953,36 @@
       "slug": "yellowtail",
       "category": "Handwriting",
       "languageGroup": "Other",
-      "subsets": ["menu", "latin", "latin-ext"],
+      "subsets": [
+        "menu",
+        "latin",
+        "latin-ext"
+      ],
       "officialPopularityRank": 208,
       "styleCount": 1,
       "variableAxisCount": 0,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 0,
+      "sourcePath": "apache/yellowtail",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "Apache-2.0",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [],
+      "glyphCountMax": 373,
+      "unicodeCodepointUnion": 369,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 121,
@@ -1904,13 +4990,35 @@
       "slug": "satisfy",
       "category": "Handwriting",
       "languageGroup": "Other",
-      "subsets": ["menu", "latin"],
+      "subsets": [
+        "menu",
+        "latin"
+      ],
       "officialPopularityRank": 198,
       "styleCount": 1,
       "variableAxisCount": 0,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 0,
+      "sourcePath": "apache/satisfy",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "Apache-2.0",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [],
+      "glyphCountMax": 227,
+      "unicodeCodepointUnion": 226,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 122,
@@ -1918,13 +5026,35 @@
       "slug": "permanentmarker",
       "category": "Handwriting",
       "languageGroup": "Other",
-      "subsets": ["menu", "latin"],
+      "subsets": [
+        "menu",
+        "latin"
+      ],
       "officialPopularityRank": 200,
       "styleCount": 1,
       "variableAxisCount": 0,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 0,
+      "sourcePath": "apache/permanentmarker",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "Apache-2.0",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [],
+      "glyphCountMax": 230,
+      "unicodeCodepointUnion": 229,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 123,
@@ -1932,13 +5062,38 @@
       "slug": "righteous",
       "category": "Display",
       "languageGroup": "Other",
-      "subsets": ["menu", "latin", "latin-ext"],
+      "subsets": [
+        "menu",
+        "latin",
+        "latin-ext"
+      ],
       "officialPopularityRank": 212,
       "styleCount": 1,
       "variableAxisCount": 0,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/righteous",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
-      "reservedFontNames": ["Righteous"],
-      "previewStatus": "SKIPPED_LICENSE_REVIEW"
+      "licenseSha256Verified": true,
+      "reservedFontNames": [
+        "Righteous"
+      ],
+      "axes": [],
+      "glyphCountMax": 372,
+      "unicodeCodepointUnion": 369,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "UNAVAILABLE_RFN",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 124,
@@ -1946,11 +5101,21 @@
       "slug": "nanumpenscript",
       "category": "Handwriting",
       "languageGroup": "Korean",
-      "subsets": ["menu", "korean", "latin"],
+      "subsets": [
+        "menu",
+        "korean",
+        "latin"
+      ],
       "officialPopularityRank": 409,
       "styleCount": 1,
       "variableAxisCount": 0,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/nanumpenscript",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [
         "Nanum",
         "Naver Nanum",
@@ -1963,7 +5128,20 @@
         "NanumPen",
         "Naver NanumPen"
       ],
-      "previewStatus": "SKIPPED_LICENSE_REVIEW"
+      "axes": [],
+      "glyphCountMax": 13751,
+      "unicodeCodepointUnion": 11742,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 1.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "UNAVAILABLE_RFN",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 125,
@@ -1971,13 +5149,36 @@
       "slug": "luckiestguy",
       "category": "Display",
       "languageGroup": "Other",
-      "subsets": ["menu", "latin", "latin-ext"],
+      "subsets": [
+        "menu",
+        "latin",
+        "latin-ext"
+      ],
       "officialPopularityRank": 231,
       "styleCount": 1,
       "variableAxisCount": 0,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 0,
+      "sourcePath": "apache/luckiestguy",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "Apache-2.0",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [],
+      "glyphCountMax": 369,
+      "unicodeCodepointUnion": 367,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 126,
@@ -1985,13 +5186,36 @@
       "slug": "zeyada",
       "category": "Handwriting",
       "languageGroup": "Other",
-      "subsets": ["menu", "latin", "latin-ext"],
+      "subsets": [
+        "menu",
+        "latin",
+        "latin-ext"
+      ],
       "officialPopularityRank": 234,
       "styleCount": 1,
       "variableAxisCount": 0,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/zeyada",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [],
+      "glyphCountMax": 346,
+      "unicodeCodepointUnion": 343,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 127,
@@ -1999,13 +5223,40 @@
       "slug": "ubuntumono",
       "category": "Monospace",
       "languageGroup": "Other",
-      "subsets": ["menu", "cyrillic", "cyrillic-ext", "greek", "greek-ext", "latin", "latin-ext"],
+      "subsets": [
+        "menu",
+        "cyrillic",
+        "cyrillic-ext",
+        "greek",
+        "greek-ext",
+        "latin",
+        "latin-ext"
+      ],
       "officialPopularityRank": 411,
       "styleCount": 4,
       "variableAxisCount": 0,
+      "fontFileCount": 4,
+      "parsedFontFileCount": 4,
+      "variableFontCount": 0,
+      "sourcePath": "ufl/ubuntumono",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "UFL-1.0",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [],
+      "glyphCountMax": 1301,
+      "unicodeCodepointUnion": 1224,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 128,
@@ -2013,13 +5264,37 @@
       "slug": "bangers",
       "category": "Display",
       "languageGroup": "Other",
-      "subsets": ["menu", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 262,
       "styleCount": 1,
       "variableAxisCount": 0,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/bangers",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [],
+      "glyphCountMax": 597,
+      "unicodeCodepointUnion": 557,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 129,
@@ -2027,13 +5302,35 @@
       "slug": "librebarcode39",
       "category": "Display",
       "languageGroup": "Other",
-      "subsets": ["menu", "latin"],
+      "subsets": [
+        "menu",
+        "latin"
+      ],
       "officialPopularityRank": 241,
       "styleCount": 1,
       "variableAxisCount": 0,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/librebarcode39",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [],
+      "glyphCountMax": 121,
+      "unicodeCodepointUnion": 76,
+      "coverage": {
+        "latin": 0.736842,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 130,
@@ -2041,13 +5338,38 @@
       "slug": "oleoscript",
       "category": "Display",
       "languageGroup": "Other",
-      "subsets": ["menu", "latin", "latin-ext"],
+      "subsets": [
+        "menu",
+        "latin",
+        "latin-ext"
+      ],
       "officialPopularityRank": 274,
       "styleCount": 2,
       "variableAxisCount": 0,
+      "fontFileCount": 2,
+      "parsedFontFileCount": 2,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/oleoscript",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
-      "reservedFontNames": ["Oleo Script"],
-      "previewStatus": "SKIPPED_LICENSE_REVIEW"
+      "licenseSha256Verified": true,
+      "reservedFontNames": [
+        "Oleo Script"
+      ],
+      "axes": [],
+      "glyphCountMax": 246,
+      "unicodeCodepointUnion": 233,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "UNAVAILABLE_RFN",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 131,
@@ -2055,13 +5377,37 @@
       "slug": "vt323",
       "category": "Monospace",
       "languageGroup": "Other",
-      "subsets": ["menu", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 267,
       "styleCount": 1,
       "variableAxisCount": 0,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/vt323",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [],
+      "glyphCountMax": 587,
+      "unicodeCodepointUnion": 568,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 132,
@@ -2069,13 +5415,38 @@
       "slug": "gabarito",
       "category": "Display",
       "languageGroup": "Other",
-      "subsets": ["menu", "latin", "latin-ext"],
+      "subsets": [
+        "menu",
+        "latin",
+        "latin-ext"
+      ],
       "officialPopularityRank": 374,
       "styleCount": 6,
       "variableAxisCount": 1,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 1,
+      "sourcePath": "ofl/gabarito",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [
+        "wght"
+      ],
+      "glyphCountMax": 519,
+      "unicodeCodepointUnion": 478,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 133,
@@ -2083,13 +5454,36 @@
       "slug": "specialelite",
       "category": "Display",
       "languageGroup": "Other",
-      "subsets": ["menu", "latin", "latin-ext"],
+      "subsets": [
+        "menu",
+        "latin",
+        "latin-ext"
+      ],
       "officialPopularityRank": 264,
       "styleCount": 1,
       "variableAxisCount": 0,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 0,
+      "sourcePath": "apache/specialelite",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "Apache-2.0",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [],
+      "glyphCountMax": 370,
+      "unicodeCodepointUnion": 368,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 134,
@@ -2097,13 +5491,38 @@
       "slug": "pottaone",
       "category": "Display",
       "languageGroup": "Japanese",
-      "subsets": ["menu", "japanese", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "japanese",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 468,
       "styleCount": 1,
       "variableAxisCount": 0,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/pottaone",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [],
+      "glyphCountMax": 7365,
+      "unicodeCodepointUnion": 7286,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.492533,
+        "zhTW": 0.407243,
+        "japanese": 1.0,
+        "korean": 0.0,
+        "cjkUnified": 0.302782
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 135,
@@ -2111,13 +5530,38 @@
       "slug": "hachimarupop",
       "category": "Handwriting",
       "languageGroup": "Japanese",
-      "subsets": ["menu", "cyrillic", "japanese", "latin", "latin-ext"],
+      "subsets": [
+        "menu",
+        "cyrillic",
+        "japanese",
+        "latin",
+        "latin-ext"
+      ],
       "officialPopularityRank": 469,
       "styleCount": 1,
       "variableAxisCount": 0,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/hachimarupop",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [],
+      "glyphCountMax": 7575,
+      "unicodeCodepointUnion": 7470,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.499482,
+        "zhTW": 0.423168,
+        "japanese": 1.0,
+        "korean": 0.0,
+        "cjkUnified": 0.318312
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 136,
@@ -2125,13 +5569,41 @@
       "slug": "yesevaone",
       "category": "Display",
       "languageGroup": "Other",
-      "subsets": ["menu", "cyrillic", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "cyrillic",
+        "cyrillic-ext",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 373,
       "styleCount": 1,
       "variableAxisCount": 0,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/yesevaone",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
-      "reservedFontNames": ["Yeseva"],
-      "previewStatus": "SKIPPED_LICENSE_REVIEW"
+      "licenseSha256Verified": true,
+      "reservedFontNames": [
+        "Yeseva"
+      ],
+      "axes": [],
+      "glyphCountMax": 666,
+      "unicodeCodepointUnion": 652,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "UNAVAILABLE_RFN",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 137,
@@ -2139,13 +5611,37 @@
       "slug": "patrickhand",
       "category": "Handwriting",
       "languageGroup": "Other",
-      "subsets": ["menu", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 284,
       "styleCount": 1,
       "variableAxisCount": 0,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/patrickhand",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [],
+      "glyphCountMax": 728,
+      "unicodeCodepointUnion": 515,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 138,
@@ -2153,13 +5649,37 @@
       "slug": "sharetechmono",
       "category": "Monospace",
       "languageGroup": "Other",
-      "subsets": ["menu", "latin"],
+      "subsets": [
+        "menu",
+        "latin"
+      ],
       "officialPopularityRank": 263,
       "styleCount": 1,
       "variableAxisCount": 0,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/sharetechmono",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
-      "reservedFontNames": ["Share"],
-      "previewStatus": "SKIPPED_LICENSE_REVIEW"
+      "licenseSha256Verified": true,
+      "reservedFontNames": [
+        "Share"
+      ],
+      "axes": [],
+      "glyphCountMax": 268,
+      "unicodeCodepointUnion": 267,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "UNAVAILABLE_RFN",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 139,
@@ -2167,13 +5687,41 @@
       "slug": "merienda",
       "category": "Handwriting",
       "languageGroup": "Other",
-      "subsets": ["menu", "latin", "latin-ext", "vietnamese"],
+      "subsets": [
+        "menu",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
       "officialPopularityRank": 420,
       "styleCount": 7,
       "variableAxisCount": 1,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 1,
+      "sourcePath": "ofl/merienda",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
-      "reservedFontNames": ["Merienda"],
-      "previewStatus": "SKIPPED_LICENSE_REVIEW"
+      "licenseSha256Verified": true,
+      "reservedFontNames": [
+        "Merienda"
+      ],
+      "axes": [
+        "wght"
+      ],
+      "glyphCountMax": 656,
+      "unicodeCodepointUnion": 600,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "UNAVAILABLE_RFN",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 140,
@@ -2181,13 +5729,38 @@
       "slug": "passionone",
       "category": "Display",
       "languageGroup": "Other",
-      "subsets": ["menu", "latin", "latin-ext"],
+      "subsets": [
+        "menu",
+        "latin",
+        "latin-ext"
+      ],
       "officialPopularityRank": 314,
       "styleCount": 3,
       "variableAxisCount": 0,
+      "fontFileCount": 3,
+      "parsedFontFileCount": 3,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/passionone",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
-      "reservedFontNames": ["Passion"],
-      "previewStatus": "SKIPPED_LICENSE_REVIEW"
+      "licenseSha256Verified": true,
+      "reservedFontNames": [
+        "Passion"
+      ],
+      "axes": [],
+      "glyphCountMax": 273,
+      "unicodeCodepointUnion": 269,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "UNAVAILABLE_RFN",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 141,
@@ -2195,13 +5768,38 @@
       "slug": "chelseamarket",
       "category": "Display",
       "languageGroup": "Other",
-      "subsets": ["menu", "latin", "latin-ext"],
+      "subsets": [
+        "menu",
+        "latin",
+        "latin-ext"
+      ],
       "officialPopularityRank": 277,
       "styleCount": 1,
       "variableAxisCount": 0,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/chelseamarket",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
-      "reservedFontNames": ["Chelsea Market"],
-      "previewStatus": "SKIPPED_LICENSE_REVIEW"
+      "licenseSha256Verified": true,
+      "reservedFontNames": [
+        "Chelsea Market"
+      ],
+      "axes": [],
+      "glyphCountMax": 228,
+      "unicodeCodepointUnion": 227,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "UNAVAILABLE_RFN",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 142,
@@ -2222,9 +5820,28 @@
       "officialPopularityRank": 441,
       "styleCount": 3,
       "variableAxisCount": 0,
+      "fontFileCount": 3,
+      "parsedFontFileCount": 3,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/firamono",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [],
+      "glyphCountMax": 1485,
+      "unicodeCodepointUnion": 1350,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 143,
@@ -2232,13 +5849,37 @@
       "slug": "patuaone",
       "category": "Display",
       "languageGroup": "Other",
-      "subsets": ["menu", "latin"],
+      "subsets": [
+        "menu",
+        "latin"
+      ],
       "officialPopularityRank": 269,
       "styleCount": 1,
       "variableAxisCount": 0,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/patuaone",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
-      "reservedFontNames": ["Patua One"],
-      "previewStatus": "SKIPPED_LICENSE_REVIEW"
+      "licenseSha256Verified": true,
+      "reservedFontNames": [
+        "Patua One"
+      ],
+      "axes": [],
+      "glyphCountMax": 236,
+      "unicodeCodepointUnion": 231,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "UNAVAILABLE_RFN",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 144,
@@ -2246,13 +5887,38 @@
       "slug": "kaushanscript",
       "category": "Handwriting",
       "languageGroup": "Other",
-      "subsets": ["menu", "latin", "latin-ext"],
+      "subsets": [
+        "menu",
+        "latin",
+        "latin-ext"
+      ],
       "officialPopularityRank": 280,
       "styleCount": 1,
       "variableAxisCount": 0,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/kaushanscript",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
-      "reservedFontNames": ["Kaushan Script"],
-      "previewStatus": "SKIPPED_LICENSE_REVIEW"
+      "licenseSha256Verified": true,
+      "reservedFontNames": [
+        "Kaushan Script"
+      ],
+      "axes": [],
+      "glyphCountMax": 414,
+      "unicodeCodepointUnion": 397,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "UNAVAILABLE_RFN",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 145,
@@ -2260,13 +5926,38 @@
       "slug": "sacramento",
       "category": "Handwriting",
       "languageGroup": "Other",
-      "subsets": ["menu", "latin", "latin-ext"],
+      "subsets": [
+        "menu",
+        "latin",
+        "latin-ext"
+      ],
       "officialPopularityRank": 289,
       "styleCount": 1,
       "variableAxisCount": 0,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/sacramento",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
-      "reservedFontNames": ["Sacramento"],
-      "previewStatus": "SKIPPED_LICENSE_REVIEW"
+      "licenseSha256Verified": true,
+      "reservedFontNames": [
+        "Sacramento"
+      ],
+      "axes": [],
+      "glyphCountMax": 375,
+      "unicodeCodepointUnion": 370,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 0.0,
+        "zhTW": 0.0,
+        "japanese": 0.0,
+        "korean": 0.0,
+        "cjkUnified": 0.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "UNAVAILABLE_RFN",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 146,
@@ -2286,9 +5977,30 @@
       "officialPopularityRank": 725,
       "styleCount": 8,
       "variableAxisCount": 1,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 1,
+      "sourcePath": "ofl/chirongoroundtc",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [
+        "wght"
+      ],
+      "glyphCountMax": 50706,
+      "unicodeCodepointUnion": 46265,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 1.0,
+        "zhTW": 1.0,
+        "japanese": 1.0,
+        "korean": 1.0,
+        "cjkUnified": 1.0
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 147,
@@ -2296,13 +6008,36 @@
       "slug": "mashanzheng",
       "category": "Handwriting",
       "languageGroup": "Chinese",
-      "subsets": ["menu", "chinese-simplified", "latin"],
+      "subsets": [
+        "menu",
+        "chinese-simplified",
+        "latin"
+      ],
       "officialPopularityRank": 583,
       "styleCount": 1,
       "variableAxisCount": 0,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/mashanzheng",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [],
+      "glyphCountMax": 7017,
+      "unicodeCodepointUnion": 7015,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 1.0,
+        "zhTW": 0.335579,
+        "japanese": 0.509873,
+        "korean": 0.0,
+        "cjkUnified": 0.32217
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 148,
@@ -2310,13 +6045,36 @@
       "slug": "zcoolxiaowei",
       "category": "Sans Serif",
       "languageGroup": "Chinese",
-      "subsets": ["menu", "chinese-simplified", "latin"],
+      "subsets": [
+        "menu",
+        "chinese-simplified",
+        "latin"
+      ],
       "officialPopularityRank": 644,
       "styleCount": 1,
       "variableAxisCount": 0,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/zcoolxiaowei",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [],
+      "glyphCountMax": 7019,
+      "unicodeCodepointUnion": 7016,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 1.0,
+        "zhTW": 0.335579,
+        "japanese": 0.509873,
+        "korean": 0.0,
+        "cjkUnified": 0.32217
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 149,
@@ -2324,13 +6082,36 @@
       "slug": "zcoolkuaile",
       "category": "Sans Serif",
       "languageGroup": "Chinese",
-      "subsets": ["menu", "chinese-simplified", "latin"],
+      "subsets": [
+        "menu",
+        "chinese-simplified",
+        "latin"
+      ],
       "officialPopularityRank": 680,
       "styleCount": 1,
       "variableAxisCount": 0,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/zcoolkuaile",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [],
+      "glyphCountMax": 7055,
+      "unicodeCodepointUnion": 7053,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 1.0,
+        "zhTW": 0.335732,
+        "japanese": 0.510026,
+        "korean": 0.0,
+        "cjkUnified": 0.322313
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     },
     {
       "curationRank": 150,
@@ -2338,13 +6119,36 @@
       "slug": "zcoolqingkehuangyou",
       "category": "Sans Serif",
       "languageGroup": "Chinese",
-      "subsets": ["menu", "chinese-simplified", "latin"],
+      "subsets": [
+        "menu",
+        "chinese-simplified",
+        "latin"
+      ],
       "officialPopularityRank": 871,
       "styleCount": 1,
       "variableAxisCount": 0,
+      "fontFileCount": 1,
+      "parsedFontFileCount": 1,
+      "variableFontCount": 0,
+      "sourcePath": "ofl/zcoolqingkehuangyou",
+      "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
       "license": "OFL-1.1",
+      "licenseSha256Verified": true,
       "reservedFontNames": [],
-      "previewStatus": "ELIGIBLE_NOT_GENERATED"
+      "axes": [],
+      "glyphCountMax": 9433,
+      "unicodeCodepointUnion": 9429,
+      "coverage": {
+        "latin": 1.0,
+        "zhCN": 1.0,
+        "zhTW": 0.500421,
+        "japanese": 0.754936,
+        "korean": 0.0,
+        "cjkUnified": 0.437119
+      },
+      "packagingStatus": "STANDARD",
+      "previewStatus": "ELIGIBLE_NOT_GENERATED",
+      "finalStatus": "APPROVED"
     }
   ]
 }

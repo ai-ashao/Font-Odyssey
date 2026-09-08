@@ -7,6 +7,7 @@ import {
   filterAndSortFonts,
   fontCatalog,
 } from '@/lib/font-catalog'
+import type { FontDirectorySearch } from '@/lib/font-directory-search'
 import { FontCard } from './font-card'
 
 const categories: Array<'All' | FontCategory> = [
@@ -19,35 +20,64 @@ const categories: Array<'All' | FontCategory> = [
 ]
 const languages: Array<'All' | FontLanguage> = ['All', 'Latin', 'Chinese', 'Japanese', 'Korean']
 
-export function FontCatalogPage({ locale }: Readonly<{ locale: Locale }>) {
-  const [query, setQuery] = useState('')
-  const [category, setCategory] = useState<(typeof categories)[number]>('All')
-  const [language, setLanguage] = useState<(typeof languages)[number]>('All')
-  const [sort, setSort] = useState<FontSort>('featured')
+export function FontCatalogPage({
+  locale,
+  search = {},
+  onSearchChange,
+}: Readonly<{
+  locale: Locale
+  search?: FontDirectorySearch
+  onSearchChange?: (search: FontDirectorySearch) => void
+}>) {
   const [hydrated, setHydrated] = useState(false)
+
   useEffect(() => setHydrated(true), [])
+
+  const query = search.q ?? ''
+  const category = search.category ?? 'All'
+  const language = search.language ?? 'All'
+  const sort = search.sort ?? 'featured'
   const fonts = useMemo(
     () => filterAndSortFonts(fontCatalog, { query, category, language, sort }),
     [query, category, language, sort],
   )
+
   const copy =
     locale === 'zh-CN'
       ? {
           eyebrow: '精选字体目录',
-          title: '探索 149 个经过许可门禁的字体',
+          title: '浏览 149 个经过许可门禁的字体',
           description:
-            '按推荐度、热门程度、类别和语言快速筛选。默认顺序来自 FontOdyssey 的策展排名。',
+            '按推荐度、热门程度、类别和语言快速筛选。筛选只服务发现体验，真正需要排名的主题使用独立 Hub 页面。',
           search: '搜索字体',
           results: '个字体',
+          category: '类别',
+          language: '语言',
+          sort: '排序',
         }
-      : {
-          eyebrow: 'CURATED FONT DIRECTORY',
-          title: 'Explore 149 license-gated font families',
-          description:
-            'Filter by recommendation, popularity, category, and language. Featured order follows the FontOdyssey curation rank.',
-          search: 'Search fonts',
-          results: 'fonts',
-        }
+      : locale === 'zh-TW'
+        ? {
+            eyebrow: '精選字體目錄',
+            title: '瀏覽 149 個通過授權門檻的字體',
+            description:
+              '依推薦度、熱門程度、類別與語言快速篩選。篩選只服務探索體驗，需要排名的主題使用獨立 Hub 頁面。',
+            search: '搜尋字體',
+            results: '個字體',
+            category: '類別',
+            language: '語言',
+            sort: '排序',
+          }
+        : {
+            eyebrow: 'CURATED FONT DIRECTORY',
+            title: 'Explore 149 license-gated font families',
+            description:
+              'Filter by recommendation, popularity, category, and language. Filters support discovery; indexable search themes live on dedicated hub pages.',
+            search: 'Search fonts',
+            results: 'fonts',
+            category: 'Category',
+            language: 'Language',
+            sort: 'Sort',
+          }
 
   return (
     <section
@@ -69,15 +99,23 @@ export function FontCatalogPage({ locale }: Readonly<{ locale: Locale }>) {
         <input
           aria-label={copy.search}
           className="h-10 rounded-lg border bg-background px-3 text-sm"
-          onInput={(event) => setQuery(event.currentTarget.value)}
+          onInput={(event) =>
+            onSearchChange?.({
+              ...search,
+              q: event.currentTarget.value.trim() || undefined,
+            })
+          }
           placeholder={`${copy.search}…`}
           type="search"
           value={query}
         />
         <select
-          aria-label="Category"
+          aria-label={copy.category}
           className="h-10 rounded-lg border bg-background px-3 text-sm"
-          onChange={(event) => setCategory(event.target.value as (typeof categories)[number])}
+          onChange={(event) => {
+            const value = event.target.value as (typeof categories)[number]
+            onSearchChange?.({ ...search, category: value === 'All' ? undefined : value })
+          }}
           value={category}
         >
           {categories.map((value) => (
@@ -85,9 +123,12 @@ export function FontCatalogPage({ locale }: Readonly<{ locale: Locale }>) {
           ))}
         </select>
         <select
-          aria-label="Language"
+          aria-label={copy.language}
           className="h-10 rounded-lg border bg-background px-3 text-sm"
-          onChange={(event) => setLanguage(event.target.value as (typeof languages)[number])}
+          onChange={(event) => {
+            const value = event.target.value as (typeof languages)[number]
+            onSearchChange?.({ ...search, language: value === 'All' ? undefined : value })
+          }}
           value={language}
         >
           {languages.map((value) => (
@@ -95,9 +136,12 @@ export function FontCatalogPage({ locale }: Readonly<{ locale: Locale }>) {
           ))}
         </select>
         <select
-          aria-label="Sort"
+          aria-label={copy.sort}
           className="h-10 rounded-lg border bg-background px-3 text-sm"
-          onChange={(event) => setSort(event.target.value as FontSort)}
+          onChange={(event) => {
+            const value = event.target.value as FontSort
+            onSearchChange?.({ ...search, sort: value === 'featured' ? undefined : value })
+          }}
           value={sort}
         >
           <option value="featured">Featured</option>

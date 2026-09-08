@@ -17,9 +17,18 @@ import { Route as RobotsDottxtRouteImport } from './routes/robots[.]txt'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as TermsOfServiceRouteImport } from './routes/terms-of-service'
 import { Route as ApiHealthRouteImport } from './routes/api.health'
+import { Route as FontSlugRouteImport } from './routes/font.$slug'
 import { Route as FontsIndexRouteImport } from './routes/fonts.index'
+import { Route as FontsHubRouteImport } from './routes/fonts.$hub'
+import { Route as FontsSlugRouteImport } from './routes/fonts.$slug'
+import { Route as ZhTwIndexRouteImport } from './routes/zh-tw.index'
 import { Route as ZhIndexRouteImport } from './routes/zh.index'
+import { Route as ZhTwFontSlugRouteImport } from './routes/zh-tw.font.$slug'
+import { Route as ZhTwFontsIndexRouteImport } from './routes/zh-tw.fonts.index'
+import { Route as ZhTwFontsHubRouteImport } from './routes/zh-tw.fonts.$hub'
+import { Route as ZhFontSlugRouteImport } from './routes/zh.font.$slug'
 import { Route as ZhFontsIndexRouteImport } from './routes/zh.fonts.index'
+import { Route as ZhFontsHubRouteImport } from './routes/zh.fonts.$hub'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -61,9 +70,29 @@ const ApiHealthRoute = ApiHealthRouteImport.update({
   path: '/api/health',
   getParentRoute: () => rootRouteImport,
 } as any)
+const FontSlugRoute = FontSlugRouteImport.update({
+  id: '/font/$slug',
+  path: '/font/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const FontsIndexRoute = FontsIndexRouteImport.update({
   id: '/fonts/',
   path: '/fonts/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FontsHubRoute = FontsHubRouteImport.update({
+  id: '/fonts/$hub',
+  path: '/fonts/$hub',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FontsSlugRoute = FontsSlugRouteImport.update({
+  id: '/fonts/$slug',
+  path: '/fonts/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ZhTwIndexRoute = ZhTwIndexRouteImport.update({
+  id: '/zh-tw/',
+  path: '/zh-tw/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ZhIndexRoute = ZhIndexRouteImport.update({
@@ -71,9 +100,34 @@ const ZhIndexRoute = ZhIndexRouteImport.update({
   path: '/zh/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ZhTwFontSlugRoute = ZhTwFontSlugRouteImport.update({
+  id: '/zh-tw/font/$slug',
+  path: '/zh-tw/font/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ZhTwFontsIndexRoute = ZhTwFontsIndexRouteImport.update({
+  id: '/zh-tw/fonts/',
+  path: '/zh-tw/fonts/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ZhTwFontsHubRoute = ZhTwFontsHubRouteImport.update({
+  id: '/zh-tw/fonts/$hub',
+  path: '/zh-tw/fonts/$hub',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ZhFontSlugRoute = ZhFontSlugRouteImport.update({
+  id: '/zh/font/$slug',
+  path: '/zh/font/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ZhFontsIndexRoute = ZhFontsIndexRouteImport.update({
   id: '/zh/fonts/',
   path: '/zh/fonts/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ZhFontsHubRoute = ZhFontsHubRouteImport.update({
+  id: '/zh/fonts/$hub',
+  path: '/zh/fonts/$hub',
   getParentRoute: () => rootRouteImport,
 } as any)
 
@@ -86,8 +140,17 @@ export interface FileRoutesByFullPath {
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms-of-service': typeof TermsOfServiceRoute
   '/api/health': typeof ApiHealthRoute
+  '/font/$slug': typeof FontSlugRoute
+  '/fonts/$hub': typeof FontsHubRoute
+  '/fonts/$slug': typeof FontsSlugRoute
   '/fonts/': typeof FontsIndexRoute
+  '/zh-tw/': typeof ZhTwIndexRoute
   '/zh/': typeof ZhIndexRoute
+  '/zh-tw/font/$slug': typeof ZhTwFontSlugRoute
+  '/zh-tw/fonts/$hub': typeof ZhTwFontsHubRoute
+  '/zh/font/$slug': typeof ZhFontSlugRoute
+  '/zh/fonts/$hub': typeof ZhFontsHubRoute
+  '/zh-tw/fonts/': typeof ZhTwFontsIndexRoute
   '/zh/fonts/': typeof ZhFontsIndexRoute
 }
 export interface FileRoutesByTo {
@@ -99,8 +162,17 @@ export interface FileRoutesByTo {
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms-of-service': typeof TermsOfServiceRoute
   '/api/health': typeof ApiHealthRoute
+  '/font/$slug': typeof FontSlugRoute
+  '/fonts/$hub': typeof FontsHubRoute
+  '/fonts/$slug': typeof FontsSlugRoute
   '/fonts': typeof FontsIndexRoute
+  '/zh-tw': typeof ZhTwIndexRoute
   '/zh': typeof ZhIndexRoute
+  '/zh-tw/font/$slug': typeof ZhTwFontSlugRoute
+  '/zh-tw/fonts/$hub': typeof ZhTwFontsHubRoute
+  '/zh/font/$slug': typeof ZhFontSlugRoute
+  '/zh/fonts/$hub': typeof ZhFontsHubRoute
+  '/zh-tw/fonts': typeof ZhTwFontsIndexRoute
   '/zh/fonts': typeof ZhFontsIndexRoute
 }
 export interface FileRoutesById {
@@ -113,8 +185,17 @@ export interface FileRoutesById {
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms-of-service': typeof TermsOfServiceRoute
   '/api/health': typeof ApiHealthRoute
+  '/font/$slug': typeof FontSlugRoute
+  '/fonts/$hub': typeof FontsHubRoute
+  '/fonts/$slug': typeof FontsSlugRoute
   '/fonts/': typeof FontsIndexRoute
+  '/zh-tw/': typeof ZhTwIndexRoute
   '/zh/': typeof ZhIndexRoute
+  '/zh-tw/font/$slug': typeof ZhTwFontSlugRoute
+  '/zh-tw/fonts/$hub': typeof ZhTwFontsHubRoute
+  '/zh/font/$slug': typeof ZhFontSlugRoute
+  '/zh/fonts/$hub': typeof ZhFontsHubRoute
+  '/zh-tw/fonts/': typeof ZhTwFontsIndexRoute
   '/zh/fonts/': typeof ZhFontsIndexRoute
 }
 export interface FileRouteTypes {
@@ -128,8 +209,17 @@ export interface FileRouteTypes {
     | '/sitemap.xml'
     | '/terms-of-service'
     | '/api/health'
+    | '/font/$slug'
+    | '/fonts/$hub'
+    | '/fonts/$slug'
     | '/fonts/'
+    | '/zh-tw/'
     | '/zh/'
+    | '/zh-tw/font/$slug'
+    | '/zh-tw/fonts/$hub'
+    | '/zh/font/$slug'
+    | '/zh/fonts/$hub'
+    | '/zh-tw/fonts/'
     | '/zh/fonts/'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -141,8 +231,17 @@ export interface FileRouteTypes {
     | '/sitemap.xml'
     | '/terms-of-service'
     | '/api/health'
+    | '/font/$slug'
+    | '/fonts/$hub'
+    | '/fonts/$slug'
     | '/fonts'
+    | '/zh-tw'
     | '/zh'
+    | '/zh-tw/font/$slug'
+    | '/zh-tw/fonts/$hub'
+    | '/zh/font/$slug'
+    | '/zh/fonts/$hub'
+    | '/zh-tw/fonts'
     | '/zh/fonts'
   id:
     | '__root__'
@@ -154,8 +253,17 @@ export interface FileRouteTypes {
     | '/sitemap.xml'
     | '/terms-of-service'
     | '/api/health'
+    | '/font/$slug'
+    | '/fonts/$hub'
+    | '/fonts/$slug'
     | '/fonts/'
+    | '/zh-tw/'
     | '/zh/'
+    | '/zh-tw/font/$slug'
+    | '/zh-tw/fonts/$hub'
+    | '/zh/font/$slug'
+    | '/zh/fonts/$hub'
+    | '/zh-tw/fonts/'
     | '/zh/fonts/'
   fileRoutesById: FileRoutesById
 }
@@ -168,8 +276,17 @@ export interface RootRouteChildren {
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   TermsOfServiceRoute: typeof TermsOfServiceRoute
   ApiHealthRoute: typeof ApiHealthRoute
+  FontSlugRoute: typeof FontSlugRoute
+  FontsHubRoute: typeof FontsHubRoute
+  FontsSlugRoute: typeof FontsSlugRoute
   FontsIndexRoute: typeof FontsIndexRoute
+  ZhTwIndexRoute: typeof ZhTwIndexRoute
   ZhIndexRoute: typeof ZhIndexRoute
+  ZhTwFontSlugRoute: typeof ZhTwFontSlugRoute
+  ZhTwFontsHubRoute: typeof ZhTwFontsHubRoute
+  ZhFontSlugRoute: typeof ZhFontSlugRoute
+  ZhFontsHubRoute: typeof ZhFontsHubRoute
+  ZhTwFontsIndexRoute: typeof ZhTwFontsIndexRoute
   ZhFontsIndexRoute: typeof ZhFontsIndexRoute
 }
 
@@ -231,11 +348,39 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ApiHealthRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/font/$slug': {
+      id: '/font/$slug'
+      path: '/font/$slug'
+      fullPath: '/font/$slug'
+      preLoaderRoute: typeof FontSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/fonts/': {
       id: '/fonts/'
       path: '/fonts'
       fullPath: '/fonts/'
       preLoaderRoute: typeof FontsIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/fonts/$hub': {
+      id: '/fonts/$hub'
+      path: '/fonts/$hub'
+      fullPath: '/fonts/$hub'
+      preLoaderRoute: typeof FontsHubRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/fonts/$slug': {
+      id: '/fonts/$slug'
+      path: '/fonts/$slug'
+      fullPath: '/fonts/$slug'
+      preLoaderRoute: typeof FontsSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/zh-tw/': {
+      id: '/zh-tw/'
+      path: '/zh-tw'
+      fullPath: '/zh-tw/'
+      preLoaderRoute: typeof ZhTwIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/zh/': {
@@ -245,11 +390,46 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ZhIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/zh-tw/font/$slug': {
+      id: '/zh-tw/font/$slug'
+      path: '/zh-tw/font/$slug'
+      fullPath: '/zh-tw/font/$slug'
+      preLoaderRoute: typeof ZhTwFontSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/zh-tw/fonts/': {
+      id: '/zh-tw/fonts/'
+      path: '/zh-tw/fonts'
+      fullPath: '/zh-tw/fonts/'
+      preLoaderRoute: typeof ZhTwFontsIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/zh-tw/fonts/$hub': {
+      id: '/zh-tw/fonts/$hub'
+      path: '/zh-tw/fonts/$hub'
+      fullPath: '/zh-tw/fonts/$hub'
+      preLoaderRoute: typeof ZhTwFontsHubRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/zh/font/$slug': {
+      id: '/zh/font/$slug'
+      path: '/zh/font/$slug'
+      fullPath: '/zh/font/$slug'
+      preLoaderRoute: typeof ZhFontSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/zh/fonts/': {
       id: '/zh/fonts/'
       path: '/zh/fonts'
       fullPath: '/zh/fonts/'
       preLoaderRoute: typeof ZhFontsIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/zh/fonts/$hub': {
+      id: '/zh/fonts/$hub'
+      path: '/zh/fonts/$hub'
+      fullPath: '/zh/fonts/$hub'
+      preLoaderRoute: typeof ZhFontsHubRouteImport
       parentRoute: typeof rootRouteImport
     }
   }
@@ -264,8 +444,17 @@ const rootRouteChildren: RootRouteChildren = {
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   TermsOfServiceRoute: TermsOfServiceRoute,
   ApiHealthRoute: ApiHealthRoute,
+  FontSlugRoute: FontSlugRoute,
+  FontsHubRoute: FontsHubRoute,
+  FontsSlugRoute: FontsSlugRoute,
   FontsIndexRoute: FontsIndexRoute,
+  ZhTwIndexRoute: ZhTwIndexRoute,
   ZhIndexRoute: ZhIndexRoute,
+  ZhTwFontSlugRoute: ZhTwFontSlugRoute,
+  ZhTwFontsHubRoute: ZhTwFontsHubRoute,
+  ZhFontSlugRoute: ZhFontSlugRoute,
+  ZhFontsHubRoute: ZhFontsHubRoute,
+  ZhTwFontsIndexRoute: ZhTwFontsIndexRoute,
   ZhFontsIndexRoute: ZhFontsIndexRoute,
 }
 export const routeTree = rootRouteImport

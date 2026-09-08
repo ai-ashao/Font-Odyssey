@@ -12,6 +12,7 @@ research/
 staging/
 analysis/
 reports/
+artifacts/
 test-results/
 playwright-report/
 

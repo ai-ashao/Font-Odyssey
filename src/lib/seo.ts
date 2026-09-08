@@ -13,6 +13,7 @@ export type PageSeoInput = {
   path: string
   alternates?: ReadonlyArray<{ locale: string; path: string }>
   indexable?: boolean
+  robots?: 'noindex,follow' | 'noindex,nofollow'
   socialImage?: string
 }
 
@@ -38,7 +39,11 @@ export function pageHead(input: PageSeoInput) {
             { name: 'twitter:image', content: socialImage },
           ]
         : []),
-      ...(input.indexable === false ? [{ name: 'robots', content: 'noindex,nofollow' }] : []),
+      ...(input.robots
+        ? [{ name: 'robots', content: input.robots }]
+        : input.indexable === false
+          ? [{ name: 'robots', content: 'noindex,nofollow' }]
+          : []),
     ],
     links: [
       { rel: 'canonical', href: canonical },
@@ -67,6 +72,7 @@ export function localizedPageHead(input: {
   title: string
   description: string
   socialImage?: string
+  robots?: PageSeoInput['robots']
 }) {
   const path = localizedPath(input.pageId, input.locale)
   if (!path) throw new Error(`Missing ${input.locale} route for ${input.pageId}`)
@@ -77,6 +83,7 @@ export function localizedPageHead(input: {
     path,
     alternates: hreflangAlternates(input.pageId),
     indexable: isPublicPageIndexable(input.pageId),
+    robots: input.robots,
     socialImage: input.socialImage,
   })
 }

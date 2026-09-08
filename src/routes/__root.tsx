@@ -80,7 +80,11 @@ function RootComponent() {
               {localeAlternates.map((alternate) => (
                 <a
                   aria-label={
-                    locale === 'zh-CN' ? `切换到${alternate.label}` : `Switch to ${alternate.label}`
+                    locale === 'en'
+                      ? `Switch to ${alternate.label}`
+                      : locale === 'zh-CN'
+                        ? `切换到${alternate.label}`
+                        : `切換到${alternate.label}`
                   }
                   className="locale-switch"
                   data-locale-switch

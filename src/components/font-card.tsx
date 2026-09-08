@@ -1,11 +1,49 @@
+import type { CSSProperties } from 'react'
 import type { Locale } from '@/i18n/config'
+import { fontPreviewUrl } from '@/lib/font-assets'
 import { type FontCatalogItem, fontLanguages } from '@/lib/font-catalog'
+import { fontPath } from '@/lib/font-routes'
 
-export function FontCard({ font, locale }: Readonly<{ font: FontCatalogItem; locale: Locale }>) {
+export function FontCard({
+  font,
+  locale,
+  previewText,
+}: Readonly<{ font: FontCatalogItem; locale: Locale; previewText?: string }>) {
   const languages = fontLanguages(font)
-  const styles = locale === 'zh-CN' ? `${font.styleCount} 种样式` : `${font.styleCount} styles`
+  const styles =
+    locale === 'zh-CN'
+      ? `${font.styleCount} 种样式`
+      : locale === 'zh-TW'
+        ? `${font.styleCount} 種樣式`
+        : `${font.styleCount} styles`
+  const preview =
+    previewText ||
+    (locale === 'zh-CN'
+      ? '让文字拥有自己的声音。'
+      : locale === 'zh-TW'
+        ? '讓文字擁有自己的聲音。'
+        : 'Make something worth reading.')
+  const previewUrl = fontPreviewUrl(font)
+  const familyName = `FontOdysseyPreview-${font.slug}`
+  const previewStyle: CSSProperties | undefined = previewUrl
+    ? { fontFamily: `"${familyName}", var(--sans)` }
+    : undefined
+
   return (
-    <article className="rounded-2xl border bg-card p-5 shadow-sm" data-font-card={font.slug}>
+    <article
+      className="group relative overflow-hidden rounded-2xl border bg-card p-5 transition-colors hover:border-foreground/30"
+      data-font-card={font.slug}
+    >
+      {previewUrl ? (
+        <style>{`@font-face{font-family:"${familyName}";src:url("${previewUrl}") format("woff2");font-display:swap;}`}</style>
+      ) : null}
+      <a
+        aria-label={`${font.family} font`}
+        className="absolute inset-0 z-10 rounded-2xl"
+        href={fontPath(font, locale)}
+      >
+        <span className="sr-only">{font.family}</span>
+      </a>
       <div className="flex items-start justify-between gap-4">
         <span className="font-mono text-[10px] text-muted-foreground">
           #{String(font.curationRank).padStart(3, '0')}
@@ -14,21 +52,31 @@ export function FontCard({ font, locale }: Readonly<{ font: FontCatalogItem; loc
           {font.category}
         </span>
       </div>
-      <h2 className="mt-8 text-2xl font-medium tracking-tight">{font.family}</h2>
-      <p className="mt-3 text-sm leading-6 text-muted-foreground">
-        {locale === 'zh-CN'
-          ? '字体漫游，发现值得长期使用的字形。'
-          : 'The quick brown fox jumps over the lazy dog.'}
+      <h2 className="mt-7 text-xl font-semibold tracking-[-0.03em]">{font.family}</h2>
+      <p
+        className="mt-5 min-h-16 break-words text-[1.55rem] leading-tight tracking-[-0.035em]"
+        style={previewStyle}
+      >
+        {preview}
       </p>
-      <div className="mt-7 flex flex-wrap items-center gap-2 text-xs text-muted-foreground">
+      <div className="mt-7 flex flex-wrap items-center gap-2 border-t pt-4 text-xs text-muted-foreground">
         <span>{styles}</span>
         <span aria-hidden="true">·</span>
         <span>{font.license}</span>
-        {languages.map((language) => (
+        {font.variableAxisCount > 0 ? (
+          <>
+            <span aria-hidden="true">·</span>
+            <span>Variable</span>
+          </>
+        ) : null}
+        {languages.slice(0, 2).map((language) => (
           <span className="rounded-full border px-2 py-0.5" key={language}>
             {language}
           </span>
         ))}
+      </div>
+      <div className="mt-4 text-sm font-semibold text-primary">
+        {locale === 'zh-CN' ? '查看字体' : locale === 'zh-TW' ? '查看字體' : 'View font'} →
       </div>
     </article>
   )

@@ -59,4 +59,23 @@ export const shellMessages = {
       returnHome: '返回首页',
     },
   },
+  'zh-TW': {
+    primaryNavigation: '主導覽',
+    nav: {
+      home: '首頁',
+      tools: '字體',
+    },
+    languageSwitcher: '語言切換',
+    footer: {
+      about: '關於我們',
+      contact: '聯絡',
+      privacy: '隱私政策',
+      terms: '服務條款',
+    },
+    notFound: {
+      kicker: '404 / 頁面不存在',
+      title: '找不到這個頁面。',
+      returnHome: '返回首頁',
+    },
+  },
 } satisfies Record<Locale, ShellMessages>
