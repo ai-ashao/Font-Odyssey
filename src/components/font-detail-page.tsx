@@ -2,12 +2,7 @@ import { ArrowLeft, Download, ShieldCheck } from 'lucide-react'
 import { useEffect, useId, useState } from 'react'
 import type { Locale } from '@/i18n/config'
 import { fontDownloadSources, fontPreviewUrl } from '@/lib/font-assets'
-import {
-  type FontCatalogItem,
-  fontLanguages,
-  fontSupportsSimplifiedChinese,
-  fontSupportsTraditionalChinese,
-} from '@/lib/font-catalog'
+import { type FontCatalogItem, fontLanguages } from '@/lib/font-catalog'
 import type { PublishedFont } from '@/lib/font-publishing'
 import { findFontHub, fontHubPath } from '@/lib/font-routes'
 
@@ -159,32 +154,13 @@ function CatalogFontDetailPage({
           <h2 className="text-2xl font-semibold tracking-tight">{copy.languages}</h2>
           <p className="mt-3 text-sm leading-7 text-muted-foreground">
             {locale === 'en'
-              ? 'Support below comes from the current launch catalog metadata. Exact glyph coverage can be added later from the ingestion analysis.'
+              ? 'Coverage is measured from the analyzed font files, not inferred from the family name.'
               : locale === 'zh-CN'
-                ? '以下支持信息来自当前首发目录 metadata；后续可以继续接入 ingestion 分析得到的精确字符覆盖率。'
-                : '以下支援資訊來自目前首發目錄 metadata；後續可以繼續接入 ingestion 分析得到的精確字元覆蓋率。'}
+                ? '覆盖率来自字体文件实测分析，不根据字体名称或标签猜测。'
+                : '覆蓋率來自字體檔案實測分析，不依字體名稱或標籤推測。'}
           </p>
         </div>
-        <div className="flex flex-wrap content-start gap-2">
-          {languages.map((language) => (
-            <span className="rounded-full border bg-card px-3 py-2 text-sm" key={language}>
-              {language}
-            </span>
-          ))}
-          {fontSupportsSimplifiedChinese(font) ? (
-            <span className="rounded-full border bg-card px-3 py-2 text-sm">
-              Simplified Chinese
-            </span>
-          ) : null}
-          {fontSupportsTraditionalChinese(font) ? (
-            <span className="rounded-full border bg-card px-3 py-2 text-sm">
-              Traditional Chinese
-            </span>
-          ) : null}
-          {font.subsets.includes('latin-ext') ? (
-            <span className="rounded-full border bg-card px-3 py-2 text-sm">Latin Extended</span>
-          ) : null}
-        </div>
+        <CoveragePanel font={font} locale={locale} />
       </section>
 
       <section className="rounded-2xl border bg-card p-6">
@@ -228,6 +204,86 @@ function CatalogFontDetailPage({
         </section>
       ) : null}
     </article>
+  )
+}
+
+function CoveragePanel({ font, locale }: Readonly<{ font: FontCatalogItem; locale: Locale }>) {
+  const labels =
+    locale === 'zh-CN'
+      ? {
+          title: '字符覆盖率',
+          latin: '拉丁字符',
+          zhCN: '简体中文',
+          zhTW: '繁体中文',
+          japanese: '日文',
+          korean: '韩文',
+          glyphs: '最大 Glyph 数',
+          codepoints: 'Unicode 码点',
+        }
+      : locale === 'zh-TW'
+        ? {
+            title: '字元覆蓋率',
+            latin: '拉丁字元',
+            zhCN: '簡體中文',
+            zhTW: '繁體中文',
+            japanese: '日文',
+            korean: '韓文',
+            glyphs: '最大 Glyph 數',
+            codepoints: 'Unicode 碼點',
+          }
+        : {
+            title: 'Character coverage',
+            latin: 'Latin',
+            zhCN: 'Simplified Chinese',
+            zhTW: 'Traditional Chinese',
+            japanese: 'Japanese',
+            korean: 'Korean',
+            glyphs: 'Max glyphs',
+            codepoints: 'Unicode codepoints',
+          }
+
+  const metrics = [
+    ['latin', labels.latin, font.coverage.latin],
+    ['zhCN', labels.zhCN, font.coverage.zhCN],
+    ['zhTW', labels.zhTW, font.coverage.zhTW],
+    ['japanese', labels.japanese, font.coverage.japanese],
+    ['korean', labels.korean, font.coverage.korean],
+  ] as const
+  const visibleMetrics = metrics.filter(([, , value]) => value > 0)
+
+  return (
+    <section className="rounded-2xl border bg-card p-5" aria-label={labels.title}>
+      <h3 className="text-lg font-semibold">{labels.title}</h3>
+      <div className="mt-5 space-y-4">
+        {visibleMetrics.map(([key, label, value]) => {
+          const percent = Math.round(value * 1000) / 10
+          return (
+            <div key={key}>
+              <div className="flex items-center justify-between gap-4 text-sm">
+                <span>{label}</span>
+                <strong>{percent.toFixed(percent === 100 ? 0 : 1)}%</strong>
+              </div>
+              <div className="mt-2 h-2 overflow-hidden rounded-full bg-muted">
+                <div
+                  className="h-full rounded-full bg-primary"
+                  style={{ width: `${Math.min(100, percent)}%` }}
+                />
+              </div>
+            </div>
+          )
+        })}
+      </div>
+      <dl className="mt-6 grid gap-3 border-t pt-4 text-sm sm:grid-cols-2">
+        <div>
+          <dt className="text-muted-foreground">{labels.glyphs}</dt>
+          <dd className="mt-1 font-semibold">{font.glyphCountMax.toLocaleString()}</dd>
+        </div>
+        <div>
+          <dt className="text-muted-foreground">{labels.codepoints}</dt>
+          <dd className="mt-1 font-semibold">{font.unicodeCodepointUnion.toLocaleString()}</dd>
+        </div>
+      </dl>
+    </section>
   )
 }
 
@@ -397,6 +453,8 @@ function PublishedFontDetailContent({
             </ul>
           </section>
         </div>
+
+        <CoveragePanel font={font.facts} locale={content.locale} />
 
         <section className="font-download-panel">
           <div>

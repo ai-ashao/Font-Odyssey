@@ -1,8 +1,9 @@
 import type { Locale } from '@/i18n/config'
 import type { FontCatalogItem } from './font-catalog'
+import { publishedFontForLocale } from './font-publication'
 import {
   type FontHubDefinition,
-  fontDetailAlternates,
+  fontDetailHreflangAlternates,
   fontHubAlternates,
   fontHubPath,
   fontPath,
@@ -19,27 +20,35 @@ export function fontDetailHead(font: FontCatalogItem | undefined, locale: Locale
     })
   }
 
-  const title =
+  const published = publishedFontForLocale(font.slug, locale)
+  const editorial = published?.content[locale]
+
+  const fallbackTitle =
     locale === 'en'
-      ? `${font.family} Font Free Download`
+      ? `${font.family} Font — License & Language Support`
       : locale === 'zh-CN'
-        ? `${font.family} 字体免费下载与授权说明`
-        : `${font.family} 字體免費下載與授權說明`
-  const description =
+        ? `${font.family} 字体信息、授权与语言支持`
+        : `${font.family} 字體資訊、授權與語言支援`
+  const fallbackDescription =
     locale === 'en'
-      ? `Preview ${font.family}, review ${font.styleCount} styles, ${font.license} licensing, language support, and verified source information before downloading.`
+      ? `Review ${font.family} styles, ${font.license} licensing, measured language coverage, and upstream source information.`
       : locale === 'zh-CN'
-        ? `预览 ${font.family}，查看 ${font.styleCount} 种样式、${font.license} 许可证、语言支持与官方来源，再选择下载方式。`
-        : `預覽 ${font.family}，查看 ${font.styleCount} 種樣式、${font.license} 授權、語言支援與官方來源，再選擇下載方式。`
+        ? `查看 ${font.family} 的字体样式、${font.license} 许可证、实测语言覆盖率与上游来源。`
+        : `查看 ${font.family} 的字體樣式、${font.license} 授權、實測語言覆蓋率與上游來源。`
+
+  const hreflang = published ? fontDetailHreflangAlternates(font) : []
+  const fallback = hreflang.find((alternate) => alternate.locale === 'en') ?? hreflang[0]
+  const alternates =
+    hreflang.length >= 2 && fallback
+      ? [...hreflang, { locale: 'x-default', path: fallback.path }]
+      : []
 
   return pageHead({
-    title,
-    description,
+    title: editorial?.title ?? fallbackTitle,
+    description: editorial?.description ?? fallbackDescription,
     path: fontPath(font, locale),
-    alternates: [
-      ...fontDetailAlternates(font),
-      { locale: 'x-default', path: fontPath(font, 'en') },
-    ],
+    alternates,
+    indexable: Boolean(published),
   })
 }
 

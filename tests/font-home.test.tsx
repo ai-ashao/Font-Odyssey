@@ -12,7 +12,7 @@ describe('SEO-first font homepage', () => {
     expect(html).toContain('/fonts/chinese')
     expect(html).toContain('/fonts/sans-serif')
     expect(html).toContain('Are all FontOdyssey fonts free for commercial use?')
-    expect(html).toContain('No fabricated downloads')
+    expect(html).toContain('Verified download availability')
   })
 
   it('keeps Chinese content localized behind the shared component', () => {

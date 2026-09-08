@@ -25,13 +25,13 @@ export function FontHome({ locale }: Readonly<{ locale: Locale }>) {
           languages: '按语言浏览',
           languageCopy: '中文、日文、韩文和拉丁字体分别建立清晰的主题入口。',
           styles: '按风格浏览',
-          styleCopy: '用真实搜索意图建立字体风格页，而不是制造无限筛选 URL。',
+          styleCopy: '按字体风格快速比较相关家族，不必在庞大的字体目录里反复翻找。',
           commercial: '免费商用字体',
           commercialCopy:
             '这里收录的字体已通过当前资源许可门禁。用于商业项目时，仍应在字体详情页确认具体许可证和保留字体名等要求。',
           chinese: '中文字体更需要看覆盖范围',
           chineseCopy:
-            '简体和繁体支持并不等价。FontOdyssey 会持续补充字符覆盖数据，避免只凭“支持中文”四个字做判断。',
+            '简体和繁体支持并不等价。FontOdyssey 直接展示实测字符覆盖率，帮助你在下载前发现缺字风险。',
           trust: '来源和许可证不是下载后的附注',
           trustCopy:
             '每个字体详情页都把来源、许可证、样式和语言支持放在下载附近，让用户在下载前完成判断。',
@@ -52,13 +52,13 @@ export function FontHome({ locale }: Readonly<{ locale: Locale }>) {
             languages: '依語言瀏覽',
             languageCopy: '中文、日文、韓文與拉丁字體分別建立清楚的主題入口。',
             styles: '依風格瀏覽',
-            styleCopy: '以真實搜尋意圖建立字體風格頁，而不是製造無限篩選 URL。',
+            styleCopy: '依字體風格快速比較相關家族，不必在龐大的字體目錄裡反覆翻找。',
             commercial: '免費商用字體',
             commercialCopy:
               '這裡收錄的字體已通過目前資源授權門檻。用於商業專案時，仍應在字體詳情頁確認具體授權與保留字體名稱等要求。',
             chinese: '中文字體更需要看覆蓋範圍',
             chineseCopy:
-              '簡體與繁體支援並不相同。FontOdyssey 會持續補充字元覆蓋資料，避免只憑「支援中文」做判斷。',
+              '簡體與繁體支援並不相同。FontOdyssey 直接展示實測字元覆蓋率，幫助你在下載前發現缺字風險。',
             trust: '來源與授權不是下載後的附註',
             trustCopy:
               '每個字體詳情頁都把來源、授權、樣式與語言支援放在下載附近，讓使用者在下載前完成判斷。',
@@ -80,13 +80,13 @@ export function FontHome({ locale }: Readonly<{ locale: Locale }>) {
               'Explore dedicated discovery pages for Chinese, Japanese, Korean, and Latin fonts.',
             styles: 'Browse by style',
             styleCopy:
-              'Use intentional search hubs instead of thousands of low-value filter combinations.',
+              'Compare focused font collections by style without digging through an endless catalog.',
             commercial: 'Free fonts for commercial use',
             commercialCopy:
               'The catalog contains open-license families that passed the current redistribution gate. Always review the individual font license and reserved-name conditions before commercial use.',
             chinese: 'Chinese fonts need better coverage signals',
             chineseCopy:
-              'Simplified and Traditional Chinese support are not interchangeable. FontOdyssey keeps language metadata visible and is ready for deeper glyph-coverage data from the ingestion pipeline.',
+              'Simplified and Traditional Chinese support are not interchangeable. FontOdyssey surfaces measured character coverage so missing-glyph risk is visible before download.',
             trust: 'Source and license are part of the product',
             trustCopy:
               'Every font detail page keeps source, license, styles, and language support next to the download decision instead of hiding them in a footnote.',
@@ -143,10 +143,10 @@ export function FontHome({ locale }: Readonly<{ locale: Locale }>) {
           />
           <p className="mt-3 border-t pt-3 text-xs text-muted-foreground">
             {locale === 'en'
-              ? 'Preview copy updates the featured cards. Real font faces load automatically when R2 preview assets are configured.'
+              ? 'Preview copy updates the featured cards. Real font faces load automatically after a preview asset passes remote verification.'
               : locale === 'zh-CN'
-                ? '预览文字会同步到精选卡片；配置 R2 预览资源后会自动加载真实字体。'
-                : '預覽文字會同步到精選卡片；設定 R2 預覽資源後會自動載入真實字體。'}
+                ? '预览文字会同步到精选卡片；预览资源通过远程验证后会自动加载真实字体。'
+                : '預覽文字會同步到精選卡片；預覽資源通過遠端驗證後會自動載入真實字體。'}
           </p>
         </div>
       </section>
@@ -225,10 +225,10 @@ export function FontHome({ locale }: Readonly<{ locale: Locale }>) {
           }
           description={
             locale === 'en'
-              ? 'Useful collections create focused discovery paths without turning every filter combination into an indexable page.'
+              ? 'Useful collections group related fonts by language, style, and practical use so strong candidates are easier to compare.'
               : locale === 'zh-CN'
-                ? '合集页围绕真实使用需求组织字体，不把每一种筛选组合都变成可索引页面。'
-                : '合集頁圍繞真實使用需求整理字體，不把每一種篩選組合都變成可索引頁面。'
+                ? '合集按语言、风格和真实使用需求组织字体，让适合的候选更容易比较。'
+                : '合集依語言、風格與真實使用需求整理字體，讓合適的候選更容易比較。'
           }
         />
         <div className="grid gap-4 md:grid-cols-2">
@@ -278,7 +278,7 @@ export function FontHome({ locale }: Readonly<{ locale: Locale }>) {
             <TrustItem
               title={
                 locale === 'en'
-                  ? 'No fabricated downloads'
+                  ? 'Verified download availability'
                   : locale === 'zh-CN'
                     ? '不伪造下载链接'
                     : '不偽造下載連結'

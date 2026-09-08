@@ -2,19 +2,6 @@ export type PublicEnv = {
   siteUrl: string
   ga4Id?: string
   googleSiteVerification?: string
-  fontAssetBaseUrl?: string
-}
-
-function parseOptionalHttpUrl(value: string | undefined, field: string): string | undefined {
-  const raw = value?.trim()
-  if (!raw) return undefined
-  try {
-    const url = new URL(raw)
-    if (!['http:', 'https:'].includes(url.protocol)) throw new Error('unsupported protocol')
-    return url.toString().replace(/\/$/, '')
-  } catch {
-    throw new Error(`${field} must be an absolute http(s) URL.`)
-  }
 }
 
 export function parsePublicEnv(source: Record<string, string | undefined>): PublicEnv {
@@ -37,10 +24,6 @@ export function parsePublicEnv(source: Record<string, string | undefined>): Publ
     siteUrl,
     ga4Id,
     googleSiteVerification: source.VITE_GOOGLE_SITE_VERIFICATION?.trim() || undefined,
-    fontAssetBaseUrl: parseOptionalHttpUrl(
-      source.VITE_FONT_ASSET_BASE_URL,
-      'VITE_FONT_ASSET_BASE_URL',
-    ),
   }
 }
 

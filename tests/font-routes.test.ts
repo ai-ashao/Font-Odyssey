@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { findFontBySlug, fontCatalog } from '@/lib/font-catalog'
+import { indexableFontLocales } from '@/lib/font-publication'
 import {
   findFontHub,
   fontDetailAlternates,
@@ -32,7 +33,7 @@ describe('font entity and hub routes', () => {
     expect(fontsForHub(sans).every((font) => font.category === 'Sans Serif')).toBe(true)
   })
 
-  it('generates reciprocal locale alternates for font routes', () => {
+  it('keeps user-facing locale switches available for catalog detail routes', () => {
     expect(fontLocaleAlternatesForPath('/font/inter')).toEqual([
       { locale: 'zh-CN', path: '/zh/font/inter' },
       { locale: 'zh-TW', path: '/zh-tw/font/inter' },
@@ -43,12 +44,18 @@ describe('font entity and hub routes', () => {
     ])
   })
 
-  it('publishes every approved font in every shipped locale', () => {
-    const paths = fontSitemapPaths()
-    expect(paths).toContain('/font/inter')
-    expect(paths).toContain('/zh/font/inter')
-    expect(paths).toContain('/zh-tw/font/inter')
-    expect(paths.length).toBeGreaterThan(fontCatalog.length * 3)
-    expect(new Set(paths).size).toBe(paths.length)
+  it('puts only publishing-gate-eligible font details in the sitemap', () => {
+    const paths = new Set(fontSitemapPaths())
+    for (const font of fontCatalog) {
+      const indexable = new Set(indexableFontLocales(font))
+      for (const locale of ['en', 'zh-CN', 'zh-TW'] as const) {
+        expect(paths.has(fontPath(font, locale))).toBe(indexable.has(locale))
+      }
+    }
+
+    expect(paths.has('/fonts/chinese')).toBe(true)
+    expect(paths.has('/zh/fonts/chinese')).toBe(true)
+    expect(paths.has('/zh-tw/fonts/chinese')).toBe(true)
+    expect(paths.size).toBe(fontSitemapPaths().length)
   })
 })

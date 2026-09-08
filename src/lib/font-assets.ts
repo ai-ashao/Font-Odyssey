@@ -1,7 +1,7 @@
 import { fontDownloadOverrides } from '@/data/font-downloads'
 import type { Locale } from '@/i18n/config'
-import { publicEnv } from './config/env'
 import type { FontCatalogItem } from './font-catalog'
+import { verifiedAssetReleaseForSlug } from './font-publication'
 
 export type FontDownloadSource = {
   id: 'quark' | 'baidu' | 'r2' | 'official'
@@ -11,18 +11,12 @@ export type FontDownloadSource = {
   sponsored: boolean
 }
 
-function objectUrl(path: string): string | undefined {
-  const base = publicEnv.fontAssetBaseUrl
-  if (!base) return undefined
-  return `${base}${path.startsWith('/') ? path : `/${path}`}`
-}
-
 export function fontPreviewUrl(font: FontCatalogItem): string | undefined {
-  return fontDownloadOverrides[font.slug]?.preview || objectUrl(`/fonts/${font.slug}/preview.woff2`)
+  return verifiedAssetReleaseForSlug(font.slug)?.preview?.url
 }
 
 export function fontR2DownloadUrl(font: FontCatalogItem): string | undefined {
-  return fontDownloadOverrides[font.slug]?.r2 || objectUrl(`/fonts/${font.slug}/${font.slug}.zip`)
+  return verifiedAssetReleaseForSlug(font.slug)?.package.url
 }
 
 export function fontOfficialSourceUrl(font: FontCatalogItem): string {

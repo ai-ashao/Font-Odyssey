@@ -1,6 +1,7 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { FontDetailPage } from '@/components/font-detail-page'
 import { findFontBySlug } from '@/lib/font-catalog'
+import { fontDetailModelForLocale } from '@/lib/font-publication'
 import { fontDetailHead } from '@/lib/font-seo'
 
 export const Route = createFileRoute('/font/$slug')({
@@ -10,5 +11,5 @@ export const Route = createFileRoute('/font/$slug')({
 
 function FontPage() {
   const { slug } = Route.useParams()
-  return <FontDetailPage font={findFontBySlug(slug)} locale="en" />
+  return <FontDetailPage font={fontDetailModelForLocale(slug, 'en')} locale="en" />
 }

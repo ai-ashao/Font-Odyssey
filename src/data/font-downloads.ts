@@ -1,15 +1,14 @@
 export type FontDownloadOverride = {
   quark?: string
   baidu?: string
-  r2?: string
-  preview?: string
 }
 
 export type FontDownloadOverrideMap = Record<string, FontDownloadOverride>
 
 /**
- * Add real, verified per-font download URLs here.
+ * Add only real, verified affiliate/share URLs here.
  *
- * Do not add placeholders. The UI only renders a provider when a real URL exists.
+ * R2 package and preview URLs are deliberately not configurable here. They are rendered only from
+ * VERIFIED asset releases after remote readback succeeds.
  */
 export const fontDownloadOverrides: FontDownloadOverrideMap = {}

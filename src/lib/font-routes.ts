@@ -7,6 +7,7 @@ import {
   fontCatalog,
   fontLanguages,
 } from './font-catalog'
+import { indexableFontLocales } from './font-publication'
 
 export type FontHubId =
   | 'chinese'
@@ -251,6 +252,13 @@ export function fontDetailAlternates(font: FontCatalogItem) {
   }))
 }
 
+export function fontDetailHreflangAlternates(font: FontCatalogItem) {
+  return indexableFontLocales(font).map((locale) => ({
+    locale,
+    path: fontPath(font, locale),
+  }))
+}
+
 export function fontHubAlternates(hub: FontHubDefinition) {
   return (['en', 'zh-CN', 'zh-TW'] as const).map((locale) => ({
     locale,
@@ -279,7 +287,7 @@ export function fontLocaleAlternatesForPath(
 export function fontSitemapPaths(): string[] {
   return [
     ...fontCatalog.flatMap((font) =>
-      (['en', 'zh-CN', 'zh-TW'] as const).map((locale) => fontPath(font, locale)),
+      indexableFontLocales(font).map((locale) => fontPath(font, locale)),
     ),
     ...fontHubDefinitions.flatMap((hub) =>
       (['en', 'zh-CN', 'zh-TW'] as const).map((locale) => fontHubPath(hub, locale)),
