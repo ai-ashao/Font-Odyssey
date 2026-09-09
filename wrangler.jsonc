@@ -5,6 +5,6 @@
   "compatibility_flags": ["nodejs_compat"],
   "main": "@tanstack/react-start/server-entry",
   "workers_dev": true,
-  "routes": [{ "pattern": "fontodyssey.com", "custom_domain": true }],
+  "routes": [{ "pattern": "fontodyssey.com/*", "zone_name": "fontodyssey.com" }],
   "vars": {}
 }
