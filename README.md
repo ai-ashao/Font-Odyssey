@@ -70,6 +70,7 @@ upload to R2 or deploy the website.
 - `/fonts` and `/zh/fonts`: complete 149-family directories;
 - `/about`, `/contact`, `/privacy-policy`, and `/terms-of-service`: trust and legal surfaces.
 
-Privacy and Terms remain in starter legal-review status and stay out of the
-sitemap until reviewed. The current SEO brief records user-provided product
-evidence only; it makes no keyword-volume, difficulty, or SERP-ranking claim.
+Privacy and Terms use the normal public-page publishing path and are included
+in the sitemap. Their content is limited to the product's actual features and
+data practices. The current SEO brief records user-provided product evidence
+only; it makes no keyword-volume, difficulty, or SERP-ranking claim.

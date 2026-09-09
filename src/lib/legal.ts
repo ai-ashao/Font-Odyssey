@@ -1,7 +1,5 @@
 export const legalTemplateVersion = '0.1' as const
 
-export type LegalReviewStatus = 'starter' | 'reviewed'
-
 export type LegalProvider = {
   name: string
   purpose: string
@@ -27,8 +25,7 @@ export type LegalFeatureProfile = {
 
 export type LegalProfile = {
   templateVersion: typeof legalTemplateVersion
-  templateKind: 'free-local-tool'
-  reviewStatus: LegalReviewStatus
+  templateKind: 'free-tool-site'
   productName: string
   operatorName: string
   siteUrl: string
@@ -88,10 +85,7 @@ function supportEmailForPublicSite(siteUrl: string): string {
   return `support@${hostname}`
 }
 
-export function validateLegalProfile(
-  profile: LegalProfile,
-  options: Readonly<{ requireReviewed?: boolean }> = {},
-): ReadonlyArray<string> {
+export function validateLegalProfile(profile: LegalProfile): ReadonlyArray<string> {
   const issues: string[] = []
   const requiredFields = {
     productName: profile.productName,
@@ -112,9 +106,6 @@ export function validateLegalProfile(
   try {
     const url = new URL(profile.siteUrl)
     if (!['http:', 'https:'].includes(url.protocol)) throw new Error('unsupported protocol')
-    if (options.requireReviewed && url.protocol !== 'https:') {
-      issues.push('Reviewed legal profiles require an HTTPS siteUrl.')
-    }
   } catch {
     issues.push('Legal profile siteUrl must be an absolute HTTP(S) URL.')
   }
@@ -180,16 +171,6 @@ export function validateLegalProfile(
     }
   }
 
-  if (options.requireReviewed && profile.reviewStatus !== 'reviewed') {
-    issues.push('Legal profile must be reviewed before production launch.')
-  }
-  if (
-    options.requireReviewed &&
-    /\b(?:applicable|operator is established|operator's location)\b/i.test(profile.governingLaw)
-  ) {
-    issues.push('Reviewed legal profiles require a specific governingLaw jurisdiction.')
-  }
-
   return Array.from(new Set(issues))
 }
 
@@ -198,10 +179,6 @@ export function buildLegalDocument(
   profile: LegalProfile,
 ): LegalDocument {
   return kind === 'privacy' ? buildPrivacyDocument(profile) : buildTermsDocument(profile)
-}
-
-export function isLegalProfileLaunchReady(profile: LegalProfile): boolean {
-  return validateLegalProfile(profile, { requireReviewed: true }).length === 0
 }
 
 function buildPrivacyDocument(profile: LegalProfile): LegalDocument {
@@ -223,7 +200,7 @@ function buildPrivacyDocument(profile: LegalProfile): LegalDocument {
         title: '1. Scope and operator',
         paragraphs: [
           `${profile.operatorName} operates ${profile.productName} at ${profile.siteUrl}. This policy applies to the website and product experiences that link to it.`,
-          'Supported tool inputs are processed in the browser. The local tool workflow does not intentionally upload or persist those inputs on the operator’s servers.',
+          `${profile.productName} does not require an account and does not ask visitors to upload font files. Font downloads are served from the configured asset infrastructure.`,
         ],
       },
       {
@@ -256,7 +233,7 @@ function buildPrivacyDocument(profile: LegalProfile): LegalDocument {
         id: 'retention',
         title: '5. Retention',
         paragraphs: [
-          'Retention is stated for each processing activity above. Browser-local tool inputs are not intentionally retained by the operator.',
+          'Retention is stated for each processing activity above. The Service does not intentionally collect or retain user-provided font files.',
         ],
       },
       {
@@ -270,7 +247,7 @@ function buildPrivacyDocument(profile: LegalProfile): LegalDocument {
         id: 'children',
         title: '7. Children',
         paragraphs: [
-          `${profile.productName} is intended for a general audience and is not directed to children. The operator does not knowingly collect children’s personal information through the local tool workflow.`,
+          `${profile.productName} is intended for a general audience and is not directed to children. The operator does not knowingly collect children’s personal information through the Service.`,
         ],
       },
       {
@@ -302,7 +279,7 @@ function buildTermsDocument(profile: LegalProfile): LegalDocument {
         id: 'service',
         title: '2. The service',
         paragraphs: [
-          `${profile.operatorName} provides ${profile.productName} as a free, account-free tool at ${profile.siteUrl}. Supported tool inputs are processed locally in the browser and are not intentionally uploaded or stored by the operator.`,
+          `${profile.productName} is a free, account-free font discovery and download service operated by ${profile.operatorName} at ${profile.siteUrl}. Font files are served from the configured asset infrastructure, and each font remains subject to its own license terms.`,
         ],
       },
       {
@@ -317,17 +294,17 @@ function buildTermsDocument(profile: LegalProfile): LegalDocument {
         ],
       },
       {
-        id: 'inputs-results',
-        title: '4. Your inputs and results',
+        id: 'font-licenses',
+        title: '4. Font files and licenses',
         paragraphs: [
-          'Your inputs and generated results remain yours. You are responsible for having the right to use your inputs and for reviewing results before relying on or distributing them.',
+          'Font files are provided under the license identified on the relevant font page or included with the download. You are responsible for reviewing and complying with that license before using, modifying, or redistributing a font.',
         ],
       },
       {
         id: 'intellectual-property',
         title: '5. Intellectual property',
         paragraphs: [
-          `${profile.productName}, its software, branding, and original content remain the property of ${profile.operatorName} or its licensors. These terms grant only a limited right to use the service as provided.`,
+          `${profile.productName}, its software, branding, and original site content remain the property of ${profile.operatorName} or its licensors. Font files and related names remain the property of their respective rights holders and licensors. These terms grant only a limited right to use the Service as provided.`,
         ],
       },
       {
@@ -341,7 +318,7 @@ function buildTermsDocument(profile: LegalProfile): LegalDocument {
         id: 'disclaimers-liability',
         title: '7. Disclaimers and limitation of liability',
         paragraphs: [
-          'The Service is provided on an “as available” basis to the extent permitted by law. It is not professional, legal, financial, medical, or compliance advice, and results should be reviewed for their intended use.',
+          'The Service is provided on an “as available” basis to the extent permitted by law. It is not legal or compliance advice. Font metadata and license information should be independently verified before use.',
           'To the maximum extent permitted by applicable law, the operator is not liable for indirect, incidental, special, consequential, or punitive damages arising from use of the service. Rights that cannot lawfully be limited remain unaffected.',
         ],
       },

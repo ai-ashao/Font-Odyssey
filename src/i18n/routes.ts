@@ -1,7 +1,5 @@
 import { fontLocaleAlternatesForPath, fontSitemapPaths } from '@/lib/font-routes'
-import { isLegalProfileLaunchReady } from '@/lib/legal'
 import { toolLocaleAlternatesForPath, toolSitemapPaths } from '@/lib/tool-registry'
-import { legalProfile } from '@/modules/legal-profile'
 import { toolRegistry } from '@/modules/tool-registry'
 import { defaultLocale, type Locale, localeConfig, supportedLocales } from './config'
 
@@ -14,7 +12,6 @@ export type PublicPageRoute = {
   paths: LocalizedPaths
 }
 
-const legalPagesIndexable = isLegalProfileLaunchReady(legalProfile)
 const staticPages: PublicPageRoute[] = [
   { id: 'home', indexable: true, paths: { en: '/', 'zh-CN': '/zh', 'zh-TW': '/zh-tw' } },
   {
@@ -24,8 +21,8 @@ const staticPages: PublicPageRoute[] = [
   },
   { id: 'about', indexable: true, paths: { en: '/about' } },
   { id: 'contact', indexable: true, paths: { en: '/contact' } },
-  { id: 'privacy', indexable: legalPagesIndexable, paths: { en: '/privacy-policy' } },
-  { id: 'terms', indexable: legalPagesIndexable, paths: { en: '/terms-of-service' } },
+  { id: 'privacy', indexable: true, paths: { en: '/privacy-policy' } },
+  { id: 'terms', indexable: true, paths: { en: '/terms-of-service' } },
 ]
 
 export const publicPageRoutes: ReadonlyArray<PublicPageRoute> = staticPages

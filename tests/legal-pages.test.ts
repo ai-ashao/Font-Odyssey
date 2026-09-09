@@ -3,7 +3,6 @@ import { describe, expect, it } from 'vitest'
 import {
   buildLegalDocument,
   defaultSupportEmailForSite,
-  isLegalProfileLaunchReady,
   type LegalProfile,
   validateLegalProfile,
 } from '@/lib/legal'
@@ -18,14 +17,10 @@ describe('legal page contracts', () => {
     expect(() => defaultSupportEmailForSite('http://localhost:3000')).toThrow(/public domain/)
   })
 
-  it('keeps the checked-in profile structurally valid and reports its launch state', () => {
+  it('keeps the checked-in profile structurally valid without a review-state machine', () => {
     expect(validateLegalProfile(legalProfile)).toEqual([])
-    expect(legalProfile.templateKind).toBe('free-local-tool')
-    const releaseIssues = validateLegalProfile(legalProfile, { requireReviewed: true })
-    expect(isLegalProfileLaunchReady(legalProfile)).toBe(releaseIssues.length === 0)
-    if (legalProfile.reviewStatus === 'starter') {
-      expect(releaseIssues).toContain('Legal profile must be reviewed before production launch.')
-    }
+    expect(legalProfile.templateKind).toBe('free-tool-site')
+    expect(legalProfile).not.toHaveProperty('reviewStatus')
     expect(legalProfile.siteUrl).toBe(site.url)
   })
 
@@ -73,7 +68,7 @@ describe('legal page contracts', () => {
       'acceptance',
       'service',
       'acceptable-use',
-      'inputs-results',
+      'font-licenses',
       'intellectual-property',
       'availability',
       'disclaimers-liability',
@@ -117,36 +112,36 @@ describe('legal page contracts', () => {
     expect(termsRoute).not.toContain('InformationPage')
   })
 
-  it('keeps implementation instructions out of reviewed public documents', () => {
-    const reviewed = {
+  it('keeps implementation instructions and internal status labels out of public documents', () => {
+    const configured = {
       ...legalProfile,
-      reviewStatus: 'reviewed',
       siteUrl: 'https://fontodyssey.example',
       contactEmail: 'support@fontodyssey.example',
       governingLaw: 'the laws of the State of Delaware, United States',
     } satisfies LegalProfile
 
     const publicCopy = JSON.stringify([
-      buildLegalDocument('privacy', reviewed),
-      buildLegalDocument('terms', reviewed),
+      buildLegalDocument('privacy', configured),
+      buildLegalDocument('terms', configured),
     ])
 
     expect(publicCopy).not.toMatch(/current product configuration/i)
     expect(publicCopy).not.toMatch(/must be added before/i)
     expect(publicCopy).not.toMatch(/sandbox|paid plans|production user accounts/i)
-    expect(isLegalProfileLaunchReady(reviewed)).toBe(true)
+    expect(publicCopy).not.toMatch(/legal review status|launch-ready/i)
+    expect(publicCopy).not.toMatch(/tool inputs|processed locally|generated results/i)
+    expect(publicCopy).toContain('Font files and licenses')
+    expect(validateLegalProfile(configured)).toEqual([])
   })
 
-  it('keeps the unfinished legal launch behind an explicit deployment gate', () => {
+  it('uses the normal deployment path without a separate legal release system', () => {
     const packageJson = JSON.parse(readFileSync('package.json', 'utf8')) as {
       scripts: Record<string, string>
     }
-    const releaseTest = readFileSync('tests/legal-release.test.ts', 'utf8')
 
     expect(packageJson.scripts.deploy).toBe('pnpm verify && wrangler deploy')
-    expect(packageJson.scripts['deploy:with-legal']).toMatch(/^pnpm legal:check &&/)
-    expect(packageJson.scripts.test).toContain('--exclude tests/legal-release.test.ts')
-    expect(packageJson.scripts['legal:check']).toContain('--mode production')
-    expect(releaseTest).toContain('requireReviewed: true')
+    expect(packageJson.scripts).not.toHaveProperty('deploy:with-legal')
+    expect(packageJson.scripts).not.toHaveProperty('legal:check')
+    expect(packageJson.scripts.test).not.toContain('legal-release')
   })
 })
