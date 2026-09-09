@@ -42,12 +42,19 @@ async function waitForServer() {
   }
   throw new Error(`Vite did not start.\n${output.join('')}`)
 }
-function assertHead(html, path) {
+function assertHead(response, html, path) {
   const url = `${baseUrl}${path}`
   assert((html.match(/<title>/g) ?? []).length === 1, `${path} needs one title.`)
   assert(html.includes('name="description"'), `${path} needs a description.`)
   assert(html.includes(`rel="canonical" href="${url}"`), `${path} canonical mismatch.`)
-  assert(!html.includes('noindex,nofollow'), `${path} must be indexable.`)
+  assert(
+    html.includes('name="robots" content="noindex,nofollow"'),
+    `${path} must include the sitewide noindex directive.`,
+  )
+  assert(
+    response.headers.get('x-robots-tag') === 'noindex, nofollow',
+    `${path} must include the sitewide X-Robots-Tag header.`,
+  )
 }
 
 try {
@@ -56,6 +63,10 @@ try {
   assert(
     health.response.status === 200 && health.text.includes('"catalogFamilies":149'),
     'Health contract failed.',
+  )
+  assert(
+    health.response.headers.get('x-robots-tag') === 'noindex, nofollow',
+    'Health endpoint must include the sitewide X-Robots-Tag header.',
   )
   const sitemap = await request('/sitemap.xml')
   assert(sitemap.response.status === 200, 'Sitemap failed.')
@@ -67,7 +78,7 @@ try {
   for (const path of paths) {
     const page = await request(path)
     assert(page.response.status === 200, `${path} must return 200.`)
-    assertHead(page.text, path)
+    assertHead(page.response, page.text, path)
   }
   const home = await request('/')
   assert(home.text.includes('data-font-home'), 'Font homepage marker missing.')
@@ -90,7 +101,9 @@ try {
       `${duplicate} must not become a second font-detail route.`,
     )
   }
-  console.log(`E2E smoke passed for ${paths.length} sitemap URLs and the 149-family catalog.`)
+  console.log(
+    `E2E smoke passed for ${paths.length} noindex sitemap URLs and the 149-family catalog.`,
+  )
 } finally {
   server.kill('SIGTERM')
   await Promise.race([

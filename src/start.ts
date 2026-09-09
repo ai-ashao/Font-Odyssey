@@ -1,4 +1,5 @@
 import { createMiddleware, createStart } from '@tanstack/react-start'
+import { productConfig } from '@/lib/product-config'
 
 const securityHeaders = createMiddleware({ type: 'request' }).server(async ({ next }) => {
   const result = await next()
@@ -21,6 +22,9 @@ const securityHeaders = createMiddleware({ type: 'request' }).server(async ({ ne
   headers.set('referrer-policy', 'strict-origin-when-cross-origin')
   headers.set('x-content-type-options', 'nosniff')
   headers.set('x-frame-options', 'DENY')
+  if (!productConfig.indexingEnabled) {
+    headers.set('x-robots-tag', 'noindex, nofollow')
+  }
 
   return {
     ...result,

@@ -29,6 +29,7 @@ export const Route = createRootRoute({
       { charSet: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { title: site.name },
+      ...(!productConfig.indexingEnabled ? [{ name: 'robots', content: 'noindex,nofollow' }] : []),
       ...(publicEnv.googleSiteVerification
         ? [{ name: 'google-site-verification', content: publicEnv.googleSiteVerification }]
         : []),

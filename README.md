@@ -74,3 +74,7 @@ Privacy and Terms use the normal public-page publishing path and are included
 in the sitemap. Their content is limited to the product's actual features and
 data practices. The current SEO brief records user-provided product evidence
 only; it makes no keyword-volume, difficulty, or SERP-ranking claim.
+
+Production is configured for `https://fontodyssey.com`. Search indexing is
+temporarily disabled sitewide through matching HTML robots metadata and the
+`X-Robots-Tag` response header.

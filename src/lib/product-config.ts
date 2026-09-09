@@ -2,6 +2,7 @@ export type ProductMode = 'saas' | 'tool'
 
 export type ProductConfig = {
   mode: ProductMode
+  indexingEnabled: boolean
   brand: {
     name: string
     mark: string
@@ -14,6 +15,7 @@ export type ProductConfig = {
  */
 export const productConfig: ProductConfig = {
   mode: 'tool',
+  indexingEnabled: false,
   brand: {
     name: 'FontOdyssey',
     mark: 'FO',
