@@ -84,6 +84,12 @@ try {
       `${removed} template residue must stay removed.`,
     )
   }
+  for (const duplicate of ['/fonts/inter', '/zh/fonts/inter', '/zh-tw/fonts/inter']) {
+    assert(
+      (await request(duplicate)).response.status === 404,
+      `${duplicate} must not become a second font-detail route.`,
+    )
+  }
   console.log(`E2E smoke passed for ${paths.length} sitemap URLs and the 149-family catalog.`)
 } finally {
   server.kill('SIGTERM')
