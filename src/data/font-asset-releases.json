@@ -1,0 +1,3973 @@
+[
+  {
+    "slug": "notosanstc",
+    "releaseVersion": "5e35378e-1d04305e",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/notosanstc/5e35378e-1d04305e/notosanstc.zip",
+      "sha256": "2801c013ec701e37030c3760308f9fb7a082dea503e935d603f87940bdf7b6c5",
+      "bytes": 7602709,
+      "contentType": "application/zip",
+      "etag": "96e7f942987f8d1d6b0f3eed9e5246fe"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/notosanstc/5e35378e-1d04305e/LICENSE.txt",
+      "sha256": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9",
+      "bytes": 4388,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "9e6561baca2756628871baf0c1e23539"
+    },
+    "previewStatus": "UNAVAILABLE_RFN",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:21:37Z"
+  },
+  {
+    "slug": "notosansjp",
+    "releaseVersion": "5e35378e-1d04305e",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/notosansjp/5e35378e-1d04305e/notosansjp.zip",
+      "sha256": "452c6c040c7e4f2ed0cfc202ab340c13c5c9fff9aa28795cb0fef25b339280d7",
+      "bytes": 5865972,
+      "contentType": "application/zip",
+      "etag": "07611ab23bc6bd5ba80ffedaa5470a7a"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/notosansjp/5e35378e-1d04305e/LICENSE.txt",
+      "sha256": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9",
+      "bytes": 4388,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "9e6561baca2756628871baf0c1e23539"
+    },
+    "previewStatus": "UNAVAILABLE_RFN",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:21:37Z"
+  },
+  {
+    "slug": "notosanssc",
+    "releaseVersion": "5e35378e-1d04305e",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/notosanssc/5e35378e-1d04305e/notosanssc.zip",
+      "sha256": "dfb3348b7551b3fa794e6e0cc45ef91e3acb18cb159f3cfc7c131f408a3c145c",
+      "bytes": 11299224,
+      "contentType": "application/zip",
+      "etag": "ceed3d0c8a24cc29082a43d792520129"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/notosanssc/5e35378e-1d04305e/LICENSE.txt",
+      "sha256": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9",
+      "bytes": 4388,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "9e6561baca2756628871baf0c1e23539"
+    },
+    "previewStatus": "UNAVAILABLE_RFN",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:21:37Z"
+  },
+  {
+    "slug": "notosanskr",
+    "releaseVersion": "5e35378e-1d04305e",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/notosanskr/5e35378e-1d04305e/notosanskr.zip",
+      "sha256": "65bd84dfde28dcf651a6f64155a3d43c90c553f39bd52ac28322d3840d14ea6b",
+      "bytes": 5347789,
+      "contentType": "application/zip",
+      "etag": "89993d2b6f7326560bcf04abf11530f6"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/notosanskr/5e35378e-1d04305e/LICENSE.txt",
+      "sha256": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9",
+      "bytes": 4388,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "9e6561baca2756628871baf0c1e23539"
+    },
+    "previewStatus": "UNAVAILABLE_RFN",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:21:37Z"
+  },
+  {
+    "slug": "notoserifjp",
+    "releaseVersion": "5e35378e-1d04305e",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/notoserifjp/5e35378e-1d04305e/notoserifjp.zip",
+      "sha256": "ffc297dfea01c3baad5fabee9fef5f8efdc8ab970f74599e3fe82360fdfe97d2",
+      "bytes": 8109053,
+      "contentType": "application/zip",
+      "etag": "4ec5fc0587b3d11bbf14916df5a3a40d"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/notoserifjp/5e35378e-1d04305e/LICENSE.txt",
+      "sha256": "5e0da210fb04058a8c0087985d2d456b931c2579811a49655721d3cf0c36b6d6",
+      "bytes": 4350,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "6536de90aa507e8786e54037026bbc81"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:21:37Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/notoserifjp/5e35378e-1d04305e/preview.woff2",
+      "sha256": "bf9c3e4377e51acc1a1a2e0978e39043224fa71f84cc5bca1b3786a3e49e3d5a",
+      "bytes": 9304,
+      "contentType": "font/woff2",
+      "etag": "956f0ef9b9a8657edeab53ea1b77010f"
+    }
+  },
+  {
+    "slug": "roboto",
+    "releaseVersion": "5e35378e-1d04305e",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/roboto/5e35378e-1d04305e/roboto.zip",
+      "sha256": "6a2a4d92383d15f112bd9d738cc4dee4cec77bdf61dab2e1cfe77e4f3d252359",
+      "bytes": 608140,
+      "contentType": "application/zip",
+      "etag": "278f8a3873f1ab87f0b73d9804109e9d"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/roboto/5e35378e-1d04305e/LICENSE.txt",
+      "sha256": "061402327a96aadb0bfb694a960ed289ecd38d383e396243831ab81feb109c41",
+      "bytes": 4394,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "d0d30e4860cc10440e095be065c2b0e3"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:21:37Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/roboto/5e35378e-1d04305e/preview.woff2",
+      "sha256": "0330e2d939375ab58c27c234b305b124e0e9b9ae5bfba1da07a43b89d0fddeae",
+      "bytes": 24516,
+      "contentType": "font/woff2",
+      "etag": "cb7d74faee98e3ed8515357cfe382fb5"
+    }
+  },
+  {
+    "slug": "opensans",
+    "releaseVersion": "5e35378e-1d04305e",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/opensans/5e35378e-1d04305e/opensans.zip",
+      "sha256": "e4a3cd852e1280eb6eb6352c73104708476f94798ca31f61c1330ccdb267b78e",
+      "bytes": 740461,
+      "contentType": "application/zip",
+      "etag": "fa9a5ac55cc5029b9ed0894ab88560d8"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/opensans/5e35378e-1d04305e/LICENSE.txt",
+      "sha256": "fbbbcfef55318de350562559b671360de6d597112ecc5c73881b05092db89602",
+      "bytes": 4389,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "2f74ec5e0b1fbcd6869e9224d7b4d600"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:21:37Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/opensans/5e35378e-1d04305e/preview.woff2",
+      "sha256": "92bbddd64d579df75c1fe306e70f5323fb109b47f089b9e8bbbd134c35365993",
+      "bytes": 29024,
+      "contentType": "font/woff2",
+      "etag": "c66c0471aa602ddf8f66e4b0cbe76098"
+    }
+  },
+  {
+    "slug": "inter",
+    "releaseVersion": "5e35378e-eb2c904c",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/inter/5e35378e-eb2c904c/inter.zip",
+      "sha256": "ca6ac32064d40a354828e2ccf83b84d6ce7422861c413042340bdd980ab33245",
+      "bytes": 961695,
+      "contentType": "application/zip",
+      "etag": "bb672a02e98032b4ed8c4604df4dbd5f"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/inter/5e35378e-eb2c904c/LICENSE.txt",
+      "sha256": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57",
+      "bytes": 4377,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "5e95cb23ed621124015c5d23224ba2d3"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:15:17Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/inter/5e35378e-eb2c904c/preview.woff2",
+      "sha256": "f50d69b259fd253d7da1386286acd7c9284c15c894ff210713389b54afd46fb5",
+      "bytes": 21460,
+      "contentType": "font/woff2",
+      "etag": "8fdb54ae311d2e721652e98e29d3b844"
+    }
+  },
+  {
+    "slug": "montserrat",
+    "releaseVersion": "5e35378e-1d04305e",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/montserrat/5e35378e-1d04305e/montserrat.zip",
+      "sha256": "39bf9c9b94584864cdefafcde7d906c493d67511c38e206b0e6315d7127f44d1",
+      "bytes": 619671,
+      "contentType": "application/zip",
+      "etag": "c092e0be300e51434a407fece11e41b2"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/montserrat/5e35378e-1d04305e/LICENSE.txt",
+      "sha256": "8b7141c03fa4f8d44e6345d5d4931709290f0f67875e452e95ac1fd3a027802e",
+      "bytes": 4400,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "2fdec60339ef243dcaca42a0c7bce717"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:21:37Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/montserrat/5e35378e-1d04305e/preview.woff2",
+      "sha256": "fa79ccdeabd8d5819bec231fb2b7c6f934306288b6d33650b39a2f230cfc339d",
+      "bytes": 13380,
+      "contentType": "font/woff2",
+      "etag": "c1800cc5138514f030155d4d3815ee23"
+    }
+  },
+  {
+    "slug": "arimo",
+    "releaseVersion": "5e35378e-1d04305e",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/arimo/5e35378e-1d04305e/arimo.zip",
+      "sha256": "a827e251b864b643ff230d51d49fcaeb56c12b82a62498be1f38c8cf28913b53",
+      "bytes": 642556,
+      "contentType": "application/zip",
+      "etag": "b0a0691973a890ea564987dd3d391696"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/arimo/5e35378e-1d04305e/LICENSE.txt",
+      "sha256": "11cce536cd2f3864d767003af5dcd739e2e15818cf2279b6175edeadd3960992",
+      "bytes": 4384,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "5f5727f99ad64bfce2d067464f36c9d8"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:21:37Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/arimo/5e35378e-1d04305e/preview.woff2",
+      "sha256": "cffac61254908110ea3dda58949eb2359f1e92d3f7c075dbf2bdad4018f6afa3",
+      "bytes": 5816,
+      "contentType": "font/woff2",
+      "etag": "2654e120575c31e50d23344f0487d2ed"
+    }
+  },
+  {
+    "slug": "robotomono",
+    "releaseVersion": "5e35378e-1d04305e",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/robotomono/5e35378e-1d04305e/robotomono.zip",
+      "sha256": "c7764888732a036da94dfb0605a49d86897e4bb988dba0b5192210aac2a87eec",
+      "bytes": 271519,
+      "contentType": "application/zip",
+      "etag": "52668ad7c2f45435af84bf8a1bc90fb8"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/robotomono/5e35378e-1d04305e/LICENSE.txt",
+      "sha256": "50ab8dd54680d3473f649c9db86fece88434d097c7834475c1c72d2f8c429215",
+      "bytes": 4395,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "e1a72ae9cb3ae2bc19cf4dea20623042"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:21:37Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/robotomono/5e35378e-1d04305e/preview.woff2",
+      "sha256": "72dbea454d75c584e6147c70f2734e6472ab9531244e0e85a30fc105aa4f69e9",
+      "bytes": 10672,
+      "contentType": "font/woff2",
+      "etag": "124e4b5f3d0ec28f614c66b4f7ad94cd"
+    }
+  },
+  {
+    "slug": "notosans",
+    "releaseVersion": "5e35378e-1d04305e",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/notosans/5e35378e-1d04305e/notosans.zip",
+      "sha256": "272b26accd0f91cd834e2ff90551909993d3654881ab28c84ae35ad726dc35d0",
+      "bytes": 2587766,
+      "contentType": "application/zip",
+      "etag": "a6772fc0f6d0972503a107b39f9c6818"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/notosans/5e35378e-1d04305e/LICENSE.txt",
+      "sha256": "cee9892f9f0cc8fe882c9e9537ee6a89621d86ee7ceaf70b02e2b2b1c25c061a",
+      "bytes": 4396,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "ead60c8cdf357c455cf69725c35c3b2d"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:21:37Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/notosans/5e35378e-1d04305e/preview.woff2",
+      "sha256": "1b907727196befd46992d5fdbdfc25767ac1f36d34a29a6022489c6184181ec6",
+      "bytes": 19484,
+      "contentType": "font/woff2",
+      "etag": "9d76b9e6ab2a90b969b635ebce113d62"
+    }
+  },
+  {
+    "slug": "raleway",
+    "releaseVersion": "5e35378e-eb2c904c",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/raleway/5e35378e-eb2c904c/raleway.zip",
+      "sha256": "891802e4fe7de915638a9504aa4cb4bb74322972ece9be68a89083ed967613a7",
+      "bytes": 345510,
+      "contentType": "application/zip",
+      "etag": "20d4021b448900e9b5302d5a6ef5e7fa"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/raleway/5e35378e-eb2c904c/LICENSE.txt",
+      "sha256": "7e946cf1171784d1015279e7dc35f827957a6b5d1f1f659ae0c98e5f5e37ed9b",
+      "bytes": 4497,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "7a36082ad889d5cafbe77a63a5ebb75f"
+    },
+    "previewStatus": "UNAVAILABLE_RFN",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:15:17Z"
+  },
+  {
+    "slug": "mplus1p",
+    "releaseVersion": "5e35378e-1d04305e",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/mplus1p/5e35378e-1d04305e/mplus1p.zip",
+      "sha256": "89403a129edb96359c0d91693e1871ea5bb733ac25c984c3dfa58b90fe89368e",
+      "bytes": 7123014,
+      "contentType": "application/zip",
+      "etag": "643f7017748ed00af992a0d176078ed8"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/mplus1p/5e35378e-1d04305e/LICENSE.txt",
+      "sha256": "da15da6b1496d4de18f97e2ad1b722ef8a1c121149c2c93b2cf7eac6ac27b35c",
+      "bytes": 4389,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "f1fe5b1114eb8e1b3884bdc935b2d796"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:21:37Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/mplus1p/5e35378e-1d04305e/preview.woff2",
+      "sha256": "ff0513a8a528647170ddcf4e480aeb361f9f6e3d4e6029c82e0c1005135ba0ca",
+      "bytes": 2916,
+      "contentType": "font/woff2",
+      "etag": "bc27d789bbc219651b0380f98291625c"
+    }
+  },
+  {
+    "slug": "nunito",
+    "releaseVersion": "5e35378e-1d04305e",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/nunito/5e35378e-1d04305e/nunito.zip",
+      "sha256": "40b0712f7a7d91b9bf3e13006fbbb71a146b2fc5eb6d61f7b1236124362e09c9",
+      "bytes": 269385,
+      "contentType": "application/zip",
+      "etag": "7a000e995e0973941551f87bb54ed011"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/nunito/5e35378e-1d04305e/LICENSE.txt",
+      "sha256": "580df76c95a1ec5ab878ceb25bb3d85c6a076804e9c970c8c6972aea775fdf65",
+      "bytes": 4385,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "1be2e7edc99bc4a3d9d56d68c48b5f39"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:21:37Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/nunito/5e35378e-1d04305e/preview.woff2",
+      "sha256": "459697abe483e30b2edb4cdbc8f220f8382664473b1ead8337710c5bee601232",
+      "bytes": 12252,
+      "contentType": "font/woff2",
+      "etag": "1c8542fee04f95bf83b5dffddac814bf"
+    }
+  },
+  {
+    "slug": "nunitosans",
+    "releaseVersion": "5e35378e-1d04305e",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/nunitosans/5e35378e-1d04305e/nunitosans.zip",
+      "sha256": "ef75d8c79fa641e512bf5c8f414a74aa698d97cf3fde76dfbcffa4fed1ac447e",
+      "bytes": 549915,
+      "contentType": "application/zip",
+      "etag": "e0273a11bd5133408da5ecce19420414"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/nunitosans/5e35378e-1d04305e/LICENSE.txt",
+      "sha256": "efbb0c9e864cef973982d9a17567e6be5c3d1759695574586f3f18c7ecca064b",
+      "bytes": 4393,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "23d4d0303ede3add187dce33e45e74ba"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:21:37Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/nunitosans/5e35378e-1d04305e/preview.woff2",
+      "sha256": "ad85d571244610e1588e2f823d84157770ba882cfbb1d1ea4af5cda9a5603c02",
+      "bytes": 28072,
+      "contentType": "font/woff2",
+      "etag": "b0abda2e64a615716185c49c6736eb2e"
+    }
+  },
+  {
+    "slug": "rubik",
+    "releaseVersion": "5e35378e-1d04305e",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/rubik/5e35378e-1d04305e/rubik.zip",
+      "sha256": "dd333a78e3d366d9cc1f9ddc8da11b95418dc1378275e57fc8966aa57611cedf",
+      "bytes": 299873,
+      "contentType": "application/zip",
+      "etag": "209d72ec8d1fb5b08309261e6b64758c"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/rubik/5e35378e-1d04305e/LICENSE.txt",
+      "sha256": "472cbe7c25441df63e9c7864b43eb3c0f4b3df950c66a76224e6cfe1eae843fb",
+      "bytes": 4384,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "2b56bdae7c1d9345d678696c3def6e12"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:21:37Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/rubik/5e35378e-1d04305e/preview.woff2",
+      "sha256": "2a4e59fe02426f5dacd26e53db75487dbba4b69238149b63607e8be82503b419",
+      "bytes": 10396,
+      "contentType": "font/woff2",
+      "etag": "4ab6a7cd099bee92399f33c6fda16875"
+    }
+  },
+  {
+    "slug": "robotoslab",
+    "releaseVersion": "5e35378e-1d04305e",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/robotoslab/5e35378e-1d04305e/robotoslab.zip",
+      "sha256": "8ef89fa8ceb7533bf9e70582c1da4a5261d765a3bcda4512be6ca70532bda44a",
+      "bytes": 152139,
+      "contentType": "application/zip",
+      "etag": "3144ce3c5f20b2640b63912c23d7147c"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/robotoslab/5e35378e-1d04305e/LICENSE.txt",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "3b83ef96387f14655fc854ddc3c6bd57"
+    },
+    "previewStatus": "ELIGIBLE_NOT_GENERATED",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:21:37Z"
+  },
+  {
+    "slug": "oswald",
+    "releaseVersion": "5e35378e-1d04305e",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/oswald/5e35378e-1d04305e/oswald.zip",
+      "sha256": "83f32be9eb569b5ab08b0deeba61377d888f4d0490197587833fc64a98e85c0e",
+      "bytes": 93595,
+      "contentType": "application/zip",
+      "etag": "d9a1fec288da37037a20725275dc5080"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/oswald/5e35378e-1d04305e/LICENSE.txt",
+      "sha256": "0fd731a904b729a4e02eaf5e8ebd06783edd9abe400e8882760160230675b652",
+      "bytes": 4483,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "c0fc6149908f11bdb440d51d4c916323"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:21:37Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/oswald/5e35378e-1d04305e/preview.woff2",
+      "sha256": "d5bca12b1a34519c2be7cfd052a94732a49ad2548157a19106f6cf36a58d54e0",
+      "bytes": 9144,
+      "contentType": "font/woff2",
+      "etag": "8aace7b99e4319a00a16c450b2f068c4"
+    }
+  },
+  {
+    "slug": "manrope",
+    "releaseVersion": "5e35378e-1d04305e",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/manrope/5e35378e-1d04305e/manrope.zip",
+      "sha256": "ad358be7d506efb383c0a2d545a34ba265b19047e381d8b9c1e5a82ca3d3cc6e",
+      "bytes": 70379,
+      "contentType": "application/zip",
+      "etag": "de57d372f6657ec35f669414154aa7ab"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/manrope/5e35378e-1d04305e/LICENSE.txt",
+      "sha256": "e01b637272e0cbdfb240184dd98ea5cc671556d9894dae2668d92ab2c906787c",
+      "bytes": 4384,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "2fcaec0e88aa2184f928d27ff72284ed"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:21:37Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/manrope/5e35378e-1d04305e/preview.woff2",
+      "sha256": "9f3bdabc507bf06c9629cd7da865bdb1b5e37f7c51e5152ceb77f04dec4c0df5",
+      "bytes": 7960,
+      "contentType": "font/woff2",
+      "etag": "5cbd6259d5711a68469756fea2416160"
+    }
+  },
+  {
+    "slug": "notoseriftc",
+    "releaseVersion": "5e35378e-eb2c904c",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/notoseriftc/5e35378e-eb2c904c/notoseriftc.zip",
+      "sha256": "1defddce75e77466c6db78f1a2745f3713517ef87264ddf757d7fe418eac060b",
+      "bytes": 10485696,
+      "contentType": "application/zip",
+      "etag": "f28cdeb208d000659de452b079a69562"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/notoseriftc/5e35378e-eb2c904c/LICENSE.txt",
+      "sha256": "5e0da210fb04058a8c0087985d2d456b931c2579811a49655721d3cf0c36b6d6",
+      "bytes": 4350,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "6536de90aa507e8786e54037026bbc81"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:15:17Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/notoseriftc/5e35378e-eb2c904c/preview.woff2",
+      "sha256": "99d67bc775509a62391d042c525328ba17ef2e8ec31223221ada8bd1c6663236",
+      "bytes": 7944,
+      "contentType": "font/woff2",
+      "etag": "7948124e9e08c4a4f1945c8fda433579"
+    }
+  },
+  {
+    "slug": "ubuntu",
+    "releaseVersion": "5e35378e-1d04305e",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/ubuntu/5e35378e-1d04305e/ubuntu.zip",
+      "sha256": "c80860aa95b1bc37bad8a98ce2c73abfedbd425927f2d5c46a0276ddde4afb8d",
+      "bytes": 1431857,
+      "contentType": "application/zip",
+      "etag": "6c94e2f7594807c89a5c86b1692a9636"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/ubuntu/5e35378e-1d04305e/LICENSE.txt",
+      "sha256": "2f0015108d68627bd788d313f529c21ff4da2c2c42a5e1f3883acc83480f9002",
+      "bytes": 4673,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "325a1a9029112a2405e743c7f816427b"
+    },
+    "previewStatus": "ELIGIBLE_NOT_GENERATED",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:21:37Z"
+  },
+  {
+    "slug": "notoserifsc",
+    "releaseVersion": "5e35378e-eb2c904c",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/notoserifsc/5e35378e-eb2c904c/notoserifsc.zip",
+      "sha256": "b2fada4a9c42a2fd3bca2b1f1416441082499f096178299ee20fdacbc06f58e8",
+      "bytes": 15480032,
+      "contentType": "application/zip",
+      "etag": "ca752240dd93698ec1e84484c114f992"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/notoserifsc/5e35378e-eb2c904c/LICENSE.txt",
+      "sha256": "5e0da210fb04058a8c0087985d2d456b931c2579811a49655721d3cf0c36b6d6",
+      "bytes": 4350,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "6536de90aa507e8786e54037026bbc81"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:15:17Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/notoserifsc/5e35378e-eb2c904c/preview.woff2",
+      "sha256": "c0f17ff727b89916b13c854f9bb4d17cc13a92f149a72cb7296996b8d7c7985c",
+      "bytes": 7920,
+      "contentType": "font/woff2",
+      "etag": "384f2ee716528e6a3eee34692272798e"
+    }
+  },
+  {
+    "slug": "merriweather",
+    "releaseVersion": "5e35378e-1d04305e",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/merriweather/5e35378e-1d04305e/merriweather.zip",
+      "sha256": "b71a633ffd503556584ce342ef0eb2dbf788b6ae9aed31dae4f6ae9078126798",
+      "bytes": 6406649,
+      "contentType": "application/zip",
+      "etag": "e5236e891747cb9627b35fb818e4704a"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/merriweather/5e35378e-1d04305e/LICENSE.txt",
+      "sha256": "715bd349bfa6116f99e351e1548321dcfa25b91df65502d22ca8d624557697d2",
+      "bytes": 4438,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "45fdbbf9040d6c064b8c4cc47feb7a5e"
+    },
+    "previewStatus": "UNAVAILABLE_RFN",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:21:37Z"
+  },
+  {
+    "slug": "lora",
+    "releaseVersion": "5e35378e-1d04305e",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/lora/5e35378e-1d04305e/lora.zip",
+      "sha256": "483331b1cb00fd15d2d76947e86912270d1f9b87734e4df07a95b648c585b900",
+      "bytes": 224914,
+      "contentType": "application/zip",
+      "etag": "f6abe0332bd6ee48c2c5dfe035733159"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/lora/5e35378e-1d04305e/LICENSE.txt",
+      "sha256": "1d9a970809ac804b582a6ce7f0ebc4e7fefcbfd7ff6299cad35ee656a21be716",
+      "bytes": 4423,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "804cefa2a9ec3f1ff5a9af3882c18fab"
+    },
+    "previewStatus": "UNAVAILABLE_RFN",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:21:37Z"
+  },
+  {
+    "slug": "mulish",
+    "releaseVersion": "5e35378e-1d04305e",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/mulish/5e35378e-1d04305e/mulish.zip",
+      "sha256": "8891049930687d31d176b48dc9fbadad18e0308254395878dd128d5fb2ce75dc",
+      "bytes": 206291,
+      "contentType": "application/zip",
+      "etag": "4703a23104983a8923ea80638bf0042c"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/mulish/5e35378e-1d04305e/LICENSE.txt",
+      "sha256": "097e9ac414d9251c8580c073a13f8899798c66db746de60662148789ca693f19",
+      "bytes": 4385,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "4fd5bc926a5b74b30d13974fa8591119"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:21:37Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/mulish/5e35378e-1d04305e/preview.woff2",
+      "sha256": "b258715629991050592634b681615d9b453ce8d5b864022d97605c5ce3dd3dba",
+      "bytes": 9704,
+      "contentType": "font/woff2",
+      "etag": "f4a000100fd0729effa551a43d79ff63"
+    }
+  },
+  {
+    "slug": "sourcesans3",
+    "releaseVersion": "5e35378e-1d04305e",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/sourcesans3/5e35378e-1d04305e/sourcesans3.zip",
+      "sha256": "b30f98a7bd2f104ea51b6bebd148bfaa5a5aac3c4195c93fa5aabb3683c006f7",
+      "bytes": 418905,
+      "contentType": "application/zip",
+      "etag": "f369bacd5c6200f266911ad33068be70"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/sourcesans3/5e35378e-1d04305e/LICENSE.txt",
+      "sha256": "09746787287a289323b0ec3cff4d1a4a801331b82b7207c1e186f5d26619a392",
+      "bytes": 4579,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "b80846b87d2b15e26e95885e0a3d5fe7"
+    },
+    "previewStatus": "UNAVAILABLE_RFN",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:21:37Z"
+  },
+  {
+    "slug": "ibmplexsans",
+    "releaseVersion": "5e35378e-1d04305e",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/ibmplexsans/5e35378e-1d04305e/ibmplexsans.zip",
+      "sha256": "47c65e3d8e4fcfb7162c95c8bbebc556899c53e798de525163770bc352563f60",
+      "bytes": 631198,
+      "contentType": "application/zip",
+      "etag": "db9352ee14d7976269295187ea1357c1"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/ibmplexsans/5e35378e-1d04305e/LICENSE.txt",
+      "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da",
+      "bytes": 4456,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "4d4949dda4b23922e334f0cbf6179065"
+    },
+    "previewStatus": "UNAVAILABLE_RFN",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:21:37Z"
+  },
+  {
+    "slug": "jetbrainsmono",
+    "releaseVersion": "5e35378e-1d04305e",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/jetbrainsmono/5e35378e-1d04305e/jetbrainsmono.zip",
+      "sha256": "fa5848cb1e316d47ecdec5c2972b1fc8836884518b1fbf29759af01d580f494f",
+      "bytes": 190734,
+      "contentType": "application/zip",
+      "etag": "acb9bd199f1e505054da43643f80f1af"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/jetbrainsmono/5e35378e-1d04305e/LICENSE.txt",
+      "sha256": "b2fe5e8987594e9ffd1d2ca52a2f5d73eb8335243893c5d6254b5ad69269591d",
+      "bytes": 4399,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "a3c0bd543d9c4224a1af07527a88e497"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:21:37Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/jetbrainsmono/5e35378e-1d04305e/preview.woff2",
+      "sha256": "05753e98f1663b77ea81fac53588b1731759c3cc94e7e471135fa5bca866879f",
+      "bytes": 6892,
+      "contentType": "font/woff2",
+      "etag": "bbdc4a3b34725d38c41bfcd3f6aa5d91"
+    }
+  },
+  {
+    "slug": "heebo",
+    "releaseVersion": "5e35378e-1d04305e",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/heebo/5e35378e-1d04305e/heebo.zip",
+      "sha256": "7d8621de427710959fda02e7016d28baf2ef2a069a4a9f411f189271ff8852e4",
+      "bytes": 79239,
+      "contentType": "application/zip",
+      "etag": "2b2559788adb3705bb4564d551172a10"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/heebo/5e35378e-1d04305e/LICENSE.txt",
+      "sha256": "866747cbccae229433e946b90fcfc457b81c33ac89e593855770851354f9e6c3",
+      "bytes": 4474,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "6d33fd2ca38a36c3633e2930c252228e"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:21:37Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/heebo/5e35378e-1d04305e/preview.woff2",
+      "sha256": "f29fc55e44f56e6d3074519a78f739cf45bf0b390830ef69e0565369ffb4eb45",
+      "bytes": 10076,
+      "contentType": "font/woff2",
+      "etag": "e1b88a3ca725b50b3be2e5906818283c"
+    }
+  },
+  {
+    "slug": "notoserif",
+    "releaseVersion": "5e35378e-1d04305e",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/notoserif/5e35378e-1d04305e/notoserif.zip",
+      "sha256": "5e06aea85db18677c3811456449a208b2cf01b3ce7e40fdb7eda14acc80aa7c4",
+      "bytes": 2550417,
+      "contentType": "application/zip",
+      "etag": "351ed7350da19d4fd47a72ff44e03a1e"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/notoserif/5e35378e-1d04305e/LICENSE.txt",
+      "sha256": "cee9892f9f0cc8fe882c9e9537ee6a89621d86ee7ceaf70b02e2b2b1c25c061a",
+      "bytes": 4396,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "ead60c8cdf357c455cf69725c35c3b2d"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:21:37Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/notoserif/5e35378e-1d04305e/preview.woff2",
+      "sha256": "46ef881ab6e1c8dd521be55fe8da8eb036a9c858edf2ddfc3e407af386ae0869",
+      "bytes": 24136,
+      "contentType": "font/woff2",
+      "etag": "d01b699817e5c8e855b14ddc7e14308e"
+    }
+  },
+  {
+    "slug": "firasans",
+    "releaseVersion": "5e35378e-eb2c904c",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/firasans/5e35378e-eb2c904c/firasans.zip",
+      "sha256": "cda3341128532b9ebb14d898d26f2d5dad5a2cee9d9cefb5742acf3fff8b4221",
+      "bytes": 3933207,
+      "contentType": "application/zip",
+      "etag": "e7d1de742818e11607547275ea7c7d57"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/firasans/5e35378e-eb2c904c/LICENSE.txt",
+      "sha256": "8f24842e9174beda18a556c2ae7d54f5dc444340c19a3a9ef77e23bca366adbd",
+      "bytes": 4370,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "de28deb2f8c1f23fd4d6918113ac3ddd"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:15:17Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/firasans/5e35378e-eb2c904c/preview.woff2",
+      "sha256": "f1a681bf25399f4e4bf7d8a8f103751dcedf0f55b15d61aa97ab3ff44fada713",
+      "bytes": 8060,
+      "contentType": "font/woff2",
+      "etag": "7cb9a078c928a31f56e199a042140444"
+    }
+  },
+  {
+    "slug": "cormorantgaramond",
+    "releaseVersion": "5e35378e-1d04305e",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/cormorantgaramond/5e35378e-1d04305e/cormorantgaramond.zip",
+      "sha256": "c7ae392269e7bd85d083273b978532f8a67f5be5b4094676c8ddecb485cc6c52",
+      "bytes": 541007,
+      "contentType": "application/zip",
+      "etag": "5c9ba68b1c0e6e7e41f0ac548481739a"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/cormorantgaramond/5e35378e-1d04305e/LICENSE.txt",
+      "sha256": "60700d351cac4650c51f3f9db318d2a420f8b45052dba2715eb5fec41f0f6956",
+      "bytes": 4387,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "6085761d4b4b031541e48038b5701c6f"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:21:37Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/cormorantgaramond/5e35378e-1d04305e/preview.woff2",
+      "sha256": "cad1c0b0c875b62dc40bcef917b62dc3e2727f587b7e924850f52e224fcdcfe0",
+      "bytes": 11768,
+      "contentType": "font/woff2",
+      "etag": "176d2e8461a2e2be7ae00e0c10418dc0"
+    }
+  },
+  {
+    "slug": "librefranklin",
+    "releaseVersion": "5e35378e-1d04305e",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/librefranklin/5e35378e-1d04305e/librefranklin.zip",
+      "sha256": "dda82f0aca600fb0cca31cee9f4ed96ee5d4b1354eb9b82aeb917d3d5945e611",
+      "bytes": 202205,
+      "contentType": "application/zip",
+      "etag": "142efc45c9fc050008d4bd2ab304a91f"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/librefranklin/5e35378e-1d04305e/LICENSE.txt",
+      "sha256": "2710268527181a27b8e938617551bae29e714e6525247be6679bf897a9942a60",
+      "bytes": 4495,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "5af2455830b482248ef3fffaed4e4eda"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:21:37Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/librefranklin/5e35378e-1d04305e/preview.woff2",
+      "sha256": "7783c314bd825dd9aa0cc5081aa10861432a7351f728db75e621b620a66d1905",
+      "bytes": 10516,
+      "contentType": "font/woff2",
+      "etag": "4bbf139922ecbb5cf91494be61a5fc30"
+    }
+  },
+  {
+    "slug": "poppins",
+    "releaseVersion": "5e35378e-1d04305e",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/poppins/5e35378e-1d04305e/poppins.zip",
+      "sha256": "0b0aecbb6b1fc0e9e6db1f92ecc0c91c60e130fba0d7f15945d4378c40b54a30",
+      "bytes": 1372712,
+      "contentType": "application/zip",
+      "etag": "e60d64ceb0cb4141efaf07b0ad758744"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/poppins/5e35378e-1d04305e/LICENSE.txt",
+      "sha256": "6be04893d770899a015649c7aa3b582f871b272f8747a92b78b17c3e5c8b2573",
+      "bytes": 4385,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "481fed197dac47775fb62cefafa2555e"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:21:37Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/poppins/5e35378e-1d04305e/preview.woff2",
+      "sha256": "43d265ade8972c9fbf1ddfec1308c4dbc169cb6f210249aff65437a9ab4cff2d",
+      "bytes": 2516,
+      "contentType": "font/woff2",
+      "etag": "821fee43aa581bade453d0af07bdc01d"
+    }
+  },
+  {
+    "slug": "notoserifkr",
+    "releaseVersion": "5e35378e-b52c7bb8",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/notoserifkr/5e35378e-b52c7bb8/notoserifkr.zip",
+      "sha256": "254be3c93ad11fd5064dc5ea8b761a8ffce8efa0f21f4cbc2560ea1a569acb52",
+      "bytes": 9622290,
+      "contentType": "application/zip",
+      "etag": "0d2367b4b8f9e6b70bc5d33f77a32dd3"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/notoserifkr/5e35378e-b52c7bb8/LICENSE.txt",
+      "sha256": "5e0da210fb04058a8c0087985d2d456b931c2579811a49655721d3cf0c36b6d6",
+      "bytes": 4350,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "6536de90aa507e8786e54037026bbc81"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:26:52Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/notoserifkr/5e35378e-b52c7bb8/preview.woff2",
+      "sha256": "c8aa02e696fff18199e34286920817d6a6c06c1da82807bbcbbb7d658b5cbfd7",
+      "bytes": 8764,
+      "contentType": "font/woff2",
+      "etag": "8de8f6677721820362ca1d61e1e2300d"
+    }
+  },
+  {
+    "slug": "lato",
+    "releaseVersion": "5e35378e-b52c7bb8",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/lato/5e35378e-b52c7bb8/lato.zip",
+      "sha256": "83abe2497b18a98d102c68bb7f8c87a986463033b11406a4b126c35db34b2460",
+      "bytes": 6097985,
+      "contentType": "application/zip",
+      "etag": "68f95e6aeccd7b62eed98901bc37743e"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/lato/5e35378e-b52c7bb8/LICENSE.txt",
+      "sha256": "74ba064d03f1f1c4a952da936c3eb71866c34404916734de3cae73b34357e59e",
+      "bytes": 4407,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "39591640d6982378c43eba1db4b68e12"
+    },
+    "previewStatus": "UNAVAILABLE_RFN",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:26:52Z"
+  },
+  {
+    "slug": "ebgaramond",
+    "releaseVersion": "5e35378e-b52c7bb8",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/ebgaramond/5e35378e-b52c7bb8/ebgaramond.zip",
+      "sha256": "261083c6fd02fc1e14a2b9e7a421e202bd034d24d40e629961018994bbd84469",
+      "bytes": 789633,
+      "contentType": "application/zip",
+      "etag": "f9b37d116db33e54eeff77737fbf2d55"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/ebgaramond/5e35378e-b52c7bb8/LICENSE.txt",
+      "sha256": "0985066662eb755ed3683ae5482a81a9195b49ce3f7e165cc2388b3dbece7dd7",
+      "bytes": 4398,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "9166a25d533447579c7c3af6dc8e0bdb"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:26:52Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/ebgaramond/5e35378e-b52c7bb8/preview.woff2",
+      "sha256": "6a9be981f83e56707999cef916c2318569a11b12ff9d546b2ed607bfc7cc540a",
+      "bytes": 14496,
+      "contentType": "font/woff2",
+      "etag": "b67233d81e2b39e698ada3a4219c274a"
+    }
+  },
+  {
+    "slug": "sourcecodepro",
+    "releaseVersion": "5e35378e-b52c7bb8",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/sourcecodepro/5e35378e-b52c7bb8/sourcecodepro.zip",
+      "sha256": "442ad673da03b0d3cb326a20cf51fe517b9e96a4cb81f38e32260d636481ccea",
+      "bytes": 214124,
+      "contentType": "application/zip",
+      "etag": "251da346ea5c3690e19a97c324573ea8"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/sourcecodepro/5e35378e-b52c7bb8/LICENSE.txt",
+      "sha256": "cb30d3086a8b3ce0b9e3690bf48d6620402b61160bc658076f95180ccd9e9dae",
+      "bytes": 4622,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "c7c16bdc2c96af797293d68503e5c65c"
+    },
+    "previewStatus": "UNAVAILABLE_RFN",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:26:52Z"
+  },
+  {
+    "slug": "dmsans",
+    "releaseVersion": "5e35378e-b52c7bb8",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/dmsans/5e35378e-b52c7bb8/dmsans.zip",
+      "sha256": "6f86a0773af39a7b7c5b3faff71b5217fca58c6e7c0ff635d525b0e6c202de52",
+      "bytes": 252460,
+      "contentType": "application/zip",
+      "etag": "02e84b7f9a328c297c897899668575f1"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/dmsans/5e35378e-b52c7bb8/LICENSE.txt",
+      "sha256": "9af36190332437f5ecd09974de43c1f7c77a310a996cdd8ceb25628b458840e1",
+      "bytes": 4482,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "5d80d8b71643fc638d4b8b1f3ded7c6f"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:26:52Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/dmsans/5e35378e-b52c7bb8/preview.woff2",
+      "sha256": "27145bd67d5040da716a3da9b3d6b64d9666913f10503957c60fc3394d2b42f2",
+      "bytes": 21952,
+      "contentType": "font/woff2",
+      "etag": "9e056d904d8aade969ce04a5ba589cf2"
+    }
+  },
+  {
+    "slug": "ibmplexmono",
+    "releaseVersion": "5e35378e-b52c7bb8",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/ibmplexmono/5e35378e-b52c7bb8/ibmplexmono.zip",
+      "sha256": "908879bb66facc8828e8886d92071efb114ec423a1fb5ed7cbb25686ffea5ec3",
+      "bytes": 850625,
+      "contentType": "application/zip",
+      "etag": "36570bdb16b92460f589865a39daae54"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/ibmplexmono/5e35378e-b52c7bb8/LICENSE.txt",
+      "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da",
+      "bytes": 4456,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "4d4949dda4b23922e334f0cbf6179065"
+    },
+    "previewStatus": "UNAVAILABLE_RFN",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:26:52Z"
+  },
+  {
+    "slug": "intertight",
+    "releaseVersion": "5e35378e-b52c7bb8",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/intertight/5e35378e-b52c7bb8/intertight.zip",
+      "sha256": "42b65cb2a27f86d1a59a4b850d43477fa7741a93126f775e737b4abd35481f0d",
+      "bytes": 632997,
+      "contentType": "application/zip",
+      "etag": "672dac8dea61b39a87bb879a0559832f"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/intertight/5e35378e-b52c7bb8/LICENSE.txt",
+      "sha256": "50240ab035cf1b6b3307940235481d515c4b6de3ab1fa843dbe59e7892cb9d58",
+      "bytes": 4383,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "456066065daca41f7fe56453e9a9ad48"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:26:52Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/intertight/5e35378e-b52c7bb8/preview.woff2",
+      "sha256": "5ec77fc47992485494bbf4cd30a4e783050aef0b6a43537d87c561f65c9b4b12",
+      "bytes": 12072,
+      "contentType": "font/woff2",
+      "etag": "6924c16f369385415b4cb490696072d1"
+    }
+  },
+  {
+    "slug": "playfairdisplay",
+    "releaseVersion": "5e35378e-b52c7bb8",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/playfairdisplay/5e35378e-b52c7bb8/playfairdisplay.zip",
+      "sha256": "60a6b572525ade4f129a02782db09c7ca5c7238e3cd428ba32864a8c67ae2bec",
+      "bytes": 270609,
+      "contentType": "application/zip",
+      "etag": "dd16ae9b2924f91a97803602b044c4db"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/playfairdisplay/5e35378e-b52c7bb8/LICENSE.txt",
+      "sha256": "566be814f8e96e93dfa16101331557eb6b5467e9e03f627c0910fe93ca12300e",
+      "bytes": 4449,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "b1c322433789a92e0e60359dcbfb96e3"
+    },
+    "previewStatus": "UNAVAILABLE_RFN",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:26:52Z"
+  },
+  {
+    "slug": "robotoflex",
+    "releaseVersion": "5e35378e-b52c7bb8",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/robotoflex/5e35378e-b52c7bb8/robotoflex.zip",
+      "sha256": "8c046dafe0a07a21606dbe2d54f1dd528a5d2e96673460c0a99892b1d997f2df",
+      "bytes": 1024347,
+      "contentType": "application/zip",
+      "etag": "513da7a50618f0cbe27493e7e4cdc2f9"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/robotoflex/5e35378e-b52c7bb8/LICENSE.txt",
+      "sha256": "9cbaed04b20c853f99840efe5dc96956f6f6120ed83a0ade35f9281a2b63e5d0",
+      "bytes": 4488,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "6e1cd7edbe987e276142937e38395911"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:26:52Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/robotoflex/5e35378e-b52c7bb8/preview.woff2",
+      "sha256": "6dd6fc4d8650254e70e1cda2a6ebacc9a53af7eae1c3cdbd703a87a09b7ed590",
+      "bytes": 91992,
+      "contentType": "font/woff2",
+      "etag": "07d47c1a2f55010696cc26304d82cb33"
+    }
+  },
+  {
+    "slug": "bitter",
+    "releaseVersion": "5e35378e-b52c7bb8",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/bitter/5e35378e-b52c7bb8/bitter.zip",
+      "sha256": "aff70f4905e97861ab3aba3be386bff7b5bc983bda965825914ca63aab6fccc7",
+      "bytes": 303372,
+      "contentType": "application/zip",
+      "etag": "373099a5bab8c795e2543213cc43410f"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/bitter/5e35378e-b52c7bb8/LICENSE.txt",
+      "sha256": "152a1e283e23b42c4940da4c72f2f5bebaa17969cb77c76d7af05903846006f1",
+      "bytes": 4424,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "db58f5a0efcc29037e31839da245f1f5"
+    },
+    "previewStatus": "UNAVAILABLE_RFN",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:26:52Z"
+  },
+  {
+    "slug": "outfit",
+    "releaseVersion": "5e35378e-b52c7bb8",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/outfit/5e35378e-b52c7bb8/outfit.zip",
+      "sha256": "878df7e6a1d84c7e622e5e49a230195312b4885370e6261ef27e74c2ce5816fc",
+      "bytes": 58632,
+      "contentType": "application/zip",
+      "etag": "a3e2a6b11bb23c809b1fad5879cc6b13"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/outfit/5e35378e-b52c7bb8/LICENSE.txt",
+      "sha256": "c676351bf8576b9aba743cd5eaa8c0e7ee0d51f805d720447b4df4ddb6a2e416",
+      "bytes": 4389,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "fc7bcc2f3d37195db3ea982ccfecd531"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:26:52Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/outfit/5e35378e-b52c7bb8/preview.woff2",
+      "sha256": "172e66b697701db5639b51c301baf3be56370fd958e8395ea1683e44d189bc76",
+      "bytes": 10516,
+      "contentType": "font/woff2",
+      "etag": "971914c2f89591b939aba83d47765048"
+    }
+  },
+  {
+    "slug": "nanumgothic",
+    "releaseVersion": "5e35378e-b52c7bb8",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/nanumgothic/5e35378e-b52c7bb8/nanumgothic.zip",
+      "sha256": "29d341d9318fd2d3b34f6c062684b884a1ed2bb7d448fdf2d6c17f260b8ada6c",
+      "bytes": 2249092,
+      "contentType": "application/zip",
+      "etag": "4ba382d54b051bb0cbc65b2d20b6386e"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/nanumgothic/5e35378e-b52c7bb8/LICENSE.txt",
+      "sha256": "eeacf16032901d0ed0456876ec77b8f0fda6b3fecec7d972f8543eb602e6c30f",
+      "bytes": 4534,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "8e538d70b04969fb88bdd90f450142ab"
+    },
+    "previewStatus": "UNAVAILABLE_RFN",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:26:52Z"
+  },
+  {
+    "slug": "kanit",
+    "releaseVersion": "5e35378e-b52c7bb8",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/kanit/5e35378e-b52c7bb8/kanit.zip",
+      "sha256": "f0ba8499bc9023152fa8f02febd4951d7789bcd288793f9adc98ad0aed623429",
+      "bytes": 1279171,
+      "contentType": "application/zip",
+      "etag": "19763760338f2103b7b3268397f34bbe"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/kanit/5e35378e-b52c7bb8/LICENSE.txt",
+      "sha256": "eb998cc5a685b240cdb46a0b5747e70334c8c57bbd7b1f6b044d75719358df67",
+      "bytes": 4383,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "5495cb3d07efa02da584c2bf107abadc"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:26:52Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/kanit/5e35378e-b52c7bb8/preview.woff2",
+      "sha256": "142202bf25d22daa67e0a02272c96646a534300127844511fb0af1244ecd49eb",
+      "bytes": 6724,
+      "contentType": "font/woff2",
+      "etag": "10651a6b510268cbd67426db2f432f43"
+    }
+  },
+  {
+    "slug": "worksans",
+    "releaseVersion": "5e35378e-b52c7bb8",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/worksans/5e35378e-b52c7bb8/worksans.zip",
+      "sha256": "fe6b3a98f399e82367ae06d1a4f7f06faa3bc2917f11225d7d5ed82018f21181",
+      "bytes": 336594,
+      "contentType": "application/zip",
+      "etag": "09ef92aa48acc3741ffaa28e61caa1f3"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/worksans/5e35378e-b52c7bb8/LICENSE.txt",
+      "sha256": "749aca05078664ce682dce1b1b10096ac397cb088c1a6df4e1bb56f0092a9272",
+      "bytes": 4396,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "981da6d9753475b7c1627ec76309b3ab"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:26:52Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/worksans/5e35378e-b52c7bb8/preview.woff2",
+      "sha256": "84f3001442fa29a6608059becbbe0d824c23ed18acb9adcdbad2f860b562720a",
+      "bytes": 14276,
+      "contentType": "font/woff2",
+      "etag": "1c3a1ee7d70fc1a30810f002b41d89d8"
+    }
+  },
+  {
+    "slug": "plusjakartasans",
+    "releaseVersion": "5e35378e-b52c7bb8",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/plusjakartasans/5e35378e-b52c7bb8/plusjakartasans.zip",
+      "sha256": "bb2f70b696ea99e74cb972b9e14bdd9ec6e2f5663f4d0d1646b18e92b51bb4f5",
+      "bytes": 168460,
+      "contentType": "application/zip",
+      "etag": "2311cee213373176c3770df91507a2aa"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/plusjakartasans/5e35378e-b52c7bb8/LICENSE.txt",
+      "sha256": "995c7199cab65954f545996326755daee7b63cc6b42b06c13da1f9502ab08a99",
+      "bytes": 4402,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "028e355944f58645eb2a8d190e6b24f6"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:26:52Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/plusjakartasans/5e35378e-b52c7bb8/preview.woff2",
+      "sha256": "68463c1339d6883b86a371e525c73e45da5a3e4cf9d522924cf11c2a0b0b71d7",
+      "bytes": 9676,
+      "contentType": "font/woff2",
+      "etag": "8786fa47b2c8dd8fb024778879c6b16c"
+    }
+  },
+  {
+    "slug": "exo2",
+    "releaseVersion": "5e35378e-b52c7bb8",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/exo2/5e35378e-b52c7bb8/exo2.zip",
+      "sha256": "6cdd92af93ba29764c10b8956a925dfb51e201288519cf6a1bcfaacff23cc923",
+      "bytes": 281228,
+      "contentType": "application/zip",
+      "etag": "0c45a255876d6787e8282d333f75e457"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/exo2/5e35378e-b52c7bb8/LICENSE.txt",
+      "sha256": "7f95a8eeecc6904ffc81cd10cc8ebc7fcee72a67922924bf45f02dff03b88127",
+      "bytes": 4386,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "05552fc6d1895ac9ef43452878b0d896"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:26:52Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/exo2/5e35378e-b52c7bb8/preview.woff2",
+      "sha256": "c2dfbde71b3e05ebcdfb868ff6a5d296a881eea8e9b829250e113a4f43dca9dc",
+      "bytes": 13416,
+      "contentType": "font/woff2",
+      "etag": "93623b40c4d9b1f3d5be2fd9775bb5a2"
+    }
+  },
+  {
+    "slug": "figtree",
+    "releaseVersion": "5e35378e-b52c7bb8",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/figtree/5e35378e-b52c7bb8/figtree.zip",
+      "sha256": "70bb9c732d9e0fbf2b59845cd913197f7fe399045d86257ef66e3c46536703ff",
+      "bytes": 73657,
+      "contentType": "application/zip",
+      "etag": "3d958c94be15d6459c2b5192827cdc37"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/figtree/5e35378e-b52c7bb8/LICENSE.txt",
+      "sha256": "140d37233e7f3ce7313798befa9600893bcceaf41a55fa0fa5ad52f7f657a268",
+      "bytes": 4388,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "9d1b2335c80d1d9848f6918fad9c8872"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:26:52Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/figtree/5e35378e-b52c7bb8/preview.woff2",
+      "sha256": "0f560e5b15b6273db6187ff6c95b811ee4dbe48084120b3470f87cc6ad717dc2",
+      "bytes": 7276,
+      "contentType": "font/woff2",
+      "etag": "f580d84e2399d610027ad8007d5cb426"
+    }
+  },
+  {
+    "slug": "zenkakugothicnew",
+    "releaseVersion": "5e35378e-b52c7bb8",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/zenkakugothicnew/5e35378e-b52c7bb8/zenkakugothicnew.zip",
+      "sha256": "e3175ec98379e5d44b9c40be7831938248a0c1e29fc2b67d3c6241b018148016",
+      "bytes": 7009620,
+      "contentType": "application/zip",
+      "etag": "615fbbbf035591fe09de4988690b1a19"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/zenkakugothicnew/5e35378e-b52c7bb8/LICENSE.txt",
+      "sha256": "0fac78a235c98d640cb06332eb5362c211d86fa03c011df438c35005d22ad2c7",
+      "bytes": 4401,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "8b4b841702bf33556b8aa7bda827afb1"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:26:52Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/zenkakugothicnew/5e35378e-b52c7bb8/preview.woff2",
+      "sha256": "643e7cd07454bb8b9c92eb3d69850ba8252b8d3fa0fa66a8b186fad0efa28ca5",
+      "bytes": 3092,
+      "contentType": "font/woff2",
+      "etag": "f752abcb4ed8df6c72cae7ff8146cb2e"
+    }
+  },
+  {
+    "slug": "prompt",
+    "releaseVersion": "5e35378e-b52c7bb8",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/prompt/5e35378e-b52c7bb8/prompt.zip",
+      "sha256": "cf5ac78b78a56b940315b9a1855b48207f7a82ae6c920cc8f43deba987f98e60",
+      "bytes": 1315582,
+      "contentType": "application/zip",
+      "etag": "d232a82bc689a7bb44effb487925a36b"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/prompt/5e35378e-b52c7bb8/LICENSE.txt",
+      "sha256": "1d08c63944e639bbfe8a1b81e3c6a63836806c126b3573b9cda0db83fd27ffe9",
+      "bytes": 4452,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "f358e7bd062d56dd95c03c595f0609d9"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:26:52Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/prompt/5e35378e-b52c7bb8/preview.woff2",
+      "sha256": "0836465ddb13682a3caa68dce9eaee0dedc5f1d4afb1dba2f28a54c0a26a06ee",
+      "bytes": 7960,
+      "contentType": "font/woff2",
+      "etag": "421c296b2b2e5043a6d2e17e56f729ac"
+    }
+  },
+  {
+    "slug": "bricolagegrotesque",
+    "releaseVersion": "5e35378e-b52c7bb8",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/bricolagegrotesque/5e35378e-b52c7bb8/bricolagegrotesque.zip",
+      "sha256": "6b721ded2c285d430ee09da5bd929b675871397a58d8c054fea5ca061aa9d72b",
+      "bytes": 255438,
+      "contentType": "application/zip",
+      "etag": "4c539b54db53e63d2360b6f82488a59b"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/bricolagegrotesque/5e35378e-b52c7bb8/LICENSE.txt",
+      "sha256": "4b5a7d8f37f5602621c8a8d7358a6a2e71317e6c231c661e15aef0275d3e07ba",
+      "bytes": 4403,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "ca124d9da1494f1d3c650b05144c8ceb"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:26:52Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/bricolagegrotesque/5e35378e-b52c7bb8/preview.woff2",
+      "sha256": "b2e293c3278ee7a48df54cf66e98bb6388bf2737b2d8fd026bcfd387fd9124b3",
+      "bytes": 34128,
+      "contentType": "font/woff2",
+      "etag": "7418ef7986d9cbc369272bd677dbf336"
+    }
+  },
+  {
+    "slug": "barlow",
+    "releaseVersion": "5e35378e-b52c7bb8",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/barlow/5e35378e-b52c7bb8/barlow.zip",
+      "sha256": "c8d9981b73c67de54a92ca3275dbadbe9983bed8769e6ea8bb4f2fb4abdafc74",
+      "bytes": 966290,
+      "contentType": "application/zip",
+      "etag": "9d5e2993df3a0e5a958405b410fe7471"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/barlow/5e35378e-b52c7bb8/LICENSE.txt",
+      "sha256": "186d750eb496a4c17a76385f82be6aea2ac1cf2de074a811d63786cf374ea73f",
+      "bytes": 4377,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "46cbde1f44ff31807ec209f1b72acad2"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:26:52Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/barlow/5e35378e-b52c7bb8/preview.woff2",
+      "sha256": "281d2436077df9f6faa2e68111cad951642400f71134f25942e267957e1c9401",
+      "bytes": 8856,
+      "contentType": "font/woff2",
+      "etag": "5512f940e82354a385e0b1560dd92c97"
+    }
+  },
+  {
+    "slug": "saira",
+    "releaseVersion": "5e35378e-b52c7bb8",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/saira/5e35378e-b52c7bb8/saira.zip",
+      "sha256": "7fd896bffefd35fef79b412f638292ed830a61064e37aff919afd7ff0f53cdd3",
+      "bytes": 484057,
+      "contentType": "application/zip",
+      "etag": "77f6512840db3a64df6f0f71b6335572"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/saira/5e35378e-b52c7bb8/LICENSE.txt",
+      "sha256": "f2665d4718b452b3818a877191355ac884a6b9b419d35408fe7ee487e9e8f30f",
+      "bytes": 4386,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "f02d8b3e9c2fe213bddf4b196fe17367"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:26:52Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/saira/5e35378e-b52c7bb8/preview.woff2",
+      "sha256": "04edb3bd206b2acd98ecaedaa3138e6ea90dc2bef0d54d7da8979eafe8a6c8c3",
+      "bytes": 35184,
+      "contentType": "font/woff2",
+      "etag": "3f0d0f02dfa0a72e4599085dee084ff0"
+    }
+  },
+  {
+    "slug": "gothica1",
+    "releaseVersion": "5e35378e-b52c7bb8",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/gothica1/5e35378e-b52c7bb8/gothica1.zip",
+      "sha256": "037b567b9c59cd4c362ceb32d2ae3ff7a117aa71302343c4f01e5eeb49f5ce60",
+      "bytes": 6224156,
+      "contentType": "application/zip",
+      "etag": "da68dfaeb04a991a569f4bd15d9998a8"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/gothica1/5e35378e-b52c7bb8/LICENSE.txt",
+      "sha256": "ed95c33f80ccca002e3a360b683c43368f9c5eb024e5b992abb51af3c10b59bc",
+      "bytes": 4359,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "2717a63fc2134d44b124e2233b589c3e"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:26:52Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/gothica1/5e35378e-b52c7bb8/preview.woff2",
+      "sha256": "c3372fc662cdd74e987c2e6970d0dd4c804be01e77541efebbb099188e19ea96",
+      "bytes": 4200,
+      "contentType": "font/woff2",
+      "etag": "d9d7e44a6a1c6d34e9096067e4e1929c"
+    }
+  },
+  {
+    "slug": "jost",
+    "releaseVersion": "5e35378e-b52c7bb8",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/jost/5e35378e-b52c7bb8/jost.zip",
+      "sha256": "c72ed98291f3aa3e14dcc619474faa542451203ff20c23463ee45da529d767d7",
+      "bytes": 142076,
+      "contentType": "application/zip",
+      "etag": "e3d95b077066f852bdf9d40cf647f56d"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/jost/5e35378e-b52c7bb8/LICENSE.txt",
+      "sha256": "1af3438a4d5f0ed2bdbc5751a5a67ebf6d537334161184b7fbb68503ef0ea0c5",
+      "bytes": 4384,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "f35c7b79fb15a049b5e024ec8dd02c14"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:26:52Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/jost/5e35378e-b52c7bb8/preview.woff2",
+      "sha256": "9f7a401811a9da1d27639a305e604f182d8c1dfd8a2a616d183f6e37f9769d28",
+      "bytes": 7492,
+      "contentType": "font/woff2",
+      "etag": "8785689e7b90220cc54e53a99266d79b"
+    }
+  },
+  {
+    "slug": "archivo",
+    "releaseVersion": "5e35378e-b52c7bb8",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/archivo/5e35378e-b52c7bb8/archivo.zip",
+      "sha256": "4790d4bba0decbaf52d41021c37d3d7b5da9559089abcfb46406e7c090e8610c",
+      "bytes": 543824,
+      "contentType": "application/zip",
+      "etag": "d1724d6f254339345affea49d791d37b"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/archivo/5e35378e-b52c7bb8/LICENSE.txt",
+      "sha256": "108b4e57c9c796d3d38d0428ca7ee39de47ad93187302718d9b2d8864b9b716b",
+      "bytes": 4388,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "f77a6739188f623654c0a7ad6c11f82b"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:26:52Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/archivo/5e35378e-b52c7bb8/preview.woff2",
+      "sha256": "13e9d29e06c2076b37d87b90c44a4e915885ee09885eeb3fb3a8563e56adbd77",
+      "bytes": 28652,
+      "contentType": "font/woff2",
+      "etag": "341cd708ded93b07f77072438daa7ea4"
+    }
+  },
+  {
+    "slug": "sourceserif4",
+    "releaseVersion": "5e35378e-b52c7bb8",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/sourceserif4/5e35378e-b52c7bb8/sourceserif4.zip",
+      "sha256": "8ad0ed922f1b7dc1ed2b6292103f4351c302a57d39236605d7264fdd4b30d04b",
+      "bytes": 1004350,
+      "contentType": "application/zip",
+      "etag": "8ea784c56612a20b26956c9ca8830e85"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/sourceserif4/5e35378e-b52c7bb8/LICENSE.txt",
+      "sha256": "5f94c3fd3a23131a417ab5a0c8452de57e70c3cfb9f604d88241f7065ebf9fd9",
+      "bytes": 4400,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "69db1861e4e8ea4e83fcefd4baeb9e7c"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:26:52Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/sourceserif4/5e35378e-b52c7bb8/preview.woff2",
+      "sha256": "e3f960beeb25df91894d0625ec83e8518db692346b1f5b7a86cb2275457de97a",
+      "bytes": 40240,
+      "contentType": "font/woff2",
+      "etag": "c7457f229695392c0ca7bcfc9f66c4b6"
+    }
+  },
+  {
+    "slug": "fraunces",
+    "releaseVersion": "5e35378e-b52c7bb8",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/fraunces/5e35378e-b52c7bb8/fraunces.zip",
+      "sha256": "3dcf3d16574d7f158d2082e4a2bd1a61e87bc08a0d41917d618e29b02fb204ff",
+      "bytes": 545367,
+      "contentType": "application/zip",
+      "etag": "3b20d9eb8a0ab9fc92d8278d970198c2"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/fraunces/5e35378e-b52c7bb8/LICENSE.txt",
+      "sha256": "bdf4c22802eaf804f998195871c6b8938aac2ac14b2d78a8bd66a6f1eced833b",
+      "bytes": 4391,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "cd1a7cb90fac312616ab0a8c4a67f1bf"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:26:52Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/fraunces/5e35378e-b52c7bb8/preview.woff2",
+      "sha256": "64dfa54b869a0f1b88176de1c8cb32c30dee5592117269507a9ea14b5c4c289b",
+      "bytes": 37488,
+      "contentType": "font/woff2",
+      "etag": "62d646c4e3093db16768ae0440f529a9"
+    }
+  },
+  {
+    "slug": "librebaskerville",
+    "releaseVersion": "5e35378e-b52c7bb8",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/librebaskerville/5e35378e-b52c7bb8/librebaskerville.zip",
+      "sha256": "5f33fbf04954e8cf1d6fbf11cb5086c0a125509be173d412a9c730952ca308fb",
+      "bytes": 164875,
+      "contentType": "application/zip",
+      "etag": "0ad28f37dc8de9074de0d1bcebc0cb24"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/librebaskerville/5e35378e-b52c7bb8/LICENSE.txt",
+      "sha256": "3624eddd4c8f8a908130a417ae7cd089c9da69899c4e0ca1a5217d0a6fae16fd",
+      "bytes": 4542,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "585261c25563d76996884860f128bcf1"
+    },
+    "previewStatus": "UNAVAILABLE_RFN",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:26:52Z"
+  },
+  {
+    "slug": "inconsolata",
+    "releaseVersion": "5e35378e-b52c7bb8",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/inconsolata/5e35378e-b52c7bb8/inconsolata.zip",
+      "sha256": "0b73f736dec291f9ebfc18520c94e29451f578a2294b936900d59cc3a0b7536a",
+      "bytes": 188973,
+      "contentType": "application/zip",
+      "etag": "1f38cbf627571f58947faa7c68c8ab4d"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/inconsolata/5e35378e-b52c7bb8/LICENSE.txt",
+      "sha256": "29bd0cfd0fb2a45f9b057c834a057724bae1f63b525a8ac83d3e7525706d9f80",
+      "bytes": 4350,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "4a536991328518eaee5512bf982bd849"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:26:52Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/inconsolata/5e35378e-b52c7bb8/preview.woff2",
+      "sha256": "c963d78d0bdd8bc1579286c295f64238b7a6680fa5a715498afe69f1102468ff",
+      "bytes": 31832,
+      "contentType": "font/woff2",
+      "etag": "6f87b35093fd4768abb7bc65237db394"
+    }
+  },
+  {
+    "slug": "zenmarugothic",
+    "releaseVersion": "5e35378e-b52c7bb8",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/zenmarugothic/5e35378e-b52c7bb8/zenmarugothic.zip",
+      "sha256": "709fafc8eec30e5841369f83a27af1f6930373202a12d45b3740379efe053bea",
+      "bytes": 10690931,
+      "contentType": "application/zip",
+      "etag": "113769fedd7a518ba5ccffdbb280640b"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/zenmarugothic/5e35378e-b52c7bb8/LICENSE.txt",
+      "sha256": "2a20cf7ce1909d8ee1e949095d340f7d7656705f7c810a2d6faf56800ad0cb3d",
+      "bytes": 4402,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "7f0b4387661e526555f765b88c4bab6c"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:26:52Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/zenmarugothic/5e35378e-b52c7bb8/preview.woff2",
+      "sha256": "72ea5753d9424f29eb3dd6dd6ea0549152181d3deb0332c711965b191ee07ea9",
+      "bytes": 3408,
+      "contentType": "font/woff2",
+      "etag": "0b3da386adb65ced0dae95320f0c4ce1"
+    }
+  },
+  {
+    "slug": "geistmono",
+    "releaseVersion": "5e35378e-b52c7bb8",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/geistmono/5e35378e-b52c7bb8/geistmono.zip",
+      "sha256": "d926fda6aaa86a98cbdcb98a4c21e366db2a3ded03d7092b4f267df3722af9fb",
+      "bytes": 190424,
+      "contentType": "application/zip",
+      "etag": "8aa7469bc00cfb1446af0c5db1606ddf"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/geistmono/5e35378e-b52c7bb8/LICENSE.txt",
+      "sha256": "1781d2806a07d91c4edf4740b88449fab7d0eadad53f7c351b94cd4d4eb8c00f",
+      "bytes": 4387,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "fe4cc681382eff30e91c042d87f245aa"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:26:52Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/geistmono/5e35378e-b52c7bb8/preview.woff2",
+      "sha256": "293d3db9680b8a16a95549e30692721185aa7e4e860cc298a72f72f3397998a9",
+      "bytes": 8872,
+      "contentType": "font/woff2",
+      "etag": "b4e01107dad241c20da00b04f522fcf3"
+    }
+  },
+  {
+    "slug": "comfortaa",
+    "releaseVersion": "5e35378e-b52c7bb8",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/comfortaa/5e35378e-b52c7bb8/comfortaa.zip",
+      "sha256": "1c45975d75f07e96d4826a752dc50957171089bc94af54c3848917e775d649b3",
+      "bytes": 102481,
+      "contentType": "application/zip",
+      "etag": "ee17499c5549835575c072079b91f35e"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/comfortaa/5e35378e-b52c7bb8/LICENSE.txt",
+      "sha256": "bc85bae0b512b799bbfb2b916e4d0a34cfd963d09778cd783e248b479e67760a",
+      "bytes": 4519,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "11bffad5e11322af2e8b54132a46330f"
+    },
+    "previewStatus": "UNAVAILABLE_RFN",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:26:52Z"
+  },
+  {
+    "slug": "notosanshk",
+    "releaseVersion": "5e35378e-b52c7bb8",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/notosanshk/5e35378e-b52c7bb8/notosanshk.zip",
+      "sha256": "892b547789373d354e75230590a9d6ad4ea2430021073e4c1cbafc5b89056476",
+      "bytes": 7595111,
+      "contentType": "application/zip",
+      "etag": "a996ac6a201e9b38a8c38162f6e74a77"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/notosanshk/5e35378e-b52c7bb8/LICENSE.txt",
+      "sha256": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9",
+      "bytes": 4388,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "9e6561baca2756628871baf0c1e23539"
+    },
+    "previewStatus": "UNAVAILABLE_RFN",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:26:52Z"
+  },
+  {
+    "slug": "lineseedjp",
+    "releaseVersion": "5e35378e-b52c7bb8",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/lineseedjp/5e35378e-b52c7bb8/lineseedjp.zip",
+      "sha256": "26b0cd94fe1924275ea4492218456e271205fdb082bb8e9c92cda6a139aefb58",
+      "bytes": 8404661,
+      "contentType": "application/zip",
+      "etag": "24f48c475f43863cf116a53eb04e6013"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/lineseedjp/5e35378e-b52c7bb8/LICENSE.txt",
+      "sha256": "1cfc3752ddd076bc7d461b6680e42a345f2579f91319fa04192b754b3b993f65",
+      "bytes": 4322,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "4b33c31073ea7f6450b8fb200b79def1"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:26:52Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/lineseedjp/5e35378e-b52c7bb8/preview.woff2",
+      "sha256": "67c6d74d1dc540b3f8a18605a5569e4bae7aaac0e9a7e1c326e38b9337668054",
+      "bytes": 6244,
+      "contentType": "font/woff2",
+      "etag": "dd231461aef2012d93dff3dc49d03401"
+    }
+  },
+  {
+    "slug": "spectral",
+    "releaseVersion": "5e35378e-b52c7bb8",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/spectral/5e35378e-b52c7bb8/spectral.zip",
+      "sha256": "e5b701e7bb128ce03abd0699071547220e6ab93216ff38e0763e13eb7faee05f",
+      "bytes": 1709793,
+      "contentType": "application/zip",
+      "etag": "188b15118c508757e5994078fc75ee58"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/spectral/5e35378e-b52c7bb8/LICENSE.txt",
+      "sha256": "501d6ceca8e552630fe3aa9442b9a818565680a1a2f79f3fb8c13d6f309a9e98",
+      "bytes": 4392,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "7b6eba68f3c3e1cb0e78233759728956"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:26:52Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/spectral/5e35378e-b52c7bb8/preview.woff2",
+      "sha256": "cd0b42f8145c5a0799bba96d4916c9998c4cd672fe9dc946443ef944a3de4db0",
+      "bytes": 9404,
+      "contentType": "font/woff2",
+      "etag": "9d54d6a500c3c20a683f85168354baa3"
+    }
+  },
+  {
+    "slug": "cormorant",
+    "releaseVersion": "5e35378e-b52c7bb8",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/cormorant/5e35378e-b52c7bb8/cormorant.zip",
+      "sha256": "a1b2825bcb010b65f042309ab0212482c5c7936ff5af25b01302f900e6792d32",
+      "bytes": 392902,
+      "contentType": "application/zip",
+      "etag": "07a7f5c8826034fd98396aec41877151"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/cormorant/5e35378e-b52c7bb8/LICENSE.txt",
+      "sha256": "60700d351cac4650c51f3f9db318d2a420f8b45052dba2715eb5fec41f0f6956",
+      "bytes": 4387,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "6085761d4b4b031541e48038b5701c6f"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:26:52Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/cormorant/5e35378e-b52c7bb8/preview.woff2",
+      "sha256": "8a4ea4854ce65d296ddc7ae0b37a02f3d9eda315e9827608bb6a475f04054c39",
+      "bytes": 12100,
+      "contentType": "font/woff2",
+      "etag": "31e0ef6630b31d95c9dcf1ce57701d58"
+    }
+  },
+  {
+    "slug": "ibmplexserif",
+    "releaseVersion": "5e35378e-b52c7bb8",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/ibmplexserif/5e35378e-b52c7bb8/ibmplexserif.zip",
+      "sha256": "1a9ba03e47847ce9decc57561e8a12e40cb6451890956bb050665283d613db8e",
+      "bytes": 1047552,
+      "contentType": "application/zip",
+      "etag": "8edddfdf22b6158e02413e8d923db610"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/ibmplexserif/5e35378e-b52c7bb8/LICENSE.txt",
+      "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da",
+      "bytes": 4456,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "4d4949dda4b23922e334f0cbf6179065"
+    },
+    "previewStatus": "UNAVAILABLE_RFN",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:26:52Z"
+  },
+  {
+    "slug": "nanummyeongjo",
+    "releaseVersion": "5e35378e-b52c7bb8",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/nanummyeongjo/5e35378e-b52c7bb8/nanummyeongjo.zip",
+      "sha256": "5a3c2c2ab8f01dbdac1733039587a8f657692af88025f0cf44534c24594b731f",
+      "bytes": 3469613,
+      "contentType": "application/zip",
+      "etag": "f4c64e0ea8215b6243aa1b810c518682"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/nanummyeongjo/5e35378e-b52c7bb8/LICENSE.txt",
+      "sha256": "8eb1c1019fe7fe6d0b6e7d7bbbba1d9cbdd969d8c5f26455708f6cfb8a77284c",
+      "bytes": 4497,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "41bddad87109fc8cc30b2fcd2839d1aa"
+    },
+    "previewStatus": "UNAVAILABLE_RFN",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:26:52Z"
+  },
+  {
+    "slug": "vollkorn",
+    "releaseVersion": "5e35378e-b52c7bb8",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/vollkorn/5e35378e-b52c7bb8/vollkorn.zip",
+      "sha256": "bf7f4d5223fd51cd21d402223f9f98000007b6dc70efda35cf42eff702b06687",
+      "bytes": 479741,
+      "contentType": "application/zip",
+      "etag": "43899ba6882aab83365b8e7b8feb5fd7"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/vollkorn/5e35378e-b52c7bb8/LICENSE.txt",
+      "sha256": "53f9c99fa3d47f7d632a42ee7bab4a834a60a744f6026d676c3a223cef2b2ef3",
+      "bytes": 4489,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "59c0a8446bb60c467e6f492af0e0db07"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:26:52Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/vollkorn/5e35378e-b52c7bb8/preview.woff2",
+      "sha256": "6d84c8ea856ad515b0c0a831875c8b870192038bb253fddd7948b22bed47acc7",
+      "bytes": 14452,
+      "contentType": "font/woff2",
+      "etag": "98d433defdd101d58a3e3e76da7f15bc"
+    }
+  },
+  {
+    "slug": "newsreader",
+    "releaseVersion": "5e35378e-b52c7bb8",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/newsreader/5e35378e-b52c7bb8/newsreader.zip",
+      "sha256": "cd62051fe7bbcde1e772447cfed4188cf50ff7328132d1e8ca03c06d39684546",
+      "bytes": 574597,
+      "contentType": "application/zip",
+      "etag": "3fe4fd6707b5832ee04dcc7e7b1922e6"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/newsreader/5e35378e-b52c7bb8/LICENSE.txt",
+      "sha256": "fdfad38143ec470553cae82a1e45320bdd1b9ec70415d37bd0171051d8a4ded8",
+      "bytes": 4394,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "18b1799c268d8ac577c6aa8597f5b404"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:26:52Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/newsreader/5e35378e-b52c7bb8/preview.woff2",
+      "sha256": "e17c46b0499c9e222d8e314c0eb9c5451f972744b2b87d0ce8d48d8c790839ff",
+      "bytes": 34968,
+      "contentType": "font/woff2",
+      "etag": "727ceb9155e76cd3d9cdaed671c81ac2"
+    }
+  },
+  {
+    "slug": "robotoserif",
+    "releaseVersion": "5e35378e-675166ec",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/robotoserif/5e35378e-675166ec/robotoserif.zip",
+      "sha256": "9e545213a062afc20ffad1ff8bbd872b182ad2da0963bf6a38d8a0621faad348",
+      "bytes": 4760163,
+      "contentType": "application/zip",
+      "etag": "dd097aa3f5317d985fad1b36f415ea39"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/robotoserif/5e35378e-675166ec/LICENSE.txt",
+      "sha256": "34dbfbb43e0b4fdeef445d77b9ac0b988e5ad7a9bbf16808c97b66c66d51f553",
+      "bytes": 4489,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "49fef5e375ba4a6a63cf5e66fbfe0707"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:31:58Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/robotoserif/5e35378e-675166ec/preview.woff2",
+      "sha256": "a9c3e4c5ee96038a0e2eefc11f23587592857abecf9f472085a2103f61f2d318",
+      "bytes": 189700,
+      "contentType": "font/woff2",
+      "etag": "e2da55ecf87aa74c761d02b0f6bff004"
+    }
+  },
+  {
+    "slug": "shipporimincho",
+    "releaseVersion": "5e35378e-675166ec",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/shipporimincho/5e35378e-675166ec/shipporimincho.zip",
+      "sha256": "aa1053985f73faef0f24c43f968a45819d30e4ef05aed74e72b8ea3705ffdb93",
+      "bytes": 23087906,
+      "contentType": "application/zip",
+      "etag": "5380c44884ec47005e416aff89e0e1e8"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/shipporimincho/5e35378e-675166ec/LICENSE.txt",
+      "sha256": "41fba056279be5f45ff9a99e44b7b53897b42732f5806d8e666e0ab49ac6bd38",
+      "bytes": 4399,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "71303c0acb661804e658cb83ff11fd4e"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:31:58Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/shipporimincho/5e35378e-675166ec/preview.woff2",
+      "sha256": "aa830175a21862f1b2d5d2d0a8e307c46155b76c2a5137ec293b6932c52b02bd",
+      "bytes": 5448,
+      "contentType": "font/woff2",
+      "etag": "28b85c4dc4d0e147b17a73eeb5e6ae58"
+    }
+  },
+  {
+    "slug": "bodonimoda",
+    "releaseVersion": "5e35378e-675166ec",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/bodonimoda/5e35378e-675166ec/bodonimoda.zip",
+      "sha256": "de90bd72146adb15dbcab178abb22f4be22465b4eaa00d1bbbe098881b85a503",
+      "bytes": 192987,
+      "contentType": "application/zip",
+      "etag": "fb19b97ba9da42785c95a6b7ad5639c7"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/bodonimoda/5e35378e-675166ec/LICENSE.txt",
+      "sha256": "931dfe2e0cd3c9443295f5c1d754b8a8403bf060df50c1d5900267ade83d0046",
+      "bytes": 4400,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "0d70c1387b3b1fc2cc3980c11550e8d6"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:31:58Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/bodonimoda/5e35378e-675166ec/preview.woff2",
+      "sha256": "26a5f0cf50563a9d53446008d3f84b750bde8c6eef2ca557f34fb47f1e24e147",
+      "bytes": 17188,
+      "contentType": "font/woff2",
+      "etag": "dc2fc58e7c07f0e7e9ec3382bd96f074"
+    }
+  },
+  {
+    "slug": "ptserif",
+    "releaseVersion": "5e35378e-675166ec",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/ptserif/5e35378e-675166ec/ptserif.zip",
+      "sha256": "c83c0082e6ee790de3ca6270eec520793f089ba9e24d211136fb9ec3b6dd7e0a",
+      "bytes": 707313,
+      "contentType": "application/zip",
+      "etag": "4c4bbe72d2c90fa33776679da638f9cf"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/ptserif/5e35378e-675166ec/LICENSE.txt",
+      "sha256": "ddf311c28ddf5a5ad9747649837346b67bed9d356789c3072bb27dbce49e514d",
+      "bytes": 4434,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "71731de7fdc7b9268b653ba916989fb9"
+    },
+    "previewStatus": "UNAVAILABLE_RFN",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:31:58Z"
+  },
+  {
+    "slug": "literata",
+    "releaseVersion": "5e35378e-675166ec",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/literata/5e35378e-675166ec/literata.zip",
+      "sha256": "7dceb4db10736735919a8b59353393a88ff67fba4ceb687b488fbdb8e021ccee",
+      "bytes": 1017808,
+      "contentType": "application/zip",
+      "etag": "c293b5cf6d9381698c8834d54dcd7642"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/literata/5e35378e-675166ec/LICENSE.txt",
+      "sha256": "8742963604cd89dc81437811a850018fc03b2bfad686d7422c8235967c87614e",
+      "bytes": 4389,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "1f2ee7e8e16f36be12810c782647fa9b"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:31:58Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/literata/5e35378e-675166ec/preview.woff2",
+      "sha256": "453f29df1b4863de702f2806d6ddb411172bab08880d8a528690992911e9f555",
+      "bytes": 39708,
+      "contentType": "font/woff2",
+      "etag": "b7f6648e18eac489d2efc91b7c574b7f"
+    }
+  },
+  {
+    "slug": "dancingscript",
+    "releaseVersion": "5e35378e-675166ec",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/dancingscript/5e35378e-675166ec/dancingscript.zip",
+      "sha256": "dfc06fc0fce311bfb53504f2deacca96611ac79517366378b26627ae0f32d11c",
+      "bytes": 76989,
+      "contentType": "application/zip",
+      "etag": "7f1253e042ddc81cdd5f985937126f0a"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/dancingscript/5e35378e-675166ec/LICENSE.txt",
+      "sha256": "6f090277c00af96651ce6dbcc38ff1591047a3bffef486e80b6a32e8276a8201",
+      "bytes": 4443,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "311b662ed9014157c506041e46f68865"
+    },
+    "previewStatus": "UNAVAILABLE_RFN",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:31:58Z"
+  },
+  {
+    "slug": "mplusu",
+    "releaseVersion": "5e35378e-675166ec",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/mplusu/5e35378e-675166ec/mplusu.zip",
+      "sha256": "c3a71bb6f8c74a755295c01b0895bdb191b33c0b8a2912c562cef5956f8ee3df",
+      "bytes": 2459871,
+      "contentType": "application/zip",
+      "etag": "a6f8dd6b88d9be614779e2c37743397d"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/mplusu/5e35378e-675166ec/LICENSE.txt",
+      "sha256": "795cd5988c81dd9b11e460de70e715ab0900ee72fbfbb6ce83c387b92990fbde",
+      "bytes": 4387,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "d8367b590f0abc10e68548010b47895b"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:31:58Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/mplusu/5e35378e-675166ec/preview.woff2",
+      "sha256": "373234ee356626d13d4d24d4da2d20ed0bd1e7f487c8dc0825b17fbef79442e5",
+      "bytes": 7128,
+      "contentType": "font/woff2",
+      "etag": "a886f83cb0c55a2fff4d0dbb16b1617f"
+    }
+  },
+  {
+    "slug": "playfair",
+    "releaseVersion": "5e35378e-675166ec",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/playfair/5e35378e-675166ec/playfair.zip",
+      "sha256": "7727d0f88a20c9804e97e8a0c65ef32eef49f33605fa8b7fe44f8408eed66ac4",
+      "bytes": 1979482,
+      "contentType": "application/zip",
+      "etag": "354cdca7760a02098bd5ae9cc7e58cea"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/playfair/5e35378e-675166ec/LICENSE.txt",
+      "sha256": "7d16bbb17375beefaa4d1d25c41f860cb161c9e614b44af790983a9fd7102627",
+      "bytes": 4482,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "98845929aa5e158d692393eef57a3317"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:31:58Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/playfair/5e35378e-675166ec/preview.woff2",
+      "sha256": "1d5f0e391d316257ed59cac1b02dcca5c7789b4e0c238e902ce56dac0a1cd2c3",
+      "bytes": 49356,
+      "contentType": "font/woff2",
+      "etag": "00f3d0ca1568b1b53a54907497442217"
+    }
+  },
+  {
+    "slug": "zillaslab",
+    "releaseVersion": "5e35378e-675166ec",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/zillaslab/5e35378e-675166ec/zillaslab.zip",
+      "sha256": "9549904962c9957c9b7049c62063fb34df3a66f4b88eea4788d5c2934a0d6874",
+      "bytes": 1093909,
+      "contentType": "application/zip",
+      "etag": "f02763bbb66b395d5c4d7fb16963b675"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/zillaslab/5e35378e-675166ec/LICENSE.txt",
+      "sha256": "240b385d3ec8c8d5c1d4af2bbba6ac72bac0309a80c1a8ff112c168643cc6811",
+      "bytes": 4342,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "b871e3eafcb18ca6d9e28277dc548277"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:31:58Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/zillaslab/5e35378e-675166ec/preview.woff2",
+      "sha256": "1d4326ffdeb91e44f04c4491a2df053384b412d6d09cbabe3aabb7dd4cecab09",
+      "bytes": 8836,
+      "contentType": "font/woff2",
+      "etag": "e572d3a48fec5a667a09984cce2ac61a"
+    }
+  },
+  {
+    "slug": "zenoldmincho",
+    "releaseVersion": "5e35378e-675166ec",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/zenoldmincho/5e35378e-675166ec/zenoldmincho.zip",
+      "sha256": "4f3cd1c8b5bb7257f07c605c10894f7c3c573c0a289234c0328feca36bd4b4f7",
+      "bytes": 14751514,
+      "contentType": "application/zip",
+      "etag": "5aaa4ba4e588aaa7c7cb883409f44147"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/zenoldmincho/5e35378e-675166ec/LICENSE.txt",
+      "sha256": "469d214f9842809659c827b7f2adaf40ec0df6efdd5fe18b7127665c32aafaec",
+      "bytes": 4399,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "9b8c53941657e6c60a535bad4b599ea0"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:31:58Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/zenoldmincho/5e35378e-675166ec/preview.woff2",
+      "sha256": "0f5c0e15de2b24b1a663886f203e3617dc5e3cec5bf9e5173e18b264ff4977b5",
+      "bytes": 4660,
+      "contentType": "font/woff2",
+      "etag": "256fb28fd2e835601422e882c75c6fbb"
+    }
+  },
+  {
+    "slug": "caveat",
+    "releaseVersion": "5e35378e-675166ec",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/caveat/5e35378e-675166ec/caveat.zip",
+      "sha256": "e00bb0d7e0eb468898ba954ef89a3a8cd1d94de3e680128f0951177fb86959ee",
+      "bytes": 220202,
+      "contentType": "application/zip",
+      "etag": "4e746e33e8f1fe0f9ac32a6302b940b0"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/caveat/5e35378e-675166ec/LICENSE.txt",
+      "sha256": "1f9d81d094273d82f3898a1ee8b598a717d050ecbf5ff7bede105b704880157b",
+      "bytes": 4385,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "f041ff6e4f093a88573d3306e41037af"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:31:58Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/caveat/5e35378e-675166ec/preview.woff2",
+      "sha256": "b514e780c2ddd8ec58569797b013fa4ae98d9058ee774181cfdb9c382cd069b6",
+      "bytes": 27220,
+      "contentType": "font/woff2",
+      "etag": "236963a67d2ff6175dbb713a05d7093b"
+    }
+  },
+  {
+    "slug": "mplus1",
+    "releaseVersion": "5e35378e-675166ec",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/mplus1/5e35378e-675166ec/mplus1.zip",
+      "sha256": "3383e39c825aa737954032be2a965d2ec5ed87e4d7c076d83308034dbd7f2423",
+      "bytes": 2456342,
+      "contentType": "application/zip",
+      "etag": "ecce3eb43377f7355876bd08221172d5"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/mplus1/5e35378e-675166ec/LICENSE.txt",
+      "sha256": "04971e3fcee60b247395150d93b3616f6a0b092572332c96187b472976553abc",
+      "bytes": 4387,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "ee870a4a7cee012360178b2f8bccb725"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:31:58Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/mplus1/5e35378e-675166ec/preview.woff2",
+      "sha256": "5e1e3c46e504455b80cf3f9dc663d0fef963f0907e6644eaef90b34281c1abc4",
+      "bytes": 7048,
+      "contentType": "font/woff2",
+      "etag": "245f4f1eeb407e3a5ae2e3d5a9d72051"
+    }
+  },
+  {
+    "slug": "blackopsone",
+    "releaseVersion": "5e35378e-675166ec",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/blackopsone/5e35378e-675166ec/blackopsone.zip",
+      "sha256": "91cb92741c09230d3f800b015c64953cfce67ca821e107956511dd32b6006a01",
+      "bytes": 76700,
+      "contentType": "application/zip",
+      "etag": "ed4a46afba8474c1444d525174743c5f"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/blackopsone/5e35378e-675166ec/LICENSE.txt",
+      "sha256": "f67ca4a200424868ee8fcd5464d7b35ac1cbf7723f6bfdbd19a8524689fab9a8",
+      "bytes": 4411,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "c4f98397e57815cb10bb729989864a0c"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:31:58Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/blackopsone/5e35378e-675166ec/preview.woff2",
+      "sha256": "2f98b900bfade32f07b1b4997f1a25e1a6291babbfc23680d8df3fec72230455",
+      "bytes": 7460,
+      "contentType": "font/woff2",
+      "etag": "14944588d0998be0f03c38ae7d66a3f7"
+    }
+  },
+  {
+    "slug": "lobstertwo",
+    "releaseVersion": "5e35378e-675166ec",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/lobstertwo/5e35378e-675166ec/lobstertwo.zip",
+      "sha256": "e66fbe11257735fc7370ea6d7fb7a93f9756289e423ba5f0e63c5bce01109866",
+      "bytes": 357067,
+      "contentType": "application/zip",
+      "etag": "7cab8137230739c95b75a15224b7b606"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/lobstertwo/5e35378e-675166ec/LICENSE.txt",
+      "sha256": "f46c3ea04f38ea73c0731d73dfba3d7361d4b38970feb31a3558bd1b75e0656a",
+      "bytes": 4506,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "f93bee03c3e8cacbef251056a31093c9"
+    },
+    "previewStatus": "UNAVAILABLE_RFN",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:31:58Z"
+  },
+  {
+    "slug": "pacifico",
+    "releaseVersion": "5e35378e-675166ec",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/pacifico/5e35378e-675166ec/pacifico.zip",
+      "sha256": "41a3a013f38b7cd34116cafc54852d0b9263669956175096587810b8c27fa7f0",
+      "bytes": 147349,
+      "contentType": "application/zip",
+      "etag": "dafaf7c6193a70cf7b063b8dae3d90bb"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/pacifico/5e35378e-675166ec/LICENSE.txt",
+      "sha256": "a47e5daeda73568969395c656823102678f2eefb0d7d7ecb47aac4cc17e42204",
+      "bytes": 4389,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "0a483519cfcbfb77333aaffa7df842d9"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:31:58Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/pacifico/5e35378e-675166ec/preview.woff2",
+      "sha256": "875f5daff648c9832c71d8bc18c2cdf45a0317ee3c150d1fdb46eb7bd3e46047",
+      "bytes": 13328,
+      "contentType": "font/woff2",
+      "etag": "bc65b7a57d773d8291390fcded96bb78"
+    }
+  },
+  {
+    "slug": "lobster",
+    "releaseVersion": "5e35378e-675166ec",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/lobster/5e35378e-675166ec/lobster.zip",
+      "sha256": "970a639b4b93b4c99692bdfabe90bd19dc128c9217d2b14ea62828d516cc65c9",
+      "bytes": 150049,
+      "contentType": "application/zip",
+      "etag": "2be9fbffb67d1fb6f51048b300ac36b5"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/lobster/5e35378e-675166ec/LICENSE.txt",
+      "sha256": "88aece7d90f2bb7049719f11619a560af22af3451af141f12aa4f46bb157a99b",
+      "bytes": 4430,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "a6eef198b259df3f6cefcd021ef3079d"
+    },
+    "previewStatus": "UNAVAILABLE_RFN",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:31:58Z"
+  },
+  {
+    "slug": "sawarabimincho",
+    "releaseVersion": "5e35378e-675166ec",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/sawarabimincho/5e35378e-675166ec/sawarabimincho.zip",
+      "sha256": "919e4dec65d069b3928bd91079c226f4f871f0ee317cb0f45d32ea9241bc2e6c",
+      "bytes": 1839243,
+      "contentType": "application/zip",
+      "etag": "2a48a182bc4839d5c74c73395d722532"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/sawarabimincho/5e35378e-675166ec/LICENSE.txt",
+      "sha256": "23a49d3198c9ffd233f73208c5e39c4ed893783cece36b954c0a65ee9aa7ef29",
+      "bytes": 4405,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "6c998929aab56a0e4e1cfe5d55e59c01"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:31:58Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/sawarabimincho/5e35378e-675166ec/preview.woff2",
+      "sha256": "b14785ca2e8e4c73f12d75d4566f219eb7aa9d7f5d1fb243391ca1e130401660",
+      "bytes": 6740,
+      "contentType": "font/woff2",
+      "etag": "7cc09b7a31d4b45d5318d47888a4ccd6"
+    }
+  },
+  {
+    "slug": "bizudpgothic",
+    "releaseVersion": "5e35378e-675166ec",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/bizudpgothic/5e35378e-675166ec/bizudpgothic.zip",
+      "sha256": "c7632e58340d78086f9f04bff4052b198d84a49b46ea33869c9bdbb24ff13563",
+      "bytes": 6065435,
+      "contentType": "application/zip",
+      "etag": "84f807a26c9139262a4107861b703825"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/bizudpgothic/5e35378e-675166ec/LICENSE.txt",
+      "sha256": "e753d7155d53c747d037a445e584c8ecfca6dd79846db610417e282a736b28bc",
+      "bytes": 4408,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "4062ef2044b666a960b561617649fe49"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:31:58Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/bizudpgothic/5e35378e-675166ec/preview.woff2",
+      "sha256": "efaba4df2ccd9d844fafabff1db72a532750a2993ad4373fdabedcb45fe4b217",
+      "bytes": 8216,
+      "contentType": "font/woff2",
+      "etag": "02fae73bdef362ead97af2bff67ffe3c"
+    }
+  },
+  {
+    "slug": "sawarabigothic",
+    "releaseVersion": "5e35378e-675166ec",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/sawarabigothic/5e35378e-675166ec/sawarabigothic.zip",
+      "sha256": "f312df27d3ce5907163440b7d2aa14fab0ab28caa182a2a1372b7e892d461a46",
+      "bytes": 1071991,
+      "contentType": "application/zip",
+      "etag": "fa2c4c7e75350ae3b44745ba176b7c9d"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/sawarabigothic/5e35378e-675166ec/LICENSE.txt",
+      "sha256": "5f247fad3e8a86b6c0779dff09277047c1ce2b0b7580a1093347a8af755352ba",
+      "bytes": 4355,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "71ca0aeb681656e3c0b6482ddda51ea9"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:31:58Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/sawarabigothic/5e35378e-675166ec/preview.woff2",
+      "sha256": "40bedb23dd9d3c9243f09676c333e1c76643fb9176976d36464272bfd1803feb",
+      "bytes": 2868,
+      "contentType": "font/woff2",
+      "etag": "7cc89deea93fc2aa02b4d98249500f13"
+    }
+  },
+  {
+    "slug": "firacode",
+    "releaseVersion": "5e35378e-675166ec",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/firacode/5e35378e-675166ec/firacode.zip",
+      "sha256": "c8502609714a8791d726270c64d8dc4f04772976e498c7dae447fb73e9be9f6a",
+      "bytes": 140006,
+      "contentType": "application/zip",
+      "etag": "80c663c9aab3fcd612670f0da409f381"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/firacode/5e35378e-675166ec/LICENSE.txt",
+      "sha256": "926041dac670e6922505e35ac1661a4e8d20f1ffeabbbcb5edb5544370702369",
+      "bytes": 4391,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "c75ca55aa0a5809a854d87db2a8ebf23"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:31:58Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/firacode/5e35378e-675166ec/preview.woff2",
+      "sha256": "df932ae520ff576b6a79ff791806b84e17e485656530e2a4fbc0ca2209da78f8",
+      "bytes": 8028,
+      "contentType": "font/woff2",
+      "etag": "a0667fa2ac308c5cb95c00443475de18"
+    }
+  },
+  {
+    "slug": "nanumgothiccoding",
+    "releaseVersion": "5e35378e-675166ec",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/nanumgothiccoding/5e35378e-675166ec/nanumgothiccoding.zip",
+      "sha256": "64b3cda75dea08e8c08b8dd7a69813b7f40cf3936263d011ac8e4c5e550fecf7",
+      "bytes": 2023801,
+      "contentType": "application/zip",
+      "etag": "d78f197efa4fb165634aaff4a6022932"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/nanumgothiccoding/5e35378e-675166ec/LICENSE.txt",
+      "sha256": "eeacf16032901d0ed0456876ec77b8f0fda6b3fecec7d972f8543eb602e6c30f",
+      "bytes": 4534,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "8e538d70b04969fb88bdd90f450142ab"
+    },
+    "previewStatus": "UNAVAILABLE_RFN",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:31:58Z"
+  },
+  {
+    "slug": "dmmono",
+    "releaseVersion": "5e35378e-675166ec",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/dmmono/5e35378e-675166ec/dmmono.zip",
+      "sha256": "623286fa4f6505c202a938ffe1f7b1ef03de06d36d1248400ce0fd51986b1b53",
+      "bytes": 167015,
+      "contentType": "application/zip",
+      "etag": "6e25e86061c85af54675815da0a433ef"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/dmmono/5e35378e-675166ec/LICENSE.txt",
+      "sha256": "2bada5ea45c3c63b7f1ea1f88ce9672c9e4f0c42b2c3b7378949084fe55a3066",
+      "bytes": 4484,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "0eadb467f2d51c05ba4f732c780058d1"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:31:58Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/dmmono/5e35378e-675166ec/preview.woff2",
+      "sha256": "b5ccfe0ce112e9ee6f6abdb8f0ebc428f18a1b5891c898ddd6d11f824e60ff03",
+      "bytes": 6080,
+      "contentType": "font/woff2",
+      "etag": "bd16268a75f8ed779b15496156f0505c"
+    }
+  },
+  {
+    "slug": "greatvibes",
+    "releaseVersion": "5e35378e-675166ec",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/greatvibes/5e35378e-675166ec/greatvibes.zip",
+      "sha256": "d7e54f01842d2b0f81c448c8966bef6442cbf26f1e18078eb4561907dfaf80d7",
+      "bytes": 219565,
+      "contentType": "application/zip",
+      "etag": "6a2de67fcfb784e58f8332f32d025787"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/greatvibes/5e35378e-675166ec/LICENSE.txt",
+      "sha256": "61093a21f5e63dedf54222b3c09997e54c0fe43e3851d21386e02ddcbc246d49",
+      "bytes": 4399,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "9bf5586a982508628b07d3e43eb3eae2"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:31:58Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/greatvibes/5e35378e-675166ec/preview.woff2",
+      "sha256": "7711a9917f1b17dd01750634ba2b1bd0db8c0fc7ff929228f944eda03ceea032",
+      "bytes": 17112,
+      "contentType": "font/woff2",
+      "etag": "77c23b817be58b28bd6c251558fd56a4"
+    }
+  },
+  {
+    "slug": "changaone",
+    "releaseVersion": "5e35378e-675166ec",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/changaone/5e35378e-675166ec/changaone.zip",
+      "sha256": "c6f8ea25c28e82e2eedd9cfd6cd79e07e8411da38516130db7d690923e2f84c7",
+      "bytes": 31158,
+      "contentType": "application/zip",
+      "etag": "bf09b03b820b5ca1e88ea5749f294683"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/changaone/5e35378e-675166ec/LICENSE.txt",
+      "sha256": "67261c7ceb3e627da5c94d6617dac6da29bf36b910bee304a7680ad62e2c8b46",
+      "bytes": 4396,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "8aa953749ed29d90e2425c64aad8787a"
+    },
+    "previewStatus": "UNAVAILABLE_RFN",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:31:58Z"
+  },
+  {
+    "slug": "googlesanscode",
+    "releaseVersion": "5e35378e-675166ec",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/googlesanscode/5e35378e-675166ec/googlesanscode.zip",
+      "sha256": "6b89f1d5dcd3bd359c27d542c2205c76a96be5e7beaacf46c0876460cd7c9cc2",
+      "bytes": 155652,
+      "contentType": "application/zip",
+      "etag": "965aa43c1a85729c12bd84ce2d220ddc"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/googlesanscode/5e35378e-675166ec/LICENSE.txt",
+      "sha256": "ff8f4fbc4f1a71c7d4c6481c48dc2b21c43f8dc15872536667fee45c15d20928",
+      "bytes": 4396,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "c3e76f5dafdd09014e99ea1e1ea198d0"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:31:58Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/googlesanscode/5e35378e-675166ec/preview.woff2",
+      "sha256": "4f5e9c0ed3684122f59711b863824b5aa549a991f247be32fb80cd191e09a8ee",
+      "bytes": 9904,
+      "contentType": "font/woff2",
+      "etag": "61c789867b1fa1420b05497ed3694394"
+    }
+  },
+  {
+    "slug": "alfaslabone",
+    "releaseVersion": "5e35378e-675166ec",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/alfaslabone/5e35378e-675166ec/alfaslabone.zip",
+      "sha256": "368f78ce011b9d786be9c1c5248995e4e1737db7c77041dfe02de71d46fa9a7d",
+      "bytes": 48172,
+      "contentType": "application/zip",
+      "etag": "d0bc9397e74af37da9b7b196ca76bf16"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/alfaslabone/5e35378e-675166ec/LICENSE.txt",
+      "sha256": "e315abc82a78710c7242e2f2e6529651fd631d4d50e6ad98ea194f9b54c3d701",
+      "bytes": 4523,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "f361564d8f8aa9346058d87c97b3160c"
+    },
+    "previewStatus": "UNAVAILABLE_RFN",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:31:58Z"
+  },
+  {
+    "slug": "baloo2",
+    "releaseVersion": "5e35378e-675166ec",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/baloo2/5e35378e-675166ec/baloo2.zip",
+      "sha256": "3ce8381c6d6492722856817dc27a86f7ca6f13dd0d317ebc4bff510271b480ca",
+      "bytes": 257062,
+      "contentType": "application/zip",
+      "etag": "03150cc74e01adf024042c43feae8034"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/baloo2/5e35378e-675166ec/LICENSE.txt",
+      "sha256": "ad09b05dc8bc678c9daf7c4c5f7ef1f55e5726127f4330b2e98e40b9dffcb860",
+      "bytes": 4384,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "142dd11f1d21f09ff78c383cd2125743"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:31:58Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/baloo2/5e35378e-675166ec/preview.woff2",
+      "sha256": "14095bf947aacbcb59a3a695b4f6c5e219d6af42d04b11396da7fc72ab71eaf0",
+      "bytes": 10196,
+      "contentType": "font/woff2",
+      "etag": "0cb465aa6579c4dea060904e92e6f2f4"
+    }
+  },
+  {
+    "slug": "spacemono",
+    "releaseVersion": "5e35378e-675166ec",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/spacemono/5e35378e-675166ec/spacemono.zip",
+      "sha256": "f801a22ae0ac02ed4b20b4c8133378abe46f1308d9c5faf9ddc601cb83441fe2",
+      "bytes": 199980,
+      "contentType": "application/zip",
+      "etag": "55a54ef38480f435cb521684974e64dd"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/spacemono/5e35378e-675166ec/LICENSE.txt",
+      "sha256": "8e4ee42b2553e1e01504e61cb0d46d148cd8c9e5eacaa3622a7df2d4f2955b9f",
+      "bytes": 4392,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "cbc4f4411e08f789042e91748398877e"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:31:58Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/spacemono/5e35378e-675166ec/preview.woff2",
+      "sha256": "f273bf8ba9dd567d5ac989012a56218221792e9fc0aad35f61ac387b3752e7f9",
+      "bytes": 7128,
+      "contentType": "font/woff2",
+      "etag": "858af580f3b2734e0e0ca2293ddc2b3f"
+    }
+  },
+  {
+    "slug": "delagothicone",
+    "releaseVersion": "5e35378e-675166ec",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/delagothicone/5e35378e-675166ec/delagothicone.zip",
+      "sha256": "2aff6c555fbe674c3f053ec5de8df5f38332c7984021b308b1057259a0bcb400",
+      "bytes": 1584880,
+      "contentType": "application/zip",
+      "etag": "57677057ecf5c5cf36551129099e9ebf"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/delagothicone/5e35378e-675166ec/LICENSE.txt",
+      "sha256": "c0014792d4f4abc0508c295b277f2b17ae44465c8dc88d12af9cea48279b5fda",
+      "bytes": 4392,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "02e10beb22479742b0ecb72d487e5957"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:31:58Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/delagothicone/5e35378e-675166ec/preview.woff2",
+      "sha256": "2130e66c80d4069a738804e409ccc11603b0310c4aca93a3afa38584f857ef7e",
+      "bytes": 3804,
+      "contentType": "font/woff2",
+      "etag": "8f4e6d9de12b3f862babe3cdfebe45cb"
+    }
+  },
+  {
+    "slug": "lilitaone",
+    "releaseVersion": "5e35378e-675166ec",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/lilitaone/5e35378e-675166ec/lilitaone.zip",
+      "sha256": "a036637d818efe41335c577e95aa3f9757378336fb97f8092596cfa93c3dd9fd",
+      "bytes": 17778,
+      "contentType": "application/zip",
+      "etag": "09f944bbddb6281d472fccd32e195589"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/lilitaone/5e35378e-675166ec/LICENSE.txt",
+      "sha256": "255d5debbb80eb2ea762644311f266a279e8778f00156655a516e2b7781a63e1",
+      "bytes": 4392,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "1b12d133f900caf923a3472c3d425ec9"
+    },
+    "previewStatus": "UNAVAILABLE_RFN",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:31:58Z"
+  },
+  {
+    "slug": "pressstart2p",
+    "releaseVersion": "5e35378e-675166ec",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/pressstart2p/5e35378e-675166ec/pressstart2p.zip",
+      "sha256": "55066c60c21a098c99e9b321925ad81b5e6b4636542621e0f5fd2e36492c0308",
+      "bytes": 42632,
+      "contentType": "application/zip",
+      "etag": "6b106cd44c7c7ec9c3f7c76d512f6f48"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/pressstart2p/5e35378e-675166ec/LICENSE.txt",
+      "sha256": "705960c3281a5765ecc0b59bd4ed7ca59eed165748076bc2fc3e8fdbfeb944b0",
+      "bytes": 4413,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "a33c6db8e56c25f2c13276a8e006645d"
+    },
+    "previewStatus": "UNAVAILABLE_RFN",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:31:58Z"
+  },
+  {
+    "slug": "bungee",
+    "releaseVersion": "5e35378e-675166ec",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/bungee/5e35378e-675166ec/bungee.zip",
+      "sha256": "50cf832f8e921d3bf5c75b6d5e8bf57fc18296cb038618ed86ebc0e18ea36e95",
+      "bytes": 57882,
+      "contentType": "application/zip",
+      "etag": "8a46eea7d919edce10537dc6c6b7d049"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/bungee/5e35378e-675166ec/LICENSE.txt",
+      "sha256": "d5787a50dde5be6c6daecab9ed459939b1bc37cff0d0e00257eaf1ec2cf4c16c",
+      "bytes": 4473,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "52fe89225387b0282321ea51d45c5343"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:31:58Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/bungee/5e35378e-675166ec/preview.woff2",
+      "sha256": "3725f622bf68f184697fd72291b76c83ad8b30ce6de2727cafb0f504ace0f041",
+      "bytes": 4784,
+      "contentType": "font/woff2",
+      "etag": "3949d3ff4f9149b6d75d4f5534fab070"
+    }
+  },
+  {
+    "slug": "amaticsc",
+    "releaseVersion": "5e35378e-675166ec",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/amaticsc/5e35378e-675166ec/amaticsc.zip",
+      "sha256": "4f57efb2e9f1ad3fe8d4834385a03e67dbaf4e892196d1d8a22f181e8e4704b4",
+      "bytes": 170281,
+      "contentType": "application/zip",
+      "etag": "4c38324da6b7313bdf102892a63e9979"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/amaticsc/5e35378e-675166ec/LICENSE.txt",
+      "sha256": "301f77908df2b00141b4dcea50cc1a586c3afcee78843bd811088e8263623f9d",
+      "bytes": 4390,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "65d122abd09a72e6f348661b30497d65"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:31:58Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/amaticsc/5e35378e-675166ec/preview.woff2",
+      "sha256": "345bb62879ab33ed826a23d2aea6034d8ccfbaa5b2607a962c584a90a02f941f",
+      "bytes": 9468,
+      "contentType": "font/woff2",
+      "etag": "58e79b3374fd1d7fd9f86b6fadebf80e"
+    }
+  },
+  {
+    "slug": "oxanium",
+    "releaseVersion": "5e35378e-675166ec",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/oxanium/5e35378e-675166ec/oxanium.zip",
+      "sha256": "c394e2e35307c26c44633d67a67da5dc11fac80893c10db8ec9b142d7710893a",
+      "bytes": 26451,
+      "contentType": "application/zip",
+      "etag": "7791a761707ff4af18d6dd40c0cc6b79"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/oxanium/5e35378e-675166ec/LICENSE.txt",
+      "sha256": "fe17c0f2581d71b4e1ea7e636e7f4877c29223e11bb1dd1a871e8c3f2a86336b",
+      "bytes": 4384,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "e7bc808e7ae8de2a8f476901e0792171"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:31:58Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/oxanium/5e35378e-675166ec/preview.woff2",
+      "sha256": "8e0743d377b8ec9f769b8e7e218e9ae6854547d5de9edd83f543c086e6e58714",
+      "bytes": 4280,
+      "contentType": "font/woff2",
+      "etag": "83d4173bd3c7740848130102812065ce"
+    }
+  },
+  {
+    "slug": "courierprime",
+    "releaseVersion": "5e35378e-675166ec",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/courierprime/5e35378e-675166ec/courierprime.zip",
+      "sha256": "2bc04c297fce2600564d415c8239b86e5a9ec722f529b8e1351feee2460f420d",
+      "bytes": 152988,
+      "contentType": "application/zip",
+      "etag": "fc4b6fd0a31e918eab1efb14dc33bcf1"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/courierprime/5e35378e-675166ec/LICENSE.txt",
+      "sha256": "9a755af092b494944c99f471be6fddd19b006a448fefdc4717e4ee0aa09a97b0",
+      "bytes": 4403,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "eb383ebba178bc240f56a9bd14eb2308"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:31:58Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/courierprime/5e35378e-675166ec/preview.woff2",
+      "sha256": "bbb52c0bffe7094fd3e4f5f92676e2c140bc26ff87b37a5e0b0a350308f314a5",
+      "bytes": 6976,
+      "contentType": "font/woff2",
+      "etag": "5d2017c3b1463d34791045a4957b13ab"
+    }
+  },
+  {
+    "slug": "gravitasone",
+    "releaseVersion": "5e35378e-675166ec",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/gravitasone/5e35378e-675166ec/gravitasone.zip",
+      "sha256": "a8d19ecfcc876f0ec15de20114478ba0f409d20c84f6b27d4ac3f4fce904f536",
+      "bytes": 22172,
+      "contentType": "application/zip",
+      "etag": "78496344a176c3b261eb8eadfca7ef2f"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/gravitasone/5e35378e-675166ec/LICENSE.txt",
+      "sha256": "9860b97028024085855e503e32c1971bfd603374641cd018c136433ebcf5a338",
+      "bytes": 4398,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "ced03352c068c2d47792b70ef6d29cb5"
+    },
+    "previewStatus": "UNAVAILABLE_RFN",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:31:58Z"
+  },
+  {
+    "slug": "abrilfatface",
+    "releaseVersion": "5e35378e-675166ec",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/abrilfatface/5e35378e-675166ec/abrilfatface.zip",
+      "sha256": "351f60c14f71882428fcd3392c353a4e7ba8eb4a4509adf51fffb56c39e3423a",
+      "bytes": 31697,
+      "contentType": "application/zip",
+      "etag": "dbfdbb4b081d3a1d6c487531d04224a1"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/abrilfatface/5e35378e-675166ec/LICENSE.txt",
+      "sha256": "aba8997e16b1e3888c6e855ba883c70d96bd4375bff8cb9c7ce0f097200f74b8",
+      "bytes": 4415,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "01a6a3e5cdb1764f26e8b5b80e326f2a"
+    },
+    "previewStatus": "UNAVAILABLE_RFN",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:31:58Z"
+  },
+  {
+    "slug": "shadowsintolight",
+    "releaseVersion": "5e35378e-675166ec",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/shadowsintolight/5e35378e-675166ec/shadowsintolight.zip",
+      "sha256": "776374ec3a16168e6dc802f3c6a31159ef393e4e8efeadd7d16c004b7ba0f78d",
+      "bytes": 31124,
+      "contentType": "application/zip",
+      "etag": "69b6127501fcd0a74d10527ea8306330"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/shadowsintolight/5e35378e-675166ec/LICENSE.txt",
+      "sha256": "0e441ae9f18ad0c294cc5b6ae3974c2db1614cab220598578b1b58c4cc334485",
+      "bytes": 4362,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "213e80ba62a3de5a71d3f5814113cc3b"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:31:58Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/shadowsintolight/5e35378e-675166ec/preview.woff2",
+      "sha256": "293071df1ce31dba680c790b5fc8e9b9908a47003241b49ec9aff9a759a525cd",
+      "bytes": 7000,
+      "contentType": "font/woff2",
+      "etag": "48e7c795b14e661d6673c455b4a8033a"
+    }
+  },
+  {
+    "slug": "huninn",
+    "releaseVersion": "5e35378e-675166ec",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/huninn/5e35378e-675166ec/huninn.zip",
+      "sha256": "c199233f2804eba37343da4a58244c5640a778a841a6b962f269fa094862375c",
+      "bytes": 2805030,
+      "contentType": "application/zip",
+      "etag": "53ebee3b63b0b1845e98d2dc36be2e7f"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/huninn/5e35378e-675166ec/LICENSE.txt",
+      "sha256": "d71824aeb09afc4c2cac01acab5c3db79796e927ba37be40d69fb62a412639b6",
+      "bytes": 4382,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "9dac303d372cfab79059c30abf7bc2f4"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:31:58Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/huninn/5e35378e-675166ec/preview.woff2",
+      "sha256": "5a1f855f8de13d377e5280fe518da74285f1687229eb13defdfd7c8385621a8a",
+      "bytes": 4512,
+      "contentType": "font/woff2",
+      "etag": "69b95a24577355f7247d8b34497398dd"
+    }
+  },
+  {
+    "slug": "kalam",
+    "releaseVersion": "5e35378e-675166ec",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/kalam/5e35378e-675166ec/kalam.zip",
+      "sha256": "8282555dc70dc2a48218867b4b8530ef5f4ca93df2ef5b299fc720c27b517cae",
+      "bytes": 570036,
+      "contentType": "application/zip",
+      "etag": "9aba7ea74d0327f41347a6530590b246"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/kalam/5e35378e-675166ec/LICENSE.txt",
+      "sha256": "f62ef357d3a1c3d27edd35a6e1ba350e8a8d13499797964eeadefbf0b3b15d1f",
+      "bytes": 4373,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "5cd80f7708fef4b16854c4af0bbd3f16"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:31:58Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/kalam/5e35378e-675166ec/preview.woff2",
+      "sha256": "3ad7a5539a363199443ebab2ff41da652b0565f25889a3ea9a49e00dc8a7f9fc",
+      "bytes": 6768,
+      "contentType": "font/woff2",
+      "etag": "68fd89a46d3bd587571404be30276a85"
+    }
+  },
+  {
+    "slug": "rowdies",
+    "releaseVersion": "5e35378e-da662005",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/rowdies/5e35378e-da662005/rowdies.zip",
+      "sha256": "b7abd410dfae9b555098753a268d4e30835d01a112bf247116e72def1d2f2427",
+      "bytes": 123131,
+      "contentType": "application/zip",
+      "etag": "cc20f1d0dfe73863ae29d1d17f02e706"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/rowdies/5e35378e-da662005/LICENSE.txt",
+      "sha256": "c585309492415154b9ad6401a9e0c5d9e3f9b2e92b71146d968e5bd4305ac74b",
+      "bytes": 4384,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "87f677202c173b236d838fe7160e7aa6"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:35:44Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/rowdies/5e35378e-da662005/preview.woff2",
+      "sha256": "c0b1a5471ec592fa4e741fc2fa9598588f2d41b3b93c38c0d42353eae5497c46",
+      "bytes": 7272,
+      "contentType": "font/woff2",
+      "etag": "fd3dafc0329228fe2bef496cf7fba6eb"
+    }
+  },
+  {
+    "slug": "indieflower",
+    "releaseVersion": "5e35378e-da662005",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/indieflower/5e35378e-da662005/indieflower.zip",
+      "sha256": "530c3a4e7cde03c54bce237ccdce6a1517a8796898c6568bcde087b45ba6bdad",
+      "bytes": 57120,
+      "contentType": "application/zip",
+      "etag": "663a29261a6b473182896fc8de5dad13"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/indieflower/5e35378e-da662005/LICENSE.txt",
+      "sha256": "d9cdb075679d15a99bab2a8541b9c4fdc71347502111fbe9affd1d462219d96b",
+      "bytes": 4366,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "9947d24015c57f6332cdf2050e355971"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:35:44Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/indieflower/5e35378e-da662005/preview.woff2",
+      "sha256": "33b281ac4c39ef050d99c8c16c09540357226b8e99e20c5ca88c46333ef3a6d3",
+      "bytes": 8596,
+      "contentType": "font/woff2",
+      "etag": "a949a5e3cb70b891faf5cc01908012c4"
+    }
+  },
+  {
+    "slug": "comicneue",
+    "releaseVersion": "5e35378e-da662005",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/comicneue/5e35378e-da662005/comicneue.zip",
+      "sha256": "299651987088d96c2c6d368a563661e53064f7edc0f188942894d2b7ad1f5c0b",
+      "bytes": 186993,
+      "contentType": "application/zip",
+      "etag": "e68eeab335a45a7acfc5f27e06c0d611"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/comicneue/5e35378e-da662005/LICENSE.txt",
+      "sha256": "7c38a22e5878e60fe423360553e63dd7be23d29f1f60336034935dbfc96e8320",
+      "bytes": 4390,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "6ea64233e2e17ca273b6a7beb958bc7e"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:35:44Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/comicneue/5e35378e-da662005/preview.woff2",
+      "sha256": "0441a9426e78a68717109cb00b5859d97b7e801f61ac90fc12087a84ab9df551",
+      "bytes": 6776,
+      "contentType": "font/woff2",
+      "etag": "845463c625e248c8814bb09d00db6e57"
+    }
+  },
+  {
+    "slug": "yellowtail",
+    "releaseVersion": "5e35378e-da662005",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/yellowtail/5e35378e-da662005/yellowtail.zip",
+      "sha256": "665c7b26bafc13a47be9871745ffbdc41a1d1e2ba3ab9b90ba9b87a038b38aa0",
+      "bytes": 36796,
+      "contentType": "application/zip",
+      "etag": "d9770f46fd8c731f27e0d7c9d2d44515"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/yellowtail/5e35378e-da662005/LICENSE.txt",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "3b83ef96387f14655fc854ddc3c6bd57"
+    },
+    "previewStatus": "ELIGIBLE_NOT_GENERATED",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:35:44Z"
+  },
+  {
+    "slug": "satisfy",
+    "releaseVersion": "5e35378e-da662005",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/satisfy/5e35378e-da662005/satisfy.zip",
+      "sha256": "0970365fb05b14942efe22ba79059ff11901b80ce35afb2d471558c607bacd1d",
+      "bytes": 33428,
+      "contentType": "application/zip",
+      "etag": "ccc342753f515b6c1adb9d51bb9b6a2f"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/satisfy/5e35378e-da662005/LICENSE.txt",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "3b83ef96387f14655fc854ddc3c6bd57"
+    },
+    "previewStatus": "ELIGIBLE_NOT_GENERATED",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:35:44Z"
+  },
+  {
+    "slug": "permanentmarker",
+    "releaseVersion": "5e35378e-da662005",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/permanentmarker/5e35378e-da662005/permanentmarker.zip",
+      "sha256": "8cb92f13972cc552be78f3a81d63630d02e090dd4cde164babca5311f34dc2dd",
+      "bytes": 46041,
+      "contentType": "application/zip",
+      "etag": "938b0b729b462103aed50d72f5400393"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/permanentmarker/5e35378e-da662005/LICENSE.txt",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "3b83ef96387f14655fc854ddc3c6bd57"
+    },
+    "previewStatus": "ELIGIBLE_NOT_GENERATED",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:35:44Z"
+  },
+  {
+    "slug": "righteous",
+    "releaseVersion": "5e35378e-da662005",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/righteous/5e35378e-da662005/righteous.zip",
+      "sha256": "e112230887e624fcae97b73049e74c5e24700538ec5f1cc8f1eab7ac40c3b80c",
+      "bytes": 25987,
+      "contentType": "application/zip",
+      "etag": "da01d7deeb07f835a00523d91eff6525"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/righteous/5e35378e-da662005/LICENSE.txt",
+      "sha256": "1c5bc055869d5e9151ec7774082727db720ec4293c65be67f91a4bdcaeb02998",
+      "bytes": 4432,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "a4e4cc38da8d3c0884d323629144b8eb"
+    },
+    "previewStatus": "UNAVAILABLE_RFN",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:35:44Z"
+  },
+  {
+    "slug": "nanumpenscript",
+    "releaseVersion": "5e35378e-da662005",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/nanumpenscript/5e35378e-da662005/nanumpenscript.zip",
+      "sha256": "920c18a14d5fea3da7afcb491cc1485398df20a303b6a7b74b3fe2188a249832",
+      "bytes": 1289276,
+      "contentType": "application/zip",
+      "etag": "a432e02d19ee8011ffc2492f0771a4d8"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/nanumpenscript/5e35378e-da662005/LICENSE.txt",
+      "sha256": "eeacf16032901d0ed0456876ec77b8f0fda6b3fecec7d972f8543eb602e6c30f",
+      "bytes": 4534,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "8e538d70b04969fb88bdd90f450142ab"
+    },
+    "previewStatus": "UNAVAILABLE_RFN",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:35:44Z"
+  },
+  {
+    "slug": "luckiestguy",
+    "releaseVersion": "5e35378e-da662005",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/luckiestguy/5e35378e-da662005/luckiestguy.zip",
+      "sha256": "74b08300c55391f6e9d61ef9b9ecde61842ea5ad5dd39bc0ac9b319e7e76b9be",
+      "bytes": 44601,
+      "contentType": "application/zip",
+      "etag": "d25d6fc49c2cee6894a36a19be118efb"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/luckiestguy/5e35378e-da662005/LICENSE.txt",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "3b83ef96387f14655fc854ddc3c6bd57"
+    },
+    "previewStatus": "ELIGIBLE_NOT_GENERATED",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:35:44Z"
+  },
+  {
+    "slug": "zeyada",
+    "releaseVersion": "5e35378e-da662005",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/zeyada/5e35378e-da662005/zeyada.zip",
+      "sha256": "0f1e73c9949d2488a5a355f52fcc745f171d8fd56336b71b04383b93429f31b5",
+      "bytes": 35971,
+      "contentType": "application/zip",
+      "etag": "f1b00b105f16ed6ea8a6b0f0a873e2e1"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/zeyada/5e35378e-da662005/LICENSE.txt",
+      "sha256": "0e441ae9f18ad0c294cc5b6ae3974c2db1614cab220598578b1b58c4cc334485",
+      "bytes": 4362,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "213e80ba62a3de5a71d3f5814113cc3b"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:35:44Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/zeyada/5e35378e-da662005/preview.woff2",
+      "sha256": "cad6155b45c6044c0b1ef481cdc06efe9c2e105c20b6defdc324986df08d2afe",
+      "bytes": 8244,
+      "contentType": "font/woff2",
+      "etag": "9f5a41f1c6bd35850be51da268895183"
+    }
+  },
+  {
+    "slug": "ubuntumono",
+    "releaseVersion": "5e35378e-da662005",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/ubuntumono/5e35378e-da662005/ubuntumono.zip",
+      "sha256": "1d6c8575626832e5e0a702fd318c6cf455e5019ca83c0b1bde802cc05fbaeb37",
+      "bytes": 466967,
+      "contentType": "application/zip",
+      "etag": "5b97f26080e2c8e0be4089b9f576acab"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/ubuntumono/5e35378e-da662005/LICENSE.txt",
+      "sha256": "2f0015108d68627bd788d313f529c21ff4da2c2c42a5e1f3883acc83480f9002",
+      "bytes": 4673,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "325a1a9029112a2405e743c7f816427b"
+    },
+    "previewStatus": "ELIGIBLE_NOT_GENERATED",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:35:44Z"
+  },
+  {
+    "slug": "bangers",
+    "releaseVersion": "5e35378e-da662005",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/bangers/5e35378e-da662005/bangers.zip",
+      "sha256": "47311ff4c969fe75c2e6570f57d3e49ea06f90f45d64fbb17476a76928c066d5",
+      "bytes": 49170,
+      "contentType": "application/zip",
+      "etag": "7ded5319b3037223d18bfb97127828ac"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/bangers/5e35378e-da662005/LICENSE.txt",
+      "sha256": "630dd5a307c0657b094d324e069b390edf90182fe5003639e06c02a0e5769af7",
+      "bytes": 4479,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "579eddf3185b681be1537f735d72283a"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:35:44Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/bangers/5e35378e-da662005/preview.woff2",
+      "sha256": "5012aa82712c8f258d727d8ad846f8610b7e5231d86e99842fc22c97f6cd391f",
+      "bytes": 7624,
+      "contentType": "font/woff2",
+      "etag": "c78ac41e93e57b975b9808190e708e71"
+    }
+  },
+  {
+    "slug": "librebarcode39",
+    "releaseVersion": "5e35378e-da662005",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/librebarcode39/5e35378e-da662005/librebarcode39.zip",
+      "sha256": "d343b742bd6d0301f775f1715d9af393c60e5c3f6f759af5ea7ee3de5f0f7cf7",
+      "bytes": 6706,
+      "contentType": "application/zip",
+      "etag": "11946f40476950a38383054b95a345ee"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/librebarcode39/5e35378e-da662005/LICENSE.txt",
+      "sha256": "a4b7ccd1bda3269afba7d6d9293a7161e699d2f4f1f280dd8a8535c569388de9",
+      "bytes": 4402,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "e17320167beb54c0ada2c648e13d9e60"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:35:44Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/librebarcode39/5e35378e-da662005/preview.woff2",
+      "sha256": "13533c939d6b55fab2cf511cf0ea2896941350c142106ac23431f5738febfc66",
+      "bytes": 2744,
+      "contentType": "font/woff2",
+      "etag": "7d2bd4e849282c4d5bd0a2c8b8f0a56a"
+    }
+  },
+  {
+    "slug": "oleoscript",
+    "releaseVersion": "5e35378e-da662005",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/oleoscript/5e35378e-da662005/oleoscript.zip",
+      "sha256": "ccc916761885db941d595b7688f4baa6a321d579475ca01c60ce42f16d4d911b",
+      "bytes": 40576,
+      "contentType": "application/zip",
+      "etag": "49cf4895ec456f423089b59536f937d6"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/oleoscript/5e35378e-da662005/LICENSE.txt",
+      "sha256": "8fbe530adcbe30c658393c3f2b5a4785d6765afcefdfe47f594730131f3a0abd",
+      "bytes": 4419,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "be7aa6ae09af6394e431280c6d89981e"
+    },
+    "previewStatus": "UNAVAILABLE_RFN",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:35:44Z"
+  },
+  {
+    "slug": "vt323",
+    "releaseVersion": "5e35378e-da662005",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/vt323/5e35378e-da662005/vt323.zip",
+      "sha256": "7a39915c0b47d6542ffb726718a604e1198e9581e837cde6ce4c06c1eea561e5",
+      "bytes": 46232,
+      "contentType": "application/zip",
+      "etag": "733e28602fc87f00aceb1ebd8f2887c9"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/vt323/5e35378e-da662005/LICENSE.txt",
+      "sha256": "27d9af34210253e7ca1251fbace86c6f65b40031d6ce1a75493a1b2093631298",
+      "bytes": 4367,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "c0e4a8dc44030994b5f7f62afb80d2ee"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:35:44Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/vt323/5e35378e-da662005/preview.woff2",
+      "sha256": "53848c6d08b832f3b2876ee6db16d27187c5310f498bc5ad9b5154325a6303c9",
+      "bytes": 6440,
+      "contentType": "font/woff2",
+      "etag": "c1631dce78f11323eef88e8b253acb91"
+    }
+  },
+  {
+    "slug": "gabarito",
+    "releaseVersion": "5e35378e-da662005",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/gabarito/5e35378e-da662005/gabarito.zip",
+      "sha256": "caf3413e9af9bedeaa22e7c1d47a382bd98927a29916ecb7202489a3905a64eb",
+      "bytes": 78329,
+      "contentType": "application/zip",
+      "etag": "82b840eedf0059f47e0da6e7a2e7a5bd"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/gabarito/5e35378e-da662005/LICENSE.txt",
+      "sha256": "21506cc7106bbfd4aa1c40371f33f9f4296182a8e4bb46658e99af24feb4bfca",
+      "bytes": 4391,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "ce5530fd37780e7c0e6c7859ea597982"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:35:44Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/gabarito/5e35378e-da662005/preview.woff2",
+      "sha256": "2b36ad39323ba498789689347cd4d121d6fba63381e33bb2db0f4e31322ea440",
+      "bytes": 8452,
+      "contentType": "font/woff2",
+      "etag": "a463151d734ac17067d222a748acc398"
+    }
+  },
+  {
+    "slug": "specialelite",
+    "releaseVersion": "5e35378e-da662005",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/specialelite/5e35378e-da662005/specialelite.zip",
+      "sha256": "917141d688d2b971fef966df36216067d58bb1e15d816d42e5074e9d105eebac",
+      "bytes": 96323,
+      "contentType": "application/zip",
+      "etag": "6b9a8eab8454fcefe1f6e0d227697a95"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/specialelite/5e35378e-da662005/LICENSE.txt",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "3b83ef96387f14655fc854ddc3c6bd57"
+    },
+    "previewStatus": "ELIGIBLE_NOT_GENERATED",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:35:44Z"
+  },
+  {
+    "slug": "pottaone",
+    "releaseVersion": "5e35378e-da662005",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/pottaone/5e35378e-da662005/pottaone.zip",
+      "sha256": "78af4cbf7ee8591772295830be6a5bc5ff1bb1a5ab9e92e8d4e9b2ab444c3d8c",
+      "bytes": 2692044,
+      "contentType": "application/zip",
+      "etag": "e205773a0746e5e351fba305f3bc854a"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/pottaone/5e35378e-da662005/LICENSE.txt",
+      "sha256": "fe55933bcfad354914050fe0e7c879bd666a623f1e363a651198ac40c271cd26",
+      "bytes": 4472,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "2949bcdd05da6f8733d61a0a67dd8d04"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:35:44Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/pottaone/5e35378e-da662005/preview.woff2",
+      "sha256": "97b42d8576791379871409eabcdd408c21191c3be5c98708e14f63508e238f1c",
+      "bytes": 5156,
+      "contentType": "font/woff2",
+      "etag": "2a9d7f72b7f6ef55a10adc76752d1845"
+    }
+  },
+  {
+    "slug": "hachimarupop",
+    "releaseVersion": "5e35378e-da662005",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/hachimarupop/5e35378e-da662005/hachimarupop.zip",
+      "sha256": "dd976ea965c4faa2af5d2bdc523b76251df4a803b6a8cab494f35375c1df06df",
+      "bytes": 2664654,
+      "contentType": "application/zip",
+      "etag": "2085e5a782f6663979b0941bc614e17b"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/hachimarupop/5e35378e-da662005/LICENSE.txt",
+      "sha256": "8d3c434650e84f42ddb33e9b5929089ea51c39b231b798dacb33087d5f05d9f1",
+      "bytes": 4494,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "9defb06b2f3800418f2784515cc11d5f"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:35:44Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/hachimarupop/5e35378e-da662005/preview.woff2",
+      "sha256": "4bb4b5d8bb021197dd9f38a749fe3c4685f8efa5a35dfe85cf94675e28d1571d",
+      "bytes": 4100,
+      "contentType": "font/woff2",
+      "etag": "016ead32564f270173408acebfff5ad8"
+    }
+  },
+  {
+    "slug": "yesevaone",
+    "releaseVersion": "5e35378e-da662005",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/yesevaone/5e35378e-da662005/yesevaone.zip",
+      "sha256": "f7e000be4caad0c0b43ed7813af05548ede6b457766b087d1015475b786f4b7e",
+      "bytes": 50835,
+      "contentType": "application/zip",
+      "etag": "0382795ce444a530b8cda9017d0c6e5f"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/yesevaone/5e35378e-da662005/LICENSE.txt",
+      "sha256": "ab592d1abca19428b89d851706fa7815ec25139c6affb45d366577ca63fb91b7",
+      "bytes": 4405,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "729a18084eaee3c165d4496547d89d15"
+    },
+    "previewStatus": "UNAVAILABLE_RFN",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:35:44Z"
+  },
+  {
+    "slug": "patrickhand",
+    "releaseVersion": "5e35378e-da662005",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/patrickhand/5e35378e-da662005/patrickhand.zip",
+      "sha256": "347017f9a9009ff72cc9952a465a5059609ea2141fc170843a048f2e9d1f852d",
+      "bytes": 90631,
+      "contentType": "application/zip",
+      "etag": "bcf201866f4a0d6d251d69f6fb41b911"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/patrickhand/5e35378e-da662005/LICENSE.txt",
+      "sha256": "377f4f9c19e935228552478eb68cc2ed82910988a60ba60e2ac73b09f32d02d1",
+      "bytes": 4376,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "9784abf2e290b15f7cf540f9667ac065"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:35:44Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/patrickhand/5e35378e-da662005/preview.woff2",
+      "sha256": "590d42fd00a32b81ebb9f61c2a9db0101066dec5f33c5a1c0ebd856a73e53e51",
+      "bytes": 7280,
+      "contentType": "font/woff2",
+      "etag": "35557db9a94d6122b221c1b48e6cef86"
+    }
+  },
+  {
+    "slug": "sharetechmono",
+    "releaseVersion": "5e35378e-da662005",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/sharetechmono/5e35378e-da662005/sharetechmono.zip",
+      "sha256": "87b6b3b7de89121085e3018f0b587bd66f72f791aff598524f0cc2cecbb2968b",
+      "bytes": 24018,
+      "contentType": "application/zip",
+      "etag": "8006b2a0e2185b7221a1ff301cca4b84"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/sharetechmono/5e35378e-da662005/LICENSE.txt",
+      "sha256": "9d96f445b6e9c701428811d0177f894874f8d6f07ecc30d568c506542368f3ff",
+      "bytes": 4429,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "9b151b8cd6edd0c385b9ba79c7196265"
+    },
+    "previewStatus": "UNAVAILABLE_RFN",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:35:44Z"
+  },
+  {
+    "slug": "merienda",
+    "releaseVersion": "5e35378e-da662005",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/merienda/5e35378e-da662005/merienda.zip",
+      "sha256": "006fe15440fa4559d75eba9290922008ce2385003eed7a5e95983554a22047d3",
+      "bytes": 109503,
+      "contentType": "application/zip",
+      "etag": "93988c867aa1f582baa4f31b725df860"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/merienda/5e35378e-da662005/LICENSE.txt",
+      "sha256": "61470db03bfdf0616932a086346acf8eddaddbdffbac9c468f0d88ac72ccb151",
+      "bytes": 4514,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "81ffead2a6689570622b616397883d9c"
+    },
+    "previewStatus": "UNAVAILABLE_RFN",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:35:44Z"
+  },
+  {
+    "slug": "passionone",
+    "releaseVersion": "5e35378e-da662005",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/passionone/5e35378e-da662005/passionone.zip",
+      "sha256": "f383eed4190918595d912a725da986112073364367495117aeb851f83a04e6e7",
+      "bytes": 44343,
+      "contentType": "application/zip",
+      "etag": "4bd267602198272d1d1229308047eed5"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/passionone/5e35378e-da662005/LICENSE.txt",
+      "sha256": "36c285c5472c625901d4a13da7e31c5ea6126678d31d56cf95572c49f27c8950",
+      "bytes": 4390,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "3f98bea67533aee4f09f01c5d753154a"
+    },
+    "previewStatus": "UNAVAILABLE_RFN",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:35:44Z"
+  },
+  {
+    "slug": "chelseamarket",
+    "releaseVersion": "5e35378e-da662005",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/chelseamarket/5e35378e-da662005/chelseamarket.zip",
+      "sha256": "d62e6b8c1b5e8db1dc8e01130f070f624cbabc92961a0ecc4721c30b03e35bff",
+      "bytes": 84639,
+      "contentType": "application/zip",
+      "etag": "83ceefc235165ac2a721ad6a5a52a3c1"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/chelseamarket/5e35378e-da662005/LICENSE.txt",
+      "sha256": "ae6de2f6fc00f76cc7eb0d97c1ae5e0b7ec734f20ad7f58cf4c74738dc822d21",
+      "bytes": 4397,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "1362a6e44ea50c5741e673ea2e63a314"
+    },
+    "previewStatus": "UNAVAILABLE_RFN",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:35:44Z"
+  },
+  {
+    "slug": "firamono",
+    "releaseVersion": "5e35378e-da662005",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/firamono/5e35378e-da662005/firamono.zip",
+      "sha256": "6067046b6a0cb044a039f6078a96fe5b3ddc235beb244fdf0590945e04985bac",
+      "bytes": 272907,
+      "contentType": "application/zip",
+      "etag": "d11e25072c601844d90eb7bb413ac905"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/firamono/5e35378e-da662005/LICENSE.txt",
+      "sha256": "d1829ff3455bbf3b9d13dfb0a57758a863107c9108aab48558f26f37f1094180",
+      "bytes": 4371,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "0373cf792d4b95c61399b94c02702892"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:35:44Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/firamono/5e35378e-da662005/preview.woff2",
+      "sha256": "fcce036a90ecbf9e07bcada10958b58323782144b04e057ef005d338d1176417",
+      "bytes": 6828,
+      "contentType": "font/woff2",
+      "etag": "dd5cdfd5cb696c3c4e59fabc7de45e46"
+    }
+  },
+  {
+    "slug": "patuaone",
+    "releaseVersion": "5e35378e-da662005",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/patuaone/5e35378e-da662005/patuaone.zip",
+      "sha256": "47cbd17d98cba5c41bb3df85a298ba794acf4fb6c100b7b1eb7d43e92f6c487a",
+      "bytes": 22174,
+      "contentType": "application/zip",
+      "etag": "29a2108cba71bc9dac9ccdfbe5a5d1a5"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/patuaone/5e35378e-da662005/LICENSE.txt",
+      "sha256": "cd2dea62cd4b0c5fb335cf07ff04fd5c4bacb49b8d6c2bbbef9766c663d79b1c",
+      "bytes": 4409,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "b3d7a6e09c73e071464c229b27d8261a"
+    },
+    "previewStatus": "UNAVAILABLE_RFN",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:35:44Z"
+  },
+  {
+    "slug": "kaushanscript",
+    "releaseVersion": "5e35378e-da662005",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/kaushanscript/5e35378e-da662005/kaushanscript.zip",
+      "sha256": "7abba83d245088533e44259310667d49479f36cb9ed810e3b103ce89468163c5",
+      "bytes": 81845,
+      "contentType": "application/zip",
+      "etag": "4f23065e5be275a95e06f0ed013e76a2"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/kaushanscript/5e35378e-da662005/LICENSE.txt",
+      "sha256": "3336bf5d4e7eedba48ecb831f37bf676e901c39f2e6a422cceadd9d2ffa55be8",
+      "bytes": 4492,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "7555d0424df39c6284aa3526a78d1450"
+    },
+    "previewStatus": "UNAVAILABLE_RFN",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:35:44Z"
+  },
+  {
+    "slug": "sacramento",
+    "releaseVersion": "5e35378e-da662005",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/sacramento/5e35378e-da662005/sacramento.zip",
+      "sha256": "0c2f6e77e62d5aca5f5b63501ea594d9baccf93fb8ce1cd612701a56d6061ffb",
+      "bytes": 44516,
+      "contentType": "application/zip",
+      "etag": "b0658683737b2643e92b946fb38222f3"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/sacramento/5e35378e-da662005/LICENSE.txt",
+      "sha256": "2e2cb5a98da665f2ab82a9fd01fb18c2337f845761b0c163f690ed65f3b94677",
+      "bytes": 4431,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "da638a63ec18b23dd769e1b50cd3437b"
+    },
+    "previewStatus": "UNAVAILABLE_RFN",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:35:44Z"
+  },
+  {
+    "slug": "chirongoroundtc",
+    "releaseVersion": "5e35378e-da662005",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/chirongoroundtc/5e35378e-da662005/chirongoroundtc.zip",
+      "sha256": "525a743f2be62b5be1e3b57454957f284c9129972590835aa6e43346c89f0b7e",
+      "bytes": 26495172,
+      "contentType": "application/zip",
+      "etag": "ee09199f0fc8dea4ab16cd8b00503de3"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/chirongoroundtc/5e35378e-da662005/LICENSE.txt",
+      "sha256": "7b9cc84fe1935d1418de4af57b4106038fb836b3a162e1b86507c7fc8543a759",
+      "bytes": 4451,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "7d793c3c9c07811ad0c6a1bc187073e1"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:35:44Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/chirongoroundtc/5e35378e-da662005/preview.woff2",
+      "sha256": "e53a88e07e536ec30dc2e39414d609e7044d88d7eaa6e98211e7a4442202646d",
+      "bytes": 8828,
+      "contentType": "font/woff2",
+      "etag": "bcab2e03b7a56fb6b0e41f1387b859b9"
+    }
+  },
+  {
+    "slug": "mashanzheng",
+    "releaseVersion": "5e35378e-da662005",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/mashanzheng/5e35378e-da662005/mashanzheng.zip",
+      "sha256": "ac42c95231708d61f42684aed231d66133f0f3a640554d5883a5018671f0fadf",
+      "bytes": 3825328,
+      "contentType": "application/zip",
+      "etag": "14655264290344a3ab643ede5066b59d"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/mashanzheng/5e35378e-da662005/LICENSE.txt",
+      "sha256": "d7bdb1cee215b689e23c2f95672a6084c790542170648267a55114103d756a08",
+      "bytes": 4397,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "019f49c7fdcbf8a61301bf449f4abb75"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:35:44Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/mashanzheng/5e35378e-da662005/preview.woff2",
+      "sha256": "83a1a6dcc9ae622d35632b800d749bf858bbe3717e7e9fe4abac596bab7273cf",
+      "bytes": 5340,
+      "contentType": "font/woff2",
+      "etag": "7bce51154b8c9c8d14cc808060520c01"
+    }
+  },
+  {
+    "slug": "zcoolxiaowei",
+    "releaseVersion": "5e35378e-da662005",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/zcoolxiaowei/5e35378e-da662005/zcoolxiaowei.zip",
+      "sha256": "cdc97d58883f7081e91864935c1c31ea077003da6b348369a427b83d63c44d87",
+      "bytes": 3427612,
+      "contentType": "application/zip",
+      "etag": "f69aa08338aa7333e6d1c691c065d57a"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/zcoolxiaowei/5e35378e-da662005/LICENSE.txt",
+      "sha256": "a094514ca57cf8f9c5e8d8d1adab5d8cd3a377297ff016f9df2c05b3ecd77f0a",
+      "bytes": 4400,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "0dd7a8a53f720def9cc711ef6b8a2f4e"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:35:44Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/zcoolxiaowei/5e35378e-da662005/preview.woff2",
+      "sha256": "19efcc5846976454654d7107e2630258fac6258935fd9d4270e56689f5e6290a",
+      "bytes": 6816,
+      "contentType": "font/woff2",
+      "etag": "2d5574081e7bc2df758c0900b2dafab6"
+    }
+  },
+  {
+    "slug": "zcoolkuaile",
+    "releaseVersion": "5e35378e-da662005",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/zcoolkuaile/5e35378e-da662005/zcoolkuaile.zip",
+      "sha256": "e3c5b061c1d4b8e98386ce978631e37b1d14a85cb6b61b4e19639a65af5a5724",
+      "bytes": 1113420,
+      "contentType": "application/zip",
+      "etag": "40e0775eb8ee2af67d8d606a76ab9138"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/zcoolkuaile/5e35378e-da662005/LICENSE.txt",
+      "sha256": "538078469839b4a2e7ad22bef4ebe41681a4e53749bb2a072144024f1d6d703d",
+      "bytes": 4398,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "191c205d1af7e827c17acee03db2723b"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:35:44Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/zcoolkuaile/5e35378e-da662005/preview.woff2",
+      "sha256": "d0f29089db896e6957ef69c2214b55b21e3bb526e3e011ee2cd353703b37f3f0",
+      "bytes": 2060,
+      "contentType": "font/woff2",
+      "etag": "409160595611b4b6275cd26db739d4be"
+    }
+  },
+  {
+    "slug": "zcoolqingkehuangyou",
+    "releaseVersion": "5e35378e-da662005",
+    "sourceCommit": "5e35378e6bda803962ee6fd257e444a7d459660d",
+    "package": {
+      "url": "https://assets.fontodyssey.com/fonts/zcoolqingkehuangyou/5e35378e-da662005/zcoolqingkehuangyou.zip",
+      "sha256": "077e16ab21fe69739b0038d01a450e74ea56e23e104e928e6e6475e8038387de",
+      "bytes": 3530293,
+      "contentType": "application/zip",
+      "etag": "3a2a35ab3b7ee044b209e63233b17753"
+    },
+    "license": {
+      "url": "https://assets.fontodyssey.com/fonts/zcoolqingkehuangyou/5e35378e-da662005/LICENSE.txt",
+      "sha256": "f1bce31b817dee01c1e4ef8bc45d8ecb95f01f4abbf0a985007cb3cd0fd8123d",
+      "bytes": 4419,
+      "contentType": "text/plain; charset=utf-8",
+      "etag": "e89944e0267e8b176b9fd3e2f2443ed0"
+    },
+    "previewStatus": "GENERATED_SUBSET",
+    "status": "VERIFIED",
+    "verifiedAt": "2026-09-09T12:35:44Z",
+    "preview": {
+      "url": "https://assets.fontodyssey.com/fonts/zcoolqingkehuangyou/5e35378e-da662005/preview.woff2",
+      "sha256": "eff91086e18f802edf134764e9fe8b9faceb3be0d3d7f8dd930983e1145937b0",
+      "bytes": 5296,
+      "contentType": "font/woff2",
+      "etag": "a5d60c07264a2f1331d1515bc30216ce"
+    }
+  }
+]

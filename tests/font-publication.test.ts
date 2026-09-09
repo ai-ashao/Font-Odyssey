@@ -10,14 +10,15 @@ import { validateAssetRelease } from '@/lib/font-publishing'
 import { fontAssetReleases } from '@/modules/font-asset-releases'
 
 describe('font publishing gate', () => {
-  it('contains the five remotely verified pilot releases in curation order', () => {
-    expect(fontAssetReleases.map((release) => release.slug)).toEqual([
-      'inter',
-      'raleway',
-      'notoseriftc',
-      'notoserifsc',
-      'firasans',
-    ])
+  it('contains every remotely verified release and preserves the Pilot set', () => {
+    const slugs = fontAssetReleases.map((release) => release.slug)
+    expect(slugs).toEqual(
+      expect.arrayContaining(['inter', 'raleway', 'notoseriftc', 'notoserifsc', 'firasans']),
+    )
+    expect(slugs).toEqual(fontCatalog.map((font) => font.slug))
+    expect(slugs).toHaveLength(149)
+    expect(slugs).not.toContain('robotocondensed')
+    expect(new Set(slugs).size).toBe(slugs.length)
     expect(fontAssetReleases.flatMap(validateAssetRelease)).toEqual([])
   })
 

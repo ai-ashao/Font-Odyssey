@@ -1,11 +1,12 @@
-import type { FontAssetRelease } from '@/lib/font-publishing'
+import generatedReleases from '@/data/font-asset-releases.json'
+import { type FontAssetRelease, validateAssetRelease } from '@/lib/font-publishing'
 
 const assetBaseUrl = 'https://assets.fontodyssey.com'
 const releaseVersion = '5e35378e-eb2c904c'
 const sourceCommit = '5e35378e6bda803962ee6fd257e444a7d459660d'
 const verifiedAt = '2026-09-09T09:46:56Z'
 
-export const fontAssetReleases: ReadonlyArray<FontAssetRelease> = [
+const pilotAssetReleases: ReadonlyArray<FontAssetRelease> = [
   {
     slug: 'inter',
     releaseVersion,
@@ -145,3 +146,17 @@ export const fontAssetReleases: ReadonlyArray<FontAssetRelease> = [
     verifiedAt,
   },
 ]
+
+const candidateReleases = generatedReleases as ReadonlyArray<FontAssetRelease>
+const releaseIssues = candidateReleases.flatMap(validateAssetRelease)
+if (releaseIssues.length > 0) {
+  throw new Error(`Invalid generated font release registry:\n${releaseIssues.join('\n')}`)
+}
+for (const pilot of pilotAssetReleases) {
+  const generated = candidateReleases.find((release) => release.slug === pilot.slug)
+  if (!generated || generated.sourceCommit !== pilot.sourceCommit) {
+    throw new Error(`Generated registry lost verified Pilot release: ${pilot.slug}`)
+  }
+}
+
+export const fontAssetReleases = candidateReleases
