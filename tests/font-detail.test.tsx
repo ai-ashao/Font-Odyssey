@@ -10,13 +10,13 @@ import { fontEditorialContent } from '@/modules/font-editorial-content'
 const sha256 = 'a'.repeat(64)
 
 describe('font detail publishing boundary', () => {
-  it('keeps draft pages out of the public registry and sitemap', () => {
-    expect(fontEditorialContent).toHaveLength(5)
-    expect(fontEditorialContent.every((content) => content.contentStatus === 'draft')).toBe(true)
-    expect(publishedFontForLocale('inter', 'en')).toBeUndefined()
-    expect(fontSitemapPaths()).not.toContain('/font/inter')
-    expect(fontSitemapPaths()).not.toContain('/zh/font/inter')
-    expect(fontSitemapPaths()).not.toContain('/zh-tw/font/inter')
+  it('publishes the five reviewed Pilot families in all three locales', () => {
+    expect(fontEditorialContent).toHaveLength(15)
+    expect(fontEditorialContent.every((content) => content.contentStatus === 'ready')).toBe(true)
+    expect(publishedFontForLocale('inter', 'en')).toBeDefined()
+    expect(fontSitemapPaths()).toContain('/font/inter')
+    expect(fontSitemapPaths()).toContain('/zh/font/inter')
+    expect(fontSitemapPaths()).toContain('/zh-tw/font/inter')
   })
 
   it('uses stable localized detail paths', () => {
@@ -27,7 +27,9 @@ describe('font detail publishing boundary', () => {
 
   it('renders the specimen and verified download controls from composed data', () => {
     const facts = fontCatalog.find((font) => font.slug === 'inter')
-    const draft = fontEditorialContent.find((content) => content.slug === 'inter')
+    const draft = fontEditorialContent.find(
+      (content) => content.slug === 'inter' && content.locale === 'en',
+    )
     expect(facts).toBeDefined()
     expect(draft).toBeDefined()
     if (!facts || !draft) throw new Error('Missing Inter test fixtures.')

@@ -12,7 +12,7 @@ const securityHeaders = createMiddleware({ type: 'request' }).server(async ({ ne
       "frame-ancestors 'none'",
       "img-src 'self' data:",
       "style-src 'self' 'unsafe-inline'",
-      "font-src 'self'",
+      "font-src 'self' https://assets.fontodyssey.com",
       "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com",
       "connect-src 'self' https://www.google-analytics.com",
     ].join('; '),

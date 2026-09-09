@@ -137,13 +137,14 @@ describe('legal page contracts', () => {
     expect(isLegalProfileLaunchReady(reviewed)).toBe(true)
   })
 
-  it('wires the strict legal check into the deployment command', () => {
+  it('keeps the unfinished legal launch behind an explicit deployment gate', () => {
     const packageJson = JSON.parse(readFileSync('package.json', 'utf8')) as {
       scripts: Record<string, string>
     }
     const releaseTest = readFileSync('tests/legal-release.test.ts', 'utf8')
 
-    expect(packageJson.scripts.deploy).toMatch(/^pnpm legal:check &&/)
+    expect(packageJson.scripts.deploy).toBe('pnpm verify && wrangler deploy')
+    expect(packageJson.scripts['deploy:with-legal']).toMatch(/^pnpm legal:check &&/)
     expect(packageJson.scripts.test).toContain('--exclude tests/legal-release.test.ts')
     expect(packageJson.scripts['legal:check']).toContain('--mode production')
     expect(releaseTest).toContain('requireReviewed: true')

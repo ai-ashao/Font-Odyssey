@@ -6,9 +6,21 @@ import {
   publishedFontForLocale,
   verifiedAssetReleaseForSlug,
 } from '@/lib/font-publication'
+import { validateAssetRelease } from '@/lib/font-publishing'
 import { fontAssetReleases } from '@/modules/font-asset-releases'
 
 describe('font publishing gate', () => {
+  it('contains the five remotely verified pilot releases in curation order', () => {
+    expect(fontAssetReleases.map((release) => release.slug)).toEqual([
+      'inter',
+      'raleway',
+      'notoseriftc',
+      'notoserifsc',
+      'firasans',
+    ])
+    expect(fontAssetReleases.flatMap(validateAssetRelease)).toEqual([])
+  })
+
   it('never infers R2 availability from a slug or base URL', () => {
     const unverified = fontCatalog.find(
       (font) => !fontAssetReleases.some((release) => release.slug === font.slug),

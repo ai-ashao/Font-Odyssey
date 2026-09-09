@@ -1,5 +1,147 @@
 import type { FontAssetRelease } from '@/lib/font-publishing'
 
-// Intentionally empty until versioned R2 objects pass remote readback.
-// Local packaging manifests must never be copied here as VERIFIED releases.
-export const fontAssetReleases: ReadonlyArray<FontAssetRelease> = []
+const assetBaseUrl = 'https://assets.fontodyssey.com'
+const releaseVersion = '5e35378e-eb2c904c'
+const sourceCommit = '5e35378e6bda803962ee6fd257e444a7d459660d'
+const verifiedAt = '2026-09-09T09:46:56Z'
+
+export const fontAssetReleases: ReadonlyArray<FontAssetRelease> = [
+  {
+    slug: 'inter',
+    releaseVersion,
+    sourceCommit,
+    package: {
+      url: `${assetBaseUrl}/fonts/inter/${releaseVersion}/inter.zip`,
+      sha256: 'ca6ac32064d40a354828e2ccf83b84d6ce7422861c413042340bdd980ab33245',
+      bytes: 961695,
+      contentType: 'application/zip',
+      etag: 'bb672a02e98032b4ed8c4604df4dbd5f',
+    },
+    license: {
+      url: `${assetBaseUrl}/fonts/inter/${releaseVersion}/LICENSE.txt`,
+      sha256: '5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57',
+      bytes: 4377,
+      contentType: 'text/plain; charset=utf-8',
+      etag: '5e95cb23ed621124015c5d23224ba2d3',
+    },
+    preview: {
+      url: `${assetBaseUrl}/fonts/inter/${releaseVersion}/preview.woff2`,
+      sha256: 'f50d69b259fd253d7da1386286acd7c9284c15c894ff210713389b54afd46fb5',
+      bytes: 21460,
+      contentType: 'font/woff2',
+      etag: '8fdb54ae311d2e721652e98e29d3b844',
+    },
+    previewStatus: 'GENERATED_SUBSET',
+    status: 'VERIFIED',
+    verifiedAt,
+  },
+  {
+    slug: 'raleway',
+    releaseVersion,
+    sourceCommit,
+    package: {
+      url: `${assetBaseUrl}/fonts/raleway/${releaseVersion}/raleway.zip`,
+      sha256: '891802e4fe7de915638a9504aa4cb4bb74322972ece9be68a89083ed967613a7',
+      bytes: 345510,
+      contentType: 'application/zip',
+      etag: '20d4021b448900e9b5302d5a6ef5e7fa',
+    },
+    license: {
+      url: `${assetBaseUrl}/fonts/raleway/${releaseVersion}/LICENSE.txt`,
+      sha256: '7e946cf1171784d1015279e7dc35f827957a6b5d1f1f659ae0c98e5f5e37ed9b',
+      bytes: 4497,
+      contentType: 'text/plain; charset=utf-8',
+      etag: '7a36082ad889d5cafbe77a63a5ebb75f',
+    },
+    previewStatus: 'UNAVAILABLE_RFN',
+    status: 'VERIFIED',
+    verifiedAt,
+  },
+  {
+    slug: 'notoseriftc',
+    releaseVersion,
+    sourceCommit,
+    package: {
+      url: `${assetBaseUrl}/fonts/notoseriftc/${releaseVersion}/notoseriftc.zip`,
+      sha256: '1defddce75e77466c6db78f1a2745f3713517ef87264ddf757d7fe418eac060b',
+      bytes: 10485696,
+      contentType: 'application/zip',
+      etag: 'f28cdeb208d000659de452b079a69562',
+    },
+    license: {
+      url: `${assetBaseUrl}/fonts/notoseriftc/${releaseVersion}/LICENSE.txt`,
+      sha256: '5e0da210fb04058a8c0087985d2d456b931c2579811a49655721d3cf0c36b6d6',
+      bytes: 4350,
+      contentType: 'text/plain; charset=utf-8',
+      etag: '6536de90aa507e8786e54037026bbc81',
+    },
+    preview: {
+      url: `${assetBaseUrl}/fonts/notoseriftc/${releaseVersion}/preview.woff2`,
+      sha256: '99d67bc775509a62391d042c525328ba17ef2e8ec31223221ada8bd1c6663236',
+      bytes: 7944,
+      contentType: 'font/woff2',
+      etag: '7948124e9e08c4a4f1945c8fda433579',
+    },
+    previewStatus: 'GENERATED_SUBSET',
+    status: 'VERIFIED',
+    verifiedAt,
+  },
+  {
+    slug: 'notoserifsc',
+    releaseVersion,
+    sourceCommit,
+    package: {
+      url: `${assetBaseUrl}/fonts/notoserifsc/${releaseVersion}/notoserifsc.zip`,
+      sha256: 'b2fada4a9c42a2fd3bca2b1f1416441082499f096178299ee20fdacbc06f58e8',
+      bytes: 15480032,
+      contentType: 'application/zip',
+      etag: 'ca752240dd93698ec1e84484c114f992',
+    },
+    license: {
+      url: `${assetBaseUrl}/fonts/notoserifsc/${releaseVersion}/LICENSE.txt`,
+      sha256: '5e0da210fb04058a8c0087985d2d456b931c2579811a49655721d3cf0c36b6d6',
+      bytes: 4350,
+      contentType: 'text/plain; charset=utf-8',
+      etag: '6536de90aa507e8786e54037026bbc81',
+    },
+    preview: {
+      url: `${assetBaseUrl}/fonts/notoserifsc/${releaseVersion}/preview.woff2`,
+      sha256: 'c0f17ff727b89916b13c854f9bb4d17cc13a92f149a72cb7296996b8d7c7985c',
+      bytes: 7920,
+      contentType: 'font/woff2',
+      etag: '384f2ee716528e6a3eee34692272798e',
+    },
+    previewStatus: 'GENERATED_SUBSET',
+    status: 'VERIFIED',
+    verifiedAt,
+  },
+  {
+    slug: 'firasans',
+    releaseVersion,
+    sourceCommit,
+    package: {
+      url: `${assetBaseUrl}/fonts/firasans/${releaseVersion}/firasans.zip`,
+      sha256: 'cda3341128532b9ebb14d898d26f2d5dad5a2cee9d9cefb5742acf3fff8b4221',
+      bytes: 3933207,
+      contentType: 'application/zip',
+      etag: 'e7d1de742818e11607547275ea7c7d57',
+    },
+    license: {
+      url: `${assetBaseUrl}/fonts/firasans/${releaseVersion}/LICENSE.txt`,
+      sha256: '8f24842e9174beda18a556c2ae7d54f5dc444340c19a3a9ef77e23bca366adbd',
+      bytes: 4370,
+      contentType: 'text/plain; charset=utf-8',
+      etag: 'de28deb2f8c1f23fd4d6918113ac3ddd',
+    },
+    preview: {
+      url: `${assetBaseUrl}/fonts/firasans/${releaseVersion}/preview.woff2`,
+      sha256: 'f1a681bf25399f4e4bf7d8a8f103751dcedf0f55b15d61aa97ab3ff44fada713',
+      bytes: 8060,
+      contentType: 'font/woff2',
+      etag: '7cb9a078c928a31f56e199a042140444',
+    },
+    previewStatus: 'GENERATED_SUBSET',
+    status: 'VERIFIED',
+    verifiedAt,
+  },
+]

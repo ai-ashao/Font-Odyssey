@@ -323,24 +323,100 @@ function PublishedFontDetailPage({
   const content = font.content[locale]
   if (!content) return null
 
-  return <PublishedFontDetailContent content={content} font={font} />
+  return <PublishedFontDetailContent content={content} font={font} locale={locale} />
 }
 
 function PublishedFontDetailContent({
   content,
   font,
+  locale,
 }: Readonly<{
   content: NonNullable<PublishedFont['content'][Locale]>
   font: PublishedFont
+  locale: Locale
 }>) {
   const [sample, setSample] = useState(content.previewText)
   const [size, setSize] = useState(72)
-  const [previewState, setPreviewState] = useState<'loading' | 'ready' | 'error'>(
-    font.release.preview ? 'loading' : 'error',
+  const [previewState, setPreviewState] = useState<'loading' | 'ready' | 'unavailable' | 'error'>(
+    font.release.preview ? 'loading' : 'unavailable',
   )
   const previewFace = `FontOdyssey-${font.facts.slug}`
   const previewUrl = font.release.preview?.url
   const rangeId = useId()
+  const copy =
+    locale === 'zh-CN'
+      ? {
+          allFonts: '全部字体',
+          curated: '精选',
+          styles: '样式',
+          axes: '可变轴',
+          license: '许可证',
+          static: '静态',
+          specimen: '在线预览',
+          trySize: '按你的字号试用',
+          ready: '预览字体已加载',
+          loading: '正在加载预览字体…',
+          unavailable: '此版本不提供衍生预览',
+          failed: '预览字体加载失败',
+          previewLabel: '预览文字',
+          about: '关于这个字体家族',
+          brings: '它能为版面带来什么',
+          uses: '适合用途',
+          verified: '已验证版本',
+          download: '下载',
+          downloadCopy: '原始字体文件、来源说明与许可证文本。版本',
+          zip: '下载 ZIP',
+          readLicense: '阅读许可证',
+        }
+      : locale === 'zh-TW'
+        ? {
+            allFonts: '全部字體',
+            curated: '精選',
+            styles: '樣式',
+            axes: '可變軸',
+            license: '授權',
+            static: '靜態',
+            specimen: '線上預覽',
+            trySize: '依你的字級試用',
+            ready: '預覽字體已載入',
+            loading: '正在載入預覽字體…',
+            unavailable: '此版本不提供衍生預覽',
+            failed: '預覽字體載入失敗',
+            previewLabel: '預覽文字',
+            about: '關於這個字體家族',
+            brings: '它能為版面帶來什麼',
+            uses: '適合用途',
+            verified: '已驗證版本',
+            download: '下載',
+            downloadCopy: '原始字體檔、來源說明與授權文字。版本',
+            zip: '下載 ZIP',
+            readLicense: '閱讀授權',
+          }
+        : {
+            allFonts: 'All fonts',
+            curated: 'Curated',
+            styles: 'Styles',
+            axes: 'Axes',
+            license: 'License',
+            static: 'Static',
+            specimen: 'Live specimen',
+            trySize: 'Try it at your size',
+            ready: 'Preview font ready',
+            loading: 'Loading preview font…',
+            unavailable: 'Preview unavailable for this release',
+            failed: 'Preview font could not be loaded',
+            previewLabel: 'Preview text',
+            about: 'About the family',
+            brings: 'What it brings to a layout',
+            uses: 'Works well for',
+            verified: 'Verified release',
+            download: 'Download',
+            downloadCopy: 'Original font files, source notice, and license text. Release',
+            zip: 'Download ZIP',
+            readLicense: 'Read license',
+          }
+  const directoryPath =
+    locale === 'en' ? '/fonts' : locale === 'zh-CN' ? '/zh/fonts' : '/zh-tw/fonts'
 
   useEffect(() => {
     if (!previewUrl) return
@@ -368,29 +444,30 @@ function PublishedFontDetailContent({
   return (
     <article className="font-detail" data-font-detail={font.facts.slug}>
       <div className="font-detail-inner">
-        <a className="font-detail-back" href="/fonts">
-          <ArrowLeft aria-hidden="true" /> All fonts
+        <a className="font-detail-back" href={directoryPath}>
+          <ArrowLeft aria-hidden="true" /> {copy.allFonts}
         </a>
 
         <header className="font-detail-hero">
           <div>
             <p className="font-detail-kicker">
-              Curated #{String(font.facts.curationRank).padStart(3, '0')} · {font.facts.category}
+              {copy.curated} #{String(font.facts.curationRank).padStart(3, '0')} ·{' '}
+              {font.facts.category}
             </p>
             <h1 style={{ fontFamily: `${previewFace}, var(--sans)` }}>{content.h1}</h1>
             <p>{content.intro}</p>
           </div>
           <dl className="font-detail-facts">
             <div>
-              <dt>Styles</dt>
+              <dt>{copy.styles}</dt>
               <dd>{font.facts.styleCount}</dd>
             </div>
             <div>
-              <dt>Axes</dt>
-              <dd>{font.facts.axes.length ? font.facts.axes.join(', ') : 'Static'}</dd>
+              <dt>{copy.axes}</dt>
+              <dd>{font.facts.axes.length ? font.facts.axes.join(', ') : copy.static}</dd>
             </div>
             <div>
-              <dt>License</dt>
+              <dt>{copy.license}</dt>
               <dd>{font.facts.license}</dd>
             </div>
           </dl>
@@ -399,18 +476,20 @@ function PublishedFontDetailContent({
         <section className="font-specimen" aria-labelledby={`${rangeId}-heading`}>
           <div className="font-specimen-toolbar">
             <div>
-              <p className="font-detail-kicker">Live specimen</p>
-              <h2 id={`${rangeId}-heading`}>Try it at your size</h2>
+              <p className="font-detail-kicker">{copy.specimen}</p>
+              <h2 id={`${rangeId}-heading`}>{copy.trySize}</h2>
               <span
                 aria-live="polite"
                 className="font-preview-state"
                 data-preview-state={previewState}
               >
                 {previewState === 'ready'
-                  ? 'Preview font ready'
+                  ? copy.ready
                   : previewState === 'loading'
-                    ? 'Loading preview font…'
-                    : 'Preview font could not be loaded'}
+                    ? copy.loading
+                    : previewState === 'unavailable'
+                      ? copy.unavailable
+                      : copy.failed}
               </span>
             </div>
             <label htmlFor={rangeId}>
@@ -426,7 +505,7 @@ function PublishedFontDetailContent({
             </label>
           </div>
           <textarea
-            aria-label={`Preview text for ${font.facts.family}`}
+            aria-label={`${copy.previewLabel}: ${font.facts.family}`}
             onChange={(event) => setSample(event.currentTarget.value)}
             spellCheck="false"
             style={{ fontFamily: `${previewFace}, var(--sans)`, fontSize: `${size}px` }}
@@ -436,8 +515,8 @@ function PublishedFontDetailContent({
 
         <div className="font-detail-columns">
           <section>
-            <p className="font-detail-kicker">About the family</p>
-            <h2>What it brings to a layout</h2>
+            <p className="font-detail-kicker">{copy.about}</p>
+            <h2>{copy.brings}</h2>
             {content.about.map((paragraph) => (
               <p className="font-detail-copy" key={paragraph}>
                 {paragraph}
@@ -445,7 +524,7 @@ function PublishedFontDetailContent({
             ))}
           </section>
           <section>
-            <p className="font-detail-kicker">Works well for</p>
+            <p className="font-detail-kicker">{copy.uses}</p>
             <ul className="font-use-cases">
               {content.useCases.map((useCase) => (
                 <li key={useCase}>{useCase}</li>
@@ -458,19 +537,20 @@ function PublishedFontDetailContent({
 
         <section className="font-download-panel">
           <div>
-            <p className="font-detail-kicker">Verified release</p>
-            <h2>Download {font.facts.family}</h2>
+            <p className="font-detail-kicker">{copy.verified}</p>
+            <h2>
+              {copy.download} {font.facts.family}
+            </h2>
             <p className="font-download-copy">
-              Original font files, source notice, and license text. Release{' '}
-              {font.release.releaseVersion}.
+              {copy.downloadCopy} {font.release.releaseVersion}.
             </p>
           </div>
           <div className="font-download-actions">
             <a href={font.release.package.url} download>
-              <Download aria-hidden="true" /> Download ZIP
+              <Download aria-hidden="true" /> {copy.zip}
             </a>
             <a className="font-license-link" href={font.release.license.url}>
-              <ShieldCheck aria-hidden="true" /> Read license
+              <ShieldCheck aria-hidden="true" /> {copy.readLicense}
             </a>
           </div>
         </section>
