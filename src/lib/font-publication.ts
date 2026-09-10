@@ -27,7 +27,10 @@ export function assembledPublishedFont(slug: string): PublishedFont | undefined 
   if (!facts || !release) return undefined
 
   const content = Object.fromEntries(
-    publishingLocales.map((locale) => [locale, fontEditorialContentFor(facts, locale)]),
+    publishingLocales.map((locale) => [
+      locale,
+      fontEditorialContentFor(facts, locale, release.previewStatus),
+    ]),
   ) as PublishedFont['content']
 
   return { facts, release, content }

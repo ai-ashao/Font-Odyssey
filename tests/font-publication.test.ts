@@ -42,4 +42,19 @@ describe('font publishing gate', () => {
       }
     }
   })
+
+  it('builds published SEO copy from the remotely verified preview state', () => {
+    const inter = publishedFontForLocale('inter', 'en')
+    const raleway = publishedFontForLocale('raleway', 'en')
+    expect(inter).toBeDefined()
+    expect(raleway).toBeDefined()
+    if (!inter || !raleway) return
+
+    expect(inter.release.previewStatus).toBe('GENERATED_SUBSET')
+    expect(inter.content.en?.description).toContain('verified live preview')
+
+    expect(raleway.release.previewStatus).toBe('UNAVAILABLE_RFN')
+    expect(raleway.content.en?.description).toContain('Reserved Font Name preview restrictions')
+    expect(raleway.content.en?.description).not.toContain('verified live preview')
+  })
 })
