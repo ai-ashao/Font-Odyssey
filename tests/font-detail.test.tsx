@@ -5,14 +5,18 @@ import { fontCatalog } from '@/lib/font-catalog'
 import { publishedFontForLocale } from '@/lib/font-publication'
 import type { FontAssetRelease, PublishedFont } from '@/lib/font-publishing'
 import { fontPath, fontSitemapPaths } from '@/lib/font-routes'
-import { fontEditorialContent } from '@/modules/font-editorial-content'
+import {
+  buildFontEditorialSnapshot,
+  fontEditorialContentFor,
+} from '@/modules/font-editorial-content'
 
 const sha256 = 'a'.repeat(64)
 
 describe('font detail publishing boundary', () => {
-  it('publishes the five reviewed Pilot families in all three locales', () => {
-    expect(fontEditorialContent).toHaveLength(15)
-    expect(fontEditorialContent.every((content) => content.contentStatus === 'ready')).toBe(true)
+  it('provides ready factual content for every catalog family in all three locales', () => {
+    const editorial = buildFontEditorialSnapshot()
+    expect(editorial).toHaveLength(fontCatalog.length * 3)
+    expect(editorial.every((content) => content.contentStatus === 'ready')).toBe(true)
     expect(publishedFontForLocale('inter', 'en')).toBeDefined()
     expect(fontSitemapPaths()).toContain('/font/inter')
     expect(fontSitemapPaths()).toContain('/zh/font/inter')
@@ -27,12 +31,10 @@ describe('font detail publishing boundary', () => {
 
   it('renders the specimen and verified download controls from composed data', () => {
     const facts = fontCatalog.find((font) => font.slug === 'inter')
-    const draft = fontEditorialContent.find(
-      (content) => content.slug === 'inter' && content.locale === 'en',
-    )
     expect(facts).toBeDefined()
-    expect(draft).toBeDefined()
-    if (!facts || !draft) throw new Error('Missing Inter test fixtures.')
+    if (!facts) throw new Error('Missing Inter test fixture.')
+
+    const content = fontEditorialContentFor(facts, 'en')
     const release: FontAssetRelease = {
       slug: 'inter',
       releaseVersion: '5e35378e-example1',
@@ -59,13 +61,14 @@ describe('font detail publishing boundary', () => {
       status: 'VERIFIED',
       verifiedAt: '2026-09-07T00:00:00Z',
     }
-    const ready = { ...draft, contentStatus: 'ready' as const, reviewedAt: '2026-09-07T00:00:00Z' }
-    const font: PublishedFont = { facts, release, content: { en: ready } }
+    const font: PublishedFont = { facts, release, content: { en: content } }
     const html = renderToStaticMarkup(<FontDetailPage font={font} locale="en" />)
+
     expect(html).toContain('data-font-detail="inter"')
     expect(html).toContain('Live specimen')
     expect(html).toContain('Loading preview font')
-    expect(html).toContain('Download ZIP')
+    expect(html).toContain('Download font')
+    expect(html).toContain('https://assets.example/fonts/inter/inter.zip')
     expect(html).toContain('5e35378e-example1')
   })
 })

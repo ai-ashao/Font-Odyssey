@@ -25,12 +25,16 @@ describe('font entity and hub routes', () => {
   it('builds language and category hubs from real inventory', () => {
     const chinese = findFontHub('chinese')
     const sans = findFontHub('sans-serif')
+    const display = findFontHub('display')
     expect(chinese).toBeDefined()
     expect(sans).toBeDefined()
-    if (!chinese || !sans) return
+    expect(display).toBeDefined()
+    if (!chinese || !sans || !display) return
     expect(fontHubPath(chinese, 'zh-CN')).toBe('/zh/fonts/chinese')
+    expect(fontHubPath(display, 'en')).toBe('/fonts/display')
     expect(fontsForHub(chinese).length).toBeGreaterThan(0)
     expect(fontsForHub(sans).every((font) => font.category === 'Sans Serif')).toBe(true)
+    expect(fontsForHub(display).every((font) => font.category === 'Display')).toBe(true)
   })
 
   it('keeps user-facing locale switches available for catalog detail routes', () => {
@@ -56,6 +60,9 @@ describe('font entity and hub routes', () => {
     expect(paths.has('/fonts/chinese')).toBe(true)
     expect(paths.has('/zh/fonts/chinese')).toBe(true)
     expect(paths.has('/zh-tw/fonts/chinese')).toBe(true)
+    expect(paths.has('/fonts/display')).toBe(true)
+    expect(paths.has('/zh/fonts/display')).toBe(true)
+    expect(paths.has('/zh-tw/fonts/display')).toBe(true)
     expect(paths.size).toBe(fontSitemapPaths().length)
   })
 })

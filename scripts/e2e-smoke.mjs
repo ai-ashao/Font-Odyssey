@@ -101,6 +101,16 @@ try {
       `${duplicate} must not become a second font-detail route.`,
     )
   }
+  for (const invalid of [
+    '/font/definitely-not-a-font',
+    '/zh/font/definitely-not-a-font',
+    '/zh-tw/font/definitely-not-a-font',
+  ]) {
+    assert(
+      (await request(invalid)).response.status === 404,
+      `${invalid} must return a real 404 instead of a soft-404 page.`,
+    )
+  }
   console.log(
     `E2E smoke passed for ${paths.length} noindex sitemap URLs and the 149-family catalog.`,
   )

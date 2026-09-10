@@ -1,4 +1,4 @@
-import type { CSSProperties } from 'react'
+import { type CSSProperties, useEffect, useRef, useState } from 'react'
 import type { Locale } from '@/i18n/config'
 import { fontPreviewUrl } from '@/lib/font-assets'
 import { type FontCatalogItem, fontLanguages } from '@/lib/font-catalog'
@@ -9,6 +9,8 @@ export function FontCard({
   locale,
   previewText,
 }: Readonly<{ font: FontCatalogItem; locale: Locale; previewText?: string }>) {
+  const cardRef = useRef<HTMLElement | null>(null)
+  const [previewActive, setPreviewActive] = useState(false)
   const languages = fontLanguages(font)
   const styles =
     locale === 'zh-CN'
@@ -25,16 +27,40 @@ export function FontCard({
         : 'Make something worth reading.')
   const previewUrl = fontPreviewUrl(font)
   const familyName = `FontOdysseyPreview-${font.slug}`
-  const previewStyle: CSSProperties | undefined = previewUrl
-    ? { fontFamily: `"${familyName}", var(--sans)` }
-    : undefined
+  const previewStyle: CSSProperties | undefined =
+    previewUrl && previewActive ? { fontFamily: `"${familyName}", var(--sans)` } : undefined
+
+  useEffect(() => {
+    if (!previewUrl) return
+    const node = cardRef.current
+    if (!node) return
+
+    if (!('IntersectionObserver' in window)) {
+      setPreviewActive(true)
+      return
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (!entries.some((entry) => entry.isIntersecting)) return
+        setPreviewActive(true)
+        observer.disconnect()
+      },
+      { rootMargin: '500px 0px' },
+    )
+
+    observer.observe(node)
+    return () => observer.disconnect()
+  }, [previewUrl])
 
   return (
     <article
       className="group relative overflow-hidden rounded-2xl border bg-card p-5 transition-colors hover:border-foreground/30"
       data-font-card={font.slug}
+      data-preview-active={previewActive ? 'true' : undefined}
+      ref={cardRef}
     >
-      {previewUrl ? (
+      {previewUrl && previewActive ? (
         <style>{`@font-face{font-family:"${familyName}";src:url("${previewUrl}") format("woff2");font-display:swap;}`}</style>
       ) : null}
       <a

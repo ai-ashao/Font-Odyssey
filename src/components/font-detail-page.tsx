@@ -361,7 +361,7 @@ function PublishedFontDetailContent({
           previewLabel: '预览文字',
           about: '关于这个字体家族',
           brings: '它能为版面带来什么',
-          uses: '适合用途',
+          uses: '该类别常见用途',
           verified: '已验证版本',
           download: '下载',
           downloadCopy: '原始字体文件、来源说明与许可证文本。版本',
@@ -385,7 +385,7 @@ function PublishedFontDetailContent({
             previewLabel: '預覽文字',
             about: '關於這個字體家族',
             brings: '它能為版面帶來什麼',
-            uses: '適合用途',
+            uses: '此類別常見用途',
             verified: '已驗證版本',
             download: '下載',
             downloadCopy: '原始字體檔、來源說明與授權文字。版本',
@@ -408,7 +408,7 @@ function PublishedFontDetailContent({
             previewLabel: 'Preview text',
             about: 'About the family',
             brings: 'What it brings to a layout',
-            uses: 'Works well for',
+            uses: 'Common uses for this category',
             verified: 'Verified release',
             download: 'Download',
             downloadCopy: 'Original font files, source notice, and license text. Release',
@@ -417,6 +417,7 @@ function PublishedFontDetailContent({
           }
   const directoryPath =
     locale === 'en' ? '/fonts' : locale === 'zh-CN' ? '/zh/fonts' : '/zh-tw/fonts'
+  const downloadSources = fontDownloadSources(font.facts, locale, font.release.package.url)
 
   useEffect(() => {
     if (!previewUrl) return
@@ -546,9 +547,17 @@ function PublishedFontDetailContent({
             </p>
           </div>
           <div className="font-download-actions">
-            <a href={font.release.package.url} download>
-              <Download aria-hidden="true" /> {copy.zip}
-            </a>
+            {downloadSources.map((source) => (
+              <a
+                className={source.primary ? undefined : 'font-license-link'}
+                href={source.url}
+                key={source.id}
+                rel={source.sponsored ? 'sponsored nofollow noopener' : 'noopener'}
+                target="_blank"
+              >
+                <Download aria-hidden="true" /> {source.label}
+              </a>
+            ))}
             <a className="font-license-link" href={font.release.license.url}>
               <ShieldCheck aria-hidden="true" /> {copy.readLicense}
             </a>

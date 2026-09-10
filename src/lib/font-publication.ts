@@ -1,27 +1,16 @@
 import type { Locale } from '@/i18n/config'
 import { fontAssetReleases } from '@/modules/font-asset-releases'
-import { fontEditorialContent } from '@/modules/font-editorial-content'
+import { fontEditorialContentFor } from '@/modules/font-editorial-content'
 import { type FontCatalogItem, findFontBySlug } from './font-catalog'
 import {
   type FontAssetRelease,
-  type FontEditorialContent,
   fontPageEligible,
   type PublishedFont,
   validateAssetRelease,
 } from './font-publishing'
 
 const releaseBySlug = new Map(fontAssetReleases.map((release) => [release.slug, release]))
-const editorialBySlug = new Map<string, Partial<Record<Locale, FontEditorialContent>>>()
-
-for (const content of fontEditorialContent) {
-  const localized = editorialBySlug.get(content.slug) ?? {}
-  localized[content.locale] = {
-    ...content,
-    about: [...content.about],
-    useCases: [...content.useCases],
-  }
-  editorialBySlug.set(content.slug, localized)
-}
+const publishingLocales = ['en', 'zh-CN', 'zh-TW'] as const satisfies ReadonlyArray<Locale>
 
 export function verifiedAssetReleaseForSlug(slug: string): FontAssetRelease | undefined {
   const release = releaseBySlug.get(slug)
@@ -37,11 +26,11 @@ export function assembledPublishedFont(slug: string): PublishedFont | undefined 
   const release = verifiedAssetReleaseForSlug(slug)
   if (!facts || !release) return undefined
 
-  return {
-    facts,
-    release,
-    content: editorialBySlug.get(slug) ?? {},
-  }
+  const content = Object.fromEntries(
+    publishingLocales.map((locale) => [locale, fontEditorialContentFor(facts, locale)]),
+  ) as PublishedFont['content']
+
+  return { facts, release, content }
 }
 
 export function publishedFontForLocale(slug: string, locale: Locale): PublishedFont | undefined {
@@ -57,7 +46,7 @@ export function fontLocaleIndexable(font: FontCatalogItem | string, locale: Loca
 
 export function indexableFontLocales(font: FontCatalogItem | string): Locale[] {
   const slug = typeof font === 'string' ? font : font.slug
-  return (['en', 'zh-CN', 'zh-TW'] as const).filter((locale) => fontLocaleIndexable(slug, locale))
+  return publishingLocales.filter((locale) => fontLocaleIndexable(slug, locale))
 }
 
 export function fontDetailModelForLocale(

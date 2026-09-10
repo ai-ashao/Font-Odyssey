@@ -23,9 +23,13 @@ export function fontOfficialSourceUrl(font: FontCatalogItem): string {
   return `https://github.com/google/fonts/tree/${font.sourceCommit}/${font.sourcePath}`
 }
 
-export function fontDownloadSources(font: FontCatalogItem, locale: Locale): FontDownloadSource[] {
+export function fontDownloadSources(
+  font: FontCatalogItem,
+  locale: Locale,
+  verifiedR2Url?: string,
+): FontDownloadSource[] {
   const overrides = fontDownloadOverrides[font.slug] || {}
-  const r2 = fontR2DownloadUrl(font)
+  const r2 = verifiedR2Url ?? fontR2DownloadUrl(font)
 
   if (locale === 'zh-CN') {
     const sources: FontDownloadSource[] = []

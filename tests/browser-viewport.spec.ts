@@ -15,7 +15,7 @@ for (const viewport of viewports) {
     await page.setViewportSize(viewport)
     await page.goto('/')
     await expect(page.locator('[data-font-home]')).toBeVisible()
-    await expect(page.getByRole('heading', { level: 1 })).toContainText('Free Fonts')
+    await expect(page.getByRole('heading', { level: 1 })).toContainText('Free Font Downloads')
     await expect(page.locator('[data-font-card]')).toHaveCount(12)
     await expect(page.locator('[data-site-header] [data-header-cta]')).toHaveCount(0)
     expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(
@@ -44,9 +44,9 @@ for (const viewport of viewports) {
     )
     await page.goto('/font/inter')
     await expect(page.locator('[data-font-detail="inter"]')).toBeVisible()
-    await expect(page.getByRole('heading', { level: 1 })).toHaveText('Inter')
+    await expect(page.getByRole('heading', { level: 1 })).toHaveText('Inter Font')
     await expect(page.getByText('Verified release')).toBeVisible()
-    await expect(page.getByRole('link', { name: 'Download ZIP' })).toBeVisible()
+    await expect(page.getByRole('link', { name: 'Download font' })).toBeVisible()
     await expect(page.locator('[data-preview-state]')).toHaveAttribute(
       'data-preview-state',
       'ready',
@@ -60,7 +60,7 @@ for (const viewport of viewports) {
     await page.setViewportSize(viewport)
     await page.goto('/zh-tw')
     await expect(page.locator('[data-font-home]')).toBeVisible()
-    await expect(page.getByRole('heading', { level: 1 })).toContainText('免費字體')
+    await expect(page.getByRole('heading', { level: 1 })).toContainText('免費字體下載')
     expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(
       viewport.width,
     )

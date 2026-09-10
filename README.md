@@ -15,8 +15,9 @@ launch catalog contains 149 license-gated families, ordered by a frozen editoria
 
 The repository intentionally does not track generated font ZIPs, WOFF2 previews,
 the Google Fonts staging checkout, or analysis reports. Those local artifacts are
-large and reproducible. A production download store and public domain are still
-release gates.
+large and reproducible. Production font assets are published as immutable, remotely
+verified objects under `https://assets.fontodyssey.com`; Git stores release metadata,
+not the generated binary payloads.
 
 ## Run the site
 

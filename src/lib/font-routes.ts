@@ -16,6 +16,7 @@ export type FontHubId =
   | 'latin'
   | 'sans-serif'
   | 'serif'
+  | 'display'
   | 'handwriting'
   | 'monospace'
   | 'free-commercial'
@@ -151,6 +152,7 @@ export const fontHubDefinitions: ReadonlyArray<FontHubDefinition> = [
     [
       ['sans-serif', 'Sans Serif', 'Sans Serif Fonts', '无衬线字体', '無襯線字體'],
       ['serif', 'Serif', 'Serif Fonts', '衬线字体', '襯線字體'],
+      ['display', 'Display', 'Display Fonts', '展示字体', '展示字體'],
       ['handwriting', 'Handwriting', 'Handwriting Fonts', '手写字体', '手寫字體'],
       ['monospace', 'Monospace', 'Monospace Fonts', '等宽字体', '等寬字體'],
     ] as const

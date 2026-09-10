@@ -6,7 +6,13 @@ import { type FontHubId, findFontHub, fontHubPath } from '@/lib/font-routes'
 import { FontCard } from './font-card'
 
 const languageHubs = ['chinese', 'japanese', 'korean', 'latin'] satisfies FontHubId[]
-const styleHubs = ['sans-serif', 'serif', 'handwriting', 'monospace'] satisfies FontHubId[]
+const styleHubs = [
+  'sans-serif',
+  'serif',
+  'display',
+  'handwriting',
+  'monospace',
+] satisfies FontHubId[]
 const collectionHubs = ['free-commercial', 'variable-fonts'] satisfies FontHubId[]
 
 export function FontHome({ locale }: Readonly<{ locale: Locale }>) {
@@ -15,7 +21,7 @@ export function FontHome({ locale }: Readonly<{ locale: Locale }>) {
     locale === 'zh-CN'
       ? {
           eyebrow: '149 款精选字体 · 来源可追溯',
-          title: '免费字体下载与商用字体精选',
+          title: '免费字体下载与多语言字体精选',
           description:
             '从精选的中文、日文、韩文和拉丁字体中快速找到值得使用的字体。查看许可证、语言支持、字重与官方来源，再决定下载。',
           search: '搜索字体名称',
@@ -42,7 +48,7 @@ export function FontHome({ locale }: Readonly<{ locale: Locale }>) {
       : locale === 'zh-TW'
         ? {
             eyebrow: '149 款精選字體 · 來源可追溯',
-            title: '免費字體下載與商用字體精選',
+            title: '免費字體下載與多語言字體精選',
             description:
               '從精選的中文、日文、韓文與拉丁字體中快速找到值得使用的字體。查看授權、語言支援、字重與官方來源，再決定下載。',
             search: '搜尋字體名稱',
@@ -68,7 +74,7 @@ export function FontHome({ locale }: Readonly<{ locale: Locale }>) {
           }
         : {
             eyebrow: '149 CURATED FAMILIES · TRACEABLE SOURCES',
-            title: 'Free Fonts for Commercial Use',
+            title: 'Free Font Downloads — Curated Multilingual Fonts',
             description:
               'Discover curated Latin, Chinese, Japanese, and Korean fonts. Review licensing, language support, styles, and official sources before you download.',
             search: 'Search font names',

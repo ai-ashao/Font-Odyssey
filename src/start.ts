@@ -1,7 +1,9 @@
 import { createMiddleware, createStart } from '@tanstack/react-start'
 import { productConfig } from '@/lib/product-config'
 
-const securityHeaders = createMiddleware({ type: 'request' }).server(async ({ next }) => {
+const securityHeaders = createMiddleware({ type: 'request' }).server(async ({ next, request }) => {
+  const requestHostname = new URL(request.url).hostname
+  const isWorkersDevHost = requestHostname.endsWith('.workers.dev')
   const result = await next()
   const headers = new Headers(result.response.headers)
   headers.set(
@@ -22,7 +24,7 @@ const securityHeaders = createMiddleware({ type: 'request' }).server(async ({ ne
   headers.set('referrer-policy', 'strict-origin-when-cross-origin')
   headers.set('x-content-type-options', 'nosniff')
   headers.set('x-frame-options', 'DENY')
-  if (!productConfig.indexingEnabled) {
+  if (!productConfig.indexingEnabled || isWorkersDevHost) {
     headers.set('x-robots-tag', 'noindex, nofollow')
   }
 
