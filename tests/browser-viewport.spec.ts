@@ -18,6 +18,23 @@ for (const viewport of viewports) {
     await expect(page.getByRole('heading', { level: 1 })).toContainText('Free Font Downloads')
     await expect(page.locator('[data-font-card]')).toHaveCount(12)
     await expect(page.locator('[data-site-header] [data-header-cta]')).toHaveCount(0)
+
+    if (viewport.name === 'desktop') {
+      await expect(page.locator('.ship-main-nav')).toBeVisible()
+      await expect(page.locator('[data-mobile-menu]')).toBeHidden()
+      await expect(page.getByRole('link', { name: 'Commercial', exact: true })).toBeVisible()
+    } else {
+      const mobileMenu = page.locator('[data-mobile-menu]')
+      await expect(mobileMenu).toBeVisible()
+      await mobileMenu.locator('summary').click()
+      await expect(mobileMenu.getByRole('link', { name: 'Commercial', exact: true })).toBeVisible()
+      await expect(mobileMenu.getByRole('link', { name: 'Variable', exact: true })).toBeVisible()
+    }
+
+    const languageMenu = page.locator('[data-language-menu]')
+    await languageMenu.locator('summary').click()
+    await expect(page.getByRole('link', { name: 'Switch to 简体中文' })).toBeVisible()
+
     expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(
       viewport.width,
     )
@@ -61,6 +78,7 @@ for (const viewport of viewports) {
     await page.goto('/zh-tw')
     await expect(page.locator('[data-font-home]')).toBeVisible()
     await expect(page.getByRole('heading', { level: 1 })).toContainText('免費字體下載')
+    await expect(page.getByText('149 已驗證', { exact: true })).toBeVisible()
     expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(
       viewport.width,
     )

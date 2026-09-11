@@ -2,6 +2,7 @@ import type { Locale } from './config'
 
 type ShellMessages = {
   primaryNavigation: string
+  mobileNavigation: string
   nav: {
     home: string
     tools: string
@@ -23,6 +24,7 @@ type ShellMessages = {
 export const shellMessages = {
   en: {
     primaryNavigation: 'Primary navigation',
+    mobileNavigation: 'Menu',
     nav: {
       home: 'Home',
       tools: 'Fonts',
@@ -42,6 +44,7 @@ export const shellMessages = {
   },
   'zh-CN': {
     primaryNavigation: '主导航',
+    mobileNavigation: '菜单',
     nav: {
       home: '首页',
       tools: '字体',
@@ -61,6 +64,7 @@ export const shellMessages = {
   },
   'zh-TW': {
     primaryNavigation: '主導覽',
+    mobileNavigation: '選單',
     nav: {
       home: '首頁',
       tools: '字體',

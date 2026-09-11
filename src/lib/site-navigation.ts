@@ -6,6 +6,12 @@ export type GuidesPlacement = 'none'
 export type HeaderLinkId = 'home' | 'tools'
 export type LocalizedValue = Partial<Record<Locale, string>>
 
+export type HeaderCustomLink = {
+  id: string
+  label: LocalizedValue
+  href: LocalizedValue
+}
+
 export type FooterToolGroupConfig = {
   id: string
   title: LocalizedValue
@@ -35,6 +41,7 @@ export type SiteNavigationConfig = {
   header: {
     links: ReadonlyArray<HeaderLinkId>
     toolsHref?: LocalizedValue
+    customLinks?: ReadonlyArray<HeaderCustomLink>
     cta?: HeaderCtaConfig
   }
   footer: {
@@ -49,6 +56,31 @@ export const toolSiteNavigation: SiteNavigationConfig = {
   header: {
     links: ['tools'],
     toolsHref: { en: '/fonts', 'zh-CN': '/zh/fonts', 'zh-TW': '/zh-tw/fonts' },
+    customLinks: [
+      {
+        id: 'collections',
+        label: { en: 'Collections', 'zh-CN': '合集', 'zh-TW': '合集' },
+        href: { en: '/#collections', 'zh-CN': '/zh#collections', 'zh-TW': '/zh-tw#collections' },
+      },
+      {
+        id: 'commercial',
+        label: { en: 'Commercial', 'zh-CN': '商用字体', 'zh-TW': '商用字體' },
+        href: {
+          en: '/fonts/free-commercial',
+          'zh-CN': '/zh/fonts/free-commercial',
+          'zh-TW': '/zh-tw/fonts/free-commercial',
+        },
+      },
+      {
+        id: 'variable',
+        label: { en: 'Variable', 'zh-CN': '可变字体', 'zh-TW': '可變字體' },
+        href: {
+          en: '/fonts/variable-fonts',
+          'zh-CN': '/zh/fonts/variable-fonts',
+          'zh-TW': '/zh-tw/fonts/variable-fonts',
+        },
+      },
+    ],
   },
   footer: {
     toolGroups: [],
@@ -136,13 +168,32 @@ function duplicates(values: ReadonlyArray<string>): ReadonlyArray<string> {
   return [...duplicateValues]
 }
 
+function hasLocalizedValue(value: LocalizedValue): boolean {
+  return Boolean(Object.values(value).find((entry) => entry?.trim()))
+}
+
 export function validateSiteNavigation(
   config: SiteNavigationConfig,
   registry?: ReadonlyArray<ToolRegistryItem>,
 ): ReadonlyArray<string> {
   const issues: string[] = []
+
   if (config.header.links.includes('tools') && !config.header.toolsHref) {
     issues.push('Header includes tools but no toolsHref is configured.')
+  }
+
+  const headerCustomLinks = config.header.customLinks ?? []
+  for (const duplicateId of duplicates(headerCustomLinks.map((link) => link.id))) {
+    issues.push(`Duplicate Header custom-link id: ${duplicateId}`)
+  }
+  for (const link of headerCustomLinks) {
+    if (!link.id.trim()) issues.push('Header custom link requires an id.')
+    if (!hasLocalizedValue(link.label)) {
+      issues.push(`Header custom link ${link.id || '(missing id)'} requires a label.`)
+    }
+    if (!hasLocalizedValue(link.href)) {
+      issues.push(`Header custom link ${link.id || '(missing id)'} requires an href.`)
+    }
   }
 
   if (config.header.cta) {

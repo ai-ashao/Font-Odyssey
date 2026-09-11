@@ -5,7 +5,11 @@ import { fontSitemapPaths } from '@/lib/font-routes'
 import { validateLegalProfile } from '@/lib/legal'
 import { productConfig, validateProductConfig } from '@/lib/product-config'
 import { validateSeoFirstProductState } from '@/lib/seo-first-validation'
-import { siteNavigation, validateToolSiteNavigation } from '@/lib/site-navigation'
+import {
+  localizedNavigationValue,
+  siteNavigation,
+  validateToolSiteNavigation,
+} from '@/lib/site-navigation'
 import { legalProfile } from '@/modules/legal-profile'
 import { toolRegistry } from '@/modules/tool-registry'
 
@@ -21,6 +25,25 @@ describe('FontOdyssey configuration', () => {
   it('keeps navigation and legal configuration valid', () => {
     expect(validateToolSiteNavigation(siteNavigation, toolRegistry)).toEqual([])
     expect(validateLegalProfile(legalProfile)).toEqual([])
+  })
+
+  it('centralizes the FontOdyssey header navigation and localized destinations', () => {
+    expect(siteNavigation.header.links).toContain('tools')
+    expect(siteNavigation.header.customLinks?.map((link) => link.id)).toEqual([
+      'collections',
+      'commercial',
+      'variable',
+    ])
+
+    const commercial = siteNavigation.header.customLinks?.find((link) => link.id === 'commercial')
+    const variable = siteNavigation.header.customLinks?.find((link) => link.id === 'variable')
+    expect(commercial).toBeDefined()
+    expect(variable).toBeDefined()
+    if (!commercial || !variable) return
+
+    expect(localizedNavigationValue(commercial.href, 'en')).toBe('/fonts/free-commercial')
+    expect(localizedNavigationValue(commercial.href, 'zh-CN')).toBe('/zh/fonts/free-commercial')
+    expect(localizedNavigationValue(variable.href, 'zh-TW')).toBe('/zh-tw/fonts/variable-fonts')
   })
 
   it('ships exactly the final 149 Approved families in curation order', () => {
