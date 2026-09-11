@@ -34,7 +34,7 @@ describe('font directory search contract', () => {
 
     expect(html.match(/data-font-card=/g)).toHaveLength(11)
     expect(html).toContain('11 fonts')
-    expect(html).toContain('<option selected="">Chinese</option>')
+    expect(html).toContain('<option value="Chinese" selected="">Chinese</option>')
   })
 
   it('marks faceted pages noindex,follow while keeping the directory canonical', () => {

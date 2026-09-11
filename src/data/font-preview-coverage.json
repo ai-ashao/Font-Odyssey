@@ -1,0 +1,1069 @@
+{
+  "releases": {
+    "amaticsc": {
+      "bytes": 9468,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/amaticsc/5e35378e-675166ec/preview.woff2",
+      "sha256": "345bb62879ab33ed826a23d2aea6034d8ccfbaa5b2607a962c584a90a02f941f"
+    },
+    "archivo": {
+      "bytes": 28652,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/archivo/5e35378e-b52c7bb8/preview.woff2",
+      "sha256": "13e9d29e06c2076b37d87b90c44a4e915885ee09885eeb3fb3a8563e56adbd77"
+    },
+    "arimo": {
+      "bytes": 5816,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/arimo/5e35378e-1d04305e/preview.woff2",
+      "sha256": "cffac61254908110ea3dda58949eb2359f1e92d3f7c075dbf2bdad4018f6afa3"
+    },
+    "baloo2": {
+      "bytes": 10196,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/baloo2/5e35378e-675166ec/preview.woff2",
+      "sha256": "14095bf947aacbcb59a3a695b4f6c5e219d6af42d04b11396da7fc72ab71eaf0"
+    },
+    "bangers": {
+      "bytes": 7624,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/bangers/5e35378e-da662005/preview.woff2",
+      "sha256": "5012aa82712c8f258d727d8ad846f8610b7e5231d86e99842fc22c97f6cd391f"
+    },
+    "barlow": {
+      "bytes": 8856,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/barlow/5e35378e-b52c7bb8/preview.woff2",
+      "sha256": "281d2436077df9f6faa2e68111cad951642400f71134f25942e267957e1c9401"
+    },
+    "bizudpgothic": {
+      "bytes": 8216,
+      "codepoints": [
+        32, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 100, 101, 110, 111, 115, 116, 121,
+        12398, 12457, 12488, 12501, 12531, 23383, 25991, 26053
+      ],
+      "defaultText": "文字の旅 フォント FontOdyssey 0123456789",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/bizudpgothic/5e35378e-675166ec/preview.woff2",
+      "sha256": "efaba4df2ccd9d844fafabff1db72a532750a2993ad4373fdabedcb45fe4b217"
+    },
+    "blackopsone": {
+      "bytes": 7460,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/blackopsone/5e35378e-675166ec/preview.woff2",
+      "sha256": "2f98b900bfade32f07b1b4997f1a25e1a6291babbfc23680d8df3fec72230455"
+    },
+    "bodonimoda": {
+      "bytes": 17188,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/bodonimoda/5e35378e-675166ec/preview.woff2",
+      "sha256": "26a5f0cf50563a9d53446008d3f84b750bde8c6eef2ca557f34fb47f1e24e147"
+    },
+    "bricolagegrotesque": {
+      "bytes": 34128,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/bricolagegrotesque/5e35378e-b52c7bb8/preview.woff2",
+      "sha256": "b2e293c3278ee7a48df54cf66e98bb6388bf2737b2d8fd026bcfd387fd9124b3"
+    },
+    "bungee": {
+      "bytes": 4784,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/bungee/5e35378e-675166ec/preview.woff2",
+      "sha256": "3725f622bf68f184697fd72291b76c83ad8b30ce6de2727cafb0f504ace0f041"
+    },
+    "caveat": {
+      "bytes": 27220,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/caveat/5e35378e-675166ec/preview.woff2",
+      "sha256": "b514e780c2ddd8ec58569797b013fa4ae98d9058ee774181cfdb9c382cd069b6"
+    },
+    "chirongoroundtc": {
+      "bytes": 8828,
+      "codepoints": [
+        32, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 100, 101, 110, 111, 115, 116, 121,
+        20307, 22411, 23383, 25506, 32034
+      ],
+      "defaultText": "字型探索 FontOdyssey 0123456789",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/chirongoroundtc/5e35378e-da662005/preview.woff2",
+      "sha256": "e53a88e07e536ec30dc2e39414d609e7044d88d7eaa6e98211e7a4442202646d"
+    },
+    "comicneue": {
+      "bytes": 6776,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/comicneue/5e35378e-da662005/preview.woff2",
+      "sha256": "0441a9426e78a68717109cb00b5859d97b7e801f61ac90fc12087a84ab9df551"
+    },
+    "cormorant": {
+      "bytes": 12100,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/cormorant/5e35378e-b52c7bb8/preview.woff2",
+      "sha256": "8a4ea4854ce65d296ddc7ae0b37a02f3d9eda315e9827608bb6a475f04054c39"
+    },
+    "cormorantgaramond": {
+      "bytes": 11768,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/cormorantgaramond/5e35378e-1d04305e/preview.woff2",
+      "sha256": "cad1c0b0c875b62dc40bcef917b62dc3e2727f587b7e924850f52e224fcdcfe0"
+    },
+    "courierprime": {
+      "bytes": 6976,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/courierprime/5e35378e-675166ec/preview.woff2",
+      "sha256": "bbb52c0bffe7094fd3e4f5f92676e2c140bc26ff87b37a5e0b0a350308f314a5"
+    },
+    "delagothicone": {
+      "bytes": 3804,
+      "codepoints": [
+        32, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 100, 101, 110, 111, 115, 116, 121,
+        12398, 12457, 12488, 12501, 12531, 23383, 25991, 26053
+      ],
+      "defaultText": "文字の旅 フォント FontOdyssey 0123456789",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/delagothicone/5e35378e-675166ec/preview.woff2",
+      "sha256": "2130e66c80d4069a738804e409ccc11603b0310c4aca93a3afa38584f857ef7e"
+    },
+    "dmmono": {
+      "bytes": 6080,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/dmmono/5e35378e-675166ec/preview.woff2",
+      "sha256": "b5ccfe0ce112e9ee6f6abdb8f0ebc428f18a1b5891c898ddd6d11f824e60ff03"
+    },
+    "dmsans": {
+      "bytes": 21952,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/dmsans/5e35378e-b52c7bb8/preview.woff2",
+      "sha256": "27145bd67d5040da716a3da9b3d6b64d9666913f10503957c60fc3394d2b42f2"
+    },
+    "ebgaramond": {
+      "bytes": 14496,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/ebgaramond/5e35378e-b52c7bb8/preview.woff2",
+      "sha256": "6a9be981f83e56707999cef916c2318569a11b12ff9d546b2ed607bfc7cc540a"
+    },
+    "exo2": {
+      "bytes": 13416,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/exo2/5e35378e-b52c7bb8/preview.woff2",
+      "sha256": "c2dfbde71b3e05ebcdfb868ff6a5d296a881eea8e9b829250e113a4f43dca9dc"
+    },
+    "figtree": {
+      "bytes": 7276,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/figtree/5e35378e-b52c7bb8/preview.woff2",
+      "sha256": "0f560e5b15b6273db6187ff6c95b811ee4dbe48084120b3470f87cc6ad717dc2"
+    },
+    "firacode": {
+      "bytes": 8028,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/firacode/5e35378e-675166ec/preview.woff2",
+      "sha256": "df932ae520ff576b6a79ff791806b84e17e485656530e2a4fbc0ca2209da78f8"
+    },
+    "firamono": {
+      "bytes": 6828,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/firamono/5e35378e-da662005/preview.woff2",
+      "sha256": "fcce036a90ecbf9e07bcada10958b58323782144b04e057ef005d338d1176417"
+    },
+    "firasans": {
+      "bytes": 8060,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/firasans/5e35378e-eb2c904c/preview.woff2",
+      "sha256": "f1a681bf25399f4e4bf7d8a8f103751dcedf0f55b15d61aa97ab3ff44fada713"
+    },
+    "fraunces": {
+      "bytes": 37488,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/fraunces/5e35378e-b52c7bb8/preview.woff2",
+      "sha256": "64dfa54b869a0f1b88176de1c8cb32c30dee5592117269507a9ea14b5c4c289b"
+    },
+    "gabarito": {
+      "bytes": 8452,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/gabarito/5e35378e-da662005/preview.woff2",
+      "sha256": "2b36ad39323ba498789689347cd4d121d6fba63381e33bb2db0f4e31322ea440"
+    },
+    "geistmono": {
+      "bytes": 8872,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/geistmono/5e35378e-b52c7bb8/preview.woff2",
+      "sha256": "293d3db9680b8a16a95549e30692721185aa7e4e860cc298a72f72f3397998a9"
+    },
+    "googlesanscode": {
+      "bytes": 9904,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/googlesanscode/5e35378e-675166ec/preview.woff2",
+      "sha256": "4f5e9c0ed3684122f59711b863824b5aa549a991f247be32fb80cd191e09a8ee"
+    },
+    "gothica1": {
+      "bytes": 4200,
+      "codepoints": [
+        32, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 100, 101, 110, 111, 115, 116, 121,
+        44544, 44852, 50668, 53944, 54256, 54665
+      ],
+      "defaultText": "글꼴 여행 폰트 FontOdyssey 0123456789",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/gothica1/5e35378e-b52c7bb8/preview.woff2",
+      "sha256": "c3372fc662cdd74e987c2e6970d0dd4c804be01e77541efebbb099188e19ea96"
+    },
+    "greatvibes": {
+      "bytes": 17112,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/greatvibes/5e35378e-675166ec/preview.woff2",
+      "sha256": "7711a9917f1b17dd01750634ba2b1bd0db8c0fc7ff929228f944eda03ceea032"
+    },
+    "hachimarupop": {
+      "bytes": 4100,
+      "codepoints": [
+        32, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 100, 101, 110, 111, 115, 116, 121,
+        12398, 12457, 12488, 12501, 12531, 23383, 25991, 26053
+      ],
+      "defaultText": "文字の旅 フォント FontOdyssey 0123456789",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/hachimarupop/5e35378e-da662005/preview.woff2",
+      "sha256": "4bb4b5d8bb021197dd9f38a749fe3c4685f8efa5a35dfe85cf94675e28d1571d"
+    },
+    "heebo": {
+      "bytes": 10076,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/heebo/5e35378e-1d04305e/preview.woff2",
+      "sha256": "f29fc55e44f56e6d3074519a78f739cf45bf0b390830ef69e0565369ffb4eb45"
+    },
+    "huninn": {
+      "bytes": 4512,
+      "codepoints": [
+        32, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 100, 101, 110, 111, 115, 116, 121,
+        20307, 22411, 23383, 25506, 32034
+      ],
+      "defaultText": "字型探索 FontOdyssey 0123456789",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/huninn/5e35378e-675166ec/preview.woff2",
+      "sha256": "5a1f855f8de13d377e5280fe518da74285f1687229eb13defdfd7c8385621a8a"
+    },
+    "inconsolata": {
+      "bytes": 31832,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/inconsolata/5e35378e-b52c7bb8/preview.woff2",
+      "sha256": "c963d78d0bdd8bc1579286c295f64238b7a6680fa5a715498afe69f1102468ff"
+    },
+    "indieflower": {
+      "bytes": 8596,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/indieflower/5e35378e-da662005/preview.woff2",
+      "sha256": "33b281ac4c39ef050d99c8c16c09540357226b8e99e20c5ca88c46333ef3a6d3"
+    },
+    "inter": {
+      "bytes": 21460,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/inter/5e35378e-eb2c904c/preview.woff2",
+      "sha256": "f50d69b259fd253d7da1386286acd7c9284c15c894ff210713389b54afd46fb5"
+    },
+    "intertight": {
+      "bytes": 12072,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/intertight/5e35378e-b52c7bb8/preview.woff2",
+      "sha256": "5ec77fc47992485494bbf4cd30a4e783050aef0b6a43537d87c561f65c9b4b12"
+    },
+    "jetbrainsmono": {
+      "bytes": 6892,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/jetbrainsmono/5e35378e-1d04305e/preview.woff2",
+      "sha256": "05753e98f1663b77ea81fac53588b1731759c3cc94e7e471135fa5bca866879f"
+    },
+    "jost": {
+      "bytes": 7492,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/jost/5e35378e-b52c7bb8/preview.woff2",
+      "sha256": "9f7a401811a9da1d27639a305e604f182d8c1dfd8a2a616d183f6e37f9769d28"
+    },
+    "kalam": {
+      "bytes": 6768,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/kalam/5e35378e-675166ec/preview.woff2",
+      "sha256": "3ad7a5539a363199443ebab2ff41da652b0565f25889a3ea9a49e00dc8a7f9fc"
+    },
+    "kanit": {
+      "bytes": 6724,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/kanit/5e35378e-b52c7bb8/preview.woff2",
+      "sha256": "142202bf25d22daa67e0a02272c96646a534300127844511fb0af1244ecd49eb"
+    },
+    "librebarcode39": {
+      "bytes": 2744,
+      "codepoints": [
+        32, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102, 103,
+        104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121,
+        122
+      ],
+      "defaultText": "Sphinx of black quartz judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/librebarcode39/5e35378e-da662005/preview.woff2",
+      "sha256": "13533c939d6b55fab2cf511cf0ea2896941350c142106ac23431f5738febfc66"
+    },
+    "librefranklin": {
+      "bytes": 10516,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/librefranklin/5e35378e-1d04305e/preview.woff2",
+      "sha256": "7783c314bd825dd9aa0cc5081aa10861432a7351f728db75e621b620a66d1905"
+    },
+    "lineseedjp": {
+      "bytes": 6244,
+      "codepoints": [
+        32, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 100, 101, 110, 111, 115, 116, 121,
+        12398, 12457, 12488, 12501, 12531, 23383, 25991, 26053
+      ],
+      "defaultText": "文字の旅 フォント FontOdyssey 0123456789",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/lineseedjp/5e35378e-b52c7bb8/preview.woff2",
+      "sha256": "67c6d74d1dc540b3f8a18605a5569e4bae7aaac0e9a7e1c326e38b9337668054"
+    },
+    "literata": {
+      "bytes": 39708,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/literata/5e35378e-675166ec/preview.woff2",
+      "sha256": "453f29df1b4863de702f2806d6ddb411172bab08880d8a528690992911e9f555"
+    },
+    "manrope": {
+      "bytes": 7960,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/manrope/5e35378e-1d04305e/preview.woff2",
+      "sha256": "9f3bdabc507bf06c9629cd7da865bdb1b5e37f7c51e5152ceb77f04dec4c0df5"
+    },
+    "mashanzheng": {
+      "bytes": 5340,
+      "codepoints": [
+        32, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 100, 101, 110, 111, 115, 116, 121,
+        20307, 22411, 23383, 25506, 32034
+      ],
+      "defaultText": "字型探索 FontOdyssey 0123456789",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/mashanzheng/5e35378e-da662005/preview.woff2",
+      "sha256": "83a1a6dcc9ae622d35632b800d749bf858bbe3717e7e9fe4abac596bab7273cf"
+    },
+    "montserrat": {
+      "bytes": 13380,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/montserrat/5e35378e-1d04305e/preview.woff2",
+      "sha256": "fa79ccdeabd8d5819bec231fb2b7c6f934306288b6d33650b39a2f230cfc339d"
+    },
+    "mplus1": {
+      "bytes": 7048,
+      "codepoints": [
+        32, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 100, 101, 110, 111, 115, 116, 121,
+        12398, 12457, 12488, 12501, 12531, 23383, 25991, 26053
+      ],
+      "defaultText": "文字の旅 フォント FontOdyssey 0123456789",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/mplus1/5e35378e-675166ec/preview.woff2",
+      "sha256": "5e1e3c46e504455b80cf3f9dc663d0fef963f0907e6644eaef90b34281c1abc4"
+    },
+    "mplus1p": {
+      "bytes": 2916,
+      "codepoints": [
+        32, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 100, 101, 110, 111, 115, 116, 121,
+        12398, 12457, 12488, 12501, 12531, 23383, 25991, 26053
+      ],
+      "defaultText": "文字の旅 フォント FontOdyssey 0123456789",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/mplus1p/5e35378e-1d04305e/preview.woff2",
+      "sha256": "ff0513a8a528647170ddcf4e480aeb361f9f6e3d4e6029c82e0c1005135ba0ca"
+    },
+    "mplusu": {
+      "bytes": 7128,
+      "codepoints": [
+        32, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 100, 101, 110, 111, 115, 116, 121,
+        12398, 12457, 12488, 12501, 12531, 23383, 25991, 26053
+      ],
+      "defaultText": "文字の旅 フォント FontOdyssey 0123456789",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/mplusu/5e35378e-675166ec/preview.woff2",
+      "sha256": "373234ee356626d13d4d24d4da2d20ed0bd1e7f487c8dc0825b17fbef79442e5"
+    },
+    "mulish": {
+      "bytes": 9704,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/mulish/5e35378e-1d04305e/preview.woff2",
+      "sha256": "b258715629991050592634b681615d9b453ce8d5b864022d97605c5ce3dd3dba"
+    },
+    "newsreader": {
+      "bytes": 34968,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/newsreader/5e35378e-b52c7bb8/preview.woff2",
+      "sha256": "e17c46b0499c9e222d8e314c0eb9c5451f972744b2b87d0ce8d48d8c790839ff"
+    },
+    "notosans": {
+      "bytes": 19484,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/notosans/5e35378e-1d04305e/preview.woff2",
+      "sha256": "1b907727196befd46992d5fdbdfc25767ac1f36d34a29a6022489c6184181ec6"
+    },
+    "notoserif": {
+      "bytes": 24136,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/notoserif/5e35378e-1d04305e/preview.woff2",
+      "sha256": "46ef881ab6e1c8dd521be55fe8da8eb036a9c858edf2ddfc3e407af386ae0869"
+    },
+    "notoserifjp": {
+      "bytes": 9304,
+      "codepoints": [
+        32, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 100, 101, 110, 111, 115, 116, 121,
+        12398, 12457, 12488, 12501, 12531, 23383, 25991, 26053
+      ],
+      "defaultText": "文字の旅 フォント FontOdyssey 0123456789",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/notoserifjp/5e35378e-1d04305e/preview.woff2",
+      "sha256": "bf9c3e4377e51acc1a1a2e0978e39043224fa71f84cc5bca1b3786a3e49e3d5a"
+    },
+    "notoserifkr": {
+      "bytes": 8764,
+      "codepoints": [
+        32, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 100, 101, 110, 111, 115, 116, 121,
+        44544, 44852, 50668, 53944, 54256, 54665
+      ],
+      "defaultText": "글꼴 여행 폰트 FontOdyssey 0123456789",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/notoserifkr/5e35378e-b52c7bb8/preview.woff2",
+      "sha256": "c8aa02e696fff18199e34286920817d6a6c06c1da82807bbcbbb7d658b5cbfd7"
+    },
+    "notoserifsc": {
+      "bytes": 7920,
+      "codepoints": [
+        32, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 100, 101, 110, 111, 115, 116, 121,
+        20307, 22411, 23383, 25506, 32034
+      ],
+      "defaultText": "字型探索 FontOdyssey 0123456789",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/notoserifsc/5e35378e-eb2c904c/preview.woff2",
+      "sha256": "c0f17ff727b89916b13c854f9bb4d17cc13a92f149a72cb7296996b8d7c7985c"
+    },
+    "notoseriftc": {
+      "bytes": 7944,
+      "codepoints": [
+        32, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 100, 101, 110, 111, 115, 116, 121,
+        20307, 22411, 23383, 25506, 32034
+      ],
+      "defaultText": "字型探索 FontOdyssey 0123456789",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/notoseriftc/5e35378e-eb2c904c/preview.woff2",
+      "sha256": "99d67bc775509a62391d042c525328ba17ef2e8ec31223221ada8bd1c6663236"
+    },
+    "nunito": {
+      "bytes": 12252,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/nunito/5e35378e-1d04305e/preview.woff2",
+      "sha256": "459697abe483e30b2edb4cdbc8f220f8382664473b1ead8337710c5bee601232"
+    },
+    "nunitosans": {
+      "bytes": 28072,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/nunitosans/5e35378e-1d04305e/preview.woff2",
+      "sha256": "ad85d571244610e1588e2f823d84157770ba882cfbb1d1ea4af5cda9a5603c02"
+    },
+    "opensans": {
+      "bytes": 29024,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/opensans/5e35378e-1d04305e/preview.woff2",
+      "sha256": "92bbddd64d579df75c1fe306e70f5323fb109b47f089b9e8bbbd134c35365993"
+    },
+    "oswald": {
+      "bytes": 9144,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/oswald/5e35378e-1d04305e/preview.woff2",
+      "sha256": "d5bca12b1a34519c2be7cfd052a94732a49ad2548157a19106f6cf36a58d54e0"
+    },
+    "outfit": {
+      "bytes": 10516,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/outfit/5e35378e-b52c7bb8/preview.woff2",
+      "sha256": "172e66b697701db5639b51c301baf3be56370fd958e8395ea1683e44d189bc76"
+    },
+    "oxanium": {
+      "bytes": 4280,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/oxanium/5e35378e-675166ec/preview.woff2",
+      "sha256": "8e0743d377b8ec9f769b8e7e218e9ae6854547d5de9edd83f543c086e6e58714"
+    },
+    "pacifico": {
+      "bytes": 13328,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/pacifico/5e35378e-675166ec/preview.woff2",
+      "sha256": "875f5daff648c9832c71d8bc18c2cdf45a0317ee3c150d1fdb46eb7bd3e46047"
+    },
+    "patrickhand": {
+      "bytes": 7280,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/patrickhand/5e35378e-da662005/preview.woff2",
+      "sha256": "590d42fd00a32b81ebb9f61c2a9db0101066dec5f33c5a1c0ebd856a73e53e51"
+    },
+    "playfair": {
+      "bytes": 49356,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/playfair/5e35378e-675166ec/preview.woff2",
+      "sha256": "1d5f0e391d316257ed59cac1b02dcca5c7789b4e0c238e902ce56dac0a1cd2c3"
+    },
+    "plusjakartasans": {
+      "bytes": 9676,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/plusjakartasans/5e35378e-b52c7bb8/preview.woff2",
+      "sha256": "68463c1339d6883b86a371e525c73e45da5a3e4cf9d522924cf11c2a0b0b71d7"
+    },
+    "poppins": {
+      "bytes": 2516,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/poppins/5e35378e-1d04305e/preview.woff2",
+      "sha256": "43d265ade8972c9fbf1ddfec1308c4dbc169cb6f210249aff65437a9ab4cff2d"
+    },
+    "pottaone": {
+      "bytes": 5156,
+      "codepoints": [
+        32, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 100, 101, 110, 111, 115, 116, 121,
+        12398, 12457, 12488, 12501, 12531, 23383, 25991, 26053
+      ],
+      "defaultText": "文字の旅 フォント FontOdyssey 0123456789",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/pottaone/5e35378e-da662005/preview.woff2",
+      "sha256": "97b42d8576791379871409eabcdd408c21191c3be5c98708e14f63508e238f1c"
+    },
+    "prompt": {
+      "bytes": 7960,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/prompt/5e35378e-b52c7bb8/preview.woff2",
+      "sha256": "0836465ddb13682a3caa68dce9eaee0dedc5f1d4afb1dba2f28a54c0a26a06ee"
+    },
+    "roboto": {
+      "bytes": 24516,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/roboto/5e35378e-1d04305e/preview.woff2",
+      "sha256": "0330e2d939375ab58c27c234b305b124e0e9b9ae5bfba1da07a43b89d0fddeae"
+    },
+    "robotoflex": {
+      "bytes": 91992,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/robotoflex/5e35378e-b52c7bb8/preview.woff2",
+      "sha256": "6dd6fc4d8650254e70e1cda2a6ebacc9a53af7eae1c3cdbd703a87a09b7ed590"
+    },
+    "robotomono": {
+      "bytes": 10672,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/robotomono/5e35378e-1d04305e/preview.woff2",
+      "sha256": "72dbea454d75c584e6147c70f2734e6472ab9531244e0e85a30fc105aa4f69e9"
+    },
+    "robotoserif": {
+      "bytes": 189700,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/robotoserif/5e35378e-675166ec/preview.woff2",
+      "sha256": "a9c3e4c5ee96038a0e2eefc11f23587592857abecf9f472085a2103f61f2d318"
+    },
+    "rowdies": {
+      "bytes": 7272,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/rowdies/5e35378e-da662005/preview.woff2",
+      "sha256": "c0b1a5471ec592fa4e741fc2fa9598588f2d41b3b93c38c0d42353eae5497c46"
+    },
+    "rubik": {
+      "bytes": 10396,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/rubik/5e35378e-1d04305e/preview.woff2",
+      "sha256": "2a4e59fe02426f5dacd26e53db75487dbba4b69238149b63607e8be82503b419"
+    },
+    "saira": {
+      "bytes": 35184,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/saira/5e35378e-b52c7bb8/preview.woff2",
+      "sha256": "04edb3bd206b2acd98ecaedaa3138e6ea90dc2bef0d54d7da8979eafe8a6c8c3"
+    },
+    "sawarabigothic": {
+      "bytes": 2868,
+      "codepoints": [
+        32, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 100, 101, 110, 111, 115, 116, 121,
+        12398, 12457, 12488, 12501, 12531, 23383, 25991, 26053
+      ],
+      "defaultText": "文字の旅 フォント FontOdyssey 0123456789",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/sawarabigothic/5e35378e-675166ec/preview.woff2",
+      "sha256": "40bedb23dd9d3c9243f09676c333e1c76643fb9176976d36464272bfd1803feb"
+    },
+    "sawarabimincho": {
+      "bytes": 6740,
+      "codepoints": [
+        32, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 100, 101, 110, 111, 115, 116, 121,
+        12398, 12457, 12488, 12501, 12531, 23383, 25991, 26053
+      ],
+      "defaultText": "文字の旅 フォント FontOdyssey 0123456789",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/sawarabimincho/5e35378e-675166ec/preview.woff2",
+      "sha256": "b14785ca2e8e4c73f12d75d4566f219eb7aa9d7f5d1fb243391ca1e130401660"
+    },
+    "shadowsintolight": {
+      "bytes": 7000,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/shadowsintolight/5e35378e-675166ec/preview.woff2",
+      "sha256": "293071df1ce31dba680c790b5fc8e9b9908a47003241b49ec9aff9a759a525cd"
+    },
+    "shipporimincho": {
+      "bytes": 5448,
+      "codepoints": [
+        32, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 100, 101, 110, 111, 115, 116, 121,
+        12398, 12457, 12488, 12501, 12531, 23383, 25991, 26053
+      ],
+      "defaultText": "文字の旅 フォント FontOdyssey 0123456789",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/shipporimincho/5e35378e-675166ec/preview.woff2",
+      "sha256": "aa830175a21862f1b2d5d2d0a8e307c46155b76c2a5137ec293b6932c52b02bd"
+    },
+    "sourceserif4": {
+      "bytes": 40240,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/sourceserif4/5e35378e-b52c7bb8/preview.woff2",
+      "sha256": "e3f960beeb25df91894d0625ec83e8518db692346b1f5b7a86cb2275457de97a"
+    },
+    "spacemono": {
+      "bytes": 7128,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/spacemono/5e35378e-675166ec/preview.woff2",
+      "sha256": "f273bf8ba9dd567d5ac989012a56218221792e9fc0aad35f61ac387b3752e7f9"
+    },
+    "spectral": {
+      "bytes": 9404,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/spectral/5e35378e-b52c7bb8/preview.woff2",
+      "sha256": "cd0b42f8145c5a0799bba96d4916c9998c4cd672fe9dc946443ef944a3de4db0"
+    },
+    "vollkorn": {
+      "bytes": 14452,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/vollkorn/5e35378e-b52c7bb8/preview.woff2",
+      "sha256": "6d84c8ea856ad515b0c0a831875c8b870192038bb253fddd7948b22bed47acc7"
+    },
+    "vt323": {
+      "bytes": 6440,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/vt323/5e35378e-da662005/preview.woff2",
+      "sha256": "53848c6d08b832f3b2876ee6db16d27187c5310f498bc5ad9b5154325a6303c9"
+    },
+    "worksans": {
+      "bytes": 14276,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/worksans/5e35378e-b52c7bb8/preview.woff2",
+      "sha256": "84f3001442fa29a6608059becbbe0d824c23ed18acb9adcdbad2f860b562720a"
+    },
+    "zcoolkuaile": {
+      "bytes": 2060,
+      "codepoints": [
+        32, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 100, 101, 110, 111, 115, 116, 121,
+        20307, 22411, 23383, 25506, 32034
+      ],
+      "defaultText": "字型探索 FontOdyssey 0123456789",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/zcoolkuaile/5e35378e-da662005/preview.woff2",
+      "sha256": "d0f29089db896e6957ef69c2214b55b21e3bb526e3e011ee2cd353703b37f3f0"
+    },
+    "zcoolqingkehuangyou": {
+      "bytes": 5296,
+      "codepoints": [
+        32, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 100, 101, 110, 111, 115, 116, 121,
+        20307, 22411, 23383, 25506, 32034
+      ],
+      "defaultText": "字型探索 FontOdyssey 0123456789",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/zcoolqingkehuangyou/5e35378e-da662005/preview.woff2",
+      "sha256": "eff91086e18f802edf134764e9fe8b9faceb3be0d3d7f8dd930983e1145937b0"
+    },
+    "zcoolxiaowei": {
+      "bytes": 6816,
+      "codepoints": [
+        32, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 100, 101, 110, 111, 115, 116, 121,
+        20307, 22411, 23383, 25506, 32034
+      ],
+      "defaultText": "字型探索 FontOdyssey 0123456789",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/zcoolxiaowei/5e35378e-da662005/preview.woff2",
+      "sha256": "19efcc5846976454654d7107e2630258fac6258935fd9d4270e56689f5e6290a"
+    },
+    "zenkakugothicnew": {
+      "bytes": 3092,
+      "codepoints": [
+        32, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 100, 101, 110, 111, 115, 116, 121,
+        12398, 12457, 12488, 12501, 12531, 23383, 25991, 26053
+      ],
+      "defaultText": "文字の旅 フォント FontOdyssey 0123456789",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/zenkakugothicnew/5e35378e-b52c7bb8/preview.woff2",
+      "sha256": "643e7cd07454bb8b9c92eb3d69850ba8252b8d3fa0fa66a8b186fad0efa28ca5"
+    },
+    "zenmarugothic": {
+      "bytes": 3408,
+      "codepoints": [
+        32, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 100, 101, 110, 111, 115, 116, 121,
+        12398, 12457, 12488, 12501, 12531, 23383, 25991, 26053
+      ],
+      "defaultText": "文字の旅 フォント FontOdyssey 0123456789",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/zenmarugothic/5e35378e-b52c7bb8/preview.woff2",
+      "sha256": "72ea5753d9424f29eb3dd6dd6ea0549152181d3deb0332c711965b191ee07ea9"
+    },
+    "zenoldmincho": {
+      "bytes": 4660,
+      "codepoints": [
+        32, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 100, 101, 110, 111, 115, 116, 121,
+        12398, 12457, 12488, 12501, 12531, 23383, 25991, 26053
+      ],
+      "defaultText": "文字の旅 フォント FontOdyssey 0123456789",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/zenoldmincho/5e35378e-675166ec/preview.woff2",
+      "sha256": "0f5c0e15de2b24b1a663886f203e3617dc5e3cec5bf9e5173e18b264ff4977b5"
+    },
+    "zeyada": {
+      "bytes": 8244,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/zeyada/5e35378e-da662005/preview.woff2",
+      "sha256": "cad6155b45c6044c0b1ef481cdc06efe9c2e105c20b6defdc324986df08d2afe"
+    },
+    "zillaslab": {
+      "bytes": 8836,
+      "codepoints": [
+        32, 44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 70, 79, 83, 97, 98, 99, 100, 101, 102,
+        103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+        121, 122
+      ],
+      "defaultText": "Sphinx of black quartz, judge my vow.",
+      "previewUrl": "https://assets.fontodyssey.com/fonts/zillaslab/5e35378e-675166ec/preview.woff2",
+      "sha256": "1d4326ffdeb91e44f04c4491a2df053384b412d6d09cbabe3aabb7dd4cecab09"
+    }
+  },
+  "version": 1
+}

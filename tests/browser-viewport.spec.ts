@@ -84,3 +84,70 @@ for (const viewport of viewports) {
     )
   })
 }
+
+// Rounds 1–2. These are app-level regressions; run after generating real preview coverage.
+// The existing testPreview fixture only exercises rendering, not the production asset checksum.
+test('subset previews flag missing characters and preserve an explicitly empty input', async ({
+  page,
+}) => {
+  await page.route('https://assets.fontodyssey.com/**/preview.woff2', (route) =>
+    route.fulfill({
+      body: testPreview,
+      contentType: 'font/woff2',
+      headers: { 'Access-Control-Allow-Origin': '*' },
+    }),
+  )
+  await page.goto('/font/inter')
+  const specimen = page.locator('.fo-specimen')
+  await expect(specimen).toHaveAttribute('data-preview-evidence', 'verified')
+  await expect(specimen).toHaveAttribute('data-preview-state', 'ready')
+  const input = specimen.getByLabel('Preview text', { exact: true })
+  await input.fill('a🤖')
+  await expect(specimen.locator('.fo-preview-missing')).toHaveText('🤖')
+  await expect(specimen.locator('.fo-preview-notice')).toContainText('U+1F916')
+  await input.fill('')
+  await expect(input).toHaveValue('')
+  await expect(specimen.locator('.fo-specimen-output')).toContainText('Enter text')
+  await specimen.getByRole('button', { name: 'Reset sample' }).click()
+  await expect(input).not.toHaveValue('')
+  await expect(specimen.locator('.fo-preview-missing')).toHaveCount(0)
+})
+
+test('download anchor is visible before the specimen and moves to the real download panel', async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 390, height: 844 })
+  await page.goto('/font/inter')
+  const jump = page.locator('a[href="#font-download"]')
+  await expect(jump).toBeVisible()
+  const bounds = await jump.boundingBox()
+  expect(bounds && bounds.y < 700).toBeTruthy()
+  await jump.click()
+  await expect(page).toHaveURL(/#font-download$/)
+  await expect(page.locator('#font-download')).toBeInViewport()
+  await expect(page.locator('#font-download')).toContainText('ZIP')
+  await expect(page.locator('#font-download a[href$="/inter.zip"]')).toBeVisible()
+})
+
+test('unpreviewable RFN family does not display system-font specimens', async ({ page }) => {
+  await page.goto('/font/raleway')
+  await expect(page.locator('.fo-specimen')).toHaveAttribute('data-preview-state', 'unavailable')
+  await expect(page.locator('.fo-specimen-output')).toHaveCount(0)
+  await expect(page.locator('#font-download a[href$="/raleway.zip"]')).toBeVisible()
+})
+
+test('Simplified Chinese filters are localized and an empty result has a recovery path', async ({
+  page,
+}) => {
+  await page.goto('/zh/fonts')
+  await expect(
+    page.getByLabel('类别', { exact: true }).getByRole('option', { name: '手写体' }),
+  ).toHaveCount(1)
+  await expect(page.locator('[data-font-directory]')).toHaveAttribute('data-hydrated', 'true')
+  await page.getByLabel('搜索字体', { exact: true }).fill('nothing-matches-this-font-93817')
+  await expect(page.locator('.fo-directory-empty')).toBeVisible()
+  await expect(page.locator('[data-font-card]')).toHaveCount(0)
+  await page.locator('.fo-directory-empty').getByRole('link', { name: '清除筛选' }).click()
+  await expect(page.locator('[data-font-card]')).toHaveCount(149)
+  await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', /noindex/)
+})

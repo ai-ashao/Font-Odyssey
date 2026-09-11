@@ -1,11 +1,11 @@
 import { Search } from 'lucide-react'
-import { useId, useState } from 'react'
+import { useState } from 'react'
 import type { Locale } from '@/i18n/config'
 import { localizedPathOrDefault } from '@/i18n/routes'
-import { fontPreviewUrl } from '@/lib/font-assets'
 import { fontCatalog } from '@/lib/font-catalog'
 import { type FontHubId, findFontHub, fontHubPath, fontsForHub } from '@/lib/font-routes'
 import { FontCard } from './font-card'
+import { FontSpecimen } from './font-preview'
 
 const languageHubs = ['chinese', 'japanese', 'korean', 'latin'] satisfies FontHubId[]
 const styleHubs = [
@@ -31,7 +31,6 @@ const languageSpecimens: Record<FontHubId, string> = {
 }
 
 export function FontHome({ locale }: Readonly<{ locale: Locale }>) {
-  const previewId = useId()
   const collectionsId = 'collections'
   const copy =
     locale === 'zh-CN'
@@ -118,18 +117,13 @@ export function FontHome({ locale }: Readonly<{ locale: Locale }>) {
             faq: 'Before you download',
           }
 
-  const [previewText, setPreviewText] = useState(copy.defaultPreview)
+  const [previewText, setPreviewText] = useState<string | undefined>(undefined)
   const fontDirectory = localizedPathOrDefault('fonts', locale)
-  const heroFont = fontCatalog.find((font) => font.slug === 'inter') ?? fontCatalog[0]
-  const heroPreviewUrl = heroFont ? fontPreviewUrl(heroFont) : undefined
-  const heroFace = heroFont ? `FontOdysseyHero-${heroFont.slug}` : 'FontOdysseyHero'
+  const heroSlug = locale === 'zh-CN' ? 'notoserifsc' : locale === 'zh-TW' ? 'notoseriftc' : 'inter'
+  const heroFont = fontCatalog.find((font) => font.slug === heroSlug) ?? fontCatalog[0]
 
   return (
     <div className="prototype-home" data-product-mode-home="tool" data-font-home>
-      {heroPreviewUrl ? (
-        <style>{`@font-face{font-family:"${heroFace}";src:url("${heroPreviewUrl}") format("woff2");font-display:swap;}`}</style>
-      ) : null}
-
       <section className="prototype-hero">
         <p className="prototype-eyebrow">{copy.eyebrow}</p>
         <h1>{copy.title}</h1>
@@ -150,42 +144,15 @@ export function FontHome({ locale }: Readonly<{ locale: Locale }>) {
           <a href={fontHubPath('variable-fonts', locale)}>{copy.variable}</a>
         </nav>
 
-        <div className="prototype-specimen">
-          <div
-            className="prototype-specimen-mark"
-            style={{ fontFamily: `"${heroFace}", var(--sans)` }}
-          >
-            Aa
-          </div>
-          <div className="prototype-specimen-editor">
-            <p>
-              {copy.verified} · {heroFont?.family ?? 'Inter'} · #
-              {String(heroFont?.curationRank ?? 8).padStart(3, '0')}
-            </p>
-            <label htmlFor={previewId}>{copy.previewLabel}</label>
-            <textarea
-              id={previewId}
-              maxLength={100}
-              onChange={(event) => setPreviewText(event.currentTarget.value || copy.defaultPreview)}
-              style={{ fontFamily: `"${heroFace}", var(--sans)` }}
-              value={previewText}
-            />
-          </div>
-          <dl className="prototype-specimen-facts">
-            <div>
-              <dt>{locale === 'en' ? 'Styles' : locale === 'zh-CN' ? '样式' : '樣式'}</dt>
-              <dd>{heroFont?.styleCount ?? 18}</dd>
-            </div>
-            <div>
-              <dt>{locale === 'en' ? 'Axes' : locale === 'zh-CN' ? '可变轴' : '可變軸'}</dt>
-              <dd>{heroFont?.variableAxisCount ?? 2}</dd>
-            </div>
-            <div>
-              <dt>{locale === 'en' ? 'License' : locale === 'zh-CN' ? '许可证' : '授權'}</dt>
-              <dd>{heroFont?.license ?? 'OFL-1.1'}</dd>
-            </div>
-          </dl>
-        </div>
+        {heroFont ? (
+          <FontSpecimen
+            key={`${locale}:${heroFont.slug}`}
+            font={heroFont}
+            locale={locale}
+            compact
+            onTextChange={setPreviewText}
+          />
+        ) : null}
       </section>
 
       <section className="prototype-section prototype-featured">

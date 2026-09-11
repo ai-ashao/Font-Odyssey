@@ -2,7 +2,10 @@
   "rules": [
     {
       "allowed": {
-        "origins": ["https://font-odyssey.wangshao0713.workers.dev"],
+        "origins": [
+          "https://fontodyssey.com",
+          "https://font-odyssey.wangshao0713.workers.dev"
+        ],
         "methods": ["GET", "HEAD"],
         "headers": ["Range"]
       },

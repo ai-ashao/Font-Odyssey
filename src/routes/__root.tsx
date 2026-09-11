@@ -8,6 +8,7 @@ import {
 import { ChevronDown, Globe2, Menu } from 'lucide-react'
 import type { ReactNode } from 'react'
 import { SiteFooter } from '@/components/site-footer'
+import usabilityStyles from '@/font-usability.css?url'
 import { type Locale, localeConfig, localeFromPathname } from '@/i18n/config'
 import { shellMessages } from '@/i18n/messages'
 import { localeAlternatesForPath, localizedPathOrDefault } from '@/i18n/routes'
@@ -44,6 +45,7 @@ export const Route = createRootRoute({
     links: [
       { rel: 'stylesheet', href: styles },
       { rel: 'stylesheet', href: skinStyles },
+      { rel: 'stylesheet', href: usabilityStyles },
       { rel: 'icon', type: 'image/png', sizes: '128x128', href: '/favicon.png' },
       { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
     ],
