@@ -4,6 +4,8 @@ import type { Locale } from '@/i18n/config'
 import { fontDownloadSources, fontOfficialSourceUrl } from '@/lib/font-assets'
 import { formatPackageBytes } from '@/lib/font-preview-contract'
 import type { PublishedFont } from '@/lib/font-publishing'
+import { relatedFontsFor, relatedHubIdsFor } from '@/lib/font-related'
+import { findFontHub, fontHubPath, fontPath } from '@/lib/font-routes'
 import { FontSpecimen } from './font-preview'
 
 export function PublishedFontDetailContent({
@@ -25,6 +27,12 @@ export function PublishedFontDetailContent({
   const packageLabel = `ZIP · ${formatPackageBytes(font.release.package.bytes)}`
   const downloadSectionId = 'font-download'
   const downloadTitleId = useId()
+  const relatedTitleId = useId()
+  const relatedFonts = relatedFontsFor(font.facts, 4)
+  const relatedHubs = relatedHubIdsFor(font.facts).flatMap((id) => {
+    const hub = findFontHub(id)
+    return hub ? [hub] : []
+  })
   return (
     <article className="font-detail fo-detail" data-font-detail={font.facts.slug}>
       <div className="font-detail-inner">
@@ -157,6 +165,38 @@ export function PublishedFontDetailContent({
           </section>
         </div>
         {coverage}
+        <section className="mt-12 border-t pt-9" aria-labelledby={relatedTitleId}>
+          <p className="font-detail-kicker">{text('Keep exploring', '继续探索', '繼續探索')}</p>
+          <h2 id={relatedTitleId}>{text('Similar fonts', '相似字体', '相似字體')}</h2>
+          <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            {relatedFonts.map((related) => (
+              <a
+                className="rounded-2xl border bg-card p-4 transition hover:border-primary/50"
+                href={fontPath(related, locale)}
+                key={related.slug}
+              >
+                <strong className="block text-base">{related.family}</strong>
+                <span className="mt-1 block text-xs text-muted-foreground">
+                  {related.category} · {related.styleCount} {text('styles', '种样式', '種樣式')}
+                </span>
+              </a>
+            ))}
+          </div>
+          <nav
+            className="mt-6 flex flex-wrap gap-2"
+            aria-label={text('Related collections', '相关合集', '相關合集')}
+          >
+            {relatedHubs.map((hub) => (
+              <a
+                className="rounded-full border px-3 py-1.5 text-sm font-medium"
+                href={fontHubPath(hub, locale)}
+                key={hub.id}
+              >
+                {hub.localized[locale].title}
+              </a>
+            ))}
+          </nav>
+        </section>
       </div>
     </article>
   )

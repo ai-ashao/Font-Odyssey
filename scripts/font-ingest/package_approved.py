@@ -139,11 +139,20 @@ def select_preview_font(rows):
 
 
 def preview_text(language_group):
-    return {
+    # Preview subsets are interactive UI assets, not screenshots. Include a conservative
+    # free-input baseline so common brand names, headings and numbers do not fall back just
+    # because the default pangram did not contain a character. Unsupported glyphs are still
+    # removed by make_preview() through cmap intersection.
+    basic_latin = (
+        "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 "
+        ".,:;!?\"'()-–—[]{}@#&%+$€£¥/\\"
+    )
+    specimen = {
         "Chinese": "字体探索 字型探索 FontOdyssey 0123456789",
         "Japanese": "文字の旅 フォント FontOdyssey 0123456789",
         "Korean": "글꼴 여행 폰트 FontOdyssey 0123456789",
     }.get(language_group, "Sphinx of black quartz, judge my vow. FontOdyssey 0123456789")
+    return f"{basic_latin} {specimen}"
 
 
 def make_preview(source, target, text):
