@@ -15,7 +15,7 @@ export type ProductConfig = {
  */
 export const productConfig: ProductConfig = {
   mode: 'tool',
-  indexingEnabled: false,
+  indexingEnabled: true,
   brand: {
     name: 'FontOdyssey',
     mark: 'FO',
