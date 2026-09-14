@@ -2,6 +2,7 @@ import { Search } from 'lucide-react'
 import { useState } from 'react'
 import type { Locale } from '@/i18n/config'
 import { localizedPathOrDefault } from '@/i18n/routes'
+import { fontPreviewUrl } from '@/lib/font-assets'
 import { fontCatalog } from '@/lib/font-catalog'
 import { type FontHubId, findFontHub, fontHubPath, fontsForHub } from '@/lib/font-routes'
 import { FontCard } from './font-card'
@@ -15,6 +16,8 @@ const styleHubs = [
   'handwriting',
   'monospace',
 ] satisfies FontHubId[]
+
+const previewReadyFeaturedFonts = fontCatalog.filter((font) => fontPreviewUrl(font)).slice(0, 12)
 
 const languageSpecimens: Record<FontHubId, string> = {
   chinese: '字体',
@@ -164,7 +167,7 @@ export function FontHome({ locale }: Readonly<{ locale: Locale }>) {
           link={copy.browse}
         />
         <div className="prototype-font-grid">
-          {fontCatalog.slice(0, 12).map((font) => (
+          {previewReadyFeaturedFonts.map((font) => (
             <FontCard font={font} key={font.slug} locale={locale} previewText={previewText} />
           ))}
         </div>

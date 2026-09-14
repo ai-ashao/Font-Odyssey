@@ -17,6 +17,13 @@ for (const viewport of viewports) {
     await expect(page.locator('[data-font-home]')).toBeVisible()
     await expect(page.getByRole('heading', { level: 1 })).toContainText('Free Font Downloads')
     await expect(page.locator('[data-font-card]')).toHaveCount(12)
+    await expect(page.locator('.prototype-featured [data-font-card]').first()).toHaveAttribute(
+      'data-font-card',
+      'notoserifjp',
+    )
+    await expect(
+      page.locator('.prototype-featured [data-preview-state="unavailable"]'),
+    ).toHaveCount(0)
     await expect(page.locator('[data-site-header] [data-header-cta]')).toHaveCount(0)
 
     if (viewport.name === 'desktop') {
@@ -151,4 +158,26 @@ test('Simplified Chinese filters are localized and an empty result has a recover
   await page.locator('.fo-directory-empty').getByRole('link', { name: '清除筛选' }).click()
   await expect(page.locator('[data-font-card]')).toHaveCount(149)
   await expect(page.locator('meta[name="robots"]')).toHaveCount(0)
+})
+
+test('localized information pages and priority hub content form a complete Chinese path', async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 390, height: 844 })
+  await page.goto('/zh')
+  const about = page.locator('[data-site-footer]').getByRole('link', { name: '关于我们' })
+  await expect(about).toHaveAttribute('href', '/zh/about')
+  await about.click()
+  await expect(page).toHaveURL(/\/zh\/about$/)
+  await expect(page.getByRole('heading', { level: 1 })).toContainText('策展标准')
+  await expect(page.getByRole('heading', { name: '下载完整性' })).toBeVisible()
+  await expect(page.locator('link[hreflang="en"]')).toHaveAttribute(
+    'href',
+    'http://127.0.0.1:4174/about',
+  )
+
+  await page.goto('/zh/fonts/chinese')
+  await expect(page.getByRole('heading', { name: '如何选择中文字体' })).toBeVisible()
+  await expect(page.getByRole('heading', { name: '中文字体常见问题' })).toBeVisible()
+  expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(390)
 })

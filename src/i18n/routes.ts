@@ -19,8 +19,16 @@ const staticPages: PublicPageRoute[] = [
     indexable: true,
     paths: { en: '/fonts', 'zh-CN': '/zh/fonts', 'zh-TW': '/zh-tw/fonts' },
   },
-  { id: 'about', indexable: true, paths: { en: '/about' } },
-  { id: 'contact', indexable: true, paths: { en: '/contact' } },
+  {
+    id: 'about',
+    indexable: true,
+    paths: { en: '/about', 'zh-CN': '/zh/about', 'zh-TW': '/zh-tw/about' },
+  },
+  {
+    id: 'contact',
+    indexable: true,
+    paths: { en: '/contact', 'zh-CN': '/zh/contact', 'zh-TW': '/zh-tw/contact' },
+  },
   { id: 'privacy', indexable: true, paths: { en: '/privacy-policy' } },
   { id: 'terms', indexable: true, paths: { en: '/terms-of-service' } },
 ]

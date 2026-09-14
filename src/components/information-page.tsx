@@ -1,17 +1,20 @@
-import { Link } from '@tanstack/react-router'
 import type { ReactNode } from 'react'
 import { Badge } from '@/components/ui/badge'
+import type { Locale } from '@/i18n/config'
+import { localizedPathOrDefault } from '@/i18n/routes'
 
 export function InformationPage({
   eyebrow,
   title,
   description,
   children,
+  locale = 'en',
 }: Readonly<{
   eyebrow: string
   title: string
   description: string
   children: ReactNode
+  locale?: Locale
 }>) {
   return (
     <section className="mx-auto max-w-[860px] px-4 py-10 sm:px-6 sm:py-16">
@@ -33,9 +36,16 @@ export function InformationPage({
         {children}
       </div>
       <p className="mt-10 text-sm">
-        <Link className="font-medium text-[#4f8521] underline-offset-4 hover:underline" to="/">
-          Return to FontOdyssey
-        </Link>
+        <a
+          className="font-medium text-[#4f8521] underline-offset-4 hover:underline"
+          href={localizedPathOrDefault('home', locale)}
+        >
+          {locale === 'en'
+            ? 'Return to FontOdyssey'
+            : locale === 'zh-CN'
+              ? '返回 FontOdyssey'
+              : '返回 FontOdyssey'}
+        </a>
       </p>
     </section>
   )

@@ -42,6 +42,13 @@ describe('locale-aware route registry', () => {
       { locale: 'x-default', path: '/' },
     ])
     expect(hreflangAlternates('fonts')).toHaveLength(4)
+    expect(hreflangAlternates('about')).toEqual([
+      { locale: 'en', path: '/about' },
+      { locale: 'zh-CN', path: '/zh/about' },
+      { locale: 'zh-TW', path: '/zh-tw/about' },
+      { locale: 'x-default', path: '/about' },
+    ])
+    expect(hreflangAlternates('contact')).toHaveLength(4)
   })
 
   it('offers locale switches for static and font-entity routes', () => {
@@ -52,6 +59,10 @@ describe('locale-aware route registry', () => {
     expect(localeAlternatesForPath('/font/inter')).toMatchObject([
       { locale: 'zh-CN', path: '/zh/font/inter' },
       { locale: 'zh-TW', path: '/zh-tw/font/inter' },
+    ])
+    expect(localeAlternatesForPath('/zh/about')).toMatchObject([
+      { locale: 'en', path: '/about' },
+      { locale: 'zh-TW', path: '/zh-tw/about' },
     ])
     expect(localeAlternatesForPath('/missing')).toEqual([])
   })
@@ -74,6 +85,9 @@ describe('locale-aware route registry', () => {
     expect(publicPageRoutes.find((page) => page.id === 'privacy')?.indexable).toBe(true)
     expect(publicPageRoutes.find((page) => page.id === 'terms')?.indexable).toBe(true)
     expect(sitemapPaths()).toEqual(expect.arrayContaining(['/privacy-policy', '/terms-of-service']))
+    expect(sitemapPaths()).toEqual(
+      expect.arrayContaining(['/zh/about', '/zh-tw/about', '/zh/contact', '/zh-tw/contact']),
+    )
   })
 
   it('ships structurally complete message dictionaries for every supported locale', () => {
@@ -90,6 +104,19 @@ describe('locale-aware route registry', () => {
     expect(englishRoute).toContain('<ProductHome locale="en" />')
     expect(chineseRoute).toContain('<ProductHome locale="zh-CN" />')
     expect(traditionalRoute).toContain('<ProductHome locale="zh-TW" />')
+  })
+
+  it('keeps localized about and contact routes behind shared page components', () => {
+    const routes = [
+      ['src/routes/about.tsx', '<AboutPage locale="en" />'],
+      ['src/routes/zh.about.tsx', '<AboutPage locale="zh-CN" />'],
+      ['src/routes/zh-tw.about.tsx', '<AboutPage locale="zh-TW" />'],
+      ['src/routes/contact.tsx', '<ContactPage locale="en" />'],
+      ['src/routes/zh.contact.tsx', '<ContactPage locale="zh-CN" />'],
+      ['src/routes/zh-tw.contact.tsx', '<ContactPage locale="zh-TW" />'],
+    ] as const
+
+    for (const [path, expected] of routes) expect(readFileSync(path, 'utf8')).toContain(expected)
   })
 })
 

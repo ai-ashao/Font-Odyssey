@@ -48,6 +48,10 @@ function assertHead(response, html, path) {
   assert(html.includes('name="description"'), `${path} needs a description.`)
   assert(html.includes(`rel="canonical" href="${url}"`), `${path} canonical mismatch.`)
   assert(
+    html.includes(`property="og:image" content="${baseUrl}/og-default.png"`),
+    `${path} must include the default social image.`,
+  )
+  assert(
     !html.includes('name="robots" content="noindex,nofollow"'),
     `${path} must not include the retired sitewide noindex directive.`,
   )
@@ -70,7 +74,18 @@ try {
   const paths = [...sitemap.text.matchAll(/<loc>([^<]+)<\/loc>/g)].map(
     (match) => new URL(match[1]).pathname,
   )
-  for (const required of ['/', '/zh', '/fonts', '/zh/fonts', '/about', '/contact'])
+  for (const required of [
+    '/',
+    '/zh',
+    '/fonts',
+    '/zh/fonts',
+    '/about',
+    '/zh/about',
+    '/zh-tw/about',
+    '/contact',
+    '/zh/contact',
+    '/zh-tw/contact',
+  ])
     assert(paths.includes(required), `Missing sitemap path: ${required}`)
   for (const path of paths) {
     const page = await request(path)
@@ -81,6 +96,23 @@ try {
   assert(home.text.includes('data-font-home'), 'Font homepage marker missing.')
   assert((home.text.match(/data-font-card=/g) ?? []).length === 12, 'Homepage must SSR 12 fonts.')
   assert(home.text.includes('href="/fonts"'), 'Homepage must link to the full directory.')
+  assert(
+    !home.text.includes('Web preview unavailable'),
+    'Homepage featured fonts must all have compliant previews.',
+  )
+  const socialImage = await fetch(`${baseUrl}/og-default.png`)
+  assert(
+    socialImage.status === 200 && socialImage.headers.get('content-type')?.startsWith('image/png'),
+    'Default social image must be a public PNG.',
+  )
+  const chineseAbout = await request('/zh/about')
+  assert(chineseAbout.text.includes('下载完整性'), 'Simplified Chinese About must be localized.')
+  assert(
+    chineseAbout.text.includes('hrefLang="zh-TW"'),
+    'Localized About pages must publish reciprocal hreflang.',
+  )
+  const chineseHub = await request('/zh/fonts/chinese')
+  assert(chineseHub.text.includes('如何选择中文字体'), 'Chinese hub editorial content missing.')
   const directory = await request('/fonts')
   assert(
     (directory.text.match(/data-font-card=/g) ?? []).length === 149,

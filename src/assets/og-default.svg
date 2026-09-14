@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f7f4ee"/>
+  <circle cx="1062" cy="90" r="190" fill="#e8efff"/>
+  <circle cx="1110" cy="570" r="250" fill="#edf5e7"/>
+  <path d="M0 530 C250 455 425 590 650 505 C855 428 1015 420 1200 465 V630 H0Z" fill="#0b1f3a"/>
+  <rect x="72" y="66" width="92" height="92" rx="24" fill="#0b1f3a"/>
+  <text x="118" y="137" text-anchor="middle" fill="#f7f4ee" font-family="Georgia, serif" font-size="72" font-weight="700">F</text>
+  <path d="M82 132 C104 103 142 99 174 118" fill="none" stroke="#2d6df6" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="176" cy="117" r="8" fill="#2d6df6"/>
+  <text x="188" y="128" fill="#0b1f3a" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700" letter-spacing="-1">FontOdyssey</text>
+  <text x="72" y="266" fill="#0b1f3a" font-family="Georgia, serif" font-size="72" font-weight="700" letter-spacing="-2">Curated multilingual fonts</text>
+  <text x="72" y="326" fill="#4a5a70" font-family="Inter, Arial, sans-serif" font-size="30">Compare licensing, language coverage, and verified releases.</text>
+  <g transform="translate(72 382)">
+    <rect width="390" height="64" rx="32" fill="#ffffff" stroke="#d9e1ec"/>
+    <circle cx="36" cy="32" r="9" fill="#5d9229"/>
+    <text x="60" y="41" fill="#0b1f3a" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="600">149 verified font families</text>
+  </g>
+  <text x="780" y="407" text-anchor="middle" fill="#0b1f3a" font-family="Georgia, 'Times New Roman', serif" font-size="116" font-weight="600">Aa 字 あ 한</text>
+  <text x="72" y="575" fill="#f7f4ee" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="600" letter-spacing="1">TRACEABLE SOURCES · CLEAR LICENSES · VERIFIED DOWNLOADS</text>
+</svg>

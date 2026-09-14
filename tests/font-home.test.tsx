@@ -14,6 +14,9 @@ describe('SEO-first font homepage', () => {
     expect(html).toContain('/fonts/display')
     expect(html).toContain('Are all FontOdyssey fonts free for commercial use?')
     expect(html).toContain('Verified download availability')
+    expect(html).not.toContain('Web preview unavailable')
+    expect(html).toContain('Noto Serif JP')
+    expect(html).not.toContain('Noto Sans TC font')
   })
 
   it('keeps Chinese content localized behind the shared component', () => {

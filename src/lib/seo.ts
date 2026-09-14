@@ -7,6 +7,8 @@ import {
 } from '@/i18n/routes'
 import { absoluteUrl, site } from './site'
 
+const defaultSocialImage = '/og-default.png'
+
 export type PageSeoInput = {
   title: string
   description: string
@@ -20,7 +22,7 @@ export type PageSeoInput = {
 export function pageHead(input: PageSeoInput) {
   const title = input.title === site.name ? site.name : `${input.title} · ${site.name}`
   const canonical = absoluteUrl(input.path)
-  const socialImage = input.socialImage ? validSocialImageUrl(input.socialImage) : undefined
+  const socialImage = validSocialImageUrl(input.socialImage ?? defaultSocialImage)
 
   return {
     meta: [
