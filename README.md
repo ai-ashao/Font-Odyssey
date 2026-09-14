@@ -76,6 +76,7 @@ in the sitemap. Their content is limited to the product's actual features and
 data practices. The current SEO brief records user-provided product evidence
 only; it makes no keyword-volume, difficulty, or SERP-ranking claim.
 
-Production is configured for `https://fontodyssey.com`. Search indexing is
-temporarily disabled sitewide through matching HTML robots metadata and the
-`X-Robots-Tag` response header.
+Production is configured for `https://fontodyssey.com`. Public sitemap routes are
+indexable; filtered directory query states remain `noindex,follow`, and the
+`workers.dev` deployment remains protected by `X-Robots-Tag: noindex, nofollow`.
+HTTP and `www` requests redirect to the HTTPS apex while preserving path and query.

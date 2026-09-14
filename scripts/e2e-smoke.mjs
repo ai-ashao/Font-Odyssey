@@ -48,12 +48,12 @@ function assertHead(response, html, path) {
   assert(html.includes('name="description"'), `${path} needs a description.`)
   assert(html.includes(`rel="canonical" href="${url}"`), `${path} canonical mismatch.`)
   assert(
-    html.includes('name="robots" content="noindex,nofollow"'),
-    `${path} must include the sitewide noindex directive.`,
+    !html.includes('name="robots" content="noindex,nofollow"'),
+    `${path} must not include the retired sitewide noindex directive.`,
   )
   assert(
-    response.headers.get('x-robots-tag') === 'noindex, nofollow',
-    `${path} must include the sitewide X-Robots-Tag header.`,
+    response.headers.get('x-robots-tag') === null,
+    `${path} must not include the retired sitewide X-Robots-Tag header.`,
   )
 }
 
@@ -64,10 +64,7 @@ try {
     health.response.status === 200 && health.text.includes('"catalogFamilies":149'),
     'Health contract failed.',
   )
-  assert(
-    health.response.headers.get('x-robots-tag') === 'noindex, nofollow',
-    'Health endpoint must include the sitewide X-Robots-Tag header.',
-  )
+  assert(health.response.headers.get('x-robots-tag') === null, 'Health must be index-neutral.')
   const sitemap = await request('/sitemap.xml')
   assert(sitemap.response.status === 200, 'Sitemap failed.')
   const paths = [...sitemap.text.matchAll(/<loc>([^<]+)<\/loc>/g)].map(
@@ -88,6 +85,11 @@ try {
   assert(
     (directory.text.match(/data-font-card=/g) ?? []).length === 149,
     'Directory must SSR 149 fonts.',
+  )
+  const searchedDirectory = await request('/fonts?q=Inter')
+  assert(
+    searchedDirectory.text.includes('name="robots" content="noindex,follow"'),
+    'Directory query pages must remain noindex,follow.',
   )
   for (const removed of ['/pricing', '/login', '/dashboard', '/guides', '/tool-reference']) {
     assert(
@@ -112,7 +114,7 @@ try {
     )
   }
   console.log(
-    `E2E smoke passed for ${paths.length} noindex sitemap URLs and the 149-family catalog.`,
+    `E2E smoke passed for ${paths.length} indexable sitemap URLs and the 149-family catalog.`,
   )
 } finally {
   server.kill('SIGTERM')

@@ -16,7 +16,7 @@ import { toolRegistry } from '@/modules/tool-registry'
 describe('FontOdyssey configuration', () => {
   it('uses the real product identity and Tool mode', () => {
     expect(productConfig.mode).toBe('tool')
-    expect(productConfig.indexingEnabled).toBe(false)
+    expect(productConfig.indexingEnabled).toBe(true)
     expect(productConfig.brand.name).toBe('FontOdyssey')
     expect(validateProductConfig(productConfig)).toEqual([])
     expect(validateSeoFirstProductState()).toEqual([])

@@ -1,8 +1,21 @@
 import { createMiddleware, createStart } from '@tanstack/react-start'
+import { canonicalRedirectUrl, isCanonicalHttpsUrl } from '@/lib/canonical-host'
 import { productConfig } from '@/lib/product-config'
 
 const securityHeaders = createMiddleware({ type: 'request' }).server(async ({ next, request }) => {
-  const requestHostname = new URL(request.url).hostname
+  const requestUrl = new URL(request.url)
+  const redirectUrl = canonicalRedirectUrl(request.url)
+  if (redirectUrl) {
+    return new Response(null, {
+      status: 308,
+      headers: {
+        location: redirectUrl,
+        'cache-control': 'public, max-age=3600',
+      },
+    })
+  }
+
+  const requestHostname = requestUrl.hostname
   const isWorkersDevHost = requestHostname.endsWith('.workers.dev')
   const result = await next()
   const headers = new Headers(result.response.headers)
@@ -24,8 +37,13 @@ const securityHeaders = createMiddleware({ type: 'request' }).server(async ({ ne
   headers.set('referrer-policy', 'strict-origin-when-cross-origin')
   headers.set('x-content-type-options', 'nosniff')
   headers.set('x-frame-options', 'DENY')
+  if (isCanonicalHttpsUrl(request.url)) {
+    headers.set('strict-transport-security', 'max-age=31536000; includeSubDomains')
+  }
   if (!productConfig.indexingEnabled || isWorkersDevHost) {
     headers.set('x-robots-tag', 'noindex, nofollow')
+  } else {
+    headers.delete('x-robots-tag')
   }
 
   return {
