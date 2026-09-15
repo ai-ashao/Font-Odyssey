@@ -823,11 +823,22 @@ body {
 .font-download-panel {
   border-radius: 22px;
   background: linear-gradient(145deg, rgb(36 94 234 / 8%), transparent 52%), white;
+  color: var(--prototype-navy);
+}
+
+.font-download-panel .font-download-copy {
+  color: #61708a;
 }
 
 .font-download-actions > a:first-child {
   background: var(--prototype-blue);
+  color: white;
   box-shadow: 0 12px 30px rgb(36 94 234 / 22%);
+}
+
+.font-download-panel .font-license-link {
+  border-color: var(--input);
+  color: var(--prototype-navy);
 }
 
 .ship-footer {
