@@ -1,4 +1,4 @@
-import type { Locale } from '@/i18n/config'
+import { type Locale, supportedLocales } from '@/i18n/config'
 import {
   type FontCatalogItem,
   type FontCategory,
@@ -248,21 +248,24 @@ export function fontHubPath(hub: FontHubDefinition | FontHubId, locale: Locale):
 }
 
 export function fontDetailAlternates(font: FontCatalogItem) {
-  return (['en', 'zh-CN', 'zh-TW'] as const).map((locale) => ({
+  return supportedLocales.map((locale) => ({
     locale,
     path: fontPath(font, locale),
   }))
 }
 
 export function fontDetailHreflangAlternates(font: FontCatalogItem) {
-  return indexableFontLocales(font).map((locale) => ({
-    locale,
-    path: fontPath(font, locale),
-  }))
+  const indexable = new Set(indexableFontLocales(font))
+  return supportedLocales
+    .filter((locale) => indexable.has(locale))
+    .map((locale) => ({
+      locale,
+      path: fontPath(font, locale),
+    }))
 }
 
 export function fontHubAlternates(hub: FontHubDefinition) {
-  return (['en', 'zh-CN', 'zh-TW'] as const).map((locale) => ({
+  return supportedLocales.map((locale) => ({
     locale,
     path: fontHubPath(hub, locale),
   }))
@@ -288,11 +291,14 @@ export function fontLocaleAlternatesForPath(
 
 export function fontSitemapPaths(): string[] {
   return [
-    ...fontCatalog.flatMap((font) =>
-      indexableFontLocales(font).map((locale) => fontPath(font, locale)),
-    ),
+    ...fontCatalog.flatMap((font) => {
+      const indexable = new Set(indexableFontLocales(font))
+      return supportedLocales.flatMap((locale) =>
+        indexable.has(locale) ? [fontPath(font, locale)] : [],
+      )
+    }),
     ...fontHubDefinitions.flatMap((hub) =>
-      (['en', 'zh-CN', 'zh-TW'] as const).map((locale) => fontHubPath(hub, locale)),
+      supportedLocales.map((locale) => fontHubPath(hub, locale)),
     ),
   ]
 }

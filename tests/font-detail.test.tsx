@@ -13,17 +13,17 @@ import {
 const sha256 = 'a'.repeat(64)
 
 describe('font detail publishing boundary', () => {
-  it('provides ready factual content for every catalog family in all three locales', () => {
+  it('keeps editorial localization data available while publishing only English URLs', () => {
     const editorial = buildFontEditorialSnapshot()
     expect(editorial).toHaveLength(fontCatalog.length * 3)
     expect(editorial.every((content) => content.contentStatus === 'ready')).toBe(true)
     expect(publishedFontForLocale('inter', 'en')).toBeDefined()
     expect(fontSitemapPaths()).toContain('/font/inter')
-    expect(fontSitemapPaths()).toContain('/zh/font/inter')
-    expect(fontSitemapPaths()).toContain('/zh-tw/font/inter')
+    expect(fontSitemapPaths()).not.toContain('/zh/font/inter')
+    expect(fontSitemapPaths()).not.toContain('/zh-tw/font/inter')
   })
 
-  it('uses stable localized detail paths', () => {
+  it('keeps dormant localized path helpers stable for future expansion', () => {
     expect(fontPath('inter', 'en')).toBe('/font/inter')
     expect(fontPath('inter', 'zh-CN')).toBe('/zh/font/inter')
     expect(fontPath('inter', 'zh-TW')).toBe('/zh-tw/font/inter')

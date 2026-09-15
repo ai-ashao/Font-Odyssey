@@ -20,18 +20,6 @@ import { Route as ApiHealthRouteImport } from './routes/api.health'
 import { Route as FontSlugRouteImport } from './routes/font.$slug'
 import { Route as FontsIndexRouteImport } from './routes/fonts.index'
 import { Route as FontsHubRouteImport } from './routes/fonts.$hub'
-import { Route as ZhTwIndexRouteImport } from './routes/zh-tw.index'
-import { Route as ZhTwAboutRouteImport } from './routes/zh-tw.about'
-import { Route as ZhTwContactRouteImport } from './routes/zh-tw.contact'
-import { Route as ZhIndexRouteImport } from './routes/zh.index'
-import { Route as ZhAboutRouteImport } from './routes/zh.about'
-import { Route as ZhContactRouteImport } from './routes/zh.contact'
-import { Route as ZhTwFontSlugRouteImport } from './routes/zh-tw.font.$slug'
-import { Route as ZhTwFontsIndexRouteImport } from './routes/zh-tw.fonts.index'
-import { Route as ZhTwFontsHubRouteImport } from './routes/zh-tw.fonts.$hub'
-import { Route as ZhFontSlugRouteImport } from './routes/zh.font.$slug'
-import { Route as ZhFontsIndexRouteImport } from './routes/zh.fonts.index'
-import { Route as ZhFontsHubRouteImport } from './routes/zh.fonts.$hub'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -88,66 +76,6 @@ const FontsHubRoute = FontsHubRouteImport.update({
   path: '/fonts/$hub',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ZhTwIndexRoute = ZhTwIndexRouteImport.update({
-  id: '/zh-tw/',
-  path: '/zh-tw/',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ZhTwAboutRoute = ZhTwAboutRouteImport.update({
-  id: '/zh-tw/about',
-  path: '/zh-tw/about',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ZhTwContactRoute = ZhTwContactRouteImport.update({
-  id: '/zh-tw/contact',
-  path: '/zh-tw/contact',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ZhIndexRoute = ZhIndexRouteImport.update({
-  id: '/zh/',
-  path: '/zh/',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ZhAboutRoute = ZhAboutRouteImport.update({
-  id: '/zh/about',
-  path: '/zh/about',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ZhContactRoute = ZhContactRouteImport.update({
-  id: '/zh/contact',
-  path: '/zh/contact',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ZhTwFontSlugRoute = ZhTwFontSlugRouteImport.update({
-  id: '/zh-tw/font/$slug',
-  path: '/zh-tw/font/$slug',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ZhTwFontsIndexRoute = ZhTwFontsIndexRouteImport.update({
-  id: '/zh-tw/fonts/',
-  path: '/zh-tw/fonts/',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ZhTwFontsHubRoute = ZhTwFontsHubRouteImport.update({
-  id: '/zh-tw/fonts/$hub',
-  path: '/zh-tw/fonts/$hub',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ZhFontSlugRoute = ZhFontSlugRouteImport.update({
-  id: '/zh/font/$slug',
-  path: '/zh/font/$slug',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ZhFontsIndexRoute = ZhFontsIndexRouteImport.update({
-  id: '/zh/fonts/',
-  path: '/zh/fonts/',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ZhFontsHubRoute = ZhFontsHubRouteImport.update({
-  id: '/zh/fonts/$hub',
-  path: '/zh/fonts/$hub',
-  getParentRoute: () => rootRouteImport,
-} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -160,19 +88,7 @@ export interface FileRoutesByFullPath {
   '/api/health': typeof ApiHealthRoute
   '/font/$slug': typeof FontSlugRoute
   '/fonts/$hub': typeof FontsHubRoute
-  '/zh-tw/about': typeof ZhTwAboutRoute
-  '/zh-tw/contact': typeof ZhTwContactRoute
-  '/zh/about': typeof ZhAboutRoute
-  '/zh/contact': typeof ZhContactRoute
   '/fonts/': typeof FontsIndexRoute
-  '/zh-tw/': typeof ZhTwIndexRoute
-  '/zh/': typeof ZhIndexRoute
-  '/zh-tw/font/$slug': typeof ZhTwFontSlugRoute
-  '/zh-tw/fonts/$hub': typeof ZhTwFontsHubRoute
-  '/zh/font/$slug': typeof ZhFontSlugRoute
-  '/zh/fonts/$hub': typeof ZhFontsHubRoute
-  '/zh-tw/fonts/': typeof ZhTwFontsIndexRoute
-  '/zh/fonts/': typeof ZhFontsIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -185,19 +101,7 @@ export interface FileRoutesByTo {
   '/api/health': typeof ApiHealthRoute
   '/font/$slug': typeof FontSlugRoute
   '/fonts/$hub': typeof FontsHubRoute
-  '/zh-tw/about': typeof ZhTwAboutRoute
-  '/zh-tw/contact': typeof ZhTwContactRoute
-  '/zh/about': typeof ZhAboutRoute
-  '/zh/contact': typeof ZhContactRoute
   '/fonts': typeof FontsIndexRoute
-  '/zh-tw': typeof ZhTwIndexRoute
-  '/zh': typeof ZhIndexRoute
-  '/zh-tw/font/$slug': typeof ZhTwFontSlugRoute
-  '/zh-tw/fonts/$hub': typeof ZhTwFontsHubRoute
-  '/zh/font/$slug': typeof ZhFontSlugRoute
-  '/zh/fonts/$hub': typeof ZhFontsHubRoute
-  '/zh-tw/fonts': typeof ZhTwFontsIndexRoute
-  '/zh/fonts': typeof ZhFontsIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -211,19 +115,7 @@ export interface FileRoutesById {
   '/api/health': typeof ApiHealthRoute
   '/font/$slug': typeof FontSlugRoute
   '/fonts/$hub': typeof FontsHubRoute
-  '/zh-tw/about': typeof ZhTwAboutRoute
-  '/zh-tw/contact': typeof ZhTwContactRoute
-  '/zh/about': typeof ZhAboutRoute
-  '/zh/contact': typeof ZhContactRoute
   '/fonts/': typeof FontsIndexRoute
-  '/zh-tw/': typeof ZhTwIndexRoute
-  '/zh/': typeof ZhIndexRoute
-  '/zh-tw/font/$slug': typeof ZhTwFontSlugRoute
-  '/zh-tw/fonts/$hub': typeof ZhTwFontsHubRoute
-  '/zh/font/$slug': typeof ZhFontSlugRoute
-  '/zh/fonts/$hub': typeof ZhFontsHubRoute
-  '/zh-tw/fonts/': typeof ZhTwFontsIndexRoute
-  '/zh/fonts/': typeof ZhFontsIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -238,19 +130,7 @@ export interface FileRouteTypes {
     | '/api/health'
     | '/font/$slug'
     | '/fonts/$hub'
-    | '/zh-tw/about'
-    | '/zh-tw/contact'
-    | '/zh/about'
-    | '/zh/contact'
     | '/fonts/'
-    | '/zh-tw/'
-    | '/zh/'
-    | '/zh-tw/font/$slug'
-    | '/zh-tw/fonts/$hub'
-    | '/zh/font/$slug'
-    | '/zh/fonts/$hub'
-    | '/zh-tw/fonts/'
-    | '/zh/fonts/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -263,19 +143,7 @@ export interface FileRouteTypes {
     | '/api/health'
     | '/font/$slug'
     | '/fonts/$hub'
-    | '/zh-tw/about'
-    | '/zh-tw/contact'
-    | '/zh/about'
-    | '/zh/contact'
     | '/fonts'
-    | '/zh-tw'
-    | '/zh'
-    | '/zh-tw/font/$slug'
-    | '/zh-tw/fonts/$hub'
-    | '/zh/font/$slug'
-    | '/zh/fonts/$hub'
-    | '/zh-tw/fonts'
-    | '/zh/fonts'
   id:
     | '__root__'
     | '/'
@@ -288,19 +156,7 @@ export interface FileRouteTypes {
     | '/api/health'
     | '/font/$slug'
     | '/fonts/$hub'
-    | '/zh-tw/about'
-    | '/zh-tw/contact'
-    | '/zh/about'
-    | '/zh/contact'
     | '/fonts/'
-    | '/zh-tw/'
-    | '/zh/'
-    | '/zh-tw/font/$slug'
-    | '/zh-tw/fonts/$hub'
-    | '/zh/font/$slug'
-    | '/zh/fonts/$hub'
-    | '/zh-tw/fonts/'
-    | '/zh/fonts/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -314,19 +170,7 @@ export interface RootRouteChildren {
   ApiHealthRoute: typeof ApiHealthRoute
   FontSlugRoute: typeof FontSlugRoute
   FontsHubRoute: typeof FontsHubRoute
-  ZhTwAboutRoute: typeof ZhTwAboutRoute
-  ZhTwContactRoute: typeof ZhTwContactRoute
-  ZhAboutRoute: typeof ZhAboutRoute
-  ZhContactRoute: typeof ZhContactRoute
   FontsIndexRoute: typeof FontsIndexRoute
-  ZhTwIndexRoute: typeof ZhTwIndexRoute
-  ZhIndexRoute: typeof ZhIndexRoute
-  ZhTwFontSlugRoute: typeof ZhTwFontSlugRoute
-  ZhTwFontsHubRoute: typeof ZhTwFontsHubRoute
-  ZhFontSlugRoute: typeof ZhFontSlugRoute
-  ZhFontsHubRoute: typeof ZhFontsHubRoute
-  ZhTwFontsIndexRoute: typeof ZhTwFontsIndexRoute
-  ZhFontsIndexRoute: typeof ZhFontsIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -408,90 +252,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof FontsHubRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/zh-tw/': {
-      id: '/zh-tw/'
-      path: '/zh-tw'
-      fullPath: '/zh-tw/'
-      preLoaderRoute: typeof ZhTwIndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/zh-tw/about': {
-      id: '/zh-tw/about'
-      path: '/zh-tw/about'
-      fullPath: '/zh-tw/about'
-      preLoaderRoute: typeof ZhTwAboutRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/zh-tw/contact': {
-      id: '/zh-tw/contact'
-      path: '/zh-tw/contact'
-      fullPath: '/zh-tw/contact'
-      preLoaderRoute: typeof ZhTwContactRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/zh/': {
-      id: '/zh/'
-      path: '/zh'
-      fullPath: '/zh/'
-      preLoaderRoute: typeof ZhIndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/zh/about': {
-      id: '/zh/about'
-      path: '/zh/about'
-      fullPath: '/zh/about'
-      preLoaderRoute: typeof ZhAboutRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/zh/contact': {
-      id: '/zh/contact'
-      path: '/zh/contact'
-      fullPath: '/zh/contact'
-      preLoaderRoute: typeof ZhContactRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/zh-tw/font/$slug': {
-      id: '/zh-tw/font/$slug'
-      path: '/zh-tw/font/$slug'
-      fullPath: '/zh-tw/font/$slug'
-      preLoaderRoute: typeof ZhTwFontSlugRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/zh-tw/fonts/': {
-      id: '/zh-tw/fonts/'
-      path: '/zh-tw/fonts'
-      fullPath: '/zh-tw/fonts/'
-      preLoaderRoute: typeof ZhTwFontsIndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/zh-tw/fonts/$hub': {
-      id: '/zh-tw/fonts/$hub'
-      path: '/zh-tw/fonts/$hub'
-      fullPath: '/zh-tw/fonts/$hub'
-      preLoaderRoute: typeof ZhTwFontsHubRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/zh/font/$slug': {
-      id: '/zh/font/$slug'
-      path: '/zh/font/$slug'
-      fullPath: '/zh/font/$slug'
-      preLoaderRoute: typeof ZhFontSlugRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/zh/fonts/': {
-      id: '/zh/fonts/'
-      path: '/zh/fonts'
-      fullPath: '/zh/fonts/'
-      preLoaderRoute: typeof ZhFontsIndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/zh/fonts/$hub': {
-      id: '/zh/fonts/$hub'
-      path: '/zh/fonts/$hub'
-      fullPath: '/zh/fonts/$hub'
-      preLoaderRoute: typeof ZhFontsHubRouteImport
-      parentRoute: typeof rootRouteImport
-    }
   }
 }
 
@@ -506,19 +266,7 @@ const rootRouteChildren: RootRouteChildren = {
   ApiHealthRoute: ApiHealthRoute,
   FontSlugRoute: FontSlugRoute,
   FontsHubRoute: FontsHubRoute,
-  ZhTwAboutRoute: ZhTwAboutRoute,
-  ZhTwContactRoute: ZhTwContactRoute,
-  ZhAboutRoute: ZhAboutRoute,
-  ZhContactRoute: ZhContactRoute,
   FontsIndexRoute: FontsIndexRoute,
-  ZhTwIndexRoute: ZhTwIndexRoute,
-  ZhIndexRoute: ZhIndexRoute,
-  ZhTwFontSlugRoute: ZhTwFontSlugRoute,
-  ZhTwFontsHubRoute: ZhTwFontsHubRoute,
-  ZhFontSlugRoute: ZhFontSlugRoute,
-  ZhFontsHubRoute: ZhFontsHubRoute,
-  ZhTwFontsIndexRoute: ZhTwFontsIndexRoute,
-  ZhFontsIndexRoute: ZhFontsIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

@@ -22,12 +22,11 @@ export const localeConfig = {
 export type Locale = keyof typeof localeConfig
 
 export const defaultLocale = 'en' satisfies Locale
-export const supportedLocales = Object.keys(localeConfig) as Locale[]
 
-export function localeFromPathname(pathname: string): Locale {
-  const firstSegment = pathname.split(/[?#]/, 1)[0]?.split('/').filter(Boolean)[0]
-  return (
-    supportedLocales.find((locale) => localeConfig[locale].pathPrefix === firstSegment) ||
-    defaultLocale
-  )
+// FontOdyssey is intentionally English-only for now. Keep the locale metadata above so
+// additional markets can be re-enabled later without rebuilding the i18n foundation.
+export const supportedLocales: ReadonlyArray<Locale> = ['en']
+
+export function localeFromPathname(_pathname: string): Locale {
+  return defaultLocale
 }

@@ -1,4 +1,5 @@
 import { describe, expect, it } from 'vitest'
+import { supportedLocales } from '@/i18n/config'
 import { hreflangAlternates, sitemapPaths } from '@/i18n/routes'
 import { filterAndSortFonts, fontCatalog, fontLanguages } from '@/lib/font-catalog'
 import { fontSitemapPaths } from '@/lib/font-routes'
@@ -27,7 +28,7 @@ describe('FontOdyssey configuration', () => {
     expect(validateLegalProfile(legalProfile)).toEqual([])
   })
 
-  it('centralizes the FontOdyssey header navigation and localized destinations', () => {
+  it('keeps dormant localized navigation destinations available for future expansion', () => {
     expect(siteNavigation.header.links).toContain('tools')
     expect(siteNavigation.header.customLinks?.map((link) => link.id)).toEqual([
       'collections',
@@ -72,16 +73,13 @@ describe('FontOdyssey configuration', () => {
     expect(latinOnly.every((font) => fontLanguages(font).includes('Latin'))).toBe(true)
   })
 
-  it('publishes reciprocal three-locale home and directory routes', () => {
-    expect(hreflangAlternates('fonts')).toEqual([
-      { locale: 'en', path: '/fonts' },
-      { locale: 'zh-CN', path: '/zh/fonts' },
-      { locale: 'zh-TW', path: '/zh-tw/fonts' },
-      { locale: 'x-default', path: '/fonts' },
-    ])
-    expect(sitemapPaths()).toEqual(
-      expect.arrayContaining(['/', '/zh', '/zh-tw', '/fonts', '/zh/fonts', '/zh-tw/fonts']),
-    )
-    expect(sitemapPaths()).toEqual(expect.arrayContaining(fontSitemapPaths()))
+  it('publishes only English home and directory routes', () => {
+    const paths = sitemapPaths()
+    expect(supportedLocales).toEqual(['en'])
+    expect(hreflangAlternates('fonts')).toEqual([])
+    expect(paths).toEqual(expect.arrayContaining(['/', '/fonts']))
+    expect(paths.some((path) => path === '/zh' || path.startsWith('/zh/'))).toBe(false)
+    expect(paths.some((path) => path === '/zh-tw' || path.startsWith('/zh-tw/'))).toBe(false)
+    expect(paths).toEqual(expect.arrayContaining(fontSitemapPaths()))
   })
 })

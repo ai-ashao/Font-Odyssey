@@ -5,13 +5,13 @@ import {
   Scripts,
   useRouterState,
 } from '@tanstack/react-router'
-import { ChevronDown, Globe2, Menu } from 'lucide-react'
+import { Menu } from 'lucide-react'
 import type { ReactNode } from 'react'
 import { SiteFooter } from '@/components/site-footer'
 import usabilityStyles from '@/font-usability.css?url'
 import { type Locale, localeConfig, localeFromPathname } from '@/i18n/config'
 import { shellMessages } from '@/i18n/messages'
-import { localeAlternatesForPath, localizedPathOrDefault } from '@/i18n/routes'
+import { localizedPathOrDefault } from '@/i18n/routes'
 import { publicEnv } from '@/lib/config/env'
 import { productConfig, surfaceModeForPath } from '@/lib/product-config'
 import { site } from '@/lib/site'
@@ -59,7 +59,6 @@ function RootComponent() {
   const pathname = useRouterState({ select: (state) => state.location.pathname })
   const locale = localeFromPathname(pathname)
   const copy = shellMessages[locale]
-  const localeAlternates = localeAlternatesForPath(pathname)
   const surfaceMode = surfaceModeForPath(pathname)
   const navigation = siteNavigationForMode(surfaceMode)
 
@@ -84,38 +83,6 @@ function RootComponent() {
           </nav>
 
           <div className="ship-header-actions">
-            <details className="ship-language-menu" data-language-menu>
-              <summary aria-label={copy.languageSwitcher}>
-                <Globe2 aria-hidden="true" />
-                <span className="ship-language-current">{localeConfig[locale].label}</span>
-                {localeAlternates.length > 0 && <ChevronDown aria-hidden="true" />}
-              </summary>
-              {localeAlternates.length > 0 ? (
-                <div className="ship-language-popover">
-                  {localeAlternates.map((alternate) => (
-                    <a
-                      aria-label={
-                        locale === 'en'
-                          ? `Switch to ${alternate.label}`
-                          : locale === 'zh-CN'
-                            ? `切换到${alternate.label}`
-                            : `切換到${alternate.label}`
-                      }
-                      className="locale-switch"
-                      data-locale-switch
-                      href={alternate.path}
-                      hrefLang={alternate.locale}
-                      key={alternate.locale}
-                      lang={alternate.locale}
-                    >
-                      <span>{alternate.label}</span>
-                      <small>{alternate.shortLabel}</small>
-                    </a>
-                  ))}
-                </div>
-              ) : null}
-            </details>
-
             <details className="ship-mobile-menu" data-mobile-menu>
               <summary aria-label={copy.mobileNavigation}>
                 <Menu aria-hidden="true" />

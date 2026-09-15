@@ -7,10 +7,6 @@ import type { ToolSeoBrief } from '@/lib/tool-seo-brief'
 export const toolSeoBrief: ToolSeoBrief = {
   status: 'ready',
   primaryKeyword: 'free fonts',
-  localizedPrimaryKeywords: {
-    'zh-CN': '免费字体下载',
-    'zh-TW': '免費字體下載',
-  },
   searchIntent: 'download',
   primaryPage: '/',
   supportingKeywords: [
@@ -30,22 +26,12 @@ export const toolSeoBrief: ToolSeoBrief = {
       pageType: 'category',
       locale: 'en',
     },
-    { keyword: '免费字体下载', path: '/zh', pageType: 'tool', locale: 'zh-CN' },
-    { keyword: '字体大全', path: '/zh/fonts', pageType: 'category', locale: 'zh-CN' },
-    { keyword: '免费中文字体', path: '/zh/fonts/chinese', pageType: 'category', locale: 'zh-CN' },
-    { keyword: '免費字體下載', path: '/zh-tw', pageType: 'tool', locale: 'zh-TW' },
-    {
-      keyword: '免費中文字體',
-      path: '/zh-tw/fonts/chinese',
-      pageType: 'category',
-      locale: 'zh-TW',
-    },
   ],
-  locales: ['en', 'zh-CN', 'zh-TW'],
+  locales: ['en'],
   evidence: [
     {
       source: 'user-approved FontOdyssey SEO-first product brief and market research',
-      note: 'The user approved an EN + zh-CN + zh-TW curated font catalog, font-entity SEO pages, language/category hubs, source/license checks, and market-specific downloads. No search-volume or keyword-difficulty value is invented here.',
+      note: 'The current launch scope is an English-only curated font catalog with font-entity pages, language/category hubs, and source/license checks. No search-volume or keyword-difficulty value is invented here.',
     },
   ],
 }

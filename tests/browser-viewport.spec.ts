@@ -25,6 +25,7 @@ for (const viewport of viewports) {
       page.locator('.prototype-featured [data-preview-state="unavailable"]'),
     ).toHaveCount(0)
     await expect(page.locator('[data-site-header] [data-header-cta]')).toHaveCount(0)
+    await expect(page.locator('[data-language-menu]')).toHaveCount(0)
 
     if (viewport.name === 'desktop') {
       await expect(page.locator('.ship-main-nav')).toBeVisible()
@@ -37,10 +38,6 @@ for (const viewport of viewports) {
       await expect(mobileMenu.getByRole('link', { name: 'Commercial', exact: true })).toBeVisible()
       await expect(mobileMenu.getByRole('link', { name: 'Variable', exact: true })).toBeVisible()
     }
-
-    const languageMenu = page.locator('[data-language-menu]')
-    await languageMenu.locator('summary').click()
-    await expect(page.getByRole('link', { name: 'Switch to 简体中文' })).toBeVisible()
 
     expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(
       viewport.width,
@@ -75,17 +72,6 @@ for (const viewport of viewports) {
       'data-preview-state',
       'ready',
     )
-    expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(
-      viewport.width,
-    )
-  })
-
-  test(`Traditional Chinese homepage at ${viewport.name}`, async ({ page }) => {
-    await page.setViewportSize(viewport)
-    await page.goto('/zh-tw')
-    await expect(page.locator('[data-font-home]')).toBeVisible()
-    await expect(page.getByRole('heading', { level: 1 })).toContainText('免費字體下載')
-    await expect(page.getByText('149 已驗證', { exact: true })).toBeVisible()
     expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(
       viewport.width,
     )
@@ -143,41 +129,23 @@ test('unpreviewable RFN family does not display system-font specimens', async ({
   await expect(page.locator('#font-download a[href$="/raleway.zip"]')).toBeVisible()
 })
 
-test('Simplified Chinese filters are localized and an empty result has a recovery path', async ({
+test('retired locale routes return 404 and are not exposed as alternate pages', async ({
   page,
 }) => {
-  await page.goto('/zh/fonts')
-  await expect(
-    page.getByLabel('类别', { exact: true }).getByRole('option', { name: '手写体' }),
-  ).toHaveCount(1)
-  await expect(page.locator('[data-font-directory]')).toHaveAttribute('data-hydrated', 'true')
-  await page.getByLabel('搜索字体', { exact: true }).fill('nothing-matches-this-font-93817')
-  await expect(page.locator('.fo-directory-empty')).toBeVisible()
-  await expect(page.locator('[data-font-card]')).toHaveCount(0)
-  await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', /noindex/)
-  await page.locator('.fo-directory-empty').getByRole('link', { name: '清除筛选' }).click()
-  await expect(page.locator('[data-font-card]')).toHaveCount(149)
-  await expect(page.locator('meta[name="robots"]')).toHaveCount(0)
-})
+  for (const path of [
+    '/zh',
+    '/zh-tw',
+    '/zh/fonts',
+    '/zh-tw/fonts',
+    '/zh/font/inter',
+    '/zh-tw/font/inter',
+    '/zh/about',
+    '/zh-tw/contact',
+  ]) {
+    const response = await page.goto(path)
+    expect(response?.status()).toBe(404)
+  }
 
-test('localized information pages and priority hub content form a complete Chinese path', async ({
-  page,
-}) => {
-  await page.setViewportSize({ width: 390, height: 844 })
-  await page.goto('/zh')
-  const about = page.locator('[data-site-footer]').getByRole('link', { name: '关于我们' })
-  await expect(about).toHaveAttribute('href', '/zh/about')
-  await about.click()
-  await expect(page).toHaveURL(/\/zh\/about$/)
-  await expect(page.getByRole('heading', { level: 1 })).toContainText('策展标准')
-  await expect(page.getByRole('heading', { name: '下载完整性' })).toBeVisible()
-  await expect(page.locator('link[hreflang="en"]')).toHaveAttribute(
-    'href',
-    'http://127.0.0.1:4174/about',
-  )
-
-  await page.goto('/zh/fonts/chinese')
-  await expect(page.getByRole('heading', { name: '如何选择中文字体' })).toBeVisible()
-  await expect(page.getByRole('heading', { name: '中文字体常见问题' })).toBeVisible()
-  expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(390)
+  await page.goto('/font/inter')
+  await expect(page.locator('link[hreflang]')).toHaveCount(0)
 })

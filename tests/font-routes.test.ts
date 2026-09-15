@@ -12,14 +12,14 @@ import {
 } from '@/lib/font-routes'
 
 describe('font entity and hub routes', () => {
-  it('builds stable locale-aware font paths', () => {
+  it('keeps locale path helpers available but publishes English as the only active alternate', () => {
     const inter = findFontBySlug('inter')
     expect(inter).toBeDefined()
     if (!inter) return
     expect(fontPath(inter, 'en')).toBe('/font/inter')
     expect(fontPath(inter, 'zh-CN')).toBe('/zh/font/inter')
     expect(fontPath(inter, 'zh-TW')).toBe('/zh-tw/font/inter')
-    expect(fontDetailAlternates(inter)).toHaveLength(3)
+    expect(fontDetailAlternates(inter)).toEqual([{ locale: 'en', path: '/font/inter' }])
   })
 
   it('builds language and category hubs from real inventory', () => {
@@ -37,32 +37,26 @@ describe('font entity and hub routes', () => {
     expect(fontsForHub(display).every((font) => font.category === 'Display')).toBe(true)
   })
 
-  it('keeps user-facing locale switches available for catalog detail routes', () => {
-    expect(fontLocaleAlternatesForPath('/font/inter')).toEqual([
-      { locale: 'zh-CN', path: '/zh/font/inter' },
-      { locale: 'zh-TW', path: '/zh-tw/font/inter' },
-    ])
-    expect(fontLocaleAlternatesForPath('/zh/font/inter')).toEqual([
-      { locale: 'en', path: '/font/inter' },
-      { locale: 'zh-TW', path: '/zh-tw/font/inter' },
-    ])
+  it('does not expose user-facing locale switches on active catalog routes', () => {
+    expect(fontLocaleAlternatesForPath('/font/inter')).toEqual([])
+    expect(fontLocaleAlternatesForPath('/fonts/chinese')).toEqual([])
   })
 
-  it('puts only publishing-gate-eligible font details in the sitemap', () => {
+  it('puts only English publishing-gate-eligible font details in the sitemap', () => {
     const paths = new Set(fontSitemapPaths())
     for (const font of fontCatalog) {
       const indexable = new Set(indexableFontLocales(font))
-      for (const locale of ['en', 'zh-CN', 'zh-TW'] as const) {
-        expect(paths.has(fontPath(font, locale))).toBe(indexable.has(locale))
-      }
+      expect(paths.has(fontPath(font, 'en'))).toBe(indexable.has('en'))
+      expect(paths.has(fontPath(font, 'zh-CN'))).toBe(false)
+      expect(paths.has(fontPath(font, 'zh-TW'))).toBe(false)
     }
 
     expect(paths.has('/fonts/chinese')).toBe(true)
-    expect(paths.has('/zh/fonts/chinese')).toBe(true)
-    expect(paths.has('/zh-tw/fonts/chinese')).toBe(true)
+    expect(paths.has('/zh/fonts/chinese')).toBe(false)
+    expect(paths.has('/zh-tw/fonts/chinese')).toBe(false)
     expect(paths.has('/fonts/display')).toBe(true)
-    expect(paths.has('/zh/fonts/display')).toBe(true)
-    expect(paths.has('/zh-tw/fonts/display')).toBe(true)
+    expect(paths.has('/zh/fonts/display')).toBe(false)
+    expect(paths.has('/zh-tw/fonts/display')).toBe(false)
     expect(paths.size).toBe(fontSitemapPaths().length)
   })
 })

@@ -62,10 +62,17 @@ export function fontHubHead(hub: FontHubDefinition | undefined, locale: Locale, 
     })
   }
   const copy = hub.localized[locale]
+  const hreflang = fontHubAlternates(hub)
+  const fallback = hreflang.find((alternate) => alternate.locale === 'en') ?? hreflang[0]
+  const alternates =
+    hreflang.length >= 2 && fallback
+      ? [...hreflang, { locale: 'x-default', path: fallback.path }]
+      : []
+
   return pageHead({
     title: copy.title,
     description: copy.description,
     path: fontHubPath(hub, locale),
-    alternates: [...fontHubAlternates(hub), { locale: 'x-default', path: fontHubPath(hub, 'en') }],
+    alternates,
   })
 }
